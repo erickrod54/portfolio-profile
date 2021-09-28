@@ -1,14 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
+class App extends Component {
+constructor(){
+  super();
+
+  this.state = {
+    string: 'Hello my name is Erick - this is the start on my portfolio'
+  };
+  }
+render() {
+  return(
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello my name is Erick - this is the start on my portfolio
+          {this.state.string}
         </p>
+        {/**this is a test for state manipulation
+         * we change the value of p tag using a state
+         */}
+         <button onClick={() => this.setState({ string: 'doing click changes the prop string of the state'})}>Change text</button>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +33,7 @@ function App() {
       </header>
     </div>
   );
+}
 }
 
 export default App;
