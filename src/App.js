@@ -2,7 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 
+
 class App extends Component {
+/**converting to a class component give us access to render method and contructor 
+ * for state manipulation propuses
+ */
 constructor(){
   super();
 
@@ -13,6 +17,7 @@ constructor(){
 render() {
   return(
     <div className="App">
+      {/**attributtes like className, and OnClick are JSX attributes that mimick html attributes*/}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
