@@ -11,7 +11,7 @@ constructor(){
   super();
 
   this.state = {
-    string: 'Hello my name is Erick - this is the start on my portfolio'
+    message: 'Hello my name is Erick - this is the start on my portfolio'
   };
   }
 render() {
@@ -21,12 +21,12 @@ render() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {this.state.string}
+          {this.state.message}
         </p>
         {/**this is a test for state manipulation
          * we change the value of p tag using a state
          */}
-         <button onClick={() => this.setState({ string: 'doing click changes the prop string of the state'})}>Change text</button>
+         <button onClick={() => this.setState({ message: 'doing click changes the prop string of the state'})}>Change text</button>
         <a
           className="App-link"
           href="https://reactjs.org"
