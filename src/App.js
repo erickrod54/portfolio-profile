@@ -1,26 +1,16 @@
-
+import React from 'react';
 import './App.css';
-import { Component } from 'react';
 
 
-class App extends Component {
-/**converting to a class component give us access to render method and contructor 
- * for state manipulation propuses
- */
-constructor(){
-  super();
+import HomePage from './pages/homepage/homepage.component';
 
-  this.state = {
-    message: 'Hello my name is Erick - this is the start on my portfolio'
-  };
-  }
-render() {
-  return(
+function App(){
+  return (
     <div>
-      <p>Hello my name is Erick - this is the start on my portfolio</p>
+      <HomePage />
     </div>
   );
 }
-}
+
 
 export default App;
