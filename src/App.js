@@ -10,7 +10,7 @@ import DashBoard from './pages/dashboard/dashboard.component';
 import Header from './components/header/header.component';
 
 /**Header component is placed above Switch 
- * component, with the purpose of maintain 
+ * component, with the purpose  of maintain 
  * header across all the pages*/
 function App(){
   return (
