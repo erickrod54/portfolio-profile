@@ -2,7 +2,18 @@ import React from "react";
 
 import './homepage.styles.scss';
 
-const HomePage = () => (
+/** I'm loggin the props here in case that
+ * we need to use specific props like history,
+ * location, and match to build a dynamic 
+ * link to a child component of homepage
+ * 
+ * example
+ * 
+ *  ${props.match.url}/dashboad
+*/
+const HomePage = (props) => {
+console.log(props)   
+return(
   <div className="homepage">
      <div className="cardprofile"> 
       <p className="title">here is going to be 
@@ -12,6 +23,7 @@ const HomePage = () => (
      </div> 
 
   </div>
-);
+   );
+};
 
 export default HomePage;
