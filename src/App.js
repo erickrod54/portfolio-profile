@@ -9,21 +9,40 @@ import HomePage from './pages/homepage/homepage.component';
 import SignInPage from './pages/sign-in-page/sign-in-page.component';
 import DashBoard from './pages/dashboard/dashboard.component';
 import Header from './components/header/header.component';
+import { auth } from './firebase/firebase.utils';
 
 /**Header component is placed above Switch 
  * component, with the purpose  of maintain 
  * header across all the pages*/
-function App(){
-  return (
-    <div>
-    <Header />
-      <Switch>
-        <Route exact path='/' component={HomePage}/>
-        <Route path='/dashboard' component={DashBoard}/>
-        <Route path='/sign-in-page' component={SignInPage}/>  
-      </Switch>
-    </div>
-  );
+class App extends React.Component{
+  constructor(){
+    super();
+
+    this.state = {
+      currentUser: null
+    }
+  }
+
+  componentDidMount(){
+    auth.onAuthStateChanged(user => {
+      this.setState({ currentUser: user });
+
+      console.log(user)
+    })
+  }
+
+  render(){
+    return (
+      <div>
+      <Header />
+        <Switch>
+          <Route exact path='/' component={HomePage}/>
+          <Route path='/dashboard' component={DashBoard}/>
+          <Route path='/sign-in-page' component={SignInPage}/>  
+        </Switch>
+      </div>
+    );
+  }
 }
 
 
