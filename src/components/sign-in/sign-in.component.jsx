@@ -2,6 +2,7 @@ import React from "react";
 
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
+import { signInWithGoogle } from "../../firebase/firebase.utils";
 
 import './sign-in.styles.scss';
 
@@ -50,7 +51,7 @@ class SignIn extends React.Component{
   render(){
     return(
       <div className="sign-in">
-        <h2>Log in</h2>
+        <h2 className="title">Log in</h2>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput 
@@ -74,6 +75,7 @@ class SignIn extends React.Component{
            {/**implementing CustomButton, 
             * replacing value, we have children*/}       
           <CustomButton type="submit" > Sign in</CustomButton>
+          <CustomButton onClick={signInWithGoogle} > Sign in with Google </CustomButton>
         </form>
       </div>
     );
