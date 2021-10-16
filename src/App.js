@@ -23,18 +23,35 @@ class App extends React.Component{
     }
   }
 
+unsubscribeFromAuth = null
+
+
+/**with yhis lifecycle method i made an 
+ * open suscription - open message system
+ * beteen the profile and firebase
+ * (user session persistance), and i
+ * closed it with unsubscribeFromAuth
+*/
   componentDidMount(){
-    auth.onAuthStateChanged(user => {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       this.setState({ currentUser: user });
 
       console.log(user)
-    })
+    });
+  }
+
+  /**when unmount the app, i 
+   * call unsubcribeFromAuth */
+  componentWillUnmount(){
+    this.unsubscribeFromAuth();
   }
 
   render(){
     return (
       <div>
-      <Header />
+        {/**pass current user to the header 
+         * to track the log in with the header */}
+      <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage}/>
           <Route path='/dashboard' component={DashBoard}/>
