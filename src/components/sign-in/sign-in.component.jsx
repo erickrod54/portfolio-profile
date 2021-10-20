@@ -50,10 +50,14 @@ class SignIn extends React.Component{
 
   render(){
     return(
-      <div className="sign-in">
+      /**i cpy the code from cardprofile
+       * but i have to create the component style
+       * to reuse the code from homepagage.styles
+       */
+      <div className="sign-in cardprofile" >
         <h2 className="title">Log in</h2>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} >
           <FormInput 
             name="email" 
             type="email" 
