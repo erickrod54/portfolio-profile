@@ -1,13 +1,27 @@
 .sign-in{
-  width: 30vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
+  
 
   .title{
     margin: 10px 0;
+    color:white ;
   }
 }
 
-h2{
-  color: white;
+.cardprofile {
+
+  min-width: 50%;
+  height: 260px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+
+  
+
 }
+
