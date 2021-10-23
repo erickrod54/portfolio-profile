@@ -6,3 +6,9 @@ a {
   text-decoration: none;
   color: white;
 }
+/** with this universal selector
+i made all the box inputs align 
+across the application*/
+*{
+  box-sizing: border-box;
+}
