@@ -9,7 +9,7 @@ import HomePage from './pages/homepage/homepage.component';
 import SignInPage from './pages/sign-in-page/sign-in-page.component';
 import DashBoard from './pages/dashboard/dashboard.component';
 import Header from './components/header/header.component';
-import { auth } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 /**Header component is placed above Switch 
  * component, with the purpose  of maintain 
@@ -33,8 +33,8 @@ unsubscribeFromAuth = null
  * closed it with unsubscribeFromAuth
 */
   componentDidMount(){
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.setState({ currentUser: user });
+    this.unsubscribeFromAuth = auth.onAuthStateChanged( async user => {
+      createUserProfileDocument(user)
 
       console.log(user)
     });
