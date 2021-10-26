@@ -33,10 +33,37 @@ unsubscribeFromAuth = null
  * closed it with unsubscribeFromAuth
 */
   componentDidMount(){
-    this.unsubscribeFromAuth = auth.onAuthStateChanged( async user => {
-      createUserProfileDocument(user)
+    this.unsubscribeFromAuth = auth.onAuthStateChanged( async userAuth => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
 
-      console.log(user)
+        /**onSnapshot is 
+         * similar to onAuthStateChange method, 
+         * onSnapshot request the data stored in
+         * firebase database so i can use it,
+         * i have to use the method .data() to 
+         * watch the data the way i want*/
+        userRef.onSnapshot( snapShot => {
+         /** if i do it this way  
+          * console.log(snapShot.data()) will show me
+          * the object without an id, so i have to build
+          * a new object to mix uid property from snapShot
+          * DocumentReference and snapShot.data() */
+          this.setState({
+            currentUser:{
+              id: snapShot.id,
+              ...snapShot.data()
+            }
+          }, () => {
+            console.log(this.state)/**i log here 
+                          cause setState is 
+                          asynchronous, so we 
+                          have to call it as a 
+                          second parameter*/
+          })
+        })
+      }
+
     });
   }
 
