@@ -81,6 +81,9 @@ unsubscribeFromAuth = null
       <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage}/>
+          {/**i have to wrap this route to redirect login
+           * to dashboard and start developing profile 
+           * cards*/}
           <Route path='/dashboard' component={DashBoard}/>
           <Route path='/sign-in-page' component={SignInPage}/>  
         </Switch>
