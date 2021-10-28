@@ -73,7 +73,7 @@ unsubscribeFromAuth = null
     this.unsubscribeFromAuth();
   }
 
-  render(){
+  render(currentUser){
     return (
       <div>
         {/**pass current user to the header 
@@ -81,11 +81,13 @@ unsubscribeFromAuth = null
       <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage}/>
-          {/**i have to wrap this route to redirect login
-           * to dashboard and start developing profile 
-           * cards*/}
-          <Route path='/dashboard' component={DashBoard}/>
-          <Route path='/sign-in-page' component={SignInPage}/>  
+          {/**i have to use redirect component, pending */}
+          {
+           currentUser ?
+          <Route path='/dashboard' component={DashBoard}/> 
+          :  
+          <Route  path='/sign-in-page' component={SignInPage}/>
+          }
         </Switch>
       </div>
     );
