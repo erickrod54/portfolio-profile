@@ -55,12 +55,10 @@ unsubscribeFromAuth = null
               ...snapShot.data()
             }
           }, () => {
-            console.log(this.state)/**i log here 
-                          cause setState is 
-                          asynchronous, so we 
-                          have to call it as a 
-                          second parameter*/
+            const id = this.state.currentUser.id
+            console.log(id)
           })
+          
         })
       }
 
@@ -78,8 +76,9 @@ unsubscribeFromAuth = null
       <div>
         {/**pass current user to the header 
          * to track the log in with the header */}
-      <Header currentUser={this.state.currentUser}/>
+      <Header currentUser={this.state.currentUser}/>  
         <Switch>
+        {console.log(this.state.currentUser)}
           <Route exact path='/' component={HomePage}/>
           {/**i have to use redirect component, pending */}
           <Route path='/dashboard' component={DashBoard}/> 
