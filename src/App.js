@@ -54,9 +54,10 @@ unsubscribeFromAuth = null
               id: snapShot.id,
               ...snapShot.data()
             }
-          }, () => {
-            const id = this.state.currentUser.id
+          }, () => { 
+            const id = this.state.currentUser.id 
             console.log(id)
+            return id
           })
           
         })
@@ -72,16 +73,17 @@ unsubscribeFromAuth = null
   }
 
   render(){
+    
     return (
       <div>
         {/**pass current user to the header 
          * to track the log in with the header */}
       <Header currentUser={this.state.currentUser}/>  
         <Switch>
-        {console.log(this.state.currentUser)}
+          {console.log(this)}
           <Route exact path='/' component={HomePage}/>
           {/**i have to use redirect component, pending */}
-          <Route path='/dashboard' component={DashBoard}/> 
+          <Route  path='/dashboard' component={DashBoard}/> 
           <Route  path='/sign-in-page' component={SignInPage}/>
         </Switch>
       </div>
