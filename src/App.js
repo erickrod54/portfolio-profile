@@ -19,7 +19,8 @@ class App extends React.Component{
     super();
 
     this.state = {
-      currentUser: null
+      currentUser: null,
+      isTheuser: false
     }
   }
 
@@ -55,15 +56,21 @@ unsubscribeFromAuth = null
               ...snapShot.data()
             }
           }, () => { 
-            const id = this.state.currentUser.id 
-            console.log(id)
-            return id
+            if(this.state.currentUser.id === 'QGKpKECHBNhXalC5ahL4n0wVbZ43'){
+              this.state.isTheuser = true
+            }else{
+              return null;
+            } 
+            console.log('inside the second argument setState currentUser:',this.state.isTheuser)
+            
           })
-          
+               
         })
+        
       }
 
     });
+    
   }
 
   /**when unmount the app, i 
@@ -73,14 +80,14 @@ unsubscribeFromAuth = null
   }
 
   render(){
-    
+   
     return (
       <div>
         {/**pass current user to the header 
          * to track the log in with the header */}
       <Header currentUser={this.state.currentUser}/>  
         <Switch>
-          {console.log(this)}
+          {console.log('this is in render method',  this.state.isTheuser)}
           <Route exact path='/' component={HomePage}/>
           {/**i have to use redirect component, pending */}
           <Route  path='/dashboard' component={DashBoard}/> 
@@ -89,6 +96,7 @@ unsubscribeFromAuth = null
       </div>
     );
   }
+  
 }
 
 
