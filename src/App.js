@@ -73,6 +73,8 @@ unsubscribeFromAuth = null
     
   }
 
+  
+
   /**when unmount the app, i 
    * call unsubcribeFromAuth */
   componentWillUnmount(){
@@ -90,7 +92,7 @@ unsubscribeFromAuth = null
           {console.log('this is in render method',  this.state.isTheuser)}
           <Route exact path='/' component={HomePage}/>
           {/**i have to use redirect component, pending */}
-          <Route  path='/dashboard' component={DashBoard}/> 
+          <Route  path='/dashboard' component={DashBoard}/>
           <Route  path='/sign-in-page' component={SignInPage}/>
         </Switch>
       </div>
