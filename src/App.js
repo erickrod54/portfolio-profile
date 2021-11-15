@@ -1,7 +1,9 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect} from 'react-router-dom';
 /**importing switch and route component to start using react-router-dom functionality 
 for navigation */
+
+import { connect } from 'react-redux';
 
 import './App.css';
 
@@ -10,20 +12,12 @@ import SignInPage from './pages/sign-in-page/sign-in-page.component';
 import DashBoard from './pages/dashboard/dashboard.component';
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { setCurrentUser } from './redux/user/user.actions';
 
 /**Header component is placed above Switch 
  * component, with the purpose  of maintain 
  * header across all the pages*/
 class App extends React.Component{
-  constructor(){
-    super();
-
-    this.state = {
-      currentUser: null,
-      isTheuser: false
-    }
-  }
-
 unsubscribeFromAuth = null
 
 
@@ -34,6 +28,8 @@ unsubscribeFromAuth = null
  * closed it with unsubscribeFromAuth
 */
   componentDidMount(){
+    const{setCurrentUser} = this.props;
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged( async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -50,24 +46,16 @@ unsubscribeFromAuth = null
           * the object without an id, so i have to build
           * a new object to mix uid property from snapShot
           * DocumentReference and snapShot.data() */
-          this.setState({
-            currentUser:{
+          setCurrentUser({
               id: snapShot.id,
               ...snapShot.data()
-            }
-          }, () => { 
-            if(this.state.currentUser.id === 'QGKpKECHBNhXalC5ahL4n0wVbZ43'){
-              this.state.isTheuser = true
-            }else{
-              return null;
-            } 
-            console.log('inside the second argument setState currentUser:',this.state.isTheuser)
-            
-          })
+          });
                
-        })
+        });
         
       }
+
+      setCurrentUser(userAuth);
 
     });
     
@@ -85,15 +73,22 @@ unsubscribeFromAuth = null
    
     return (
       <div>
-        {/**pass current user to the header 
-         * to track the log in with the header */}
-      <Header currentUser={this.state.currentUser}/>  
+      <Header />  
         <Switch>
-          {console.log('this is in render method',  this.state.isTheuser)}
           <Route exact path='/' component={HomePage}/>
           {/**i have to use redirect component, pending */}
           <Route  path='/dashboard' component={DashBoard}/>
-          <Route  path='/sign-in-page' component={SignInPage}/>
+          <Route  
+            exact 
+            path='/sign-in-page'
+            render={() =>
+                this.props.currentUser ? (
+                <Redirect to='/dashboard'/>
+              ) : (
+                <SignInPage />
+              )
+            } 
+          />
         </Switch>
       </div>
     );
@@ -101,5 +96,14 @@ unsubscribeFromAuth = null
   
 }
 
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
 
-export default App;
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: user => dispatch(setCurrentUser(user))
+})
+
+export default connect(mapStateToProps, 
+                      mapDispatchToProps
+                      )(App);
