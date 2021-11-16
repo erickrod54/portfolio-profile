@@ -15,7 +15,7 @@ ReactDOM.render(
 <Provider store={store}>{/**i wrap around the whole app
  *inside this store object called Provider from react redux
  to provide all the things related to the store and state
- acorss the app*/}  
+ acoross the app*/}  
 <BrowserRouter>
   <React.StrictMode>
     <App />
