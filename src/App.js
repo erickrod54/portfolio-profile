@@ -1,7 +1,5 @@
 import React from 'react';
 import { Switch, Route, Redirect} from 'react-router-dom';
-/**importing switch and route component to start using react-router-dom functionality 
-for navigation */
 
 import { connect } from 'react-redux';
 
@@ -14,12 +12,17 @@ import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 
-/**Header component is placed above Switch 
- * component, with the purpose  of maintain 
- * header across all the pages*/
 class App extends React.Component{
 unsubscribeFromAuth = null
+/**
+ * Portfolio - App js - To Do:
 
+ *      --->re convert 'App' in a functional component
+ *      --->keep app js to route every component 
+ *          -need an update to the last version of 
+ *           react router-
+ *      ---->update login feature with firebase
+ */
 
 /**with yhis lifecycle method i made an 
  * open suscription - open message system
