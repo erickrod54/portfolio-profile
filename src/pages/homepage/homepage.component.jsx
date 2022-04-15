@@ -1,30 +1,23 @@
 import React from "react";
-
+import CardProfile from '../../components/card-profile/card-profile.component'
+import Footer from "../../components/footer/footer.component";
 import './homepage.styles.scss';
 
-/** I'm loggin the props here in case that
- * we need to use specific props like history,
- * location, and match to build a dynamic 
- * link to a child component of homepage
+/**Portfolio - HomePage Component version 1 - Features:
  * 
- * const HomePage = (props) => {
-   console.log(props)  
- * 
- * example
- * 
- *  ${props.match.url}/dashboad
+ *       --->Importing and Placing CardProfile Component
+ *       --->Importing and Placing Footer Component
 */
 const HomePage = () => {
 return(
+   <>
   <div className="homepage">
-     <div className="cardprofile"> 
-      <p className="title">here is going to be 
-         displayed the cardProfile 
-         component for the moment we will draw it
-         for style propuses</p>
-     </div> 
-
+     <div className="title">
+      <CardProfile />
+      <Footer />
+     </div>
   </div>
+   </>
    );
 };
 
