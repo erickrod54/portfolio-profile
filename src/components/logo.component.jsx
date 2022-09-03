@@ -32,6 +32,13 @@ const LogoWrapper = styled.div`
         width: 7rem;
         height: 7rem;
     }
+
+    @media screen and (max-width: 800px) {
+        img{
+            width: 10rem;
+            height: 10rem;
+        }
+    }
 `
 
 export default Logo;
