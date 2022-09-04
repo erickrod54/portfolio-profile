@@ -1,3 +1,20 @@
+
+/**Portfolio-erick - version 1 - index css -
+ * Features:
+ * 
+ *      --> Adding the color shades with
+ *          Variables.
+ *        
+ *      --> Adding a 'btn', 'modal-container', 
+ *          'isOpen', 'modal-content'  and 
+ *          'close-btn' style   
+ * 
+ * Notes: By this version changes to the data
+ * has been made in order to get the essential
+ * information
+ */
+
+
 /*
 =============== 
 Variables
@@ -56,8 +73,13 @@ Variables
 
   --gradient-bkgd:linear-gradient(
     to left,
-    rgba(7, 27, 82, 1) 0%,
+    rgb(48, 7, 82) 0%,
     rgba(0, 128, 128, 1) 100%
+  );
+  --gradient-btn:linear-gradient(
+    to left,
+    rgb(21, 7, 82) 0%,
+    rgb(113, 0, 128) 100%
   );
 }
 
@@ -73,4 +95,58 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: -1;
+}
+.isOpen {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal-content {
+  background: var(--clr-white);
+  width: 90vw;
+  max-width: var(--fixed-width);
+  padding: 3rem;
+  border-radius: var(--radius);
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  margin-right: auto;
 }
