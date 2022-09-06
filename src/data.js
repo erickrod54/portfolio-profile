@@ -7,13 +7,11 @@ import { SiRedux } from 'react-icons/si'
 import { GoMarkGithub } from 'react-icons/go'
 import {  BsLinkedin } from 'react-icons/bs'
 
-/**Portfolio-erick - version 1 - data js -
+/**Portfolio-erick - version 2 - data js -
  * Features:
  * 
- *      --> Importing 'icons' from 'react-icons'
- * 
- *      --> Building 'ResumeData' and 'social' 
- *          data
+ *      --> Commenting 'login' and 'contact' 
+ *          in order to to build later this feature.
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -22,16 +20,18 @@ import {  BsLinkedin } from 'react-icons/bs'
 
 
 export const NavBarData = [
-    {
+  /**  {
       id:2,
       urlname:'login',
       url:'/login'
-    },
-    {
+    }, */
+    /**
+     * {
       id:3,
       urlname:'contact',
       url:'/contact'
     }
+     */
 ]
 
 export const ResumeData = [
