@@ -7,17 +7,10 @@ import styled from "styled-components";
 
 import { useAppContext } from '../context'
 
-/**Portfolio-erick - version 1 - NavBar -
+/**Portfolio-erick - version 2 - NavBar -
  * Features:
  * 
- *      -->Rebuilding 'navbar' Component.
- * 
- *      -->Importing and placing 'Logo' Component.
- *     
- *      -->Importing and placing 'NavLinks' Component.
- * 
- *      -->Mapping 'NavBarData' and spreading their 
- *         props on 'NavLinks'.  
+ *      -->Exporting the 'NavBarWrapper'  
  * 
  * Notes: In next version i'll style the links and keep
  * adding as they are needed.
@@ -25,20 +18,22 @@ import { useAppContext } from '../context'
 
 const NavBar = () => {
 
-    const { NavBarData } = useAppContext()
+    const { NavBarData, openModal } = useAppContext()
 
     /**testing data links */
     //console.log(NavBarData)
 
     return(
         <NavbarWrapper>
+            <div className="logo">
             <Logo />
+            </div>
             <div className="nav-links">
             {NavBarData.map((item) => {
                 const { id } = item
                 return(
-                    <NavLinks className='nav-links' 
-                              key={id}{...item}/>
+                    <NavLinks  
+                              key={id}{...item} openModal={openModal}/>
                 )
             })}
                 
@@ -47,7 +42,7 @@ const NavBar = () => {
         )
 }
 
-const NavbarWrapper = styled.div`
+export const NavbarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 2rem;
@@ -55,9 +50,10 @@ const NavbarWrapper = styled.div`
     border-radius: 2rem;
     background: var(--gradient-bkgd);
     color: var(--clr-white);
+    border: 1px solid black;
 
     .nav-links{
-        width: 20rem;
+        width: 70%;
         display: flex;
         justify-content: flex-end ;
         margin: 2rem;
@@ -65,6 +61,51 @@ const NavbarWrapper = styled.div`
 
         li{
             list-style-type: none;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .logo{
+            
+            display:flex;
+            justify-content: center;
+        }
+        .nav-links{
+            
+            display: flex;
+            padding: 1rem;
+            flex-direction: column;
+            
+            li{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        display: flex;
+        width: 75%;
+        padding: .5rem;
+        
+        .nav-links{
+            margin-right:-42rem;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            li{
+                display: flex;
+                justify-content: center;
+                width: 30%;
+            }
         }
     }
 `
