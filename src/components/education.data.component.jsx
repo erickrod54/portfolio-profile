@@ -75,7 +75,7 @@ const EducationDataWrapper = styled(NavbarWrapper)`
         font-size: .75rem;
     }
 
-    @media screen and (max-width: 1915px) {
+    @media screen and (max-width: 2500px) {
     .rols{
        font-size: 2rem;
     }

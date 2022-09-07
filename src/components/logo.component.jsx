@@ -33,10 +33,10 @@ const LogoWrapper = styled.div`
         height: 7rem;
     }
 
-    @media screen and (max-width: 1915px) {
+    @media screen and (max-width: 2500px) {
         img{
-            width: 10rem;
-            height: 10rem;
+            width: 14rem;
+            height: 14rem;
         }
     }
 

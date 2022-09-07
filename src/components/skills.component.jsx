@@ -72,7 +72,7 @@ const SkillsWrapper = styled.div`
         }
     }
 
-    @media screen and (max-width: 1915px) {
+    @media screen and (max-width: 2500px) {
      .skills-font{
          display: flex;
          font-size: 2rem;

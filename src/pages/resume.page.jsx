@@ -62,11 +62,11 @@ const ResumePageWrapper = styled(NavbarWrapper)`
         font-size: .75rem;
     }
 
-    @media screen and (max-width: 1915px) {
-        
+    @media screen and (max-width: 2500px) {
+
         display: flex;
         flex-direction: column;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         
         .education{
             font-size: 3rem;
@@ -110,7 +110,7 @@ const HeaderWrapper = styled(NavbarWrapper)`
         padding: 1rem;
     }
 
-    @media screen and (max-width: 1915px) {
+    @media screen and (max-width: 2500px) {
     .btn{
         font-size: 2rem;
     }

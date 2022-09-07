@@ -48,11 +48,11 @@ const ExperienceWrapper = styled(NavbarWrapper)`
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 1915px) {
+    @media screen and (max-width: 2500px) {
         h2{
          display: flex; 
          justify-content: center ;
-         font-size: 2.5rem;
+         font-size: 3rem;
         }
     }
 
