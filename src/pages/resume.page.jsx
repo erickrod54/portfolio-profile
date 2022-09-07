@@ -47,9 +47,9 @@ const ResumePage = () => {
             <SkillsNewWrapper>
                 <Skills />
             </SkillsNewWrapper>
-            <Education />
+            <Education className='education'/>
         </ResumePageWrapper>
-        <Experience />
+        <Experience className='experience'/>
         <Footer/>
         
         </>
@@ -60,6 +60,39 @@ const ResumePageWrapper = styled(NavbarWrapper)`
     
     .intro{
         font-size: .75rem;
+    }
+
+    @media screen and (max-width: 1915px) {
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        
+        .education{
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 2rem;
+        
+        h2{
+            font-size: 1rem;
+            width: 120%;
+        }
+        p{
+            font-size:.75rem;  
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        width: 80%;
+        h2{
+            font-size: .75rem;
+        }
+        p{
+            font-size:.65rem;  
+        }
     }
 `
 
@@ -75,6 +108,25 @@ const HeaderWrapper = styled(NavbarWrapper)`
         width: fit-content;
         text-decoration: none;
         padding: 1rem;
+    }
+
+    @media screen and (max-width: 1915px) {
+    .btn{
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .btn{
+        font-size: 1rem;
+    }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .btn{
+        font-size: .75rem;
+    }
+    }
+
     }
 `
 export default ResumePage;

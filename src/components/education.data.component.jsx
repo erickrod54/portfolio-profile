@@ -74,6 +74,21 @@ const EducationDataWrapper = styled(NavbarWrapper)`
         flex-flow: wrap;
         font-size: .75rem;
     }
+
+    @media screen and (max-width: 1915px) {
+    .rols{
+       font-size: 2rem;
+    }
+    .period{
+       font-size: 1.5rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    }
 `
 
 

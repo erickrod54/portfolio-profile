@@ -47,6 +47,30 @@ const Experience = () => {
 const ExperienceWrapper = styled(NavbarWrapper)`
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1915px) {
+        h2{
+         display: flex; 
+         justify-content: center ;
+         font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        h2{
+         display: flex; 
+         justify-content: flex-start;
+         font-size: 2rem;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        h2{
+         display: flex; 
+         justify-content: flex-start;
+         font-size: 1.5rem;
+        }
+    }
 `
 
 export default Experience;

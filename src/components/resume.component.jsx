@@ -44,6 +44,10 @@ const ResumeWrapper = styled(NavbarWrapper)`
     padding: 8rem;
     border: 1px solid black;
     
+    @media screen and (max-width: 1915px) {
+        display: flex;
+        font-size: 1.5rem;
+    }
 
     @media screen and (max-width: 800px) {
         display: flex;
@@ -72,6 +76,13 @@ const BtnStyle = styled(NavLinksWrapper)`
     .btn{
         text-decoration: none;
         font-size: .75rem;
+    }
+
+    @media screen and (max-width: 1915px) {
+        .btn{
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
     }
 `
 

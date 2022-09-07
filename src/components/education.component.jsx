@@ -52,6 +52,12 @@ const EducationWrapper = styled(NavbarWrapper)`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1915px) {
+        
+            font-size: 2rem;
+        
+    }
 `
 
 export default Education;

@@ -125,6 +125,26 @@ border: 1px solid black;
 }
 }
 
+@media screen and (max-width: 1915px) {
+        .element1{
+            ul{
+                font-size: 1.3rem;
+            }
+        }
+        .element2{
+            ul{
+                span{
+                    width: 5rem;
+                    height: 5rem;
+                }
+                svg{
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
 @media screen and (max-width: 800px) {
         padding: 2rem;
         width: 75%;

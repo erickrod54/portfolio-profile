@@ -35,7 +35,7 @@ const Skills = () => {
                      {skills.map((skill) => {
                         const { skillname, icon } = skill
                         return(
-                            <li key={skillname}>{skillname} <span className="icon">{icon}</span></li>
+                            <li key={skillname} className='skills-font'>{skillname} <span className="icon">{icon}</span></li>
                         )
                      })}
                  </ul>
@@ -69,6 +69,27 @@ const SkillsWrapper = styled.div`
             .icon{
                 color: yellow;
             }
+        }
+    }
+
+    @media screen and (max-width: 1915px) {
+     .skills-font{
+         display: flex;
+         font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .skills-font{
+         display: flex;
+         font-size: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .skills-font{
+         display: flex;
+         font-size: .75rem;
         }
     }
 `

@@ -86,6 +86,40 @@ export const ExperienceDataWrapper = styled(NavbarWrapper)`
         flex-flow: wrap;
         font-size: .75rem;
     }
+
+        @media screen and (max-width: 1915px) {
+       
+    .rols{
+       font-size: 1.5rem;
+    }
+    .period{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    }
+
+    @media screen and (max-width: 800px) {
+    
+    .rols{
+       font-size: 1.3rem;
+    }
+    .period{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    }
+    
+   
 `
 
 export default ExperienceData;
