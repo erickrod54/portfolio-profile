@@ -7,31 +7,30 @@ import { SiRedux } from 'react-icons/si'
 import { GoMarkGithub } from 'react-icons/go'
 import {  BsLinkedin } from 'react-icons/bs'
 
-/**Portfolio-erick - version 2 - data js -
+/**Portfolio-erick - version 4 - data js -
  * Features:
  * 
- *      --> Commenting 'login' and 'contact' 
- *          in order to to build later this feature.
+ *      --> Uncommenting 'contact' in order to 
+ *          build this feature.
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
- * information
+ * information and email feature
  */
 
 
 export const NavBarData = [
-  /**  {
+  /**{
       id:2,
       urlname:'login',
       url:'/login'
     }, */
-    /**
-     * {
+    {
       id:3,
       urlname:'contact',
       url:'/contact'
     }
-     */
+   
 ]
 
 export const ResumeData = [
