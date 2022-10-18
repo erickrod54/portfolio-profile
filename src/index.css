@@ -1,13 +1,10 @@
 
-/**Portfolio-erick - version 1 - index css -
+/**Portfolio-erick - version 4 - index css -
  * Features:
- * 
- *      --> Adding the color shades with
- *          Variables.
  *        
- *      --> Adding a 'btn', 'modal-container', 
- *          'isOpen', 'modal-content'  and 
- *          'close-btn' style   
+ *      --> Adding a '.close-modal-btn' class 
+ *          style to give style to the icon
+ *          for close modal   
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -149,4 +146,15 @@ code {
 
 .close-btn {
   margin-right: auto;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-dark);
+  cursor: pointer;
 }
