@@ -9,10 +9,10 @@ import Skills from "./skills.component";
 
 import { Link } from 'react-router-dom'
 
-/**Portfolio-erick - version 5 - Resume Component -
+/**Portfolio-erick - version 6 - Resume Component -
  * Features:
  * 
- *      --> Refactoring ResumeWrapper
+ *      --> Finish Refactoring ResumeWrapper
  * 
  * Notes: In next version i'll style the links and keep
  * adding as they are needed.
@@ -37,6 +37,8 @@ const ResumeWrapper = styled(NavbarWrapper)`
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    justify-content: center;
+    align-items: center;
     
     @media screen and (max-width: 2500px) {
         display: flex;
