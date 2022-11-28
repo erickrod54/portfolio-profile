@@ -7,10 +7,11 @@ import styled from "styled-components";
 
 import { useAppContext } from '../context'
 
-/**Portfolio-erick - version 2 - NavBar -
+/**Portfolio-erick - version 5 - NavBar -
  * Features:
  * 
- *      -->Exporting the 'NavBarWrapper'  
+ *      --> Fixing resposivess for tne
+ *          contact button.  
  * 
  * Notes: In next version i'll style the links and keep
  * adding as they are needed.
