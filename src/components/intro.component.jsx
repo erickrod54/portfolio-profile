@@ -3,17 +3,11 @@ import styled from "styled-components";
 
 import { useAppContext } from '../context'
 
-/**Portfolio-erick - version 1 - Intro
+/**Portfolio-erick - version 5 - Intro
  * Component - Features:
  * 
- *      --> Destructuring 'ResumeData' from 
- *          useAppContext()
- * 
- *      --> Filtering and Mapping 'ResumeData' to 
- *          destructure the 'intro' section.
- * 
- *       --> Building the 'IntroWrapper' to 
- *          style the 'intro' section.
+ *      --> Fixing responsiveness in intro
+ *          for small screens
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -47,14 +41,20 @@ const Intro = () => {
 }
 
 const IntroWrapper = styled.div`
+    display: flex;      
+    width: 45rem;
+    justify-content: center;
+    align-items: center;
 
     .name{
         color: yellow;
     }
+
+    
     
     @media screen and (max-width: 800px) {
         padding: 2rem;
-        
+        width: 15rem;
         h2{
             font-size: 1rem;
             width: 120%;
@@ -65,7 +65,7 @@ const IntroWrapper = styled.div`
     }
     
     @media screen and (max-width: 400px) {
-        width: 80%;
+        width: 15rem;
         h2{
             font-size: .75rem;
         }
