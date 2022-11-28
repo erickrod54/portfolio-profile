@@ -9,15 +9,10 @@ import Skills from "./skills.component";
 
 import { Link } from 'react-router-dom'
 
-/**Portfolio-erick - version 1 - Resume Component -
+/**Portfolio-erick - version 5 - Resume Component -
  * Features:
  * 
- *      --> Importing and Placing '<Intro />'
- *          and '<Skills />' Components to 
- *          render a welcome screen
- * 
- *       --> Importing and placing 'NavLinksWrapper'
- *          to extending it in 'BtnStyle'.
+ *      --> Refactoring ResumeWrapper
  * 
  * Notes: In next version i'll style the links and keep
  * adding as they are needed.
@@ -41,7 +36,6 @@ const Resume = () => {
 const ResumeWrapper = styled(NavbarWrapper)`
     display: flex;
     flex-direction: column;
-    padding: 8rem;
     border: 1px solid black;
     
     @media screen and (max-width: 2500px) {
