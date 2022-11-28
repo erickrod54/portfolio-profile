@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 3 - NavLinks - Features:
+/**Portfolio-erick - version 5 - NavLinks - Features:
  * 
- *      --> Drilling 'openModal' to trigger 
- *          a modal to contact.
+ *      --> Implementing 'flex' for
+ *          'NavLinksWrapper'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -24,6 +24,8 @@ const NavLinks = ({ id, urlname, openModal }) => {
 }
 
 export const NavLinksWrapper = styled.div`
+    display: flex;
+    
     .btn{
         border: 1px solid var(--clr-black);
         background: var(--clr-white);
