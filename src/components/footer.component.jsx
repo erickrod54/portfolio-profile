@@ -5,21 +5,10 @@ import { NavbarWrapper } from "./navbar.component";
 
 import { useAppContext } from '../context';
 
-/**Portfolio-erick - version 1 - Footer Component -
+/**Portfolio-erick - version 5 - Footer Component -
  * Features:
  * 
- *      --> Destruturing 'social' data from 
- *          'useAppContext()'
- * 
- *      --> Building the 'Footer' Component
- *          setting a header and year.    
- * 
- *      --> Mapping and spreading  the 'social'
- *          data that contains icons to link
- *          to my proffesional network
- * 
- *      --> Importing 'NavbarWrapper' and 
- *          extending it in 'FooterWrapper'.
+ *      --> Fixing responsiveness in the Footer.
  * 
  * Notes: In next version i'll style the links and keep
  * adding as they are needed.
@@ -70,6 +59,7 @@ const Footer = () => {
 
 const FooterWrapper = styled(NavbarWrapper)`
 border: 1px solid black;
+;
 
 .element1{
     border: 1px solid white;
@@ -163,7 +153,7 @@ border: 1px solid black;
         }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 450px) {
      display: flex;
      flex-direction: column;
      width: 65%;
@@ -171,8 +161,7 @@ border: 1px solid black;
      .element1{
         display: flex;
         flex-direction: column;
-        font-size: .75rem;
-        width: 75%;
+        font-size:25rem;
 
         li{
             padding: .35rem;
