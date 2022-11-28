@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 import { useAppContext } from '../context'
 
-/**Portfolio-erick - version 5 - Intro
+/**Portfolio-erick - version 6 - Intro
  * Component - Features:
  * 
- *      --> Fixing responsiveness in intro
+ *      --> Finish responsiveness in intro
  *          for small screens
  * 
  * Notes: By this version changes to the data
@@ -42,7 +42,7 @@ const Intro = () => {
 
 const IntroWrapper = styled.div`
     display: flex;      
-    width: 45rem;
+    width: 50%;
     justify-content: center;
     align-items: center;
 
@@ -55,6 +55,7 @@ const IntroWrapper = styled.div`
     @media screen and (max-width: 800px) {
         padding: 2rem;
         width: 15rem;
+        width: 50%;
         h2{
             font-size: 1rem;
             width: 120%;
@@ -65,7 +66,7 @@ const IntroWrapper = styled.div`
     }
     
     @media screen and (max-width: 400px) {
-        width: 15rem;
+        width: 50%;
         h2{
             font-size: .75rem;
         }
