@@ -2,17 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useAppContext } from '../context'
 
-/**Portfolio-erick - version 1 - Skills
+/**Portfolio-erick - version 5 - Skills
  * Component - Features:
  * 
- *      --> Destructuring 'ResumeData' from 
- *          useAppContext()
- * 
- *      --> Filtering and Mapping 'ResumeData' to 
- *          destructure the 'skills' section.
- * 
- *       --> Building the 'SkillsWrapper' to 
- *          style the 'skills' section.
+ *      --> Aplying different scales for
+ *          font sizes and small screens
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -25,7 +19,7 @@ const Skills = () => {
 
     return(
         <SkillsWrapper>
-            <h2>My Skills and growing:</h2>
+            <h2>my skills and growing:</h2>
             {ResumeData.filter((section) => section.id === 2).map((skillssection) =>{
                 const { id, skills } = skillssection;
 
@@ -51,6 +45,7 @@ const SkillsWrapper = styled.div`
  display: flex;
  flex-direction: column;
  justify-content: center;
+ align-items: center;
     ul{
         border: 1px solid white;
         border-radius: .50rem;
@@ -72,11 +67,20 @@ const SkillsWrapper = styled.div`
         }
     }
 
+    h2{
+        text-transform: capitalize;
+        color: yellow;
+        text-decoration: 3px underline solid white;
+    }
+
     @media screen and (max-width: 2500px) {
      .skills-font{
          display: flex;
          font-size: 2rem;
         }
+      h2{
+        font-size: 2rem;
+      }
     }
 
     @media screen and (max-width: 800px) {
@@ -84,6 +88,10 @@ const SkillsWrapper = styled.div`
          display: flex;
          font-size: 1rem;
         }
+
+        h2{
+        font-size: 1.4rem;
+      }
     }
     
     @media screen and (max-width: 400px) {
@@ -91,6 +99,10 @@ const SkillsWrapper = styled.div`
          display: flex;
          font-size: .75rem;
         }
+
+        h2{
+        font-size: 1rem;
+      }
     }
 `
 
