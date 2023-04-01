@@ -1,8 +1,9 @@
 
-/**Portfolio-erick - version 6.02 - index css -
+/**Portfolio-erick - version 6.03 - index css -
  * Features:
  *        
- *      --> Migrating NavBar styles.  
+ *      --> Starting to work in the navbar 
+ *          elements.  
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -111,7 +112,7 @@ code {
 /*Navbar styles Global -- start**/
 
 section#navbar{
-      
+      grid-column: container-start / container-end;
       margin: 2rem;
       padding:2rem ;
       border-radius: 2rem;
@@ -131,6 +132,11 @@ section#navbar{
     .nav-links > li{
       list-style-type: none;
     }
+
+div > img{
+      width: 7rem;
+      height: 7rem;
+  }
 
 
 
