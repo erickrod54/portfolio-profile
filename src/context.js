@@ -1,20 +1,14 @@
 import React, { useContext, useState } from "react";
-import { NavBarData,
+import { constructionbkg, NavBarData,
          ResumeData,
-        social   } from './data';
+        social } from './data';
 
-/**Portfolio-erick - version 1 - context js -
+/**Portfolio-erick - version 6.04 - context js -
  * Features:
  * 
- *      -->  Importing 'NavBarData', 'ResumeData', 
- *          and 'social' from data js file
+ *      --> Importing and providing 'constructionbkg'.
  * 
- *      --> Providing the datta througth the provider
- *          to use it on the application.
- * 
- *      --> Building 'isModalOpen', 'openModal' and
- *          'closeModal' to build the Contact
- *           Component
+ *      --> Changing versioning to two digits.
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -46,7 +40,8 @@ export const AppProvider = ({ children }) => {
                 social,
                 isModalOpen,
                 openModal,
-                closeModal
+                closeModal,
+                constructionbkg
                 }}>
             {children}
         </AppContext.Provider>
