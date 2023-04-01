@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 5 - NavLinks - Features:
+/**Portfolio-erick - version 60.4 - NavLinks - Features:
  * 
- *      --> Implementing 'flex' for
- *          'NavLinksWrapper'.
+ *      --> Setting 'nav-links' to start to work in 
+ *          'NavLinks'.
+ * 
+ *      --> Changin versioning to two digits
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -13,7 +15,7 @@ import styled from "styled-components";
 const NavLinks = ({ id, urlname, openModal }) => {
 
     return(
-        <NavLinksWrapper>
+        <NavLinksWrapper id='nav-links'>
         <ul key={id}>
                        <li className="btn" onClick={ urlname === 'contact' ? openModal : null}>
                         {urlname} 
@@ -24,7 +26,6 @@ const NavLinks = ({ id, urlname, openModal }) => {
 }
 
 export const NavLinksWrapper = styled.div`
-    display: flex;
     
     .btn{
         border: 1px solid var(--clr-black);
