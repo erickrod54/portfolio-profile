@@ -1,10 +1,11 @@
 
-/**Portfolio-erick - version 4 - index css -
+/**Portfolio-erick - version 6.01 - index css -
  * Features:
  *        
- *      --> Adding a '.close-modal-btn' class 
- *          style to give style to the icon
- *          for close modal   
+ *      --> Refactoring css stylesheet to use 
+ *          grid.
+ *
+ *      --> Changing versioning to two digits.  
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -80,6 +81,14 @@ Variables
   );
 }
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -92,6 +101,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  display: grid;
+    
+  grid-template-columns: [container-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content,11rem) [col-end]) [center-end] 1fr [container-end];
+  grid-template-rows: 30vh repeat(8, min-content);
+  min-height: 100vh;
 }
 
 .btn {
