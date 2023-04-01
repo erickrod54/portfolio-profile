@@ -1,11 +1,8 @@
 
-/**Portfolio-erick - version 6.01 - index css -
+/**Portfolio-erick - version 6.02 - index css -
  * Features:
  *        
- *      --> Refactoring css stylesheet to use 
- *          grid.
- *
- *      --> Changing versioning to two digits.  
+ *      --> Migrating NavBar styles.  
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -110,6 +107,34 @@ code {
   grid-template-rows: 30vh repeat(8, min-content);
   min-height: 100vh;
 }
+
+/*Navbar styles Global -- start**/
+
+section#navbar{
+      
+      margin: 2rem;
+      padding:2rem ;
+      border-radius: 2rem;
+      background: var(--gradient-bkgd);
+      color: var(--clr-white);
+      border: 1px solid black;
+
+}
+
+    .nav-links{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end ;
+        margin: 2rem;
+    }
+
+    .nav-links > li{
+      list-style-type: none;
+    }
+
+
+
+  
 
 .btn {
   display: inline-block;
