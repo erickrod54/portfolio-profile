@@ -6,18 +6,23 @@ import { SiAirtable } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
 import { GoMarkGithub } from 'react-icons/go'
 import {  BsLinkedin } from 'react-icons/bs'
+import { construction } from './assets'
 
-/**Portfolio-erick - version 4 - data js -
+/**Portfolio-erick - version 6.04 - data js -
  * Features:
  * 
- *      --> Uncommenting 'contact' in order to 
- *          build this feature.
+ *      --> Building 'constructionbkg' to set
+ *          a background for 'UnderConstruction'
+ *          Component
+ * 
+ *      --> Changing versioning to two digits.
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
  * information and email feature
  */
 
+ export const constructionbkg = construction;
 
 export const NavBarData = [
   /**{
