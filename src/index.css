@@ -1,9 +1,9 @@
 
-/**Portfolio-erick - version 6.03 - index css -
+/**Portfolio-erick - version 6.04 - index css -
  * Features:
  *        
- *      --> Starting to work in the navbar 
- *          elements.  
+ *      --> Writting styles for 
+ *         'under-construction-page'.  
  * 
  * Notes: By this version changes to the data
  * has been made in order to get the essential
@@ -138,8 +138,61 @@ div > img{
       height: 7rem;
   }
 
+/*Under construction page styles -- Global*/
 
+section#under-construction-page{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.under-construction-page--center--msg{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 30rem;
+height: 4rem;
+background-color: var(--clr-white);
+border-radius: 0.5rem;
+border: 2px solid var(--clr-black);
+}
+
+.modal-content {
+background: var(--clr-white);
+width: 90vw;
+max-width: var(--fixed-width);
+padding: 3rem;
+border-radius: var(--radius);
+text-align: center;
+position: relative;
+}
+
+.close-btn {
+margin-right: auto;
+}
+
+.close-modal-btn {
+position: absolute;
+top: 1rem;
+right: 1rem;
+font-size: 2rem;
+background: transparent;
+border-color: transparent;
+color: var(--clr-red-dark);
+cursor: pointer;
+}
+
+/*Under construction page styles -- end*/
   
 
 .btn {
