@@ -1,16 +1,17 @@
 import React from "react";
 
 import NavBar from "../components/navbar.component";
-import Resume from "../components/resume.component";
-import Footer from "../components/footer.component";
+//import Resume from "../components/resume.component";
+//import Footer from "../components/footer.component";
 
-import Contact from "../components/contact.component";
+//import Contact from "../components/contact.component";
 
-/**Portfolio-erick - version 2 - HomePage Component -
+/**Portfolio-erick - version 6.01 - HomePage Component -
  * Features:
  * 
- *      --> Importing 'Contact' in order to render
- *          it and visualize it.  
+ *      --> Refactoring Website implementing grid.
+ * 
+ *      --> Starting to work Navbar.
  * 
  * Notes: Changes can be made later for this Component
  */
@@ -18,12 +19,15 @@ import Contact from "../components/contact.component";
 const HomePage = () => {
 
     return(
-        <>
-        <NavBar />
-        <Resume />
-        <Footer />
-        <Contact />
-        </>
+      <div className="container">
+          <NavBar />
+          {/**
+          <Resume />
+          <Footer />
+          <Contact />
+           */}
+      </div>  
+        
     )
 }
 
