@@ -1,27 +1,29 @@
 import React from "react";
 
-import NavBar from "../components/navbar.component";
+//import NavBar from "../components/navbar.component";
+
+import UnderConstructionPage from "./under.construction.page.jsx";
 //import Resume from "../components/resume.component";
 //import Footer from "../components/footer.component";
 
 //import Contact from "../components/contact.component";
 
-/**Portfolio-erick - version 6.01 - HomePage Component -
+/**Portfolio-erick - version 6.04 - HomePage Component -
  * Features:
  * 
- *      --> Refactoring Website implementing grid.
+ *      --> Placing 'UnderConstructionPage' page.
  * 
- *      --> Starting to work Navbar.
- * 
- * Notes: Changes can be made later for this Component
+ * Notes: This component will be active in the meantime
+ * the new layout get done.
  */
 
 const HomePage = () => {
 
     return(
       <div className="container">
-          <NavBar />
+          <UnderConstructionPage />
           {/**
+           <NavBar />
           <Resume />
           <Footer />
           <Contact />
