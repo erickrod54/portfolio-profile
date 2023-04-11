@@ -1,34 +1,27 @@
 import React, { useRef } from "react";
 import Modal from "./modal.component";
 
-import { useAppContext } from "../context";
-
-import styled from "styled-components";
+import { usePortfolioContext } from "../context";
 
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 
 
-/**Portfolio-erick - version 4 - Contact - Features:
+/**Portfolio-erick - version 6.06 - Contact - Features:
  * 
- *      --> Building 'sendEmail' feature.
+ *      --> Placing and testing the Component.
  * 
- *      --> Adding closeModal in order to close 
- *          the email modal.
+ *      --> Changing versioning to two digits.
  * 
- * Notes: By this version all tasks are done 
- * for this component
- * 
- *  name - email - subject - message
- * 
- * My Default Template
-Template ID:
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
 const Contact = () => {
 
-    const { closeModal } = useAppContext()
-    
+    const { closeModal } = usePortfolioContext()
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -49,7 +42,7 @@ const Contact = () => {
         <button onClick={() => closeModal()} className='close-modal-btn'>
             <FaTimes />     
         </button>    
-        <ContactWrapper>
+        <section className="contact">
         <form ref={form} onSubmit={sendEmail}>
           <ul>
             <label>your name</label>
@@ -67,40 +60,10 @@ const Contact = () => {
             </li>
           </ul>
         </form>
-        </ContactWrapper>    
+        </section>    
         </Modal>
       );
 }
 
-export const ContactWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    label{
-        text-transform:capitalize;
-        font-weight: 700;
-    }
-
-    input, textarea{
-        width: 70%;
-        border-radius: .25rem;
-        resize: vertical;
-    }
-
-    .input-message{
-        height: 4rem;
-    }
-
-    ul{
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-    }
-
-    li{
-        padding: .60rem;
-    }
-`
 
 export default Contact;
