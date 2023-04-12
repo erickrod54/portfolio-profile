@@ -1,25 +1,26 @@
 import React from "react";
-import styled from "styled-components";
-import { useAppContext } from '../context'
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 5 - Skills
- * Component - Features:
+/**Portfolio-erick - version 6.06 - SkillsComponent
+ *  - Features:
  * 
- *      --> Aplying different scales for
- *          font sizes and small screens
+ *      --> Refactoring SkillsComponent Component.
  * 
- * Notes: By this version changes to the data
- * has been made in order to get the essential
- * information
+ *      --> Applying style naming convention.
+ * 
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
-const Skills = () => {
+const SkillsComponent = () => {
 
-    const { ResumeData } = useAppContext()
+    const { ResumeData } = usePortfolioContext()
 
     return(
-        <SkillsWrapper>
-            <h2>my skills and growing:</h2>
+        <section id='skills'>
+            <div className="skills--box">
+            <h2 className="skills--title">my skills and growing:</h2>
             {ResumeData.filter((section) => section.id === 2).map((skillssection) =>{
                 const { id, skills } = skillssection;
 
@@ -29,81 +30,15 @@ const Skills = () => {
                      {skills.map((skill) => {
                         const { skillname, icon } = skill
                         return(
-                            <li key={skillname} className='skills-font'>{skillname} <span className="icon">{icon}</span></li>
+                            <li key={skillname} className='skills--li-bkg'><p>{skillname} <span className="icon">{icon} </span> </p></li>
                         )
                      })}
                  </ul>
                 )
              })}
-        </SkillsWrapper>
+            </div>
+        </section>
     )
 }
 
-const SkillsWrapper = styled.div`
- 
- width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-    ul{
-        border: 1px solid white;
-        border-radius: .50rem;
-        width: 80%;
-        font-size: 1rem;
-        display: flex;
-        list-style-type: none;
-        flex-flow: row wrap;
-
-        li{
-            background: var(--gradient-btn);
-            border-radius: .75rem;
-            padding: .25rem;
-            margin:1rem;
-
-            .icon{
-                color: yellow;
-            }
-        }
-    }
-
-    h2{
-        text-transform: capitalize;
-        color: yellow;
-        text-decoration: 3px underline solid white;
-    }
-
-    @media screen and (max-width: 2500px) {
-     .skills-font{
-         display: flex;
-         font-size: 2rem;
-        }
-      h2{
-        font-size: 2rem;
-      }
-    }
-
-    @media screen and (max-width: 800px) {
-        .skills-font{
-         display: flex;
-         font-size: 1rem;
-        }
-
-        h2{
-        font-size: 1.4rem;
-      }
-    }
-    
-    @media screen and (max-width: 400px) {
-        .skills-font{
-         display: flex;
-         font-size: .75rem;
-        }
-
-        h2{
-        font-size: 1rem;
-      }
-    }
-`
-
-export default Skills;
+export default SkillsComponent;
