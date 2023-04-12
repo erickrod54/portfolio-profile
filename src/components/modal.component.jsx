@@ -1,22 +1,20 @@
 import React from "react";
-import { useAppContext } from "../context";
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 1 - Modal
- * Component - Features:
+/**Portfolio-erick - version 6.06 - Modal - Features:
  * 
- *      --> Building generic modal
- *          Component to build a 
- *          contact and login feature
- *          later
+ *      --> Adapting modal to the new layout.
  * 
- * Notes: By this version changes to the data
- * has been made in order to get the essential
- * information
+ *      --> Changing versioning to two digits
+ * 
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
 const Modal = ({ children }) => {
 
-    const { isModalOpen } = useAppContext();
+    const {  isModalOpen } = usePortfolioContext()
 
     return(
         <div className={`${isModalOpen ? 
