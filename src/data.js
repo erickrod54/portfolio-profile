@@ -1,26 +1,37 @@
-import { TbCloudComputing } from 'react-icons/tb'
-import { SiJavascript } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import { SiVisualstudiocode } from 'react-icons/si'
-import { SiAirtable } from 'react-icons/si'
-import { SiRedux } from 'react-icons/si'
-import { GoMarkGithub } from 'react-icons/go'
-import {  BsLinkedin } from 'react-icons/bs'
-import { construction } from './assets'
+import { construction } from "./assets/index.assets";
 
-/**Portfolio-erick - version 6.04 - data js -
- * Features:
+import { SiAirtable } from 'react-icons/si';
+import { SiVisualstudiocode } from 'react-icons/si';
+import { SiRedux } from 'react-icons/si';
+
+import { faCloudArrowDown, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faSquareJs, faReact, faGithubSquare, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+/**Portfolio-erick - version 6.06 - data js
+ *  - Features:
  * 
- *      --> Building 'constructionbkg' to set
- *          a background for 'UnderConstruction'
- *          Component
+ *      --> Refactoring data js by renaming and 
+ *          importing from multiple sources.
  * 
- *      --> Changing versioning to two digits.
- * 
- * Notes: By this version changes to the data
- * has been made in order to get the essential
- * information and email feature
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
+
+const cloudWord = <FontAwesomeIcon icon={faCloudArrowDown} />;
+const javaScript = <FontAwesomeIcon icon={faSquareJs} />;
+const reactIcon = <FontAwesomeIcon icon={faReact} />;
+const githubIcon = <FontAwesomeIcon icon={faGithubSquare} />;
+const linkedlnIcon = <FontAwesomeIcon icon={faLinkedinIn} />;
+
+export const filePdf = <FontAwesomeIcon icon={faFilePdf} />;
+
+const vsCode = <SiVisualstudiocode />;
+const airTables = <SiAirtable />;
+const reduxIcon = <SiRedux />;
+
 
  export const constructionbkg = construction;
 
@@ -50,32 +61,32 @@ export const ResumeData = [
         {
             id:1,
             skillname:'API\'s',
-            icon:<TbCloudComputing />
+            icon: cloudWord
         },
         {
             id:2,
             skillname:'JavaScript',
-            icon: <SiJavascript />
+            icon: javaScript
         },
         {
             id:3,
             skillname:'React JS Library',
-            icon:<FaReact />
+            icon: reactIcon
         },
         {
             id:4,
             skillname:'VS Code',
-            icon:<SiVisualstudiocode />
+            icon: vsCode
         },
         {
             id:5,
             skillname:'Airtables',
-            icon:<SiAirtable />
+            icon: airTables
         },
         {
             id:6,
             skillname:'Redux Library for state management',
-            icon:<SiRedux />
+            icon: reduxIcon
         }
       ]               
     },
@@ -122,12 +133,12 @@ export const ResumeData = [
 export const social = [
     {
         name:'Github',
-        icon:<GoMarkGithub />,
+        icon: githubIcon,
         url:'https://github.com/erickrod54'
     },
     {
         name:'Linkdin',
-        icon:<BsLinkedin />,
+        icon: linkedlnIcon,
         url:'https://www.linkedin.com/in/erickrodriguezcardenas'
     }
 ]
