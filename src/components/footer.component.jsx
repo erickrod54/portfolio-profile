@@ -1,42 +1,43 @@
 import React from "react";
-import styled from "styled-components";
+import { usePortfolioContext } from "../context";
 
-import { NavbarWrapper } from "./navbar.component";
-
-import { useAppContext } from '../context';
-
-/**Portfolio-erick - version 5 - Footer Component -
- * Features:
+/**Portfolio-erick - version 6.06 - Footer - Features:
  * 
- *      --> Fixing responsiveness in the Footer.
+ *      --> Refactoring footer.
  * 
- * Notes: In next version i'll style the links and keep
- * adding as they are needed.
+ *      --> Applying naming convention.
+ * 
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
 const Footer = () => {
 
-    const { social } = useAppContext()
-
-    console.log('the social ==>', social)
+    const { social } = usePortfolioContext()
 
     return(
-        <FooterWrapper >
-            <div className="element1">
+        <section id='footer'>
+            <div className="footer--center">
                 <ul>
                     <li>
-                    &copy; { new Date().getFullYear()}        
+                        <p>
+                            &copy; { new Date().getFullYear()}        
+                        </p>
                     </li>
                     <li>
-                    Erick Rodriguez  |  Systems Engineer
+                        <p>
+                            Erick Rodriguez  |  Systems Engineer
+                        </p>
                     </li>
                     <li>
-                    All Rights reserved
+                        <p>
+                            All Rights reserved
+                        </p>
                     </li>
                 </ul>
             </div>
-            <hr></hr>
-            <div className="element2">
+            <div className="footer--right">
                 {social.map((net) => {
                     const { name, url, icon } = net;
 
@@ -53,128 +54,8 @@ const Footer = () => {
                     )
                 })}
             </div>
-        </FooterWrapper>
+        </section>
     )
 }
-
-const FooterWrapper = styled(NavbarWrapper)`
-border: 1px solid black;
-;
-
-.element1{
-    border: 1px solid white;
-    border-radius: .5rem;
-    display:flex ;
-    flex-direction: column;
-    justify-content: center;
-    width: 35%;
-
-    li{
-        display: flex;
-        flex-flow: column wrap;
-        list-style-type: none;
-        justify-content: center;
-        padding: .35rem;
-    }
-}
- 
-.element2{
-    border: 1px solid white;
-    border-radius: .5rem;
-    display:flex ;
-    padding: 2rem;
-    justify-content: flex-start;
-    width: 50%;
-
-    li{
-        display: flex;
-        justify-content: space-evenly;
-        cursor: pointer;
-
-    }
-    
-    span {
-    width: 4rem;
-    height: 4rem;
-    display: grid;
-    margin: 0 auto;
-    place-items: center;
-    margin-bottom: 1rem;
-    border-radius: 50%;
-    background: var(--clr-primary-10);
-    color: var(--clr-primary-1);
-    svg {
-        font-size: 2rem;
-    }
-
-    svg:hover {
-        background: chartreuse;
-        font-size: 4rem;
-        border-radius: 50%;
-    }
-}
-}
-
-@media screen and (max-width: 1915px) {
-        .element1{
-            ul{
-                font-size: 1.3rem;
-            }
-        }
-        .element2{
-            ul{
-                span{
-                    width: 5rem;
-                    height: 5rem;
-                }
-                svg{
-                    width: 3rem;
-                    height: 3rem;
-                }
-            }
-        }
-    }
-
-@media screen and (max-width: 800px) {
-        padding: 2rem;
-        width: 75%;
-
-        .element1{
-            display: flex;
-            flex-direction: column;
-            width: 65%;
-        }
-        h2{
-            font-size: 1rem;
-            width: 120%;
-        }
-        p{
-          font-size:.75rem;  
-        }
-    }
-
-    @media screen and (max-width: 450px) {
-     display: flex;
-     flex-direction: column;
-     width: 65%;
-
-     .element1{
-        display: flex;
-        flex-direction: column;
-        font-size:25rem;
-
-        li{
-            padding: .35rem;
-        }
-     }
-
-     .element2{
-        font-size: .25rem;
-        
-        display: flex;
-        flex-direction: column;
-     }
-    }
-`
 
 export default Footer;
