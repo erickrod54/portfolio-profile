@@ -1,26 +1,21 @@
 import React, { useContext, useState } from "react";
-import { constructionbkg, NavBarData,
-         ResumeData,
-        social } from './data';
+import { filePdf, NavBarData, ResumeData, social } from "./data";
 
-/**Portfolio-erick - version 6.04 - context js -
- * Features:
+/**Portfolio-erick - version 6.06 - context js
+ *  - Features:
  * 
- *      --> Importing and providing 'constructionbkg'.
+ *      --> Refactoring context js file.
  * 
- *      --> Changing versioning to two digits.
+ *      --> Importing and providing data, and features.
  * 
- * Notes: By this version changes to the data
- * has been made in order to get the essential
- * information
- * 
- *  isModalOpen
- *  closeModal
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
-export const AppContext = React.createContext()
+export const PortfolioContext = React.createContext();
 
-export const AppProvider = ({ children }) => {
+export const PortfolioProvider = ({ children }) => {
 
     const [ isModalOpen, setIsModalOpen ] = useState(false);
 
@@ -33,21 +28,23 @@ export const AppProvider = ({ children }) => {
     }
 
     return(
-        <AppContext.Provider 
-            value={{ 
-                NavBarData,
+        <PortfolioContext.Provider 
+            value={{
                 ResumeData,
                 social,
+                NavBarData,
                 isModalOpen,
                 openModal,
                 closeModal,
-                constructionbkg
+                filePdf
                 }}>
             {children}
-        </AppContext.Provider>
+        </PortfolioContext.Provider>
+
     )
+
 }
 
-export const useAppContext = () => {
-    return useContext(AppContext)
+export const usePortfolioContext = () => {
+    return useContext(PortfolioContext)
 }
