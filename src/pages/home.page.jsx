@@ -1,36 +1,26 @@
 import React from "react";
+import {HeaderComponent, IntroComponent, SkillsComponent, Footer, Contact } from "../components/index.components";
 
-//import NavBar from "../components/navbar.component";
-
-import UnderConstructionPage from "./under.construction.page.jsx";
-//import Resume from "../components/resume.component";
-//import Footer from "../components/footer.component";
-
-//import Contact from "../components/contact.component";
-
-/**Portfolio-erick - version 6.04 - HomePage Component -
+/**Portfolio-erick - version 6.06 - HomePage -
  * Features:
  * 
- *      --> Placing 'UnderConstructionPage' page.
+ *      --> Refactoring HomePage with the new
+ *          Layout.
  * 
- * Notes: This component will be active in the meantime
- * the new layout get done.
+ * Notes: This file is gonna be changed later.
  */
 
 const HomePage = () => {
 
     return(
-      <div className="container">
-          <UnderConstructionPage />
-          {/**
-           <NavBar />
-          <Resume />
-          <Footer />
-          <Contact />
-           */}
-      </div>  
-        
+        <div className="container">
+            <HeaderComponent />
+            <Contact/>
+            <IntroComponent />
+            <SkillsComponent />
+            <Footer />
+        </div>
     )
 }
 
-export default HomePage
+export default HomePage;
