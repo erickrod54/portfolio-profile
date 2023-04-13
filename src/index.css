@@ -1,13 +1,13 @@
-
-/**Portfolio-erick - version 6.04 - index css -
- * Features:
- *        
- *      --> Writting styles for 
- *         'under-construction-page'.  
+/**Portfolio-erick - version 6.06 - index css
+ *  - Features:
  * 
- * Notes: By this version changes to the data
- * has been made in order to get the essential
- * information
+ *      --> Refactoring index css styles.
+ *
+ *      --> pending to organize the code.
+ * 
+ * Notes: This components is adapted to the new layout
+ * and is functional working, pending for layout the 
+ * component itself
  */
 
 
@@ -96,126 +96,65 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .container{
   display: grid;
-    
+  
   grid-template-columns: [container-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content,11rem) [col-end]) [center-end] 1fr [container-end];
   grid-template-rows: 30vh repeat(8, min-content);
   min-height: 100vh;
 }
 
-/*Navbar styles Global -- start**/
 
-section#navbar{
-      grid-column: container-start / container-end;
-      margin: 2rem;
-      padding:2rem ;
-      border-radius: 2rem;
-      background: var(--gradient-bkgd);
-      color: var(--clr-white);
-      border: 1px solid black;
-
+/*Header styles - Global start*/
+section#header{
+  display: grid;
+  margin: 2rem;
+  padding: 2rem;
+  grid-column: container-start / conatiner-end;
+  height: fit-content;
 }
 
-    .nav-links{
-        width: 70%;
-        display: flex;
-        justify-content: flex-end ;
-        margin: 2rem;
-    }
-
-    .nav-links > li{
-      list-style-type: none;
-    }
-
-div > img{
-      width: 7rem;
-      height: 7rem;
-  }
-
-/*Under construction page styles -- Global*/
-
-section#under-construction-page{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section#header .header--logo{
+  grid-column: col-start 0 / col-end 1;
 }
 
-.under-construction-page--center--msg{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 30rem;
-height: 4rem;
-background-color: var(--clr-white);
-border-radius: 0.5rem;
-border: 2px solid var(--clr-black);
+section#header .header--buttons{
+  grid-column: col-start 7 / col-end 8;
 }
 
-.modal-content {
-background: var(--clr-white);
-width: 90vw;
-max-width: var(--fixed-width);
-padding: 3rem;
-border-radius: var(--radius);
-text-align: center;
-position: relative;
+/*Intro styles - Global start*/
+section#intro{
+  display: grid;
+  grid-column: container-start / container-end;
+  place-content: center;
 }
 
-.close-btn {
-margin-right: auto;
+.intro--intromessage--title{
+  color: yellow;
 }
 
-.close-modal-btn {
-position: absolute;
-top: 1rem;
-right: 1rem;
-font-size: 2rem;
-background: transparent;
-border-color: transparent;
-color: var(--clr-red-dark);
-cursor: pointer;
+section#intro .intro--intromessage{
+  line-height: 2rem;
+  width: 30rem;
+  grid-column: col-start 6 / col-end 8;
+  margin: 3rem;
+  padding: 3rem;
 }
 
-/*Under construction page styles -- end*/
-  
-
-.btn {
-  display: inline-block;
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius);
-  border-color: transparent;
-  text-transform: capitalize;
-  font-size: 1rem;
-  letter-spacing: var(--spacing);
-  margin-top: 2rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  cursor: pointer;
-  transition: var(--transition);
-}
-.btn:hover {
-  background: var(--clr-primary-1);
-  color: var(--clr-primary-5);
+section#intro .intro--intromessage--title{
+  margin-bottom: 2rem;
 }
 
+/*skills styles - Global start*/
+section#skills{
+  display: grid;
+  grid-column: container-start / container-end;
+  place-content: center;
+  height: 400px;
+}
+
+
+/*modal-container styles - Global start**/
 .modal-container {
   position: fixed;
   top: 0;
@@ -230,6 +169,7 @@ cursor: pointer;
   transition: var(--transition);
   z-index: -1;
 }
+
 .isOpen {
   opacity: 1;
   z-index: 999;
@@ -245,17 +185,151 @@ cursor: pointer;
   position: relative;
 }
 
-.close-btn {
-  margin-right: auto;
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact label{
+    text-transform:capitalize;
+    font-weight: 700;
+  }
+  
+  .contactinput textarea{
+    width: 70%;
+    border-radius: .25rem;
+    resize: vertical;
+  }
+
+  .contact .input-message{
+    height: 4rem;
+  }
+  
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  
+  .contact li{
+    padding: .60rem;
+  }
+  
+  /*header--buttons styles**/
+  
+  .header--buttons{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end ;
+    margin: 2rem;
+  }
+  
+  .header--buttons--each > li{
+    list-style-type: none;
+  }
+  
+  .btn{
+    border: 1px solid var(--clr-black);
+    background: var(--clr-white);
+  color: var(--clr-black);
 }
 
-.close-modal-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  background: transparent;
-  border-color: transparent;
-  color: var(--clr-red-dark);
+.btn:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+/*footer styles - Global start*/
+section#footer{
+  display: grid;
+  margin: 2rem;
+  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* divide container into 3 equal columns */
+  grid-column: container-start / container-end;
+}
+
+.footer--center{
+  justify-self: end; /* center horizontally within grid cell */
+}
+
+li{
+  list-style-type: none;
+}
+
+.footer--right {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer--right li {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.footer--right ul li svg,
+.intro--cv a svg{
+  font-size: 4rem;
+}
+
+.intro--cv a svg{
+  margin-top: 3rem;
+}
+
+/*Shared styles*/
+section#header,
+section#intro,
+section#skills,
+section#footer{
+  background: var(--gradient-bkgd);
+  margin: 4rem;
+  border-radius: 4rem;
+}
+
+p,
+h2{
+  color: var(--clr-white);
+}
+
+.icon{
+  color: yellow;  
+}
+
+.skills--title{
+  display: grid;
+  margin-bottom: 3rem;
+  text-decoration: underline yellow;
+  place-items: center;
+}
+
+.skills--box ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid var(--clr-white);
+  border-radius: 0.75rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.skills--li-bkg{
+  background: var(--gradient-btn);
+  margin: 1rem;
+  padding: .25rem;
+  border-radius: 0.5rem;
+}
+
+.header--buttons--each .btn{
+  display: grid;
+  place-content: center;
+  width: 5vw;
+  height: 5vh;
+  border-radius: 0.7rem;
   cursor: pointer;
 }
+
+
+
+
+
