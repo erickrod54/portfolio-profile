@@ -2,33 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { AppProvider } from './context';
-import { Helmet } from 'react-helmet';
+import { PortfolioProvider } from './context';
 
-/**Portfolio-erick - version 3 - index js - Features:
+/**Portfolio-erick - version 6.06 - index js file -
+ * Features:
  * 
- *      --> Importing 'Helmet' to set a 'title' to
- *          my portfolio, and a 'meta' tag.
+ *      --> Wrapping the App with the provider
  * 
- * Notes: The meta tag is super important for SEO
- * purposes editing 'href' and 'content'.
+ * Notes: This file is gonna be changed later.
  */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-     <Helmet>
-          <meta charSet="utf-8" />
-          <title>Erick Rodriguez - Portfolio</title>
-          <link rel="canonical" href="https://erickrod.netlify.app/" />
-          <meta name="description" content="Erick Rodriguez portfolio with my job background information and current work and projects"></meta>
-      </Helmet>
   <React.StrictMode>
-    <AppProvider>
-      <App />
-    </AppProvider>
+    <PortfolioProvider>
+    < App />
+    </PortfolioProvider>
   </React.StrictMode>
-  </>
 );
-
 
