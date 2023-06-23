@@ -1,32 +1,32 @@
-import { construction } from "./assets/index.assets";
+import { construction, github, linkedin } from "./assets/index.assets";
 
 import { SiAirtable } from 'react-icons/si';
 import { SiVisualstudiocode } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
 
-import { faCloudArrowDown, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { faSquareJs, faReact, faGithubSquare, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faSquareJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-/**Portfolio-erick - version 6.06 - data js
+/**Portfolio-erick - version 6.07 - data js
  *  - Features:
  * 
- *      --> Refactoring data js by renaming and 
- *          importing from multiple sources.
+ *      --> Changing icons for github and linkdin.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+
 const cloudWord = <FontAwesomeIcon icon={faCloudArrowDown} />;
 const javaScript = <FontAwesomeIcon icon={faSquareJs} />;
 const reactIcon = <FontAwesomeIcon icon={faReact} />;
-const githubIcon = <FontAwesomeIcon icon={faGithubSquare} />;
-const linkedlnIcon = <FontAwesomeIcon icon={faLinkedinIn} />;
+const githubIcon = <img src={github} alt='github'/>;
+const linkedlnIcon = <img width="180" height="180" src={linkedin} alt='linkedin'/>;
 
-export const filePdf = <FontAwesomeIcon icon={faFilePdf} />;
+export const filePdf = <img width="64" height="64" src="https://img.icons8.com/external-bearicons-gradient-bearicons/64/external-PDF-file-extension-bearicons-gradient-bearicons.png" alt="external-PDF-file-extension-bearicons-gradient-bearicons"/>;
 
 const vsCode = <SiVisualstudiocode />;
 const airTables = <SiAirtable />;
