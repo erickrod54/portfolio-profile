@@ -1,9 +1,10 @@
-/**Portfolio-erick - version 6.06 - index css
+/**Portfolio-erick - version 6.07 - index css
  *  - Features:
  * 
- *      --> Refactoring index css styles.
+ *      --> Building media queries.
  *
- *      --> pending to organize the code.
+ *      --> Building styles for contact button and 
+  *         pdf icon
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -94,14 +95,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../src/assets/subtle-prism.svg);
+  background-repeat: repeat;
 }
 
 .container{
   display: grid;
   
   grid-template-columns: [container-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content,11rem) [col-end]) [center-end] 1fr [container-end];
-  grid-template-rows: 30vh repeat(8, min-content);
-  min-height: 100vh;
+  
 }
 
 
@@ -135,9 +137,9 @@ section#intro{
 
 section#intro .intro--intromessage{
   line-height: 2rem;
-  width: 30rem;
+ 
   grid-column: col-start 6 / col-end 8;
-  margin: 3rem;
+
   padding: 3rem;
 }
 
@@ -150,7 +152,7 @@ section#skills{
   display: grid;
   grid-column: container-start / container-end;
   place-content: center;
-  height: 400px;
+  
 }
 
 
@@ -185,41 +187,13 @@ section#skills{
   position: relative;
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .contact label{
-    text-transform:capitalize;
-    font-weight: 700;
-  }
-  
-  .contactinput textarea{
-    width: 70%;
-    border-radius: .25rem;
-    resize: vertical;
-  }
-
-  .contact .input-message{
-    height: 4rem;
-  }
-  
-  .contact ul{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-  }
-  
-  .contact li{
-    padding: .60rem;
-  }
+.contact .close-modal-btn{
+  cursor: pointer;
+}
   
   /*header--buttons styles**/
   
   .header--buttons{
-    width: 70%;
     display: flex;
     justify-content: flex-end ;
     margin: 2rem;
@@ -274,9 +248,38 @@ li{
   font-size: 4rem;
 }
 
-.intro--cv a svg{
+.intro--cv {
   margin-top: 3rem;
+
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--clr-white);
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+ 
+  transition: 0.5s ease;
+  user-select: none;
+  
+  &:hover,:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+   cursor: pointer;
+  }
+
 }
+
 
 /*Shared styles*/
 section#header,
@@ -299,9 +302,14 @@ h2{
 
 .skills--title{
   display: grid;
-  margin-bottom: 3rem;
+  margin: 1rem;
+  padding: 1rem;
   text-decoration: underline yellow;
   place-items: center;
+}
+
+.skills--title{
+  text-transform: capitalize;
 }
 
 .skills--box ul{
@@ -329,6 +337,73 @@ h2{
   cursor: pointer;
 }
 
+@media screen and (max-width:2000px){
+  section#intro .intro--intromessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width:900px){
+  section#intro .intro--intromessage {
+    width: 27rem;
+  }
+}
+
+@media screen and (max-width:520px){
+  
+  section#header{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header--logo{
+    display: grid;
+    place-content: center;
+  }
+
+  .skills--box ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  .skills--title{
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .skills--box ul li{
+    width: fit-content;
+  }
+
+  section#footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#footer ul{
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .footer--right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#intro .intro--intromessage {
+    width: 20rem;
+  }
+  
+}
 
 
 
