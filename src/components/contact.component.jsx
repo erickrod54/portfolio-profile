@@ -1,69 +1,89 @@
 import React, { useRef } from "react";
 import Modal from "./modal.component";
-
 import { usePortfolioContext } from "../context";
-
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
+import styled from 'styled-components';
 
-
-/**Portfolio-erick - version 6.06 - Contact - Features:
+/**Portfolio-erick - version 6.08 - Contact - Features:
  * 
- *      --> Placing and testing the Component.
+ *      --> Refactoring styles for contact form
  * 
- *      --> Changing versioning to two digits.
- * 
- * Notes: This components is adapted to the new layout
- * and is functional working, pending for layout the 
- * component itself
+ * Notes: By this version all tasks are done 
+ * for this component
  */
 
+const ContactForm = styled.form`
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(127, 255, 212, 0.5);
+`;
+
+const ContactInput = styled.input`
+  padding: 10px;
+  margin: 10px 0;
+`;
+
+const ContactTextArea = styled.textarea`
+  padding: 10px;
+  margin: 10px 0;
+`;
+
+const ContactButton = styled.input`
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: yellow;
+  background-color: transparent;
+  border: 2px solid yellow;
+  transition: 0.5s ease;
+  user-select: none;
+`;
+
 const Contact = () => {
+  const { closeModal } = usePortfolioContext()
+  const form = useRef();
 
-    const { closeModal } = usePortfolioContext()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    const form = useRef();
+    emailjs.sendForm('service_2ty4p3i', 'template_w3jpd4s', form.current, 'rQysZwpxWQqwyMhIY')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+    closeModal()
+  };
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_2ty4p3i', 'template_w3jpd4s', form.current, 'rQysZwpxWQqwyMhIY')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        e.target.reset()
-        closeModal()
-    };
-
-    return (
-        <Modal>
+  return (
+    <Modal>
+      <section className="contact">
         <button onClick={() => closeModal()} className='close-modal-btn'>
-            <FaTimes />     
+          <FaTimes />     
         </button>    
-        <section className="contact">
-        <form ref={form} onSubmit={sendEmail}>
+        <ContactForm ref={form} onSubmit={sendEmail}>
           <ul>
             <label>your name</label>
             <li>
-            <input type="text" name="user_name" placeholder='type your name'/>
+              <ContactInput type="text" name="user_name" placeholder='type your name' />
             </li>
             <label>your email</label>
             <li>
-            <input type="email" name="user_email" placeholder='type your email'/>
+              <ContactInput type="email" name="user_email" placeholder='type your email' />
             </li>
             <label>Message</label>
             <li>
-            <textarea name="message" placeholder='type your message'/>
-            <input type="submit" value="Send" />
+              <ContactTextArea name="message" placeholder='type your message' />
             </li>
+            <ContactButton type="submit" value="Send" />
           </ul>
-        </form>
-        </section>    
-        </Modal>
-      );
+        </ContactForm>
+      </section>    
+    </Modal>
+  );
 }
-
 
 export default Contact;
