@@ -1,11 +1,9 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 6.06 - Modal - Features:
+/**Portfolio-erick - version 6.08 - Modal - Features:
  * 
- *      --> Adapting modal to the new layout.
- * 
- *      --> Changing versioning to two digits
+ *      --> Refactoring Modal condiion
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -20,7 +18,7 @@ const Modal = ({ children }) => {
         <div className={`${isModalOpen ? 
             ('modal-container isOpen ') : 
             ('modal-container')}`}>
-                <div className="modal-content">
+                <div>
                     { children }
                 </div>
             </div>
