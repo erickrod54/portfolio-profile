@@ -3,9 +3,9 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 
 
-/**Portfolio-erick - version 6.08 - Footer - Features:
+/**Portfolio-erick - version 6.09 - Footer - Features:
  * 
- *      --> writting 'FooterCenter' 
+ *      --> writting 'CenterList' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -32,6 +32,10 @@ const FooterCenter = styled.div`
   justify-self: end;
 `
 
+const CenterList = styled.ul`
+
+`
+
 const Footer = () => {
 
     const { social } = usePortfolioContext()
@@ -39,7 +43,7 @@ const Footer = () => {
     return(
         <FooterContainer>
             <FooterCenter>
-                <ul>
+                <CenterList>
                     <li>
                         <p>
                             &copy; { new Date().getFullYear()}        
@@ -55,7 +59,7 @@ const Footer = () => {
                             All Rights reserved
                         </p>
                     </li>
-                </ul>
+                </CenterList>
             </FooterCenter>
             <div className="footer--right">
                 {social.map((net) => {
