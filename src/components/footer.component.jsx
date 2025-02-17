@@ -3,9 +3,9 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 
 
-/**Portfolio-erick - version 6.07 - Footer - Features:
+/**Portfolio-erick - version 6.08 - Footer - Features:
  * 
- *      --> Refactoring to Styled Components
+ *      --> writting 'FooterCenter' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -28,6 +28,9 @@ const FooterContainer = styled.section`
   margin-right: 4.3rem;
 `
 
+const FooterCenter = styled.div`
+  justify-self: end;
+`
 
 const Footer = () => {
 
@@ -35,7 +38,7 @@ const Footer = () => {
 
     return(
         <FooterContainer>
-            <div className="footer--center">
+            <FooterCenter>
                 <ul>
                     <li>
                         <p>
@@ -53,7 +56,7 @@ const Footer = () => {
                         </p>
                     </li>
                 </ul>
-            </div>
+            </FooterCenter>
             <div className="footer--right">
                 {social.map((net) => {
                     const { name, url, icon } = net;
