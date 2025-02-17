@@ -3,9 +3,9 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 
 
-/**Portfolio-erick - version 6.11 - Footer - Features:
+/**Portfolio-erick - version 6.12 - Footer - Features:
  * 
- *      --> writting 'FooterRight' 
+ *      --> writting 'AnchorTag' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -46,6 +46,9 @@ const FooterRight = styled.div`
     grid-template-columns: repeat(2, 1fr);
 `
 
+const AnchorTag = styled.a`
+
+`
 const Footer = () => {
 
     const { social } = usePortfolioContext()
@@ -76,7 +79,7 @@ const Footer = () => {
                     const { name, url, icon } = net;
 
                     return(
-                       <a key={name} href={url}>
+                       <AnchorTag key={name} href={url}>
                        <ul>
                             <li>
                                 <span>   
@@ -84,7 +87,7 @@ const Footer = () => {
                                 </span>
                             </li>
                        </ul>
-                       </a>
+                       </AnchorTag>
                     )
                 })}
             </FooterRight>
