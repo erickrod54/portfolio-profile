@@ -3,9 +3,9 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 
 
-/**Portfolio-erick - version 6.10 - Footer - Features:
+/**Portfolio-erick - version 6.11 - Footer - Features:
  * 
- *      --> writting 'CenterListItem' 
+ *      --> writting 'FooterRight' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -40,6 +40,12 @@ const CenterListItem = styled.li`
 
 `
 
+const FooterRight = styled.div`
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+`
+
 const Footer = () => {
 
     const { social } = usePortfolioContext()
@@ -65,7 +71,7 @@ const Footer = () => {
                     </CenterListItem>
                 </CenterList>
             </FooterCenter>
-            <div className="footer--right">
+            <FooterRight>
                 {social.map((net) => {
                     const { name, url, icon } = net;
 
@@ -81,7 +87,7 @@ const Footer = () => {
                        </a>
                     )
                 })}
-            </div>
+            </FooterRight>
         </FooterContainer>
     )
 }
