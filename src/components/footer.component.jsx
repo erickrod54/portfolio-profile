@@ -3,18 +3,14 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 import { FooterContainer } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 6.13 - Footer - Features:
+/**Portfolio-erick - version 6.14 - Footer - Features:
  * 
- *      --> Migrating 'FooterContainer' 
+ *      --> Migrating 'FooterCenter' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const FooterCenter = styled.div`
-  justify-self: end;
-`
 
 const CenterList = styled.ul`
 
