@@ -1,14 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 6.13 - styled.components - Features:
+/**Portfolio-erick - version 6.14 - styled.components - Features:
  * 
- *      --> writting 'FooterContainer' 
+ *      --> writting 'FooterCenter' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+export const FooterCenter = styled.div`
+    justify-self: end;
+` 
 export const FooterContainer = styled.section`
         display: grid;
         margin: 2rem;
