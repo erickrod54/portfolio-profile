@@ -1,4 +1,4 @@
-import { FooterContainer } from "./styled.components";
+import { FooterCenter, FooterContainer } from "./styled.components";
 
 
 /**Portfolio-erick - version 6.13 - styled.components - Features:
@@ -10,5 +10,5 @@ import { FooterContainer } from "./styled.components";
  * component itself
  */
 
-export { FooterContainer }
+export { FooterContainer, FooterCenter }
 
