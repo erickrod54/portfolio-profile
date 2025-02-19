@@ -1,9 +1,9 @@
-import { CenterList, FooterCenter, FooterContainer } from "./styled.components";
+import { CenterList, CenterListItem, FooterCenter, FooterContainer } from "./styled.components";
 
 
-/**Portfolio-erick - version 6.16 - styled.components - Features:
+/**Portfolio-erick - version 6.18 - styled.components - Features:
  * 
- *      --> importing and exporting  'CenterList' 
+ *      --> importing and exporting  'CenterListItem' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
