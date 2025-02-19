@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 6.14 - styled.components - Features:
+/**Portfolio-erick - version 6.16 - styled.components - Features:
  * 
- *      --> writting 'FooterCenter' 
+ *      --> writting 'CenterList' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const CenterList = styled.ul`
+
+`
 
 export const FooterCenter = styled.div`
     justify-self: end;
