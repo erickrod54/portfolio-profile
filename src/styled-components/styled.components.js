@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 6.19 - styled.components - Features:
+/**Portfolio-erick - version 6.20 - styled.components - Features:
  * 
- *      --> writting 'FooterRight' 
+ *      --> writting 'AnchorTag' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const AnchorTag = styled.a`
+
+`
 
 export const FooterRight = styled.div`
     justify-self: end;
