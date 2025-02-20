@@ -1,13 +1,19 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 6.18 - styled.components - Features:
+/**Portfolio-erick - version 6.19 - styled.components - Features:
  * 
- *      --> writting 'CenterListItem' 
+ *      --> writting 'FooterRight' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const FooterRight = styled.div`
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+`
 
 export const CenterListItem = styled.li`
 
