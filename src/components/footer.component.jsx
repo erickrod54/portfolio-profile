@@ -1,22 +1,16 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { CenterList, FooterCenter, FooterContainer } from "../styled-components/styled.components";
+import { CenterList, CenterListItem, FooterCenter, FooterContainer } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 6.17 - Footer - Features:
+/**Portfolio-erick - version 6.18 - Footer - Features:
  * 
- *      --> Adding 'FooterCenter' 
+ *      --> Migrating 'CenterListItem' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-
-
-const CenterListItem = styled.li`
-
-`
 
 const FooterRight = styled.div`
     justify-self: end;
