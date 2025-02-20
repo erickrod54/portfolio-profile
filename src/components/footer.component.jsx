@@ -1,26 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { CenterList, CenterListItem, FooterCenter, FooterContainer } from "../styled-components/styled.components";
+import { AnchorTag, CenterList, CenterListItem, FooterCenter, FooterContainer, FooterRight } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 6.18 - Footer - Features:
+/**Portfolio-erick - version 6.20 - Footer - Features:
  * 
- *      --> Migrating 'CenterListItem' 
+ *      --> Migrating 'AnchorTag' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-const FooterRight = styled.div`
-    justify-self: end;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-`
-
-const AnchorTag = styled.a`
-
-`
 const Footer = () => {
 
     const { social } = usePortfolioContext()
