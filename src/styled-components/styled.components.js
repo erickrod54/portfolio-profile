@@ -1,13 +1,22 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.00 - styled.components - Features:
+/**Portfolio-erick - version 7.01 - styled.components - Features:
  * 
- *      --> writting 'EachBtn' 
+ *      --> writting 'ButtonsWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ButtonsWrapper = styled.section`
+    display: grid;
+    place-content: center;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 0.7rem;
+    cursor: pointer;
+`
 
 export const EachBtn = styled.button`
     padding: 10px 20px;
