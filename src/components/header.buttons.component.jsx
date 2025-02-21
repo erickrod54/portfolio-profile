@@ -1,23 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
-import { EachBtn } from "../styled-components/styled.components";
+import { ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.01 - HeaderButtons - Features:
+/**Portfolio-erick - version 7.02 - HeaderButtons - Features:
  * 
- *      --> writting 'ButtonsWrapper'.
+ *      --> Migrating 'ButtonsWrapper'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
-
-const ButtonsWrapper = styled.section`
-  display: grid;
-  place-content: center;
-  width: 5vw;
-  height: 5vh;
-  border-radius: 0.7rem;
-  cursor: pointer;
-`
 
 const HeaderButtons = ({ id, urlname, openModal }) => {
 
