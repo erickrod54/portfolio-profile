@@ -5,13 +5,17 @@ import HeaderButtons from "./header.buttons.component";
 import styled from "styled-components";
 import { HeaderWrapper } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.09 - HeaderComponent - Features:
+/**Portfolio-erick - version 7.10 - HeaderComponent - Features:
  * 
- *      --> Migrating 'HeaderWrapper'
+ *      --> writting  'HeaderLogo'
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
+
+const HeaderLogo = styled.div`
+  grid-column: col-start 0 / col-end 1;
+`;
 
 const HeaderComponent = () => {
 
@@ -19,9 +23,9 @@ const HeaderComponent = () => {
 
     return(
         <HeaderWrapper>
-                <div className="header--logo">
+                <HeaderLogo>
                     <img src={logo} alt='logo'/>
-                </div>
+                </HeaderLogo>
                 <div className="header--buttons">
                 {NavBarData.map((item) => {
                     const { id } = item
