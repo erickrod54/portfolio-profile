@@ -1,13 +1,23 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.04 - styled.components - Features:
+/**Portfolio-erick - version 7.09 - styled.components - Features:
  * 
- *      --> writting 'ButtonsList' 
+ *      --> writting 'HeaderWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const HeaderWrapper = styled.section`
+    display: grid;
+    margin: 2rem;
+    padding: 2rem;
+    grid-column: container-start / container-end;
+    height: fit-content;
+    background: linear-gradient(to left, rgb(48, 7, 82) 0%, rgba(0, 128, 128, 1) 100%);
+    border-radius: 4rem;
+`
 
 export const ButtonsList = styled.ul`
 
