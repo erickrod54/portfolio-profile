@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.09 - styled.components - Features:
+/**Portfolio-erick - version 7.10 - styled.components - Features:
  * 
- *      --> writting 'HeaderWrapper' 
+ *      --> writting 'HeaderLogo' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const HeaderLogo = styled.div`
+    grid-column: col-start 0 / col-end 1;
+`;
 
 export const HeaderWrapper = styled.section`
     display: grid;
