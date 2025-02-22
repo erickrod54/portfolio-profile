@@ -2,13 +2,17 @@ import React from "react";
 import { styled } from "styled-components";
 import { ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.02 - HeaderButtons - Features:
+/**Portfolio-erick - version 7.03 - HeaderButtons - Features:
  * 
- *      --> Migrating 'ButtonsWrapper'.
+ *      --> writting 'ButtonsList'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
+
+const ButtonsList = styled.ul`
+
+`
 
 const HeaderButtons = ({ id, urlname, openModal }) => {
 
@@ -18,11 +22,11 @@ const HeaderButtons = ({ id, urlname, openModal }) => {
 
     return(
         <ButtonsWrapper>
-        <ul key={id}>
+        <ButtonsList key={id}>
                        <EachBtn id="btn" onClick={ urlname === 'contact' ? openModal : null}>
                         {urlname} 
                        </EachBtn>     
-        </ul>
+        </ButtonsList>
         </ButtonsWrapper>
     )
 }
