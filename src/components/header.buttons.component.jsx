@@ -1,18 +1,15 @@
 import React from "react";
 import { styled } from "styled-components";
-import { ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
+import { ButtonsList, ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.03 - HeaderButtons - Features:
+/**Portfolio-erick - version 7.04 - HeaderButtons - Features:
  * 
- *      --> writting 'ButtonsList'.
+ *      --> Migrating 'ButtonsList'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
 
-const ButtonsList = styled.ul`
-
-`
 
 const HeaderButtons = ({ id, urlname, openModal }) => {
 
