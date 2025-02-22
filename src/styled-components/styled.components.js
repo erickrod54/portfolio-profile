@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.01 - styled.components - Features:
+/**Portfolio-erick - version 7.04 - styled.components - Features:
  * 
- *      --> writting 'ButtonsWrapper' 
+ *      --> writting 'ButtonsList' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ButtonsList = styled.ul`
+
+`
 
 export const ButtonsWrapper = styled.section`
     display: grid;
