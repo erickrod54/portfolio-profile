@@ -5,11 +5,11 @@ import { AnchorTag,
          CenterListItem,
          EachBtn,
          FooterCenter,
-         FooterContainer, FooterRight, HeaderButtons, HeaderLogo, HeaderWrapper } from "./styled.components";
+         FooterContainer, FooterRight, HeaderButtonsWrapper, HeaderLogo, HeaderWrapper } from "./styled.components";
 
-/**Portfolio-erick - version 7.13 - styled.components - Features:
+/**Portfolio-erick - version 7.14 - styled.components - Features:
  * 
- *      --> Adding  'HeaderButtons' 
+ *      --> Adding  'HeaderButtonsWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -22,5 +22,5 @@ export { FooterContainer,
          FooterRight,
          AnchorTag,
          EachBtn,
-         ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtons, HeaderWrapper, HeaderLogo }
+         ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
