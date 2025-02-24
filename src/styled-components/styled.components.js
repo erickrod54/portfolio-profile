@@ -1,15 +1,15 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.13 - styled.components - Features:
+/**Portfolio-erick - version 7.14 - styled.components - Features:
  * 
- *      --> writting 'HeaderButtons' 
+ *      --> Renaming 'HeaderButtonsWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-export const HeaderButtons = styled.div`
+export const HeaderButtonsWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     margin: 2rem;
