@@ -1,13 +1,30 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.14 - styled.components - Features:
+/**Portfolio-erick - version 7.15 - styled.components - Features:
  * 
- *      --> Renaming 'HeaderButtonsWrapper' 
+ *      --> Renaming 'IntroSection' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const IntroSection = styled.section`
+    display: grid;
+    grid-column: container-start / container-end;
+    place-content: center;
+    background: linear-gradient(
+    to left,
+    rgb(48, 7, 82) 0%,
+    rgba(0, 128, 128, 1) 100%
+    );
+    margin: 4rem;
+    border-radius: 4rem;
+
+    @media screen and (max-width: 520px) {
+    width: 20rem;
+    }
+`;
 
 export const HeaderButtonsWrapper = styled.div`
     display: flex;
