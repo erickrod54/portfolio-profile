@@ -5,14 +5,20 @@ import HeaderButtons from "./header.buttons.component";
 import styled from "styled-components";
 import { HeaderLogo, HeaderWrapper } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.11 - HeaderComponent - Features:
+/**Portfolio-erick - version 7.12 - HeaderComponent - Features:
  * 
- *      --> Migrating  'HeaderLogo'
+ *      --> writting  'HeaderButtons'
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
 
+const HeaderButtons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem;
+  grid-column: col-start 7 / col-end 8;
+`;
 
 const HeaderComponent = () => {
 
@@ -23,7 +29,7 @@ const HeaderComponent = () => {
                 <HeaderLogo>
                     <img src={logo} alt='logo'/>
                 </HeaderLogo>
-                <div className="header--buttons">
+                <HeaderButtons>
                 {NavBarData.map((item) => {
                     const { id } = item
                     return(
@@ -31,7 +37,7 @@ const HeaderComponent = () => {
                                 key={id}{...item} openModal={openModal}/>
                     )
                 })} 
-                </div>
+                </HeaderButtons>
         </HeaderWrapper>
     )
 }
