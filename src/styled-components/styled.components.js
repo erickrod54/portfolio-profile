@@ -1,13 +1,20 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.10 - styled.components - Features:
+/**Portfolio-erick - version 7.13 - styled.components - Features:
  * 
- *      --> writting 'HeaderLogo' 
+ *      --> writting 'HeaderButtons' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const HeaderButtons = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+    grid-column: col-start 7 / col-end 8;
+`;
 
 export const HeaderLogo = styled.div`
     grid-column: col-start 0 / col-end 1;
