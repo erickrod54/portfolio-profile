@@ -3,9 +3,9 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 import { IntroSection } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.15 - Intro - Features:
+/**Portfolio-erick - version 7.16 - Intro - Features:
  * 
- *      --> writting IntroSection' and 'IntroMessage'.
+ *      --> Migrating IntroSection' and 'IntroMessage'.
  * 
  *     
  * Notes: This components is adapted to the new layout
@@ -13,23 +13,6 @@ import { IntroSection } from "../styled-components/styled.components";
  * component itself
  */
 
-const IntroMessage = styled.div`
-  line-height: 2rem;
-  grid-column: col-start 6 / col-end 8;
-  padding: 3rem;
-  
-  @media screen and (max-width: 2000px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    width: 27rem;
-  }
-`;
 
 const IntroComponent = () => {
 
