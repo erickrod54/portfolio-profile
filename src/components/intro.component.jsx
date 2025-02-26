@@ -1,18 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { IntroSection } from "../styled-components/styled.components";
+import { IntroMessage, IntroSection } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.16 - Intro - Features:
+/**Portfolio-erick - version 7.17 - Intro - Features:
  * 
- *      --> Migrating IntroSection' and 'IntroMessage'.
+ *      --> Adding 'IntroMessage'.
  * 
- *     
+*     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
 
 const IntroComponent = () => {
 
@@ -26,7 +25,7 @@ const IntroComponent = () => {
                 const { id, myname, intro } = half;
                     //console.log('half ==>', half)
                     return(
-                    <IntroMessage>
+                    <IntroMessage key={id}>
                         <h2 className="intro--intromessage--title">Hello i'm {myname}</h2>
                         <div className="intro--intromessage--text">
                         <p>{intro}</p>
