@@ -1,6 +1,7 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
+import { IntroSection } from "../styled-components/styled.components";
 
 /**Portfolio-erick - version 7.15 - Intro - Features:
  * 
@@ -11,23 +12,6 @@ import styled from "styled-components";
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const IntroSection = styled.section`
-  display: grid;
-  grid-column: container-start / container-end;
-  place-content: center;
-  background: linear-gradient(
-    to left,
-    rgb(48, 7, 82) 0%,
-    rgba(0, 128, 128, 1) 100%
-    );
-  margin: 4rem;
-  border-radius: 4rem;
-
-  @media screen and (max-width: 520px) {
-    width: 20rem;
-  }
-`;
 
 const IntroMessage = styled.div`
   line-height: 2rem;
