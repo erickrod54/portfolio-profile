@@ -1,13 +1,31 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.15 - styled.components - Features:
+/**Portfolio-erick - version 7.16 - styled.components - Features:
  * 
- *      --> Renaming 'IntroSection' 
+ *      --> writting 'IntroMessage' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const IntroMessage = styled.div`
+  line-height: 2rem;
+  grid-column: col-start 6 / col-end 8;
+  padding: 3rem;
+  
+  @media screen and (max-width: 2000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 27rem;
+  }
+`;
 
 export const IntroSection = styled.section`
     display: grid;
