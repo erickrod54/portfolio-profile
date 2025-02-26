@@ -9,9 +9,10 @@ import { AnchorTag,
          IntroMessage, 
          IntroSection} from "./styled.components";
 
-         /**Portfolio-erick - version 7.16 - styled.components - Features:
+
+/**Portfolio-erick - version 7.17 - styled.components - Features:
  * 
- *      --> Importing and exporting  'IntroMessage' 
+ *      --> Adding  'IntroSection' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -25,5 +26,6 @@ export { FooterContainer,
          AnchorTag,
          EachBtn,
          IntroMessage,
+         IntroSection,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
