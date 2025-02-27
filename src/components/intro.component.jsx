@@ -1,22 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { IntroMessage, IntroSection } from "../styled-components/styled.components";
+import { IntroMessage, IntroSection, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.18 - Intro - Features:
+/**Portfolio-erick - version 7.19 - Intro - Features:
  * 
- *      --> writting 'IntroTitle'.
+ *      --> Migrating 'IntroTitle'.
  * 
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const IntroTitle = styled.h2`
-  color: yellow;
-  margin-bottom: 2rem;
-`;
 
 const IntroComponent = () => {
 
