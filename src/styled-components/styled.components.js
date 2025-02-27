@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.19 - styled.components - Features:
+/**Portfolio-erick - version 8.00 - styled.components - Features:
  * 
- *      --> writting 'IntroTitle' 
+ *      --> writting 'IntroText' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const IntroText = styled.p`
+    color: var(--clr-white);
+`; 
 
 export const IntroTitle = styled.h2`
     color: yellow;
