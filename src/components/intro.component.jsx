@@ -3,15 +3,20 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 import { IntroMessage, IntroSection } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.17 - Intro - Features:
+/**Portfolio-erick - version 7.18 - Intro - Features:
  * 
- *      --> Adding 'IntroMessage'.
+ *      --> writting 'IntroTitle'.
  * 
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+const IntroTitle = styled.h2`
+  color: yellow;
+  margin-bottom: 2rem;
+`;
 
 const IntroComponent = () => {
 
@@ -26,7 +31,7 @@ const IntroComponent = () => {
                     //console.log('half ==>', half)
                     return(
                     <IntroMessage key={id}>
-                        <h2 className="intro--intromessage--title">Hello i'm {myname}</h2>
+                        <IntroTitle className="intro--intromessage--title">Hello i'm {myname}</IntroTitle>
                         <div className="intro--intromessage--text">
                         <p>{intro}</p>
                         </div>
