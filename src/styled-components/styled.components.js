@@ -1,13 +1,18 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 7.16 - styled.components - Features:
+/**Portfolio-erick - version 7.19 - styled.components - Features:
  * 
- *      --> writting 'IntroMessage' 
+ *      --> writting 'IntroTitle' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const IntroTitle = styled.h2`
+    color: yellow;
+    margin-bottom: 2rem;
+`;
 
 export const IntroMessage = styled.div`
   line-height: 2rem;
