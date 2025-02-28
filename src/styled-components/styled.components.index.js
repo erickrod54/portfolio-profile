@@ -8,12 +8,13 @@ import { AnchorTag,
          FooterContainer, FooterRight, HeaderButtonsWrapper, HeaderLogo, HeaderWrapper, 
          IntroMessage, 
          IntroSection,
+         IntroText,
          IntroTitle} from "./styled.components";
 
 
-/**Portfolio-erick - version 7.19 - styled.components - Features:
+/**Portfolio-erick - version 8.00 - styled.components - Features:
  * 
- *      --> Adding  'IntroTitle' 
+ *      --> Importing and exporting  'IntroText' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
