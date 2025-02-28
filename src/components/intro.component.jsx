@@ -1,21 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { IntroMessage, IntroSection, IntroTitle } from "../styled-components/styled.components";
+import { IntroMessage, IntroSection, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.20 - Intro - Features:
+/**Portfolio-erick - version 8.00 - Intro - Features:
  * 
- *      --> writting 'IntroText'.
+ *      --> Migrating 'IntroText'.
  * 
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const IntroText = styled.p`
-  color: var(--clr-white);
-`;
 
 const IntroComponent = () => {
 
