@@ -1,13 +1,23 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.04 - styled.components - Features:
+/**Portfolio-erick - version 8.06 - styled.components - Features:
  * 
- *      --> writting 'SkillsSection' 
+ *      --> writting 'SkillsBox' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const SkillsBox = styled.div`
+  display: grid;
+  border: 1px solid white;
+  margin: 1.7em;
+  border-radius: 0.75em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`; 
 
 export const SkillsSection = styled.section`
   display: grid;
