@@ -1,25 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
+import { SkillsSection } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.03 - SkillsComponent
+/**Portfolio-erick - version 8.04 - SkillsComponent
  *  - Features:
  * 
- *      --> writting 'SkillsSection'
+ *      --> Migrating 'SkillsSection'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const SkillsSection = styled.section`
-  display: grid;
-  grid-column: container-start / container-end;
-  place-content: center;
-  background: var(--gradient-bkgd);
-  margin: 4rem;
-  border-radius: 4rem;
-`;
 
 const SkillsComponent = () => {
 
