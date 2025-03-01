@@ -1,13 +1,22 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.01 - styled.components - Features:
+/**Portfolio-erick - version 8.04 - styled.components - Features:
  * 
- *      --> writting 'DownloadCV' 
+ *      --> writting 'SkillsSection' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const SkillsSection = styled.section`
+  display: grid;
+  grid-column: container-start / container-end;
+  place-content: center;
+  background: var(--gradient-bkgd);
+  margin: 4rem;
+  border-radius: 4rem;
+`;
 
 export const DownloadCV = styled.div`
   margin-top: 3rem;
