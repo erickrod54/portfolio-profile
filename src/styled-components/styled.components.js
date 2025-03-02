@@ -1,13 +1,23 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.06 - styled.components - Features:
+/**Portfolio-erick - version 8.07 - styled.components - Features:
  * 
- *      --> writting 'SkillsBox' 
+ *      --> writting 'SkillsTitle' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const SkillsTitle = styled.h2`
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: underline yellow;
+  place-items: center;
+  text-transform: capitalize;
+  color: var(--clr-white);
+`;
 
 export const SkillsBox = styled.div`
   display: grid;
