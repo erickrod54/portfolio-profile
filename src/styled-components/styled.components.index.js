@@ -12,12 +12,13 @@ import { AnchorTag,
          IntroText,
          IntroTitle,
          SkillsBox,
-         SkillsSection} from "./styled.components";
+         SkillsSection,
+         SkillsTitle} from "./styled.components";
 
 
-/**Portfolio-erick - version 8.06 - styled.components - Features:
+/**Portfolio-erick - version 8.07 - styled.components - Features:
  * 
- *      --> Importing and exporting  'SkillsBox' 
+ *      --> Importing and exporting  'SkillsTitle' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -36,5 +37,6 @@ export { FooterContainer,
          DownloadCV,
          SkillsSection,
          SkillsBox,
+         SkillsTitle,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
