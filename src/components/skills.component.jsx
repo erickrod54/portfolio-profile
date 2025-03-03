@@ -1,33 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { SkillsBox, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
+import { SkillsBox, SkillsList, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.10 - SkillsComponent
+/**Portfolio-erick - version 8.11 - SkillsComponent
  *  - Features:
  * 
- *      --> writting 'SkillsList' media query
+ *      --> Migrating 'SkillsList's
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const SkillsList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-radius: 0.75rem;
-  margin: 1rem;
-  padding: 1rem;
-
-  @media screen and (max-width: 520px) {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-  }
-
-`;
 
 const SkillsComponent = () => {
 
