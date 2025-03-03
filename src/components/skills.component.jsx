@@ -3,10 +3,10 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 import { SkillsBox, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.09 - SkillsComponent
+/**Portfolio-erick - version 8.10 - SkillsComponent
  *  - Features:
  * 
- *      --> writting 'SkillsList'
+ *      --> writting 'SkillsList' media query
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -20,6 +20,12 @@ const SkillsList = styled.ul`
   margin: 1rem;
   padding: 1rem;
 
+  @media screen and (max-width: 520px) {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+  }
 
 `;
 
