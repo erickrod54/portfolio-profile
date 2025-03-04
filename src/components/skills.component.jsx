@@ -1,25 +1,17 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { SkillsBox, SkillsList, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
+import { SkillItem, SkillsBox, SkillsList, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.12 - SkillsComponent
+/**Portfolio-erick - version 8.13 - SkillsComponent
  *  - Features:
  * 
- *      --> writting 'SkillItem'
+ *      --> Migrating 'SkillItem'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const SkillItem = styled.li`
-  background: var(--gradient-btn);
-  margin: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-  color: var(--clr-white);
-`;
 
 const SkillsComponent = () => {
 
