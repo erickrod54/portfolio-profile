@@ -1,13 +1,21 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.11 - styled.components - Features:
+/**Portfolio-erick - version 8.13 - styled.components - Features:
  * 
- *      --> writting 'SkillsList' 
+ *      --> writting 'SkillItem' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const SkillItem = styled.li`
+  background: var(--gradient-btn);
+  margin: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--clr-white);
+`;
 
 export const SkillsList = styled.ul`
   display: grid;
