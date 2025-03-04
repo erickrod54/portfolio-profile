@@ -1,13 +1,28 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.13 - styled.components - Features:
+/**Portfolio-erick - version 8.15 - styled.components - Features:
  * 
- *      --> writting 'SkillItem' 
+ *      --> writting 'StyledModal' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const StyledModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
+  z-index: ${(props) => (props.isOpen ? "999" : "-1")};
+  transition: var(--transition);
+`;
 
 export const SkillItem = styled.li`
   background: var(--gradient-btn);
