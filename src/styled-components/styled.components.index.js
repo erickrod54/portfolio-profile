@@ -15,12 +15,13 @@ import { AnchorTag,
          SkillsBox,
          SkillsList,
          SkillsSection,
-         SkillsTitle} from "./styled.components";
+         SkillsTitle,
+         StyledModal} from "./styled.components";
 
 
-/**Portfolio-erick - version 8.13 - styled.components - Features:
+/**Portfolio-erick - version 8.15 - styled.components - Features:
  * 
- *      --> Importing and exporting  'SkillItem' 
+ *      --> Importing and exporting  'StyledModal' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -42,5 +43,6 @@ export { FooterContainer,
          SkillsTitle,
          SkillsList,
          SkillItem,
+         StyledModal,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
