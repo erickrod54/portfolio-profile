@@ -1,11 +1,11 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { StyledModal } from "../styled-components/styled.components";
+import { ModalContent, StyledModal } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.15 - Modal - Features:
+/**Portfolio-erick - version 8.16 - Modal - Features:
  * 
- *      --> Migrating 'StyledModal'
+ *      --> Migrating 'ModalContent'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -25,12 +25,3 @@ const Modal = ({ children }) => {
   export default Modal;
   
   
-  const ModalContent = styled.div`
-    background: var(--clr-white);
-    width: 90vw;
-    max-width: var(--fixed-width);
-    padding: 3rem;
-    border-radius: var(--radius);
-    text-align: center;
-    position: relative;
-  `;
