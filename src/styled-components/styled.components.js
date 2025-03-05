@@ -1,13 +1,23 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.15 - styled.components - Features:
+/**Portfolio-erick - version 8.16 - styled.components - Features:
  * 
- *      --> writting 'StyledModal' 
+ *      --> writting 'ModalContent' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ModalContent = styled.div`
+  background: var(--clr-white);
+  width: 90vw;
+  max-width: var(--fixed-width);
+  padding: 3rem;
+  border-radius: var(--radius);
+  text-align: center;
+  position: relative;
+`;
 
 export const StyledModal = styled.div`
   position: fixed;
