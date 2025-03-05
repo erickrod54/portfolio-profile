@@ -11,6 +11,7 @@ import { AnchorTag,
          IntroSection,
          IntroText,
          IntroTitle,
+         ModalContent,
          SkillItem,
          SkillsBox,
          SkillsList,
@@ -19,9 +20,9 @@ import { AnchorTag,
          StyledModal} from "./styled.components";
 
 
-/**Portfolio-erick - version 8.15 - styled.components - Features:
+/**Portfolio-erick - version 8.16 - styled.components - Features:
  * 
- *      --> Importing and exporting  'StyledModal' 
+ *      --> Importing and exporting  'ModalContent' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -44,5 +45,6 @@ export { FooterContainer,
          SkillsList,
          SkillItem,
          StyledModal,
+         ModalContent,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
