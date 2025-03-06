@@ -1,13 +1,18 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.17 - styled.components - Features:
+/**Portfolio-erick - version 8.18 - styled.components - Features:
  * 
- *      --> writting 'ContactForm' 
+ *      --> writting 'ContactInput' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ContactInput = styled.input`
+  padding: 10px;
+  margin: 10px 0;
+`;
 
 export const ContactForm = styled.form`
   padding: 20px;
