@@ -4,21 +4,15 @@ import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
-import { ContactForm, ContactInput } from "../styled-components/styled.components";
+import { ContactForm, ContactInput, ContactTextArea } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.18 - Contact - Features:
+/**Portfolio-erick - version 8.19 - Contact - Features:
  * 
- *      --> Migrating 'ContactInput'
+ *      --> Migrating 'ContactTextArea'
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
-
-
-const ContactTextArea = styled.textarea`
-  padding: 10px;
-  margin: 10px 0;
-`;
 
 const ContactButton = styled.input`
   padding: 10px 20px;
