@@ -1,13 +1,25 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.19 - styled.components - Features:
+/**Portfolio-erick - version 8.20 - styled.components - Features:
  * 
- *      --> writting 'ContactTextArea' 
+ *      --> writting 'ContactButton' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ContactButton = styled.input`
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: yellow;
+  background-color: transparent;
+  border: 2px solid yellow;
+  transition: 0.5s ease;
+  user-select: none;
+`;
 
 export const ContactTextArea = styled.textarea`
   padding: 10px;
