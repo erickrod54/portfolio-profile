@@ -4,27 +4,15 @@ import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
-import { ContactForm, ContactInput, ContactTextArea } from "../styled-components/styled.components";
+import { ContactButton, ContactForm, ContactInput, ContactTextArea } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.19 - Contact - Features:
+/**Portfolio-erick - version 8.20 - Contact - Features:
  * 
- *      --> Migrating 'ContactTextArea'
+ *      --> Migrating 'ContactButton'
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
-
-const ContactButton = styled.input`
-  padding: 10px 20px;
-  margin: 10px 0;
-  font-size: 17px;
-  font-weight: 500;
-  color: yellow;
-  background-color: transparent;
-  border: 2px solid yellow;
-  transition: 0.5s ease;
-  user-select: none;
-`;
 
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
