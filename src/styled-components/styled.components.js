@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.02 - styled.components - Features:
+/**Portfolio-erick - version 9.03 - styled.components - Features:
  * 
- *      --> writting 'ContactWrapper' 
+ *      --> writting 'CloseButton' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export   const CloseButton = styled.button`
+  cursor: pointer;
+`
 
 export const ContactWrapper = styled.section`
    
