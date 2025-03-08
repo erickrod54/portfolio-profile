@@ -3,6 +3,7 @@ import { AnchorTag,
          ButtonsWrapper,
          CenterList,
          CenterListItem,
+         CloseButton,
          ContactButton,
          ContactForm,
          ContactInput,
@@ -25,9 +26,9 @@ import { AnchorTag,
          StyledModal} from "./styled.components";
 
 
-/**Portfolio-erick - version 9.02 - styled.components - Features:
+/**Portfolio-erick - version 9.03 - styled.components - Features:
  * 
- *      --> Importing and exporting  'ContactWrapper' 
+ *      --> Importing and exporting  'CloseButton' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -56,5 +57,6 @@ export { FooterContainer,
          ContactTextArea,
          ContactButton,
          ContactWrapper,
+         CloseButton,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
