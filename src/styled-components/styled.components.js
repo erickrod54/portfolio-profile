@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 8.20 - styled.components - Features:
+/**Portfolio-erick - version 9.02 - styled.components - Features:
  * 
- *      --> writting 'ContactButton' 
+ *      --> writting 'ContactWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ContactWrapper = styled.section`
+   
+`
 
 export const ContactButton = styled.input`
   padding: 10px 20px;
