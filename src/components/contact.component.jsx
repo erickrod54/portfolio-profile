@@ -6,9 +6,9 @@ import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import { CloseButton, ContactButton, ContactForm, ContactInput, ContactTextArea, ContactWrapper } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 9.03 - Contact - Features:
+/**Portfolio-erick - version 9.04 - Contact - Features:
  * 
- *      --> Migrating 'CloseButton'
+ *      --> writitng 'ContactList'
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -31,6 +31,10 @@ const Contact = () => {
     closeModal()
   };
 
+  const ContactList = styled.ul`
+  
+  `
+
   return (
     <Modal>
       <ContactWrapper>
@@ -38,7 +42,7 @@ const Contact = () => {
           <FaTimes />     
         </CloseButton>    
         <ContactForm ref={form} onSubmit={sendEmail}>
-          <ul>
+          <ContactList>
             <label>your name</label>
             <li>
               <ContactInput type="text" name="user_name" placeholder='type your name' />
@@ -52,7 +56,7 @@ const Contact = () => {
               <ContactTextArea name="message" placeholder='type your message' />
             </li>
             <ContactButton type="submit" value="Send" />
-          </ul>
+          </ContactList>
         </ContactForm>
       </ContactWrapper>    
     </Modal>
