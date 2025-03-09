@@ -6,9 +6,9 @@ import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import { CloseButton, ContactButton, ContactForm, ContactInput, ContactTextArea, ContactWrapper } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 9.04 - Contact - Features:
+/**Portfolio-erick - version 9.05 - Contact - Features:
  * 
- *      --> writitng 'ContactList'
+ *      --> writitng 'ContactTitle'
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -35,6 +35,12 @@ const Contact = () => {
   
   `
 
+  const ContactTitle = styled.label`
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: larger;
+  `
+
   return (
     <Modal>
       <ContactWrapper>
@@ -43,15 +49,15 @@ const Contact = () => {
         </CloseButton>    
         <ContactForm ref={form} onSubmit={sendEmail}>
           <ContactList>
-            <label>your name</label>
+            <ContactTitle>your name</ContactTitle>
             <li>
               <ContactInput type="text" name="user_name" placeholder='type your name' />
             </li>
-            <label>your email</label>
+            <ContactTitle>your email</ContactTitle>
             <li>
               <ContactInput type="email" name="user_email" placeholder='type your email' />
             </li>
-            <label>Message</label>
+            <ContactTitle>Message</ContactTitle>
             <li>
               <ContactTextArea name="message" placeholder='type your message' />
             </li>
