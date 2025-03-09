@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.03 - styled.components - Features:
+/**Portfolio-erick - version 9.08 - styled.components - Features:
  * 
- *      --> writting 'CloseButton' 
+ *      --> writting 'ContactList' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ContactList = styled.ul`
+  
+`
 
 export   const CloseButton = styled.button`
   cursor: pointer;
