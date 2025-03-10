@@ -4,7 +4,13 @@ import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
-import { CloseButton, ContactButton, ContactForm, ContactInput, ContactList, ContactTextArea, ContactTitle, ContactWrapper } from "../styled-components/styled.components";
+import { CloseButton,
+         ContactButton,
+         ContactForm,
+         ContactInput,
+         ContactList,
+         ContactListItem,
+         ContactTextArea, ContactTitle, ContactWrapper } from "../styled-components/styled.components";
 
 /**Portfolio-erick - version 9.09 - Contact - Features:
  * 
@@ -30,10 +36,6 @@ const Contact = () => {
     e.target.reset()
     closeModal()
   };
-
-  const ContactListItem = styled.ul`
-    
-  `
 
   return (
     <Modal>
