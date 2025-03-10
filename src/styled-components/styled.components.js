@@ -1,13 +1,17 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.09 - styled.components - Features:
+/**Portfolio-erick - version 9.10 - styled.components - Features:
  * 
- *      --> writting 'ContactTitle' 
+ *      --> writting 'ContactListItem' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ContactListItem = styled.ul`
+    
+`
 
 export   const ContactTitle = styled.label`
     font-weight: 700;
