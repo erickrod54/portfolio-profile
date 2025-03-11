@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.10 - styled.components - Features:
+/**Portfolio-erick - version 9.11 - styled.components - Features:
  * 
- *      --> writting 'ContactListItem' 
+ *      --> writting 'SkillsList' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -93,20 +93,20 @@ export const SkillItem = styled.li`
 `;
 
 export const SkillsList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-radius: 0.75rem;
-  margin: 1rem;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adds some spacing but prevents excessive gaps */
+  margin: 0 auto; /* Center the skills */
+  padding: 0;
+  list-style: none;
+  white-space: nowrap; /* Prevents wrapping */
 
   @media screen and (max-width: 520px) {
-    display: flex;
     flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-  }
-
+    align-items: center;
+    }
 `;
+
 
 export const SkillsTitle = styled.h2`
   display: grid;
