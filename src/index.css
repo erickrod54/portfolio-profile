@@ -1,10 +1,7 @@
-/**Portfolio-erick - version 6.07 - index css
+/**Portfolio-erick - version 9.11 - index css
  *  - Features:
  * 
- *      --> Building media queries.
- *
- *      --> Building styles for contact button and 
-  *         pdf icon
+ *      --> Adding Skills Carousel styles
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -153,6 +150,21 @@ section#skills{
   grid-column: container-start / container-end;
   place-content: center;
   
+}
+
+/**new css for carrousel testing */
+.skills-carousel {
+  display: flex;
+  width: max-content;
+  gap: 1rem; /* Adjust spacing */
+}
+
+.skills--li-bkg {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 
