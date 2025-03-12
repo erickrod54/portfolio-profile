@@ -1,27 +1,22 @@
 import React from "react";
 import { usePortfolioContext } from "../context";
 import styled from "styled-components";
-import { SkillItem, SkillsBox, SkillsList, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
+import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { SiJavascript, SiReact, SiVisualstudiocode, SiAirtable, SiRedux } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi'
 import { BiCodeCurly } from 'react-icons/bi'
 
-/**Portfolio-erick - version 9.11 - SkillsComponent
+/**Portfolio-erick - version 9.12 - SkillsComponent
  *  - Features:
  * 
- *      --> Refactoring Skills to Carrousel
+ *      --> Migrating 'SkillsListWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-const SkillsListWrapper = styled.div`
-  width: 100%;
-  overflow: hidden; /* Prevents overflowing */
-  display: flex;
-  justify-content: center;
-`
+
 
   const skillIcons = {
     "API's": { icon: <BiCloudDrizzle  />, color: "#E44D26" },
