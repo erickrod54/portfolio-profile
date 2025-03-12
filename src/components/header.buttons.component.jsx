@@ -1,10 +1,8 @@
-import React from "react";
-import { styled } from "styled-components";
 import { ButtonsList, ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 7.04 - HeaderButtons - Features:
+/**Portfolio-erick - version 9.15 - HeaderButtons - Features:
  * 
- *      --> Migrating 'ButtonsList'.
+ *      --> Clearing Imports.
  * 
  * Notes: By this version all tasks are done 
  * for this component
