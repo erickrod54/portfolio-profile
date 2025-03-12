@@ -1,12 +1,10 @@
 import React, { useContext, useState } from "react";
-import { filePdf, NavBarData, ResumeData, social } from "./data";
+import { filePdf, NavBarData, ResumeData, skillIcons, social } from "./data";
 
-/**Portfolio-erick - version 6.06 - context js
+/**Portfolio-erick - version 9.13 - context js
  *  - Features:
- * 
- *      --> Refactoring context js file.
- * 
- *      --> Importing and providing data, and features.
+ *  
+ *      --> Importing and providing 'skillIcons'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -36,7 +34,8 @@ export const PortfolioProvider = ({ children }) => {
                 isModalOpen,
                 openModal,
                 closeModal,
-                filePdf
+                filePdf,
+                skillIcons,
                 }}>
             {children}
         </PortfolioContext.Provider>
