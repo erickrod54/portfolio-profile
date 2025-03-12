@@ -8,17 +8,27 @@ import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faSquareJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { SiReact, SiJavascript } from 'react-icons/si';
+import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 6.07 - data js
+/**Portfolio-erick - version 9.13 - data js
  *  - Features:
  * 
- *      --> Changing icons for github and linkdin.
+ *      --> writting 'skillIcons'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+export const skillIcons = {
+    "API's": { icon: <BiCloudDrizzle  />, color: "#E44D26" },
+    "JavaScript": { icon: <SiJavascript />, color: "#F7DF1E" },
+    "React JS Library": { icon: <SiReact />, color: "#61DAFB" },
+    "VS Code": { icon: <SiVisualstudiocode />, color: "#007ACC" },
+    "Airtables": { icon: <SiAirtable />, color: "#FFB400" },
+    "Redux Library for state management": { icon: <SiRedux />, color: "#764ABC" }
+};
 
 const cloudWord = <FontAwesomeIcon icon={faCloudArrowDown} />;
 const javaScript = <FontAwesomeIcon icon={faSquareJs} />;
