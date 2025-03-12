@@ -3,33 +3,20 @@ import { usePortfolioContext } from "../context";
 import styled from "styled-components";
 import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
-import { SiJavascript, SiReact, SiVisualstudiocode, SiAirtable, SiRedux } from 'react-icons/si';
-import { BiCloudDrizzle  } from 'react-icons/bi'
-import { BiCodeCurly } from 'react-icons/bi'
 
-/**Portfolio-erick - version 9.12 - SkillsComponent
+/**Portfolio-erick - version 9.13 - SkillsComponent
  *  - Features:
  * 
- *      --> Migrating 'SkillsListWrapper'
+ *      --> Migrating 'skillIcons'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-
-  const skillIcons = {
-    "API's": { icon: <BiCloudDrizzle  />, color: "#E44D26" },
-    "JavaScript": { icon: <SiJavascript />, color: "#F7DF1E" },
-    "React JS Library": { icon: <SiReact />, color: "#61DAFB" },
-    "VS Code": { icon: <SiVisualstudiocode />, color: "#007ACC" },
-    "Airtables": { icon: <SiAirtable />, color: "#FFB400" },
-    "Redux Library for state management": { icon: <SiRedux />, color: "#764ABC" }
-};
-
 const SkillsComponent = () => {
     
-  const { ResumeData } = usePortfolioContext();
+  const { ResumeData, skillIcons } = usePortfolioContext();
  
   // Extract the skills array from the second object in ResumeData
   const { skills = [] } = ResumeData.find(item => item.skills) || {};
