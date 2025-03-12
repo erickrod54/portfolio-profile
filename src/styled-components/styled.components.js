@@ -1,13 +1,20 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.11 - styled.components - Features:
+/**Portfolio-erick - version 9.12 - styled.components - Features:
  * 
- *      --> writting 'SkillsList' 
+ *      --> writting 'SkillsListWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const SkillsListWrapper = styled.div`
+  width: 100%;
+  overflow: hidden; /* Prevents overflowing */
+  display: flex;
+  justify-content: center;
+`
 
 export const ContactListItem = styled.ul`
     
