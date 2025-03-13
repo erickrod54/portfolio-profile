@@ -1,11 +1,9 @@
-import React from "react";
 import {HeaderComponent, IntroComponent, SkillsComponent, Footer, Contact } from "../components/index.components";
 
-/**Portfolio-erick - version 6.06 - HomePage -
+/**Portfolio-erick - version 10.00 - HomePage -
  * Features:
  * 
- *      --> Refactoring HomePage with the new
- *          Layout.
+ *      --> Clearing Imports
  * 
  * Notes: This file is gonna be changed later.
  */
