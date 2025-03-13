@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Modal from "./modal.component";
 import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
-import styled from 'styled-components';
 import { CloseButton,
          ContactButton,
          ContactForm,
@@ -12,9 +11,9 @@ import { CloseButton,
          ContactListItem,
          ContactTextArea, ContactTitle, ContactWrapper } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 9.09 - Contact - Features:
+/**Portfolio-erick - version 9.18 - Contact - Features:
  * 
- *      --> Migrating 'ContactTitle'
+ *      --> Clearing Imports
  * 
  * Notes: By this version all tasks are done 
  * for this component
