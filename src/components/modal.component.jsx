@@ -1,11 +1,9 @@
-import React from "react";
 import { usePortfolioContext } from "../context";
-import styled from "styled-components";
 import { ModalContent, StyledModal } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.16 - Modal - Features:
+/**Portfolio-erick - version 9.19 - Modal - Features:
  * 
- *      --> Migrating 'ModalContent'
+ *      --> Clearing Imports
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
