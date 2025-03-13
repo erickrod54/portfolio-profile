@@ -1,13 +1,11 @@
-import React from "react";
 import { usePortfolioContext } from "../context";
-import styled from "styled-components";
 import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 
-/**Portfolio-erick - version 9.13 - SkillsComponent
+/**Portfolio-erick - version 9.20 - SkillsComponent
  *  - Features:
  * 
- *      --> Migrating 'skillIcons'
+ *      --> Clearing Imports
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
