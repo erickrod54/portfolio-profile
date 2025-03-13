@@ -1,11 +1,9 @@
-import React from "react";
 import { usePortfolioContext } from "../context";
-import styled from "styled-components";
 import { DownloadCV, IntroMessage, IntroSection, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 8.02 - Intro - Features:
+/**Portfolio-erick - version 9.17 - Intro - Features:
  * 
- *      --> Migrating 'DownloadCV'.
+ *      --> Clearing Imports
  * 
 *     
  * Notes: This components is adapted to the new layout
