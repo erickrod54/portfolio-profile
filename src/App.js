@@ -1,12 +1,9 @@
-import React from "react";
 import HomePage from "./pages/home.page";
 
-/**Portfolio-erick - version 6.06 - App  js file -
+/**Portfolio-erick - version 10.02 - App  js file -
  * Features:
  * 
- *      --> Refactoring layout.
- * 
- *      --> Pending to set up again routing
+ *      --> Clearing Imports
  * 
  * Notes: This file is gonna be changed later.
  */
