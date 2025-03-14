@@ -1,5 +1,4 @@
-import { construction, github, linkedin } from "./assets/index.assets";
-
+import { github, linkedin } from "./assets/index.assets";
 import { SiAirtable } from 'react-icons/si';
 import { SiVisualstudiocode } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
@@ -11,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 9.13 - data js
+/**Portfolio-erick - version 10.04 - data js
  *  - Features:
  * 
- *      --> writting 'skillIcons'.
+ *      --> Clearing unused construction.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -42,8 +41,6 @@ const vsCode = <SiVisualstudiocode />;
 const airTables = <SiAirtable />;
 const reduxIcon = <SiRedux />;
 
-
- export const constructionbkg = construction;
 
 export const NavBarData = [
   /**{
