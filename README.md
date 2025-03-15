@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Portfolio Refactor
+
+## Current state
+
+## Current Observations & Risks (Coupling Hotspots)
+
+Based on the observed structure (file structure, imports, and React style), here are the places where **coupling** is likely to be **high or problematic**:
+
+### 1. `context.js`
+
+**Dependencies:** `react` and `./data`
+
+**Observation:** This file **directly couples the React context layer to your data layer** (`data.js`). This means any change in your data structure (like new icon sets or project data formats) could break the core context logic.
+
+**Ideal:** Isolate data fetching or domain data into separate service hooks (e.g., `useData.js`) and let `context.js` only manage state, not raw data dependencies.
+
+* **⚠️ Moderate Coupling** — Functional, but can be better modularized.
+
+### 2. `data.js`
+
+* **Dependencies:**
+
+**Internal:** `./assets/index.assets`
+
+**External:** Several icon libraries (`react-icons`, `@fortawesome/*`)
+
+**Observation:** This file acts as a **shared data + visual resource hub**, pulling in many icons from multiple external sources. This creates **tight coupling** to those external icon libraries.
+
+**Risk:** If you ever change the icon library or asset structure, this file (and anything that uses it) will need extensive updates. If many components consume objects or arrays defined here, they indirectly become coupled to this single implementation.
+
+**⚠️ High Coupling** — This is the biggest dependency cluster in the data layer.
