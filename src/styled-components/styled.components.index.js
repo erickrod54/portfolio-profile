@@ -14,6 +14,7 @@ import { AnchorTag,
          ContactWrapper,
          DownloadCV,
          EachBtn,
+         ExperimentalUIWrapper,
          FooterCenter,
          FooterContainer, FooterRight, HeaderButtonsWrapper, HeaderLogo, HeaderWrapper, 
          IntroMessage, 
@@ -28,10 +29,9 @@ import { AnchorTag,
          SkillsTitle,
          StyledModal} from "./styled.components";
 
-
-/**Portfolio-erick - version 10.01 - styled.components - Features:
+/**Portfolio-erick - version 10.05 - styled.components - Features:
  * 
- *      --> Clearing Unused 'IntroText'
+ *      --> Importing and exporting 'ExperimentalUIWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -65,5 +65,6 @@ export { FooterContainer,
          ContactTitle,
          ContactListItem,
          SkillsListWrapper,
+         ExperimentalUIWrapper,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
