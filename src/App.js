@@ -1,16 +1,21 @@
-import HomePage from "./pages/home.page";
+//import HomePage from "./pages/home.page";
 
-/**Portfolio-erick - version 10.02 - App  js file -
+import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
+
+/**Portfolio-erick - version 10.05 - App  js file -
  * Features:
  * 
- *      --> Clearing Imports
+ *      --> Testing 'ExperimentalUIWrapper'
  * 
- * Notes: This file is gonna be changed later.
+ * Notes: To substite the legacy body implementation.
  */
 
 function App() {
   return (
-    <HomePage />
+    <ExperimentalUIWrapper>
+    {/*<HomePage />*/}
+    <h2> Decoupling Home </h2>
+    </ExperimentalUIWrapper>
   );
 }
 
