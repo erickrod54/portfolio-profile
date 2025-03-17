@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ProfileCard from './profile.card.component';
 
-/**Portfolio-erick - version 10.06 - Card component -
+/**Portfolio-erick - version 10.07 - Card component -
 * Features:
 
-    -→> Building Card Component
+    -→> Adding ProfileCard
 
 * Notes: This is the initial test component, and 
 * later will be over more refactors.
@@ -15,6 +16,9 @@ const Card = () => {
   return (
     <StyledWrapper>
       <div className="card">
+        <StyleProfileWrapper>
+          <ProfileCard />      
+        </StyleProfileWrapper>
         <b />
         <div className="content">
           <p className="title">Erick Rodriguez<br /><span>Software Engineer</span></p>
@@ -46,6 +50,10 @@ const Card = () => {
   );
 }
 
+const StyleProfileWrapper = styled.div`
+position: relative;
+z-index:4
+`
 const StyledWrapper = styled.div`
   .card {
     position: relative;
