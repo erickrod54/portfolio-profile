@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components';
+import { AvatarPicture } from './index.components';
 
-/**Portfolio-erick - version 10.08 - ProfileCard -
+/**Portfolio-erick - version 10.09 - ProfileCard -
 * Features:
 
-    --> Migrating All related Avatar Components
+    --> Importing and Placing AvatarPicture Component
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -198,7 +199,7 @@ const ProfileCard = () => {
         </ProfileItemVue>
 
         {/* Center Profile Icon */}
- 
+        <AvatarPicture />
 
       </ProfileCardInner>
     </ProfileCardContainer>
