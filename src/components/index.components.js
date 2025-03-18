@@ -5,11 +5,13 @@ import Footer from "./footer.component";
 import HeaderButtons from "./header.buttons.component";
 import Contact from "./contact.component";
 import Card from "./card.component";
+import AvatarPicture from "./avatar.component";
 
-/**Portfolio-erick - version 10.06 - index > components
+
+/**Portfolio-erick - version 10.08 - index > components
  *  - Features:
  * 
- *      --> Adding Card Component.
+ *      --> Adding AvatarPicture Component.
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -20,4 +22,5 @@ export { HeaderComponent,
          SkillsComponent,
          HeaderButtons,
          Footer,
-         Contact, Card }
+         Contact,
+         AvatarPicture, Card }
