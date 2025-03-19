@@ -1,94 +1,69 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 10.09 - AvatarPicture -
+/**Portfolio-erick - version 10.10 - AvatarPicture -
 * Features:
 
-    --> Destructuring profileImagePic from the context
+    --> Downsizing the number of styled components
 
 * Notes: This is the Avatar isolation in order to
 * fix bugs related with the overflow, and image 
-* blur
+* blur - already fixed - reference in Card.component
 **/
 
-const ProfilePictureImg = styled.img`
-  /* Take up the full space of its parent Span */
-  width: 100%;
-  height: 100%;
+const ProfileCardCenterButton = styled.button`
+  /* Set the exact size of the final avatar circle */
+  width: 200px; /* w-[200px] */
+  height: 200px; /* h-[200px] */
   
-  /* The magic to make it a circle */
-  border-radius: 50%;
   
-  /* Ensure the image is cropped nicely and doesn't distort */
-  object-fit: cover; 
+  /* Make it a perfect circle */
+  border-radius: 9999px; 
   
-  /* Remove any browser default spacing */
-  display: block;
-`;
-
-const ProfileCardCenterInnerSpan = styled.span`
-  /* w-20 h-20 inline-block */
-  width: 5rem; /* w-20 (assuming 1rem = 16px, so 5 * 16 = 80px) */
-  height: 5rem; /* h-20 */
-  display: inline-block;
-`;
-
-const ProfileCardCenterInnerDiv = styled.div`
-  /* w-full bg-white h-full flex items-center justify-center p-2 rounded-full object-cover transition-all duration-500 */
-  width: 100%;
-  background-color: white; /* bg-white */
-  height: 100%;
+  padding: 0; 
+  border: 2px solid transparent; 
+  
+  /* Center content */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem; /* p-2 */
-  border-radius: 9999px; /* rounded-full */
-  object-fit: cover; /* object-cover */
-  transition: all 500ms; /* transition-all duration-500 */
   
-  /* active:scale-95 hover:scale-95 */
-  &:hover {
-    transform: scale(0.95); /* hover:scale-95 */
-  }
-
-  &:active {
-    transform: scale(0.95); /* active:scale-95 */
-  }
-`;
-
-const ProfileCardCenterButton = styled.button`
-  /* w-[200px] h-[200px] p-1 border-2 rounded-full cursor-pointer transition-all duration-500 z-0 */
-  width: 200px; /* w-[200px] */
-  height: 200px; /* h-[200px] */
-  padding: 0.25rem; /* p-1 */
-  border: 2px solid transparent; /* border-2 (default border color is usually black, but we set to transparent to control the hover) */
-  border-radius: 9999px; /* rounded-full */
   cursor: pointer;
-  transition: all 500ms; /* transition-all duration-500 */
-  z-index: 0; /* z-0 */
-
-  /* hover:border-gray-400/50 */
+  transition: all 500ms;
+  z-index: 0;
+  
   &:hover {
     border-color: rgba(156, 163, 175, 0.5); /* hover:border-gray-400/50 */
+    /* Ensure no scaling on hover */
+    transform: none; 
   }
+  
+  &:active {
+    transform: none; 
+  }
+  
+  -webkit-tap-highlight-color: transparent;
+`;
+
+// --- Image Styles (The Picture Itself) ---
+const ProfilePictureImg = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block;
 `;
 
 const AvatarPicture = () => {
-
   const { profileImagePic } = usePortfolioContext()
 
   return(
-    <ProfileCardCenterButton>
-          <ProfileCardCenterInnerDiv>
-            <ProfileCardCenterInnerSpan>
-                <ProfilePictureImg 
-                   src={profileImagePic} 
-                   alt="User Profile" 
-                   className="profile-picture-img" 
-                /> 
-            </ProfileCardCenterInnerSpan>
-          </ProfileCardCenterInnerDiv>
-        </ProfileCardCenterButton>
+       <ProfileCardCenterButton>
+         <ProfilePictureImg 
+             src={profileImagePic} 
+             alt="User Profile" 
+         /> 
+       </ProfileCardCenterButton>
   )
 }
 
