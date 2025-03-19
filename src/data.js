@@ -1,4 +1,4 @@
-import { github, linkedin } from "./assets/index.assets";
+import { github, linkedin, profileImage } from "./assets/index.assets";
 import { SiAirtable } from 'react-icons/si';
 import { SiVisualstudiocode } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
@@ -10,15 +10,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 10.04 - data js
+/**Portfolio-erick - version 10.09 - data js
  *  - Features:
  * 
- *      --> Clearing unused construction.
+ *      --> Importing profileImage and exporting 
+ *          it as profileImagePic.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const profileImagePic = profileImage;
 
 export const skillIcons = {
     "API's": { icon: <BiCloudDrizzle  />, color: "#E44D26" },
