@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 10.10 - AvatarPicture -
+/**Portfolio-erick - version 10.11 - AvatarPicture -
 * Features:
 
-    --> Downsizing the number of styled components
+    --> Testing background on 'ProfileCardCenterButton'
 
 * Notes: This is the Avatar isolation in order to
 * fix bugs related with the overflow, and image 
@@ -15,7 +15,7 @@ const ProfileCardCenterButton = styled.button`
   /* Set the exact size of the final avatar circle */
   width: 200px; /* w-[200px] */
   height: 200px; /* h-[200px] */
-  
+  background:black;
   
   /* Make it a perfect circle */
   border-radius: 9999px; 
