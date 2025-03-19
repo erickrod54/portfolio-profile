@@ -3,13 +3,26 @@ import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfileCard from './profile.card.component';
 
-/**Portfolio-erick - version 10.07 - Card component -
+/**Portfolio-erick - version 10.10 - Card component -
 * Features:
 
-    -→> Adding ProfileCard
+    -→> Tracking and Removing side effects AvatarPicture
 
-* Notes: This is the initial test component, and 
-* later will be over more refactors.
+* Notes: These side effects comes as follows:
+*
+*     .card > ProfileCard > AvatarComponent 
+*
+* the style class 'card' applies some styles that affects 
+* every child image and in consequence affects to the 
+* profile picture contained on 'AvatarComponent' these styles
+* are commented by the moment:
+*         
+*       opacity:0.25;
+*       transform:%20translateY%20(-70px);    
+*
+*  they are under '.card: hover img'   
+*
+* next steps are to de compose this component
 **/
 
 const Card = () => {
@@ -46,7 +59,10 @@ const Card = () => {
           </ul>
         </div>
       </div>
+
+      
     </StyledWrapper>
+    
   );
 }
 
@@ -95,18 +111,18 @@ const StyledWrapper = styled.div`
     z-index: 2;
   }
 
-  .card img {
+  .card img {     
     position: absolute;
     z-index: 3;
     scale: 0.8;
-    opacity: 0.25;
+    /*opacity:0.25;**/
     transition: 0.5s;
   }
 
   .card:hover img {
     scale: 0.5;
     opacity: 0.9;
-    transform: translateY(-70px);
+    /*transform: translateY(-70px);**/
   }
 
   .card .content {
