@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { profileImage } from "../assets/index.assets";
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 10.08 - AvatarPicture -
+/**Portfolio-erick - version 10.09 - AvatarPicture -
 * Features:
 
-    --> Building AvatarPicture
+    --> Destructuring profileImagePic from the context
 
 * Notes: This is the Avatar isolation in order to
 * fix bugs related with the overflow, and image 
@@ -75,12 +75,14 @@ const ProfileCardCenterButton = styled.button`
 
 const AvatarPicture = () => {
 
+  const { profileImagePic } = usePortfolioContext()
+
   return(
     <ProfileCardCenterButton>
           <ProfileCardCenterInnerDiv>
             <ProfileCardCenterInnerSpan>
                 <ProfilePictureImg 
-                   src={profileImage} 
+                   src={profileImagePic} 
                    alt="User Profile" 
                    className="profile-picture-img" 
                 /> 
