@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 10.11 - styled.components - Features:
+/**Portfolio-erick - version 10.12 - styled.components - Features:
  * 
- *      --> Adding gradient baackground to
+ *      --> Testing new gradient baackground for
  *          'ExperimentalUIWrapper' 
  * 
  * Notes: This components is adapted to the new layout
@@ -18,7 +18,7 @@ export const ExperimentalUIWrapper = styled.div`
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
-    background: linear-gradient(to right, #FAFAFA, #FF0000);  
+    background: linear-gradient(to bottom right, #1C1C1C, #0A0A0A);  
 `
 
 export const SkillsListWrapper = styled.div`
