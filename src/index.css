@@ -1,11 +1,11 @@
-/**Portfolio-erick - version 10.05 - index css
+/**Portfolio-erick - version 10.11 - index css
  *  - Features:
  * 
- *      --> Testing gradient Background
+ *      --> Migrating gradient Background to the 
+ *          actual styled Component
  * 
- * Notes: This components is adapted to the new layout
- * and is functional working, pending for layout the 
- * component itself
+ * Notes: The Styled Component that will control 
+ * the background now is ExperimentalUIWrapper
  */
 
 
@@ -92,8 +92,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background: linear-gradient(to right, #FAFAFA, #FF0000);
-  /*background-image: url(../src/assets/subtle-prism.svg);*/
   background-repeat: repeat;
 }
 
