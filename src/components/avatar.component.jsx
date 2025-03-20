@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 10.11 - AvatarPicture -
+/**Portfolio-erick - version 10.12 - AvatarPicture -
 * Features:
 
-    --> Testing background on 'ProfileCardCenterButton'
+    --> Testing new gradient background on 'ProfileCardCenterButton'
 
 * Notes: This is the Avatar isolation in order to
 * fix bugs related with the overflow, and image 
@@ -15,7 +15,7 @@ const ProfileCardCenterButton = styled.button`
   /* Set the exact size of the final avatar circle */
   width: 200px; /* w-[200px] */
   height: 200px; /* h-[200px] */
-  background:black;
+  background: radial-gradient(circle at center, #3D3D3D 0%, #000000 100%);
   
   /* Make it a perfect circle */
   border-radius: 9999px; 
