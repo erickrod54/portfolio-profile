@@ -6,12 +6,12 @@ import HeaderButtons from "./header.buttons.component";
 import Contact from "./contact.component";
 import Card from "./card.component";
 import AvatarPicture from "./avatar.component";
+import SocialComponent from "./social.component";
 
-
-/**Portfolio-erick - version 10.08 - index > components
+/**Portfolio-erick - version 10.13 - index > components
  *  - Features:
  * 
- *      --> Adding AvatarPicture Component.
+ *      --> Adding SocialComponent.
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -23,4 +23,5 @@ export { HeaderComponent,
          HeaderButtons,
          Footer,
          Contact,
+         SocialComponent,
          AvatarPicture, Card }
