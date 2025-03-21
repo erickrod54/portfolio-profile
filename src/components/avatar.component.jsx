@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 10.12 - AvatarPicture -
+/**Portfolio-erick - version 10.15 - AvatarPicture -
 * Features:
 
-    --> Testing new gradient background on 'ProfileCardCenterButton'
+    --> Reducing size on 'ProfilePictureImg'
 
 * Notes: This is the Avatar isolation in order to
 * fix bugs related with the overflow, and image 
@@ -47,8 +47,8 @@ const ProfileCardCenterButton = styled.button`
 
 // --- Image Styles (The Picture Itself) ---
 const ProfilePictureImg = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
   object-fit: cover; 
   display: block;
