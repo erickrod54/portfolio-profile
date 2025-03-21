@@ -2,11 +2,10 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 10.15 - SocialComponent -
+/**Portfolio-erick - version 10.16 - SocialComponent -
 * Features:
 
-    --> Replacing svg 'instagram' to FontAwesome 
-        'faInstagram'
+    --> Adding styles for title and sci ( brand icons )
 
 * Notes: This is the 'SocialComponent' isolation
 * so the styles and behavior can be better handled
@@ -48,6 +47,14 @@ const StyleSocialWrapper = styled.div`
     gap: 8px;
     margin-top: 5px;
   }
+  
+  .title {
+    margin-bottom:1rem
+  }
+ 
+ .sci{
+    margin-left:1.5rem;
+ }
 
   .sci li {
     list-style: none;
