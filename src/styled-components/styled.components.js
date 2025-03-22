@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 10.18 - styled.components - Features:
+/**Portfolio-erick - version 10.19 - styled.components - Features:
  * 
- *      --> Adding 'StyleProfileWrapper' 
+ *      --> Adding 'StyleBneonCard' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,10 +11,19 @@ import styled from "styled-components"
 
 /** Styled Components for new Portfolio - START */
 
-  /** Card component styles  */
+  /** Card component styles  - Begin */
 export const StyleProfileWrapper = styled.div`
   position: relative;
   z-index:4
+`
+
+/**this style component will hold only the html 
+ * element 'b' to give the final color to 
+ * the Card under 'CardWrapper' the color 
+ * is b > background:rgba(0, 0, 0 ,0.6);
+*/
+export const StyleBneonCard = styled.b`
+
 `
 export const ExperimentalUIWrapper = styled.div`
     height: 100vh; 
