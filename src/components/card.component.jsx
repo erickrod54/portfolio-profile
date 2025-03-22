@@ -1,26 +1,27 @@
 import styled from 'styled-components';
 import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
+import { StyleProfileWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 10.17 - Card component -
+/**Portfolio-erick - version 10.18 - Card component -
 * Features:
 
-    -→> Cleaning 'Card' component completely refactor
-        using style components.
+    -→> Migrating 'StyleProfileWrapper'
 
 * Notes: side effects on AvatarPicture comes from:
 *
-*     .card > ProfileCard > AvatarComponent 
+*     CardWrapper > ProfileCard > AvatarComponent 
 *
-* the style class 'card' applies some styles that affects 
-* every child image and in consequence affects to the 
-* profile picture contained on 'AvatarComponent' these styles
-* are commented by the moment:
+* the style component 'CardWrapper' applies some 
+* styles that affects every child image and in 
+* consequence affects to the profile picture contained 
+* on 'AvatarComponent' these styles are commented by 
+* the moment:
 *         
 *       opacity:0.25;
 *       transform:%20translateY%20(-70px);    
 *
-*  they are under '.card: hover img'   
+*  they are under '&:: hover img'   
 *
 * next steps are to de compose this component
 **/
@@ -40,11 +41,6 @@ const Card = () => {
     
   );
 }
-
-const StyleProfileWrapper = styled.div`
-position: relative;
-z-index:4
-`
 
 /**this style component will hold only the html 
  * element 'b' to give the final color to 
