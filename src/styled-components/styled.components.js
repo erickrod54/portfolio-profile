@@ -1,15 +1,21 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 10.12 - styled.components - Features:
+/**Portfolio-erick - version 10.18 - styled.components - Features:
  * 
- *      --> Testing new gradient baackground for
- *          'ExperimentalUIWrapper' 
+ *      --> Adding 'StyleProfileWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+/** Styled Components for new Portfolio - START */
+
+  /** Card component styles  */
+export const StyleProfileWrapper = styled.div`
+  position: relative;
+  z-index:4
+`
 export const ExperimentalUIWrapper = styled.div`
     height: 100vh; 
     width: 100vw;  
@@ -20,6 +26,7 @@ export const ExperimentalUIWrapper = styled.div`
     justify-content: center;
     background: linear-gradient(to bottom right, #1C1C1C, #0A0A0A);  
 `
+/** Styled Components for new Portfolio - END */
 
 export const SkillsListWrapper = styled.div`
   width: 100%;
