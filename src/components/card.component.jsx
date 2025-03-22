@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
 
-/**Portfolio-erick - version 10.16 - Card component -
+/**Portfolio-erick - version 10.17 - Card component -
 * Features:
 
-    -→> Building 'CardWrapper' style component
-        to clean the previous classic .card class
+    -→> Cleaning 'Card' component completely refactor
+        using style components.
 
 * Notes: side effects on AvatarPicture comes from:
 *
@@ -32,7 +32,7 @@ const Card = () => {
         <StyleProfileWrapper>
           <ProfileCard />      
         </StyleProfileWrapper>
-        <b />
+          <StyleBneonCard />
         <SocialComponent />
       </CardWrapper>
 
@@ -44,6 +44,15 @@ const Card = () => {
 const StyleProfileWrapper = styled.div`
 position: relative;
 z-index:4
+`
+
+/**this style component will hold only the html 
+ * element 'b' to give the final color to 
+ * the Card under 'CardWrapper' the color 
+ * is b > background:rgba(0, 0, 0 ,0.6);
+*/
+const StyleBneonCard = styled.b`
+
 `
 
 const CardWrapper = styled.div`
