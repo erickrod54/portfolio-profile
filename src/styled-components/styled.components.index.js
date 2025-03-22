@@ -27,11 +27,12 @@ import { AnchorTag,
          SkillsListWrapper,
          SkillsSection,
          SkillsTitle,
-         StyledModal} from "./styled.components";
+         StyledModal,
+         StyleProfileWrapper, } from "./styled.components";
 
-/**Portfolio-erick - version 10.05 - styled.components - Features:
+/**Portfolio-erick - version 10.18 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ExperimentalUIWrapper'
+ *      --> Importing and exporting 'StyleProfileWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -66,5 +67,6 @@ export { FooterContainer,
          ContactListItem,
          SkillsListWrapper,
          ExperimentalUIWrapper,
+         StyleProfileWrapper,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
