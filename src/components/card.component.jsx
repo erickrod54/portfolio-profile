@@ -3,27 +3,20 @@ import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
 import { StyleProfileWrapper, StyleBneonCard } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 10.19 - Card component -
+/**Portfolio-erick - version 10.20 - Card component -
 * Features:
 
-    -→> Migrating 'StyleBneonCard'
+    -→> Migrating 'img' styles to be scoped on
+        'AvatarPicture' giving full control over
+        'img' effects 
 
-* Notes: side effects on AvatarPicture comes from:
+* Notes: this new scope solve the previous issue
+* about side effects over images as follows:
 *
-*     CardWrapper > ProfileCard > AvatarComponent 
-*
-* the style component 'CardWrapper' applies some 
-* styles that affects every child image and in 
-* consequence affects to the profile picture contained 
-* on 'AvatarComponent' these styles are commented by 
-* the moment:
-*         
-*       opacity:0.25;
-*       transform:%20translateY%20(-70px);    
-*
-*  they are under '&:: hover img'   
-*
-* next steps are to de compose this component
+*    'CardWrapper > ProfileCard > AvatarComponent' 
+* 
+* in the styles migrated still commented the side 
+* effects related with 'opacity' and 'transform'
 **/
 
 const Card = () => {
@@ -79,20 +72,6 @@ const CardWrapper = styled.div`
       inset:6px;
       background:rgba(0, 0, 0 ,0.6);
       z-index: 2;
-    }
-    
-    img{
-      position: absolute;
-      z-index:3;
-      scale:0.8;
-      /*opacity:0.25;**/
-      transition:0.5s;
-    }
-    
-    &:hover img {
-      scale:0.5;
-      opacity:0.9;
-      /*transform: translateY(-70px);**/
     }
     
     .content{
