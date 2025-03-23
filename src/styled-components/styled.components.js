@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 10.19 - styled.components - Features:
+/**Portfolio-erick - version 11.00 - styled.components - Features:
  * 
- *      --> Adding 'StyleBneonCard' 
+ *      --> Adding 'CardWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,7 +11,7 @@ import styled from "styled-components"
 
 /** Styled Components for new Portfolio - START */
 
-  /** Card component styles  - Begin */
+/** Card component styles  - Begin */
 export const StyleProfileWrapper = styled.div`
   position: relative;
   z-index:4
@@ -25,6 +25,65 @@ export const StyleProfileWrapper = styled.div`
 export const StyleBneonCard = styled.b`
 
 `
+
+export const CardWrapper = styled.div`
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18rem;
+    padding: 18rem;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(315deg,#03a9f4,#ff0058);    
+    }
+  
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(315deg,#03a9f4,#ff0058);
+      filter: blur(30px);
+    }
+
+    b {
+      position:absolute;
+      inset:6px;
+      background:rgba(0, 0, 0 ,0.6);
+      z-index: 2;
+    }
+    
+    .content{
+      position: absolute;
+      z-index:3;
+      bottom:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      transform:scale(0);
+      transition:0.5s;
+    }
+    
+    &:hover .content{
+      transform:scale(1);
+      bottom:25px;
+    }
+`
+
+/** Card component styles  - End */
+
 export const ExperimentalUIWrapper = styled.div`
     height: 100vh; 
     width: 100vw;  
