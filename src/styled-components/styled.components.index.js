@@ -29,11 +29,12 @@ import { AnchorTag,
          SkillsTitle,
          StyledModal,
          StyleBneonCard,
-         StyleProfileWrapper, } from "./styled.components";
+         StyleProfileWrapper,
+         CardWrapper, } from "./styled.components";
 
-/**Portfolio-erick - version 10.19 - styled.components - Features:
+/**Portfolio-erick - version 11.00 - styled.components - Features:
  * 
- *      --> Importing and exporting 'StyleBneonCard'
+ *      --> Importing and exporting 'CardWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -70,5 +71,6 @@ export { FooterContainer,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
+         CardWrapper,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
