@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
-import { StyleProfileWrapper } from '../styled-components/styled.components.index';
+import { StyleProfileWrapper, StyleBneonCard } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 10.18 - Card component -
+/**Portfolio-erick - version 10.19 - Card component -
 * Features:
 
-    -→> Migrating 'StyleProfileWrapper'
+    -→> Migrating 'StyleBneonCard'
 
 * Notes: side effects on AvatarPicture comes from:
 *
@@ -41,15 +41,6 @@ const Card = () => {
     
   );
 }
-
-/**this style component will hold only the html 
- * element 'b' to give the final color to 
- * the Card under 'CardWrapper' the color 
- * is b > background:rgba(0, 0, 0 ,0.6);
-*/
-const StyleBneonCard = styled.b`
-
-`
 
 const CardWrapper = styled.div`
     position: relative;
