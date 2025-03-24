@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 11.00 - styled.components - Features:
+/**Portfolio-erick - version 11.01 - styled.components - Features:
  * 
- *      --> Adding 'CardWrapper' 
+ *      --> Adding 'StyledWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -81,6 +81,16 @@ export const CardWrapper = styled.div`
       bottom:25px;
     }
 `
+
+export const StyledWrapper = styled.div`
+  div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+  }
+`;
 
 /** Card component styles  - End */
 
