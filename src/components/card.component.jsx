@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
-import { StyleProfileWrapper, StyleBneonCard, CardWrapper } from '../styled-components/styled.components.index';
+import { StyleProfileWrapper, StyleBneonCard, CardWrapper, StyledWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 11.00 - Card component -
+/**Portfolio-erick - version 11.01 - Card component -
 * Features:
 
-    -→> Migrating 'CardWrapper'
+    -→> Migrating 'StyledWrapper'
 
 * Notes: Migrating style components 
 **/
@@ -26,17 +26,5 @@ const Card = () => {
     
   );
 }
-
-const StyledWrapper = styled.div`
-div{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
-}
-
-  
-  `;
 
 export default Card;
