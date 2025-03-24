@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 11.01 - styled.components - Features:
+/**Portfolio-erick - version 11.03 - styled.components - Features:
  * 
- *      --> Adding 'StyledWrapper' 
+ *      --> Adding 'ProfilePictureImg' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -104,6 +104,16 @@ export const ExperimentalUIWrapper = styled.div`
     justify-content: center;
     background: linear-gradient(to bottom right, #1C1C1C, #0A0A0A);  
 `
+  /**Avatar component styles - START */
+  // --- Image Styles (The Picture Itself) ---
+export const ProfilePictureImg = styled.img`
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+  `;
+/** Card component styles - END */
 /** Styled Components for new Portfolio - END */
 
 export const SkillsListWrapper = styled.div`
