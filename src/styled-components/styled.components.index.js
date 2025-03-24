@@ -31,11 +31,12 @@ import { AnchorTag,
          StyleBneonCard,
          StyleProfileWrapper,
          CardWrapper,
-         StyledWrapper, } from "./styled.components";
+         StyledWrapper,
+         ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 11.01 - styled.components - Features:
+/**Portfolio-erick - version 11.03 - styled.components - Features:
  * 
- *      --> Importing and exporting 'StyledWrapper'
+ *      --> Importing and exporting 'ProfilePictureImg'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -74,5 +75,6 @@ export { FooterContainer,
          StyleBneonCard,
          CardWrapper,
          StyledWrapper,
+         ProfilePictureImg,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
