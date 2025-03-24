@@ -1,12 +1,11 @@
-import styled from 'styled-components';
 import ProfileCard from './profile.card.component';
 import { SocialComponent } from './index.components';
 import { StyleProfileWrapper, StyleBneonCard, CardWrapper, StyledWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 11.01 - Card component -
+/**Portfolio-erick - version 11.02 - Card component -
 * Features:
 
-    -→> Migrating 'StyledWrapper'
+    -→> Clearing 'styled'
 
 * Notes: Migrating style components 
 **/
