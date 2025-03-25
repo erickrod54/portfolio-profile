@@ -1,11 +1,10 @@
-import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { ProfilePictureImg, ProfileCardCenterButton } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 11.04 - AvatarPicture -
+/**Portfolio-erick - version 11.05 - AvatarPicture -
 * Features:
 
-    --> Migrating 'ProfileCardCenterButton'
+    --> Clearing 'styled' import
 
 * Notes: Migrating styled components
 **/
