@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture } from './index.components';
 
-/**Portfolio-erick - version 10.09 - ProfileCard -
+/**Portfolio-erick - version 11.05 - ProfileCard -
 * Features:
 
-    --> Importing and Placing AvatarPicture Component
+    --> Renaming icons and start refactoring
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -138,7 +138,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemReact>
         
-        {/* Vercel Button */}
+        {/* Tailwind Button */}
         <ProfileItemVercel className="profile_item">
           <ProfileItemInnerSpan>
             <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemFigma>
         
-        {/* LinkedIn Button */}
+        {/* Wordpress Button */}
         <ProfileItemLinkedIn className="profile_item">
           <ProfileItemInnerSpan>
             <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +177,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemLaravel>
 
-        {/* Tailwind Button */}
+        {/* MySQL Button */}
         <ProfileItemTailwind className="profile_item">
           <ProfileItemInnerSpan>
             <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +186,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemTailwind>
 
-        {/* Vue Button */}
+        {/* AWS Button */}
         <ProfileItemVue className="profile_item">
           <ProfileItemInnerSpan>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -30 150 150">
