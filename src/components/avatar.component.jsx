@@ -1,22 +1,13 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
+import { ProfilePictureImg } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 10.20 - AvatarPicture -
+/**Portfolio-erick - version 11.03 - AvatarPicture -
 * Features:
 
-    --> Scoping side effects from CardWrapper 
-        > ProfileCard on AvatarPicture
+    --> Migrating 'ProfilePictureImg'
 
-* Notes: 
-This way AvatarPicture Component will have full
-control of the side effects cause in previous versions
-for CardWrapper and solve:
-*
-*  -`This is the Avatar isolation in order to
-*  -fix bugs related with the overflow, and image 
-*  -blur - already fixed - reference in Card.component`
-*
-*  the above issue from previus versions
+* Notes: Migrating styled components
 **/
 
 const ProfileCardCenterButton = styled.button`
@@ -67,14 +58,6 @@ const ProfileCardCenterButton = styled.button`
   -webkit-tap-highlight-color: transparent;
 `;
 
-// --- Image Styles (The Picture Itself) ---
-const ProfilePictureImg = styled.img`
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  object-fit: cover; 
-  display: block;
-`;
 
 const AvatarPicture = () => {
   const { profileImagePic } = usePortfolioContext()
