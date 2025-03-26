@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture } from './index.components';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-/**Portfolio-erick - version 11.06 - ProfileCard -
+/**Portfolio-erick - version 11.07 - ProfileCard -
 * Features:
 
-    --> Building Base size Icon and IconReactCustom
+    --> Replacing Tailwind with Git Control version
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -18,6 +18,11 @@ const IconTwentyEight = styled(FontAwesomeIcon)`
   width:30px;
   height:30px;
   display:block;
+`
+
+const IconGitAlt = styled(IconTwentyEight)`
+  /** Portland Orange */
+  color:#F1502F
 `
 
 const IconReactCustom = styled(IconTwentyEight)`
@@ -146,13 +151,10 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemReact>
         
-        {/* Tailwind Button */}
+        {/* Git control Button */}
         <ProfileItemVercel className="profile_item">
           <ProfileItemInnerSpan>
-            <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
-              {/* ... SVG content ... */}
-              <path d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z" fill="#00acc1" />
-            </svg>
+            <IconGitAlt icon={faGitAlt}/>
           </ProfileItemInnerSpan>
         </ProfileItemVercel>
         
