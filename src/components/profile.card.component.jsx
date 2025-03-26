@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture } from './index.components';
-import { faGitAlt, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faReact, faAngular } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-/**Portfolio-erick - version 11.07 - ProfileCard -
+
+/**Portfolio-erick - version 11.08 - ProfileCard -
 * Features:
 
-    --> Replacing Tailwind with Git Control version
+    --> Building 'IconAngularCustom'
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -28,6 +29,11 @@ const IconGitAlt = styled(IconTwentyEight)`
 const IconReactCustom = styled(IconTwentyEight)`
   color:#61DAFB;
 `
+
+const IconAngularCustom = styled(IconTwentyEight)`
+  color:#C3002F;
+`
+
 const ProfileCardContainer = styled.div`
   /* relative h-full w-full flex items-center justify-center */
   position: relative;
