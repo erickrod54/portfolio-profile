@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture } from './index.components';
-import { faGitAlt, faReact, faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faReact, faAngular, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.09 - ProfileCard -
+/**Portfolio-erick - version 11.10 - ProfileCard -
 * Features:
 
-    --> Replacing Figma with 'IconAngularCustom'
+    --> Importing 'faWordpress'
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
