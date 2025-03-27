@@ -4,10 +4,10 @@ import { faGitAlt, faReact, faAngular, faWordpress } from '@fortawesome/free-bra
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.11 - ProfileCard -
+/**Portfolio-erick - version 11.12 - ProfileCard -
 * Features:
 
-    --> Building 'IconWordpressCustom'
+    --> Changing 'IconWordpressCustom' color
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -35,7 +35,7 @@ const IconAngularCustom = styled(IconTwentyEight)`
 `
 
 const IconWordpressCustom = styled(IconTwentyEight)`
-  color:#FFFFFF;
+  color:#000000;
 `
 
 const ProfileCardContainer = styled.div`
