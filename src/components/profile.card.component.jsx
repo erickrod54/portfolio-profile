@@ -4,10 +4,10 @@ import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.14 - ProfileCard -
+/**Portfolio-erick - version 11.15 - ProfileCard -
 * Features:
 
-    --> Importing 'faSquareJs' 
+    --> Building 'IconJsCustom' 
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -36,6 +36,10 @@ const IconAngularCustom = styled(IconTwentyEight)`
 
 const IconWordpressCustom = styled(IconTwentyEight)`
   color:#000000;
+`
+
+const IconJsCustom = styled(IconTwentyEight)`
+  color:#F7DF1E;
 `
 
 const ProfileCardContainer = styled.div`
