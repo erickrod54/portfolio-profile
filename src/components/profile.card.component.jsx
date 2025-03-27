@@ -4,10 +4,10 @@ import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.16 - ProfileCard -
+/**Portfolio-erick - version 11.17 - ProfileCard -
 * Features:
 
-    --> Replacing Laravel Icon with 'IconJsCustom' 
+    --> Fixing Angular button comment 
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -172,7 +172,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemVercel>
         
-        {/* Figma Button */}
+        {/* Angular Button */}
         <ProfileItemFigma className="profile_item">
           <ProfileItemInnerSpan>
             <IconAngularCustom  icon={faAngular} />
