@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture } from './index.components';
-import { faGitAlt, faReact, faAngular, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.13 - ProfileCard -
+/**Portfolio-erick - version 11.14 - ProfileCard -
 * Features:
 
-    --> Switching SVG Worpress with 'IconWordpressCustom' 
+    --> Importing 'faSquareJs' 
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
