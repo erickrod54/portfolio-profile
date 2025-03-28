@@ -4,10 +4,10 @@ import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-/**Portfolio-erick - version 11.17 - ProfileCard -
+/**Portfolio-erick - version 11.18 - ProfileCard -
 * Features:
 
-    --> Fixing Angular button comment 
+    --> Setting 'profile_item' color to black
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -74,6 +74,7 @@ const ProfileItemBase = css`
   cursor: pointer;
   border: 1px solid rgba(156, 163, 175, 0.5); /* border border-gray-400/50 */
   padding: 2px; /* p-[2px] */
+  background-color:black;
   
   /* active:scale-95 hover:scale-95 transition-all duration-500 */
   transition: all 500ms; /* transition-all duration-500 */
