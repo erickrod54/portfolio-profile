@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
-import { AvatarPicture, PythonIcon } from './index.components';
+import { AvatarPicture, IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { pythonData } from './icon.component.jsx';
 
-/**Portfolio-erick - version 11.19 - ProfileCard -
+/**Portfolio-erick - version 11.20 - ProfileCard -
 * Features:
 
-    --> Replacing MySQL icon with PythonIcon
+    --> Replacing PythonIcon with IconComponent
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -196,7 +197,7 @@ const ProfileCard = () => {
         {/* MySQL Button */}
         <ProfileItemTailwind className="profile_item">
           <ProfileItemInnerSpan>
-              <PythonIcon />
+              <IconComponent data={pythonData} />
           </ProfileItemInnerSpan>
         </ProfileItemTailwind>
 
