@@ -7,12 +7,12 @@ import Contact from "./contact.component";
 import Card from "./card.component";
 import AvatarPicture from "./avatar.component";
 import SocialComponent from "./social.component";
-import PythonIcon from './python.icon.component'
+import IconComponent from './icon.component'
 
-/**Portfolio-erick - version 11.19 - index > components
+/**Portfolio-erick - version 11.20 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting PythonIcon.
+ *      --> Importing and exporting 'IconComponent'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -25,5 +25,5 @@ export { HeaderComponent,
          Footer,
          Contact,
          SocialComponent,
-         PythonIcon,
+         IconComponent,
          AvatarPicture, Card }
