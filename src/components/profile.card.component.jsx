@@ -4,10 +4,10 @@ import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { pythonData } from './icon.component.jsx';
 
-/**Portfolio-erick - version 11.20 - ProfileCard -
+/**Portfolio-erick - version 12.00 - ProfileCard -
 * Features:
 
-    --> Replacing PythonIcon with IconComponent
+    --> Changing PythonIcon comment
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -194,7 +194,7 @@ const ProfileCard = () => {
           </ProfileItemInnerSpan>
         </ProfileItemLaravel>
 
-        {/* MySQL Button */}
+        {/* Python Button */}
         <ProfileItemTailwind className="profile_item">
           <ProfileItemInnerSpan>
               <IconComponent data={pythonData} />
