@@ -2,13 +2,12 @@ import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { pythonData } from './icon.component.jsx';
 import { usePortfolioContext } from '../context.js'
 
-/**Portfolio-erick - version 12.02 - ProfileCard -
+/**Portfolio-erick - version 12.03 - ProfileCard -
 * Features:
 
-    --> Providing 'amazonAwsData' from the context  
+    --> Providing 'pythonData' from the context  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -158,7 +157,7 @@ const ProfileItemInnerSpan = styled.span`
 
 const ProfileCard = () => {
 
-  const { amazonAwsData } = usePortfolioContext();
+  const { amazonAwsData, pythonData } = usePortfolioContext();
 
   return (
     <ProfileCardContainer>
