@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social } from "./data";
+import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social, amazonAwsData } from "./data";
 
-/**Portfolio-erick - version 10.09 - context js
+/**Portfolio-erick - version 12.02 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'profileImagePic'.
+ *      --> Importing and providing 'amazonAwsData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -36,7 +36,8 @@ export const PortfolioProvider = ({ children }) => {
                 closeModal,
                 filePdf,
                 skillIcons,
-                profileImagePic
+                profileImagePic,
+                amazonAwsData
                 }}>
             {children}
         </PortfolioContext.Provider>
