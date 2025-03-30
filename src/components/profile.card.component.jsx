@@ -2,12 +2,13 @@ import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { pythonData, amazonAwsData } from './icon.component.jsx';
+import { pythonData } from './icon.component.jsx';
+import { usePortfolioContext } from '../context.js'
 
-/**Portfolio-erick - version 12.01 - ProfileCard -
+/**Portfolio-erick - version 12.02 - ProfileCard -
 * Features:
 
-    --> Changing AWS svg to IconComponent 
+    --> Providing 'amazonAwsData' from the context  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -156,6 +157,9 @@ const ProfileItemInnerSpan = styled.span`
 // --- Final Component with Styled Components ---
 
 const ProfileCard = () => {
+
+  const { amazonAwsData } = usePortfolioContext();
+
   return (
     <ProfileCardContainer>
       <ProfileCardInner className="profileCard_container">
