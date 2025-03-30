@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social, amazonAwsData } from "./data";
+import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social, amazonAwsData, pythonData } from "./data";
 
-/**Portfolio-erick - version 12.02 - context js
+/**Portfolio-erick - version 12.03 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'amazonAwsData'.
+ *      --> Importing and providing 'pythonData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -37,7 +37,8 @@ export const PortfolioProvider = ({ children }) => {
                 filePdf,
                 skillIcons,
                 profileImagePic,
-                amazonAwsData
+                amazonAwsData,
+                pythonData
                 }}>
             {children}
         </PortfolioContext.Provider>
