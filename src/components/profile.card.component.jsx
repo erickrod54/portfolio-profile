@@ -2,12 +2,13 @@ import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { usePortfolioContext } from '../context.js'
+import { usePortfolioContext } from '../context.js';
+import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.03 - ProfileCard -
+/**Portfolio-erick - version 12.04 - ProfileCard -
 * Features:
 
-    --> Providing 'pythonData' from the context  
+    --> Importing and placing 'OuterCircleIcons'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -162,54 +163,8 @@ const ProfileCard = () => {
   return (
     <ProfileCardContainer>
       <ProfileCardInner className="profileCard_container">
-        {/* React Button */}
-        <ProfileItemReact className="profile_item">
-          <ProfileItemInnerSpan>
-            <IconReactCustom icon={faReact}/>
-          </ProfileItemInnerSpan>
-        </ProfileItemReact>
         
-        {/* Git control Button */}
-        <ProfileItemVercel className="profile_item">
-          <ProfileItemInnerSpan>
-            <IconGitAlt icon={faGitAlt}/>
-          </ProfileItemInnerSpan>
-        </ProfileItemVercel>
-        
-        {/* Angular Button */}
-        <ProfileItemFigma className="profile_item">
-          <ProfileItemInnerSpan>
-            <IconAngularCustom  icon={faAngular} />
-          </ProfileItemInnerSpan>
-        </ProfileItemFigma>
-        
-        {/* Wordpress Button */}
-        <ProfileItemLinkedIn className="profile_item">
-          <ProfileItemInnerSpan>
-            <IconWordpressCustom icon={faWordpress}/>
-          </ProfileItemInnerSpan>
-        </ProfileItemLinkedIn>
-
-        {/* JS Button */}
-        <ProfileItemLaravel className="profile_item">
-          <ProfileItemInnerSpan>
-            <IconJsCustom icon={faSquareJs}/>
-          </ProfileItemInnerSpan>
-        </ProfileItemLaravel>
-
-        {/* Python Button */}
-        <ProfileItemTailwind className="profile_item">
-          <ProfileItemInnerSpan>
-              <IconComponent data={pythonData} />
-          </ProfileItemInnerSpan>
-        </ProfileItemTailwind>
-
-        {/* AWS Button */}
-        <ProfileItemVue className="profile_item">
-          <ProfileItemInnerSpan> 
-            <IconComponent data={amazonAwsData}/>
-          </ProfileItemInnerSpan>
-        </ProfileItemVue>
+        <OuterCircleIcons />
 
         {/* Center Profile Icon */}
         <AvatarPicture />
