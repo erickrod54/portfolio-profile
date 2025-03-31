@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.04 - ProfileCard -
+/**Portfolio-erick - version 12.05 - ProfileCard -
 * Features:
 
-    --> Importing and placing 'OuterCircleIcons'  
+    --> Clearing 'IconGitAlt'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -20,11 +20,6 @@ const IconTwentyEight = styled(FontAwesomeIcon)`
   width:30px;
   height:30px;
   display:block;
-`
-
-const IconGitAlt = styled(IconTwentyEight)`
-  /** Portland Orange */
-  color:#F1502F
 `
 
 const IconReactCustom = styled(IconTwentyEight)`
