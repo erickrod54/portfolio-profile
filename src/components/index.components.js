@@ -8,11 +8,12 @@ import Card from "./card.component";
 import AvatarPicture from "./avatar.component";
 import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
+import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 11.20 - index > components
+/**Portfolio-erick - version 12.04 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting 'IconComponent'.
+ *      --> Importing and exporting 'OuterCircleIcons'.
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -26,4 +27,5 @@ export { HeaderComponent,
          Contact,
          SocialComponent,
          IconComponent,
+         OuterCircleIcons,
          AvatarPicture, Card }
