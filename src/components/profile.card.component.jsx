@@ -5,22 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.09 - ProfileCard -
+/**Portfolio-erick - version 12.10 - ProfileCard -
 * Features:
 
-    --> Clearing 'IconJsCustom'  
+    --> Clearing 'IconTwentyEight'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
 **/
-
-// --- Main Container Styles ---
-
-const IconTwentyEight = styled(FontAwesomeIcon)`
-  width:30px;
-  height:30px;
-  display:block;
-`
 
 const ProfileCardContainer = styled.div`
   /* relative h-full w-full flex items-center justify-center */
