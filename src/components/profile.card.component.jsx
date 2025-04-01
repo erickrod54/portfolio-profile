@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.07 - ProfileCard -
+/**Portfolio-erick - version 12.08 - ProfileCard -
 * Features:
 
-    --> Clearing 'IconAngularCustom'  
+    --> Clearing 'IconWordpressCustom'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -20,10 +20,6 @@ const IconTwentyEight = styled(FontAwesomeIcon)`
   width:30px;
   height:30px;
   display:block;
-`
-
-const IconWordpressCustom = styled(IconTwentyEight)`
-  color:#000000;
 `
 
 const IconJsCustom = styled(IconTwentyEight)`
