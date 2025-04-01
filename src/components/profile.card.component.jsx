@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.11 - ProfileCard -
+/**Portfolio-erick - version 12.12 - ProfileCard -
 * Features:
 
-    --> Clearing 'ProfileItemReact'  
+    --> Clearing 'ProfileItemVercel'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -65,13 +65,6 @@ const ProfileItemReact = styled.button`
   ${ProfileItemBase}
   /* left-[45px] -top-[4px] absolute */
   left: 45px;
-  top: -4px;
-`;
-
-const ProfileItemVercel = styled.button`
-  ${ProfileItemBase}
-  /* right-[45px] -top-[4px] absolute */
-  right: 45px;
   top: -4px;
 `;
 
