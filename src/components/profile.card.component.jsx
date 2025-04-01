@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.10 - ProfileCard -
+/**Portfolio-erick - version 12.11 - ProfileCard -
 * Features:
 
-    --> Clearing 'IconTwentyEight'  
+    --> Clearing 'ProfileItemReact'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
