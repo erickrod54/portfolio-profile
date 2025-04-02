@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.19 - ProfileCard -
+/**Portfolio-erick - version 12.20 - ProfileCard -
 * Features:
 
-    --> Clearing 'ProfileItemVue'  
+    --> Clearing 'ProfileItemInnerSpan'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -58,20 +58,6 @@ const ProfileItemBase = css`
   &:active {
     transform: scale(0.95); /* active:scale-95 */
   }
-`;
-
-// --- Inner Span Styles (Shared) ---
-
-const ProfileItemInnerSpan = styled.span`
-  /* block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 */
-  display: block;
-  width: 40px; /* w-[40px] */
-  height: 40px; /* h-[40px] */
-  transition: all 500ms; /* transition-all duration-500 */
-  border-radius: 9999px; /* rounded-full */
-  z-index: 2; /* z-[2] */
-  background-color: white; /* bg-white */
-  padding: 0.25rem; /* p-1 (assuming 1rem = 16px, so 4 * 1 = 4px) */
 `;
 
 // --- Final Component with Styled Components ---
