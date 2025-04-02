@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.15 - ProfileCard -
+/**Portfolio-erick - version 12.16 - ProfileCard -
 * Features:
 
-    --> Clearing 'ProfileItemLinkedIn'  
+    --> Clearing 'ProfileItemLaravel'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -58,13 +58,6 @@ const ProfileItemBase = css`
   &:active {
     transform: scale(0.95); /* active:scale-95 */
   }
-`;
-
-const ProfileItemLaravel = styled.button`
-  ${ProfileItemBase}
-  /* bottom-8 -left-0 absolute */
-  bottom: 2rem; /* bottom-8 */
-  left: 0;
 `;
 
 const ProfileItemTailwind = styled.button`
