@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.17 - ProfileCard -
+/**Portfolio-erick - version 12.19 - ProfileCard -
 * Features:
 
-    --> Clearing 'ProfileItemTailwind'  
+    --> Clearing 'ProfileItemVue'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -59,14 +59,6 @@ const ProfileItemBase = css`
     transform: scale(0.95); /* active:scale-95 */
   }
 `;
-
-const ProfileItemVue = styled.button`
-  ${ProfileItemBase}
-  /* right-[40%] -bottom-4 absolute */
-  right: 40%;
-  bottom: -1rem; /* -bottom-4 */
-`;
-
 
 // --- Inner Span Styles (Shared) ---
 
