@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
-import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 12.20 - ProfileCard -
+/**Portfolio-erick - version 13.00 - ProfileCard -
 * Features:
 
-    --> Clearing 'ProfileItemInnerSpan'  
+    --> Clearing 'faGitAlt'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
