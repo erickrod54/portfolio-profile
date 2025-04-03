@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
-import { faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 13.03 - ProfileCard -
+/**Portfolio-erick - version 13.04 - ProfileCard -
 * Features:
 
     --> Clearing 'faAngular'  
