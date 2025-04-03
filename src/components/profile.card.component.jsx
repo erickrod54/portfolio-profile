@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { AvatarPicture, IconComponent } from './index.components';
-import { faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 13.02 - ProfileCard -
+/**Portfolio-erick - version 13.03 - ProfileCard -
 * Features:
 
-    --> Clearing 'faReact'  
+    --> Clearing 'faAngular'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
