@@ -1,11 +1,11 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 
-/**Portfolio-erick - version 13.08 - ProfileCard -
+/**Portfolio-erick - version 13.09 - ProfileCard -
 * Features:
 
-    --> Clearing 'IconComponent'  
+    --> Clearing 'css'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
