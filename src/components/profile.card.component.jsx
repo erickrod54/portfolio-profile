@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 import { AvatarPicture } from './index.components.js';
 
-/**Portfolio-erick - version 13.10 - ProfileCard -
+/**Portfolio-erick - version 13.11 - ProfileCard -
 * Features:
 
-    --> Adding 'AvatarPicture'  
+    --> Clearing context  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
