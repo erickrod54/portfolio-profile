@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { usePortfolioContext } from '../context.js';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
+import { AvatarPicture } from './index.components.js';
 
-/**Portfolio-erick - version 13.09 - ProfileCard -
+/**Portfolio-erick - version 13.10 - ProfileCard -
 * Features:
 
-    --> Clearing 'css'  
+    --> Adding 'AvatarPicture'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
@@ -35,8 +36,6 @@ const ProfileCardInner = styled.div`
 // --- Final Component with Styled Components ---
 
 const ProfileCard = () => {
-
-  const { amazonAwsData, pythonData } = usePortfolioContext();
 
   return (
     <ProfileCardContainer>
