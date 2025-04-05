@@ -34,11 +34,12 @@ import { AnchorTag,
          StyledWrapper,
          ProfileCardCenterButton,
          ProfileCardContainer,
+         ProfileCardInner,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 13.12 - styled.components - Features:
+/**Portfolio-erick - version 13.13 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ProfileCardContainer'
+ *      --> Importing and exporting 'ProfileCardInner'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -80,5 +81,6 @@ export { FooterContainer,
          ProfilePictureImg,
          ProfileCardCenterButton,
          ProfileCardContainer,
+         ProfileCardInner,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
