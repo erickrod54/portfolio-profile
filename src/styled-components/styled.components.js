@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 11.04 - styled.components - Features:
+/**Portfolio-erick - version 13.12 - styled.components - Features:
  * 
- *      --> Adding 'ProfileCardCenterButton' 
+ *      --> Adding 'ProfileCardContainer' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -10,6 +10,18 @@ import styled from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+/**ProfileCard component styles - Begin */
+
+export const ProfileCardContainer = styled.div`
+  /* relative h-full w-full flex items-center justify-center */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 /** Card component styles  - Begin */
 export const StyleProfileWrapper = styled.div`
