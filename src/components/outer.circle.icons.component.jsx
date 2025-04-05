@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
-import { AvatarPicture, IconComponent } from './index.components';
+import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
 
-/**Portfolio-erick - version 12.04 - OuterCircleIcons -
+/**Portfolio-erick - version 13.12 - OuterCircleIcons -
 * Features:
 
-    --> Building 'OuterCircleIcons'  
+    --> Clearin 'AvatarPicture'  
 
 * Notes: This component will hold the outer circle
 * with icons.
