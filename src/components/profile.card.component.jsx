@@ -1,25 +1,16 @@
 import styled from 'styled-components';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 import { AvatarPicture } from './index.components.js';
+import { ProfileCardContainer } from '../styled-components/styled.components.js';
 
-/**Portfolio-erick - version 13.11 - ProfileCard -
+/**Portfolio-erick - version 13.12 - ProfileCard -
 * Features:
 
-    --> Clearing context  
+    --> Migrating 'ProfileCardContainer'  
 
 * Notes: This is the initial test component, and
 * later will be over more refactors.
 **/
-
-const ProfileCardContainer = styled.div`
-  /* relative h-full w-full flex items-center justify-center */
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 
 const ProfileCardInner = styled.div`
