@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 13.13 - styled.components - Features:
+/**Portfolio-erick - version 13.17 - styled.components - Features:
  * 
- *      --> Adding 'ProfileCardInner' 
+ *      --> Adding 'ProfileItemInnerSpan' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -10,6 +10,20 @@ import styled from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+/**OuterCircleIcons component styles - Begin */
+
+export const ProfileItemInnerSpan = styled.span`
+  /* block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 */
+  display: block;
+  width: 40px; /* w-[40px] */
+  height: 40px; /* h-[40px] */
+  transition: all 500ms; /* transition-all duration-500 */
+  border-radius: 9999px; /* rounded-full */
+  z-index: 2; /* z-[2] */
+  background-color: white; /* bg-white */
+  padding: 0.25rem; /* p-1 (assuming 1rem = 16px, so 4 * 1 = 4px) */
+`;
 
 /**ProfileCard component styles - Begin */
 
