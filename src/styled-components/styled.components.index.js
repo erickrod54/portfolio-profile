@@ -35,11 +35,12 @@ import { AnchorTag,
          ProfileCardCenterButton,
          ProfileCardContainer,
          ProfileCardInner,
+         ProfileItemInnerSpan,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 13.13 - styled.components - Features:
+/**Portfolio-erick - version 13.17 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ProfileCardInner'
+ *      --> Importing and exporting 'ProfileItemInnerSpan'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -82,5 +83,6 @@ export { FooterContainer,
          ProfileCardCenterButton,
          ProfileCardContainer,
          ProfileCardInner,
+         ProfileItemInnerSpan,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
