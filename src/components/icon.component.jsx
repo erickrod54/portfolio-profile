@@ -1,13 +1,19 @@
+import styled from "styled-components";
 
 /**
- * Portfolio-erick - version 13.15 - IconComponent 
+ * Portfolio-erick - version 13.16 - IconComponent 
  * Features:
  * 
- *   --> Clearing 'pythonData' set.
+ *   --> Building 'IconComponentWrapper'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
+
+
+const IconComponentWrapper = styled.svg`
+
+`
 
 const IconComponent = ({ data }) => {
   if (!data || !Array.isArray(data) || data.length < 2) {
@@ -19,7 +25,7 @@ const IconComponent = ({ data }) => {
   const paths = data.slice(1);
 
   return (
-    <svg
+    <IconComponentWrapper
       xmlns={svgProps.xmlns}
       viewBox={svgProps.viewBox}
       width={svgProps.width}
@@ -32,7 +38,7 @@ const IconComponent = ({ data }) => {
           d={path.d}
         />
       ))}
-    </svg>
+    </IconComponentWrapper>
   );
 };
 
