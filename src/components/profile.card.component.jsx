@@ -1,12 +1,11 @@
-import styled from 'styled-components';
 import OuterCircleIcons from './outer.circle.icons.component.jsx';
 import { AvatarPicture } from './index.components.js';
 import { ProfileCardContainer, ProfileCardInner } from '../styled-components/styled.components.js';
 
-/**Portfolio-erick - version 13.13 - ProfileCard -
+/**Portfolio-erick - version 13.14 - ProfileCard -
 * Features:
 
-    --> Migrating 'ProfileCardInner'  
+    --> Clearing 'styled'  
 
 * Notes: This is the clean and dry component.
 **/
