@@ -3,11 +3,12 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
+import { ProfileItemInnerSpan } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 13.12 - OuterCircleIcons -
+/**Portfolio-erick - version 13.17 - OuterCircleIcons -
 * Features:
 
-    --> Clearin 'AvatarPicture'  
+    --> Migrating 'ProfileItemInnerSpan'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -116,23 +117,6 @@ const ProfileItemVue = styled.button`
   right: 40%;
   bottom: -1rem; /* -bottom-4 */
 `;
-
-
-// --- Inner Span Styles (Shared) ---
-
-const ProfileItemInnerSpan = styled.span`
-  /* block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 */
-  display: block;
-  width: 40px; /* w-[40px] */
-  height: 40px; /* h-[40px] */
-  transition: all 500ms; /* transition-all duration-500 */
-  border-radius: 9999px; /* rounded-full */
-  z-index: 2; /* z-[2] */
-  background-color: white; /* bg-white */
-  padding: 0.25rem; /* p-1 (assuming 1rem = 16px, so 4 * 1 = 4px) */
-`;
-
-// --- Final Component with Styled Components ---
 
 const OuterCircleIcons = () => {
 
