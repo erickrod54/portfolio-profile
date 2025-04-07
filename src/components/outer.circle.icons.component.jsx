@@ -3,12 +3,12 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemInnerSpan } from '../styled-components/styled.components.index.js';
+import { ProfileItemBase, ProfileItemInnerSpan } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 13.17 - OuterCircleIcons -
+/**Portfolio-erick - version 13.19 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemInnerSpan'  
+    --> Migrating 'ProfileItemBase'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -45,28 +45,6 @@ const IconJsCustom = styled(IconTwentyEight)`
 
 // --- Floating Profile Item Button Styles ---
 
-// Base styles for all floating buttons (profile_item)
-const ProfileItemBase = css`
-  /* rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] */
-  position: absolute; /* Handled in specific component for positioning, but included for clarity */
-  border-radius: 9999px; /* rounded-full */
-  background-size: cover; /* bg-cover */
-  cursor: pointer;
-  border: 1px solid rgba(156, 163, 175, 0.5); /* border border-gray-400/50 */
-  padding: 2px; /* p-[2px] */
-  background-color:black;
-  
-  /* active:scale-95 hover:scale-95 transition-all duration-500 */
-  transition: all 500ms; /* transition-all duration-500 */
-  
-  &:hover {
-    transform: scale(0.95); /* hover:scale-95 */
-  }
-
-  &:active {
-    transform: scale(0.95); /* active:scale-95 */
-  }
-`;
 
 // Specific components for each button based on their positioning
 const ProfileItemReact = styled.button`
