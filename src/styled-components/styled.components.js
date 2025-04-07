@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 13.17 - styled.components - Features:
+/**Portfolio-erick - version 13.18 - styled.components - Features:
  * 
- *      --> Adding 'ProfileItemInnerSpan' 
+ *      --> Adding 'ProfileItemBase' and 'ProfileItemReact' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -23,6 +23,36 @@ export const ProfileItemInnerSpan = styled.span`
   z-index: 2; /* z-[2] */
   background-color: white; /* bg-white */
   padding: 0.25rem; /* p-1 (assuming 1rem = 16px, so 4 * 1 = 4px) */
+`;
+
+export const ProfileItemBase = css`
+  /* rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] */
+  position: absolute; /* Handled in specific component for positioning, but included for clarity */
+  border-radius: 9999px; /* rounded-full */
+  background-size: cover; /* bg-cover */
+  cursor: pointer;
+  border: 1px solid rgba(156, 163, 175, 0.5); /* border border-gray-400/50 */
+  padding: 2px; /* p-[2px] */
+  background-color:black;
+  
+  /* active:scale-95 hover:scale-95 transition-all duration-500 */
+  transition: all 500ms; /* transition-all duration-500 */
+  
+  &:hover {
+    transform: scale(0.95); /* hover:scale-95 */
+  }
+
+  &:active {
+    transform: scale(0.95); /* active:scale-95 */
+  }
+`;
+
+// Specific components for each button based on their positioning
+export const ProfileItemReact = styled.button`
+  ${ProfileItemBase}
+  /* left-[45px] -top-[4px] absolute */
+  left: 45px;
+  top: -4px;
 `;
 
 /**ProfileCard component styles - Begin */
