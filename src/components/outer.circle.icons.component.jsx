@@ -3,12 +3,12 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemBase, ProfileItemInnerSpan } from '../styled-components/styled.components.index.js';
+import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.00 - OuterCircleIcons -
+/**Portfolio-erick - version 14.01 - OuterCircleIcons -
 * Features:
 
-    --> Renaming 'ProfileItemVue' to 'ProfileItemAws'  
+    --> Migrating 'ProfileItemAws'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -87,13 +87,6 @@ const ProfileItemTailwind = styled.button`
   /* bottom-8 -right-0 absolute */
   bottom: 2rem; /* bottom-8 */
   right: 0;
-`;
-
-const ProfileItemAws = styled.button`
-  ${ProfileItemBase}
-  /* right-[40%] -bottom-4 absolute */
-  right: 40%;
-  bottom: -1rem; /* -bottom-4 */
 `;
 
 const OuterCircleIcons = () => {
