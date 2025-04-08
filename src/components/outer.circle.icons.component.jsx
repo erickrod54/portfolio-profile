@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
 import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.01 - OuterCircleIcons -
+/**Portfolio-erick - version 14.02 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemAws'  
+    --> Renaming 'ProfileItemTailwind' to 'ProfileItemPython'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -82,7 +82,7 @@ const ProfileItemLaravel = styled.button`
   left: 0;
 `;
 
-const ProfileItemTailwind = styled.button`
+const ProfileItemPython = styled.button`
   ${ProfileItemBase}
   /* bottom-8 -right-0 absolute */
   bottom: 2rem; /* bottom-8 */
@@ -131,11 +131,11 @@ const OuterCircleIcons = () => {
         </ProfileItemLaravel>
 
         {/* Python Button */}
-        <ProfileItemTailwind className="profile_item">
+        <ProfileItemPython className="profile_item">
           <ProfileItemInnerSpan>
               <IconComponent data={pythonData} />
           </ProfileItemInnerSpan>
-        </ProfileItemTailwind>
+        </ProfileItemPython>
 
         {/* AWS Button */}
         <ProfileItemAws className="profile_item">
