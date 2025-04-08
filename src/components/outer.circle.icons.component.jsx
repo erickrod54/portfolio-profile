@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
 import { ProfileItemBase, ProfileItemInnerSpan } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 13.20 - OuterCircleIcons -
+/**Portfolio-erick - version 14.00 - OuterCircleIcons -
 * Features:
 
-    --> Clearing 'css'  
+    --> Renaming 'ProfileItemVue' to 'ProfileItemAws'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -89,7 +89,7 @@ const ProfileItemTailwind = styled.button`
   right: 0;
 `;
 
-const ProfileItemVue = styled.button`
+const ProfileItemAws = styled.button`
   ${ProfileItemBase}
   /* right-[40%] -bottom-4 absolute */
   right: 40%;
@@ -145,11 +145,11 @@ const OuterCircleIcons = () => {
         </ProfileItemTailwind>
 
         {/* AWS Button */}
-        <ProfileItemVue className="profile_item">
+        <ProfileItemAws className="profile_item">
           <ProfileItemInnerSpan> 
             <IconComponent data={amazonAwsData}/>
           </ProfileItemInnerSpan>
-        </ProfileItemVue>
+        </ProfileItemAws>
     </>
     );
 }
