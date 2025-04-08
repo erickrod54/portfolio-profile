@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 13.18 - styled.components - Features:
+/**Portfolio-erick - version 14.01 - styled.components - Features:
  * 
- *      --> Adding 'ProfileItemBase' and 'ProfileItemReact' 
+ *      --> Adding 'ProfileItemAws' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -46,6 +46,15 @@ export const ProfileItemBase = css`
     transform: scale(0.95); /* active:scale-95 */
   }
 `;
+
+export const ProfileItemAws = styled.button`
+  ${ProfileItemBase}
+  /* right-[40%] -bottom-4 absolute */
+  right: 40%;
+  bottom: -1rem; /* -bottom-4 */
+`;
+
+/**OuterCircleComponent styles - END */
 
 // Specific components for each button based on their positioning
 export const ProfileItemReact = styled.button`
