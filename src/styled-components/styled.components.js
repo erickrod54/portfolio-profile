@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 14.01 - styled.components - Features:
+/**Portfolio-erick - version 14.03 - styled.components - Features:
  * 
- *      --> Adding 'ProfileItemAws' 
+ *      --> Adding 'ProfileItemPython' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -52,6 +52,13 @@ export const ProfileItemAws = styled.button`
   /* right-[40%] -bottom-4 absolute */
   right: 40%;
   bottom: -1rem; /* -bottom-4 */
+`;
+
+export const ProfileItemPython = styled.button`
+  ${ProfileItemBase}
+  /* bottom-8 -right-0 absolute */
+  bottom: 2rem; /* bottom-8 */
+  right: 0;
 `;
 
 /**OuterCircleComponent styles - END */
