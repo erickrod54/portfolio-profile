@@ -3,12 +3,12 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython } from '../styled-components/styled.components.index.js';
+import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython, ProfileItemJs } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.04 - OuterCircleIcons -
+/**Portfolio-erick - version 14.05 - OuterCircleIcons -
 * Features:
 
-    --> Renaming 'ProfileItemLaravel' to 'ProfileItemJs'  
+    --> Migrating 'ProfileItemJs'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -73,13 +73,6 @@ const ProfileItemLinkedIn = styled.button`
   /* -right-4 top-20 absolute */
   right: -1rem; /* -right-4 */
   top: 5rem; /* top-20 */
-`;
-
-const ProfileItemJs = styled.button`
-  ${ProfileItemBase}
-  /* bottom-8 -left-0 absolute */
-  bottom: 2rem; /* bottom-8 */
-  left: 0;
 `;
 
 const OuterCircleIcons = () => {
