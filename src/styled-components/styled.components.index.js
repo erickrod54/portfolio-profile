@@ -40,11 +40,12 @@ import { AnchorTag,
          ProfileItemBase,
          ProfileItemAws,
          ProfileItemPython,
+         ProfileItemJs,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 14.03 - styled.components - Features:
+/**Portfolio-erick - version 14.05 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ProfileItemPython'
+ *      --> Importing and exporting 'ProfileItemJs'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -92,5 +93,6 @@ export { FooterContainer,
          ProfileItemBase,
          ProfileItemAws,
          ProfileItemPython,
+         ProfileItemJs,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
