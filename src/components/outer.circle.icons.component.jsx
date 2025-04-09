@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
 import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.03 - OuterCircleIcons -
+/**Portfolio-erick - version 14.04 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemPython'  
+    --> Renaming 'ProfileItemLaravel' to 'ProfileItemJs'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -75,7 +75,7 @@ const ProfileItemLinkedIn = styled.button`
   top: 5rem; /* top-20 */
 `;
 
-const ProfileItemLaravel = styled.button`
+const ProfileItemJs = styled.button`
   ${ProfileItemBase}
   /* bottom-8 -left-0 absolute */
   bottom: 2rem; /* bottom-8 */
@@ -117,11 +117,11 @@ const OuterCircleIcons = () => {
         </ProfileItemLinkedIn>
 
         {/* JS Button */}
-        <ProfileItemLaravel className="profile_item">
+        <ProfileItemJs className="profile_item">
           <ProfileItemInnerSpan>
             <IconJsCustom icon={faSquareJs}/>
           </ProfileItemInnerSpan>
-        </ProfileItemLaravel>
+        </ProfileItemJs>
 
         {/* Python Button */}
         <ProfileItemPython className="profile_item">
