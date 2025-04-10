@@ -3,12 +3,12 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython, ProfileItemJs } from '../styled-components/styled.components.index.js';
+import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython, ProfileItemJs, IconJsCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.06 - OuterCircleIcons -
+/**Portfolio-erick - version 14.09 - OuterCircleIcons -
 * Features:
 
-    --> Reanming ProfileItemLinkdn' to 'ProfileItemWordpress'  
+    --> Migrating 'IconJsCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -37,10 +37,6 @@ const IconAngularCustom = styled(IconTwentyEight)`
 
 const IconWordpressCustom = styled(IconTwentyEight)`
   color:#000000;
-`
-
-const IconJsCustom = styled(IconTwentyEight)`
-  color:#F7DF1E;
 `
 
 // --- Floating Profile Item Button Styles ---
