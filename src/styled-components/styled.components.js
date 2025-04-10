@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 14.07 - styled.components - Features:
+/**Portfolio-erick - version 14.08 - styled.components - Features:
  * 
- *      --> Adding 'IconJsCustom' and 'IconTwentyEight'
+ *      --> Eexporting 'IconTwentyEight'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -69,7 +69,7 @@ export const ProfileItemPython = styled.button`
   right: 0;
 `;
 
-const IconTwentyEight = styled(FontAwesomeIcon)`
+export const IconTwentyEight = styled(FontAwesomeIcon)`
   width:30px;
   height:30px;
   display:block;
