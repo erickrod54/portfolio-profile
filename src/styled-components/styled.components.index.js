@@ -42,11 +42,12 @@ import { AnchorTag,
          ProfileItemPython,
          ProfileItemJs,
          IconJsCustom,
+         IconTwentyEight,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 14.08 - styled.components - Features:
+/**Portfolio-erick - version 14.09 - styled.components - Features:
  * 
- *      --> Importing and exporting 'IconJsCustom'
+ *      --> Importing and exporting 'IconTwentyEight'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -96,5 +97,6 @@ export { FooterContainer,
          ProfileItemPython,
          ProfileItemJs,
          IconJsCustom,
+         IconTwentyEight,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
