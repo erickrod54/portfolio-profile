@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
 import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython, ProfileItemJs } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.05 - OuterCircleIcons -
+/**Portfolio-erick - version 14.06 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemJs'  
+    --> Reanming ProfileItemLinkdn' to 'ProfileItemWordpress'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -68,7 +68,7 @@ const ProfileItemFigma = styled.button`
   top: 5rem; /* top-20 (assuming 1rem = 16px, so 20 * 4 = 80px, or a custom value) */
 `;
 
-const ProfileItemLinkedIn = styled.button`
+const ProfileItemWordpress = styled.button`
   ${ProfileItemBase}
   /* -right-4 top-20 absolute */
   right: -1rem; /* -right-4 */
@@ -103,11 +103,11 @@ const OuterCircleIcons = () => {
         </ProfileItemFigma>
         
         {/* Wordpress Button */}
-        <ProfileItemLinkedIn className="profile_item">
+        <ProfileItemWordpress className="profile_item">
           <ProfileItemInnerSpan>
             <IconWordpressCustom icon={faWordpress}/>
           </ProfileItemInnerSpan>
-        </ProfileItemLinkedIn>
+        </ProfileItemWordpress>
 
         {/* JS Button */}
         <ProfileItemJs className="profile_item">
