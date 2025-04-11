@@ -43,11 +43,12 @@ import { AnchorTag,
          ProfileItemJs,
          IconJsCustom,
          IconTwentyEight,
+         ProfileItemWordpress,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 14.09 - styled.components - Features:
+/**Portfolio-erick - version 14.12 - styled.components - Features:
  * 
- *      --> Importing and exporting 'IconTwentyEight'
+ *      --> Importing and exporting 'ProfileItemWordpress'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -98,5 +99,6 @@ export { FooterContainer,
          ProfileItemJs,
          IconJsCustom,
          IconTwentyEight,
+         ProfileItemWordpress,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
