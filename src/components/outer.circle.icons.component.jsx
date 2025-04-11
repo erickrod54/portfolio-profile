@@ -7,12 +7,13 @@ import { ProfileItemBase,
          ProfileItemAws,
          ProfileItemPython,
          ProfileItemJs,
-         IconJsCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
+         IconJsCustom,
+         ProfileItemWordpress, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.11 - OuterCircleIcons -
+/**Portfolio-erick - version 14.12 - OuterCircleIcons -
 * Features:
 
-    --> Clearing 'FontAwesomeIcon'  
+    --> Migrating 'ProfileItemWordpress'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -59,13 +60,6 @@ const ProfileItemFigma = styled.button`
   /* -left-4 top-20 absolute */
   left: -1rem; /* -left-4 (assuming 1rem = 16px, so 4 * 4 = 16px) */
   top: 5rem; /* top-20 (assuming 1rem = 16px, so 20 * 4 = 80px, or a custom value) */
-`;
-
-const ProfileItemWordpress = styled.button`
-  ${ProfileItemBase}
-  /* -right-4 top-20 absolute */
-  right: -1rem; /* -right-4 */
-  top: 5rem; /* top-20 */
 `;
 
 const OuterCircleIcons = () => {
