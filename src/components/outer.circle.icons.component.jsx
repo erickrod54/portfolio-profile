@@ -3,24 +3,22 @@ import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemBase, ProfileItemInnerSpan, ProfileItemAws, ProfileItemPython, ProfileItemJs, IconJsCustom } from '../styled-components/styled.components.index.js';
+import { ProfileItemBase,
+         ProfileItemInnerSpan,
+         ProfileItemAws,
+         ProfileItemPython,
+         ProfileItemJs,
+         IconJsCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.09 - OuterCircleIcons -
+/**Portfolio-erick - version 14.10 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'IconJsCustom'  
+    --> Migrating 'IconTwentyEight'  
 
 * Notes: This component will hold the outer circle
 * with icons.
 **/
 
-// --- Main Container Styles ---
-
-const IconTwentyEight = styled(FontAwesomeIcon)`
-  width:30px;
-  height:30px;
-  display:block;
-`
 
 const IconGitAlt = styled(IconTwentyEight)`
   /** Portland Orange */
