@@ -8,12 +8,13 @@ import { ProfileItemBase,
          ProfileItemPython,
          ProfileItemJs,
          IconJsCustom,
-         ProfileItemWordpress, IconTwentyEight } from '../styled-components/styled.components.index.js';
+         ProfileItemWordpress,
+         ProfileItemAngular, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.13 - OuterCircleIcons -
+/**Portfolio-erick - version 14.14 - OuterCircleIcons -
 * Features:
 
-    --> Renaming 'ProfileItemFigma' to 'ProfileItemAngular'  
+    --> Migrating 'ProfileItemAngular'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -53,13 +54,6 @@ const ProfileItemVercel = styled.button`
   /* right-[45px] -top-[4px] absolute */
   right: 45px;
   top: -4px;
-`;
-
-const ProfileItemAngular = styled.button`
-  ${ProfileItemBase}
-  /* -left-4 top-20 absolute */
-  left: -1rem; /* -left-4 (assuming 1rem = 16px, so 4 * 4 = 16px) */
-  top: 5rem; /* top-20 (assuming 1rem = 16px, so 20 * 4 = 80px, or a custom value) */
 `;
 
 const OuterCircleIcons = () => {
