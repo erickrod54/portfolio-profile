@@ -11,10 +11,10 @@ import { ProfileItemBase,
          ProfileItemWordpress,
          ProfileItemAngular, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.14 - OuterCircleIcons -
+/**Portfolio-erick - version 14.15 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemAngular'  
+    --> Renaming 'ProfileItemVercel' to 'ProfileItemGitAlt'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -49,7 +49,7 @@ const ProfileItemReact = styled.button`
   top: -4px;
 `;
 
-const ProfileItemVercel = styled.button`
+const ProfileItemGitAlt = styled.button`
   ${ProfileItemBase}
   /* right-[45px] -top-[4px] absolute */
   right: 45px;
@@ -70,11 +70,11 @@ const OuterCircleIcons = () => {
         </ProfileItemReact>
         
         {/* Git control Button */}
-        <ProfileItemVercel className="profile_item">
+        <ProfileItemGitAlt className="profile_item">
           <ProfileItemInnerSpan>
             <IconGitAlt icon={faGitAlt}/>
           </ProfileItemInnerSpan>
-        </ProfileItemVercel>
+        </ProfileItemGitAlt>
         
         {/* Angular Button */}
         <ProfileItemAngular className="profile_item">
