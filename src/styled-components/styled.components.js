@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 14.14 - styled.components - Features:
+/**Portfolio-erick - version 14.16 - styled.components - Features:
  * 
- *      --> Eexporting 'ProfileItemAngular'
+ *      --> Eexporting 'ProfileItemGitAlt'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -91,6 +91,13 @@ export const ProfileItemAngular = styled.button`
   /* -left-4 top-20 absolute */
   left: -1rem; /* -left-4 (assuming 1rem = 16px, so 4 * 4 = 16px) */
   top: 5rem; /* top-20 (assuming 1rem = 16px, so 20 * 4 = 80px, or a custom value) */
+`;
+
+export const ProfileItemGitAlt = styled.button`
+  ${ProfileItemBase}
+  /* right-[45px] -top-[4px] absolute */
+  right: 45px;
+  top: -4px;
 `;
 
 /**OuterCircleComponent styles - END */
