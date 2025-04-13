@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { IconComponent } from './index.components';
 import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { usePortfolioContext } from '../context.js'
-import { ProfileItemBase,
-         ProfileItemInnerSpan,
+import { ProfileItemInnerSpan,
          ProfileItemAws,
          ProfileItemPython,
          ProfileItemJs,
@@ -13,10 +12,10 @@ import { ProfileItemBase,
          ProfileItemReact,
          ProfileItemGitAlt, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.17 - OuterCircleIcons -
+/**Portfolio-erick - version 14.18 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemReact'  
+    --> Clearing 'ProfileItemBase'  
 
 * Notes: This component will hold the outer circle
 * with icons.
