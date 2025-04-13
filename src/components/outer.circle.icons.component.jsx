@@ -10,12 +10,13 @@ import { ProfileItemBase,
          IconJsCustom,
          ProfileItemWordpress,
          ProfileItemAngular,
+         ProfileItemReact,
          ProfileItemGitAlt, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.16 - OuterCircleIcons -
+/**Portfolio-erick - version 14.17 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'ProfileItemGitAlt'  
+    --> Migrating 'ProfileItemReact'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -38,17 +39,6 @@ const IconAngularCustom = styled(IconTwentyEight)`
 const IconWordpressCustom = styled(IconTwentyEight)`
   color:#000000;
 `
-
-// --- Floating Profile Item Button Styles ---
-
-
-// Specific components for each button based on their positioning
-const ProfileItemReact = styled.button`
-  ${ProfileItemBase}
-  /* left-[45px] -top-[4px] absolute */
-  left: 45px;
-  top: -4px;
-`;
 
 const OuterCircleIcons = () => {
 
