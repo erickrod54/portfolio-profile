@@ -10,12 +10,13 @@ import { ProfileItemInnerSpan,
          ProfileItemWordpress,
          ProfileItemAngular,
          ProfileItemReact,
-         ProfileItemGitAlt, IconTwentyEight } from '../styled-components/styled.components.index.js';
+         ProfileItemGitAlt,
+         IconWordpressCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.18 - OuterCircleIcons -
+/**Portfolio-erick - version 14.19 - OuterCircleIcons -
 * Features:
 
-    --> Clearing 'ProfileItemBase'  
+    --> Importing 'IconWordpressCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -34,11 +35,6 @@ const IconReactCustom = styled(IconTwentyEight)`
 const IconAngularCustom = styled(IconTwentyEight)`
   color:#C3002F;
 `
-
-const IconWordpressCustom = styled(IconTwentyEight)`
-  color:#000000;
-`
-
 const OuterCircleIcons = () => {
 
   const { amazonAwsData, pythonData } = usePortfolioContext();
