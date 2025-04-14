@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 14.20 - styled.components - Features:
+/**Portfolio-erick - version 15.00 - styled.components - Features:
  * 
- *      --> Eexporting 'IconAngularCustom'
+ *      --> Eexporting 'IconReactCustom'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -106,6 +106,10 @@ export const IconWordpressCustom = styled(IconTwentyEight)`
 
 export const IconAngularCustom = styled(IconTwentyEight)`
   color:#C3002F;
+`
+
+export const IconReactCustom = styled(IconTwentyEight)`
+  color:#61DAFB;
 `
 /**OuterCircleComponent styles - END */
 
