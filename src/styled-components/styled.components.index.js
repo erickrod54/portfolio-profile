@@ -48,11 +48,12 @@ import { AnchorTag,
          ProfileItemGitAlt,
          IconWordpressCustom,
          IconAngularCustom,
+         IconReactCustom,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 14.20 - styled.components - Features:
+/**Portfolio-erick - version 15.00 - styled.components - Features:
  * 
- *      --> Importing and exporting 'IconAngularCustom'
+ *      --> Importing and exporting 'IconReactCustom'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -108,5 +109,6 @@ export { FooterContainer,
          ProfileItemGitAlt,
          IconWordpressCustom,
          IconAngularCustom,
+         IconReactCustom,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
