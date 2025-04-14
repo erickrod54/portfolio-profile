@@ -11,12 +11,13 @@ import { ProfileItemInnerSpan,
          ProfileItemAngular,
          ProfileItemReact,
          ProfileItemGitAlt,
+         IconAngularCustom,
          IconWordpressCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 14.19 - OuterCircleIcons -
+/**Portfolio-erick - version 14.20 - OuterCircleIcons -
 * Features:
 
-    --> Importing 'IconWordpressCustom'  
+    --> Importing 'IconAngularCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -32,9 +33,6 @@ const IconReactCustom = styled(IconTwentyEight)`
   color:#61DAFB;
 `
 
-const IconAngularCustom = styled(IconTwentyEight)`
-  color:#C3002F;
-`
 const OuterCircleIcons = () => {
 
   const { amazonAwsData, pythonData } = usePortfolioContext();
