@@ -2,17 +2,18 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 10.16 - SocialComponent -
+/**Portfolio-erick - version 15.04 - SocialComponent -
 * Features:
 
-    --> Adding styles for title and sci ( brand icons )
+    --> Refacotring to compose 'SocialComponent'
 
 * Notes: This is the 'SocialComponent' isolation
 * so the styles and behavior can be better handled
 **/
 
-const StyleSocialWrapper = styled.div`
- .content {
+
+const SocialContent = styled.div`
+  .content {
     position: absolute;
     z-index: 3;
     bottom: 0;
@@ -22,6 +23,10 @@ const StyleSocialWrapper = styled.div`
     transform: scale(0);
     transition: 0.5s;
   }
+
+`
+
+const StyleSocialWrapper = styled.div`
 
   .content .title {
     position: relative;
@@ -94,7 +99,7 @@ const SocialComponent = () => {
 
     return(
         <StyleSocialWrapper>    
-        <div className="content">
+        <SocialContent className="content">
           <p className="title">Erick Rodriguez<br /><span>Software Engineer</span></p>
           <ul className="sci">
             <li>
@@ -118,7 +123,7 @@ const SocialComponent = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </SocialContent>
         </StyleSocialWrapper>
     )
 }
