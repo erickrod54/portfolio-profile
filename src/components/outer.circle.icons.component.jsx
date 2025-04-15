@@ -14,12 +14,12 @@ import { ProfileItemInnerSpan,
          IconAngularCustom,
          IconReactCustom,
          IconGitAltCustom,
-         IconWordpressCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
+         IconWordpressCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 15.02 - OuterCircleIcons -
+/**Portfolio-erick - version 15.03 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'IconGitAltCustom'  
+    --> Clearing 'IconTwentyEight'  
 
 * Notes: This component will hold the outer circle
 * with icons.
