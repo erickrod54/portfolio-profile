@@ -13,22 +13,17 @@ import { ProfileItemInnerSpan,
          ProfileItemGitAlt,
          IconAngularCustom,
          IconReactCustom,
+         IconGitAltCustom,
          IconWordpressCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 15.01 - OuterCircleIcons -
+/**Portfolio-erick - version 15.02 - OuterCircleIcons -
 * Features:
 
-    --> Renaming 'IconGitAlt' to 'IconGitAltCustom'  
+    --> Migrating 'IconGitAltCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
 **/
-
-
-const IconGitAltCustom = styled(IconTwentyEight)`
-  /** Portland Orange */
-  color:#F1502F
-`
 
 const OuterCircleIcons = () => {
 
