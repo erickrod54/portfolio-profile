@@ -15,17 +15,17 @@ import { ProfileItemInnerSpan,
          IconReactCustom,
          IconWordpressCustom, IconTwentyEight } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 15.00 - OuterCircleIcons -
+/**Portfolio-erick - version 15.01 - OuterCircleIcons -
 * Features:
 
-    --> Importing 'IconReactCustom'  
+    --> Renaming 'IconGitAlt' to 'IconGitAltCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
 **/
 
 
-const IconGitAlt = styled(IconTwentyEight)`
+const IconGitAltCustom = styled(IconTwentyEight)`
   /** Portland Orange */
   color:#F1502F
 `
@@ -46,7 +46,7 @@ const OuterCircleIcons = () => {
         {/* Git control Button */}
         <ProfileItemGitAlt className="profile_item">
           <ProfileItemInnerSpan>
-            <IconGitAlt icon={faGitAlt}/>
+            <IconGitAltCustom icon={faGitAlt}/>
           </ProfileItemInnerSpan>
         </ProfileItemGitAlt>
         
