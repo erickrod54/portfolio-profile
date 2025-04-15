@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 15.00 - styled.components - Features:
+/**Portfolio-erick - version 15.02 - styled.components - Features:
  * 
- *      --> Eexporting 'IconReactCustom'
+ *      --> Eexporting 'IconGitAltCustom'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -110,6 +110,10 @@ export const IconAngularCustom = styled(IconTwentyEight)`
 
 export const IconReactCustom = styled(IconTwentyEight)`
   color:#61DAFB;
+`
+export const IconGitAltCustom = styled(IconTwentyEight)`
+  /** Portland Orange */
+  color:#F1502F
 `
 /**OuterCircleComponent styles - END */
 
