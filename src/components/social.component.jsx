@@ -2,33 +2,39 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 15.04 - SocialComponent -
+/**Portfolio-erick - version 15.05 - SocialComponent -
 * Features:
 
-    --> Refacotring to compose 'SocialComponent'
+    --> Leveling control from CardWrapper
+        over the .content to the style component 
+        'SocialContent'
 
-* Notes: This is the 'SocialComponent' isolation
-* so the styles and behavior can be better handled
+* Notes: Temperorally the state of the recent created
+* 'is-revealed' is set to 'true' for testing porpouse
+* but will be controlled by a handler from the parent
+* component
 **/
 
 
 const SocialContent = styled.div`
-  .content {
-    position: absolute;
-    z-index: 3;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: scale(0);
-    transition: 0.5s;
+  position: absolute; 
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0); 
+  transition: 0.5s;
+  
+  &.is-revealed {
+    transform: scale(1);
+    bottom: 25px;
   }
-
 `
 
 const StyleSocialWrapper = styled.div`
 
-  .content .title {
+.title {
     position: relative;
     color: #fff;
     font-weight: 500;
@@ -37,40 +43,32 @@ const StyleSocialWrapper = styled.div`
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
-  .content .title span {
+  .title span {
     font-weight: 300;
     font-size: 0.70em;
   }
 
-  .content .sci {
+  .sci {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     margin-top: 5px;
+    margin-left: 1.5rem;
   }
-  
-  .title {
-    margin-bottom:1rem
-  }
- 
- .sci{
-    margin-left:1.5rem;
- }
 
   .sci li {
     list-style: none;
   }
-
-  .sci li .fa-brands {
+  
+  // Icon size adjustments
+  .sci li svg { 
     width: 14px;
-  }
-
-  .sci li .fa-facebook {
-    width: 10px;
+    height: 14px; /* Added height for better centering */
   }
 
   .sci li a {
@@ -86,7 +84,7 @@ const StyleSocialWrapper = styled.div`
     align-items: center;
     border-radius: 4px;
     transition: 0.5s;
-    margin-right:2rem;
+    margin-right: 2rem;
   }
 
   .sci li a:hover {
@@ -95,11 +93,11 @@ const StyleSocialWrapper = styled.div`
   }
 `
 
-const SocialComponent = () => {
+const SocialComponent = ({ isRevealed = true}) => {
 
     return(
         <StyleSocialWrapper>    
-        <SocialContent className="content">
+        <SocialContent className={isRevealed ? 'is-revealed' : ''}>
           <p className="title">Erick Rodriguez<br /><span>Software Engineer</span></p>
           <ul className="sci">
             <li>
