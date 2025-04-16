@@ -2,10 +2,10 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 15.07 - SocialComponent -
+/**Portfolio-erick - version 15.08 - SocialComponent -
 * Features:
 
-    --> Building 'SocialTitle'
+    --> Building 'StyledSci'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -47,30 +47,27 @@ const SocialTitle = styled.p`
   }
 
 `
-const StyleSocialWrapper = styled.div`
 
-
-  .sci {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 5px;
-    margin-left: 1.5rem;
-  }
-
-  .sci li {
+const StyledSci = styled.ul`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  margin-left: 1.5rem;
+  
+  li {
     list-style: none;
   }
   
   // Icon size adjustments
-  .sci li svg { 
+  li svg { 
     width: 14px;
     height: 14px; /* Added height for better centering */
   }
-
-  .sci li a {
+  
+  li a {
     position: relative;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
@@ -85,11 +82,16 @@ const StyleSocialWrapper = styled.div`
     transition: 0.5s;
     margin-right: 2rem;
   }
-
-  .sci li a:hover {
+  
+  li a:hover {
     fill: currentColor;
     color: rgba(255, 255, 255, 1);
   }
+`
+const StyleSocialWrapper = styled.div`
+
+ 
+
 `
 
 const SocialComponent = ({ isRevealed }) => {
@@ -98,7 +100,7 @@ const SocialComponent = ({ isRevealed }) => {
         <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
           <SocialTitle>Erick Rodriguez<br /><span>Software Engineer</span></SocialTitle>
-          <ul className="sci">
+          <StyledSci>
             <li>
               <a href="/#">
                 <FontAwesomeIcon icon={faTelegram}/>
@@ -119,7 +121,7 @@ const SocialComponent = ({ isRevealed }) => {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
-          </ul>
+          </StyledSci>
         </SocialContent>
         </StyleSocialWrapper>
     )
