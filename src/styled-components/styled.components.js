@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 15.02 - styled.components - Features:
+/**Portfolio-erick - version 15.05 - styled.components - Features:
  * 
- *      --> Eexporting 'IconGitAltCustom'
+ *      --> Refactoring 'CardWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -173,6 +173,7 @@ export const CardWrapper = styled.div`
     align-items: center;
     margin: 18rem;
     padding: 18rem;
+    cursor: pointer; /* Suggesting a pointer to indicate clickability */
 
     &::before{
       content: '';
@@ -200,22 +201,6 @@ export const CardWrapper = styled.div`
       inset:6px;
       background:rgba(0, 0, 0 ,0.6);
       z-index: 2;
-    }
-    
-    .content{
-      position: absolute;
-      z-index:3;
-      bottom:0;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      transform:scale(0);
-      transition:0.5s;
-    }
-    
-    &:hover .content{
-      transform:scale(1);
-      bottom:25px;
     }
 `
 
