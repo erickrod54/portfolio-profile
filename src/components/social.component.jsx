@@ -2,12 +2,11 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 15.05 - SocialComponent -
+/**Portfolio-erick - version 15.06 - SocialComponent -
 * Features:
 
-    --> Leveling control from CardWrapper
-        over the .content to the style component 
-        'SocialContent'
+    --> Getting 'isRevealed' prop handled by parent 
+       component CardWrapper
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -93,10 +92,10 @@ const StyleSocialWrapper = styled.div`
   }
 `
 
-const SocialComponent = ({ isRevealed = true}) => {
+const SocialComponent = ({ isRevealed }) => {
 
     return(
-        <StyleSocialWrapper>    
+        <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
           <p className="title">Erick Rodriguez<br /><span>Software Engineer</span></p>
           <ul className="sci">
