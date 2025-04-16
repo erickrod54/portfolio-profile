@@ -2,11 +2,10 @@ import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 15.06 - SocialComponent -
+/**Portfolio-erick - version 15.07 - SocialComponent -
 * Features:
 
-    --> Getting 'isRevealed' prop handled by parent 
-       component CardWrapper
+    --> Building 'SocialTitle'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -31,9 +30,7 @@ const SocialContent = styled.div`
   }
 `
 
-const StyleSocialWrapper = styled.div`
-
-.title {
+const SocialTitle = styled.p`
     position: relative;
     color: #fff;
     font-weight: 500;
@@ -43,12 +40,15 @@ const StyleSocialWrapper = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
-  }
 
-  .title span {
+  span {
     font-weight: 300;
     font-size: 0.70em;
   }
+
+`
+const StyleSocialWrapper = styled.div`
+
 
   .sci {
     position: relative;
@@ -97,7 +97,7 @@ const SocialComponent = ({ isRevealed }) => {
     return(
         <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
-          <p className="title">Erick Rodriguez<br /><span>Software Engineer</span></p>
+          <SocialTitle>Erick Rodriguez<br /><span>Software Engineer</span></SocialTitle>
           <ul className="sci">
             <li>
               <a href="/#">
