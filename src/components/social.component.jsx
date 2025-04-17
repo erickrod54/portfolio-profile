@@ -1,12 +1,12 @@
-import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.10 - SocialComponent -
+/**Portfolio-erick - version 15.11 - SocialComponent -
 * Features:
 
-    --> Destructuring 'social' from the context
+    --> Switching 'instagram' to 'faTwitch' icon
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -121,7 +121,7 @@ const SocialComponent = ({ isRevealed }) => {
             </li>
             <li>
               <a href="/#">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faTwitch} />
               </a>
             </li>
           </StyledSci>
