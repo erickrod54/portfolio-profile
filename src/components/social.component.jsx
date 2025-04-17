@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.11 - SocialComponent -
+/**Portfolio-erick - version 15.12 - SocialComponent -
 * Features:
 
-    --> Switching 'instagram' to 'faTwitch' icon
+    --> Testing 'url_xtwitter' from social data set
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -98,7 +98,9 @@ const StyleSocialWrapper = styled.div`
 const SocialComponent = ({ isRevealed }) => {
 
     const { social } = usePortfolioContext();
-
+    
+    const url_xtwitter = social[2].url;
+  
     return(
         <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
@@ -110,7 +112,7 @@ const SocialComponent = ({ isRevealed }) => {
               </a>
             </li>
             <li>
-              <a href="/#">
+              <a href={url_xtwitter}>
                 <FontAwesomeIcon icon={faXTwitter}/>
               </a>
             </li>
