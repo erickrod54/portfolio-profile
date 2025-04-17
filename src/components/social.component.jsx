@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.12 - SocialComponent -
+/**Portfolio-erick - version 15.13 - SocialComponent -
 * Features:
 
-    --> Testing 'url_xtwitter' from social data set
+    --> Testing 'url_linkdn' from social data
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -100,6 +100,7 @@ const SocialComponent = ({ isRevealed }) => {
     const { social } = usePortfolioContext();
     
     const url_xtwitter = social[2].url;
+    const url_linkdn = social[1].url;
   
     return(
         <StyleSocialWrapper >    
@@ -117,7 +118,7 @@ const SocialComponent = ({ isRevealed }) => {
               </a>
             </li>
             <li>
-              <a href="/#">
+              <a href={url_linkdn}>
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>
