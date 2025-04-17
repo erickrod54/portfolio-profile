@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 12.03 - data js
+/**Portfolio-erick - version 15.09 - data js
  *  - Features:
  * 
- *      --> Placing 'pythonData'.
+ *      --> Updating 'social' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -181,6 +181,7 @@ export const ResumeData = [
     }
 ]
 
+/**pending adding youtube and tik tok */
 export const social = [
     {
         name:'Github',
@@ -190,6 +191,16 @@ export const social = [
     {
         name:'Linkdin',
         icon: linkedlnIcon,
+        url:'https://www.linkedin.com/in/erickrodriguezcardenas'
+    },
+    {
+        name:'X',
+        icon:'',
+        url:'https://x.com/erickdev54?s=21'
+    },
+    {
+        name:'Twitch',
+        icon: '',
         url:'https://www.linkedin.com/in/erickrodriguezcardenas'
     }
 ]
