@@ -1,11 +1,12 @@
 import { faInstagram, faLinkedinIn, faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.08 - SocialComponent -
+/**Portfolio-erick - version 15.10 - SocialComponent -
 * Features:
 
-    --> Building 'StyledSci'
+    --> Destructuring 'social' from the context
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -95,6 +96,8 @@ const StyleSocialWrapper = styled.div`
 `
 
 const SocialComponent = ({ isRevealed }) => {
+
+    const { social } = usePortfolioContext();
 
     return(
         <StyleSocialWrapper >    
