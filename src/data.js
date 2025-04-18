@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 15.14 - data js
+/**Portfolio-erick - version 15.16 - data js
  *  - Features:
  * 
- *      --> Updating 'social' data set with twitch url.
+ *      --> Updating 'social' data set with discord url.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -202,5 +202,10 @@ export const social = [
         name:'Twitch',
         icon: '',
         url:'https://dashboard.twitch.tv/u/erickdev54/'
-    }
+    },
+    {
+        name:'Discord',
+        icon: '',
+        url:'https://discord.gg/t8Ka7me4en'
+    },
 ]
