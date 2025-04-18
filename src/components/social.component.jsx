@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.13 - SocialComponent -
+/**Portfolio-erick - version 15.15 - SocialComponent -
 * Features:
 
-    --> Testing 'url_linkdn' from social data
+    --> Testing 'url_twitch' from social data
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -101,7 +101,8 @@ const SocialComponent = ({ isRevealed }) => {
     
     const url_xtwitter = social[2].url;
     const url_linkdn = social[1].url;
-  
+    const url_twitch = social[3].url;
+
     return(
         <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
@@ -123,7 +124,7 @@ const SocialComponent = ({ isRevealed }) => {
               </a>
             </li>
             <li>
-              <a href="/#">
+              <a href={url_twitch}>
                 <FontAwesomeIcon icon={faTwitch} />
               </a>
             </li>
