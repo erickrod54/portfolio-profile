@@ -1,12 +1,12 @@
-import { faInstagram, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faInstagram, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.15 - SocialComponent -
+/**Portfolio-erick - version 15.17 - SocialComponent -
 * Features:
 
-    --> Testing 'url_twitch' from social data
+    --> Switching 'telegram' for 'disord' icon
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -110,7 +110,7 @@ const SocialComponent = ({ isRevealed }) => {
           <StyledSci>
             <li>
               <a href="/#">
-                <FontAwesomeIcon icon={faTelegram}/>
+                <FontAwesomeIcon icon={faDiscord} />
               </a>
             </li>
             <li>
