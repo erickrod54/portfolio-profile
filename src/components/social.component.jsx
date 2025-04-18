@@ -1,12 +1,12 @@
-import { faDiscord, faInstagram, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.18 - SocialComponent -
+/**Portfolio-erick - version 15.19 - SocialComponent -
 * Features:
 
-    --> Adding 'url_discord' from social data set
+    --> Clearing 'faInstagram'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
