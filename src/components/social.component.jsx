@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.17 - SocialComponent -
+/**Portfolio-erick - version 15.18 - SocialComponent -
 * Features:
 
-    --> Switching 'telegram' for 'disord' icon
+    --> Adding 'url_discord' from social data set
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -102,6 +102,7 @@ const SocialComponent = ({ isRevealed }) => {
     const url_xtwitter = social[2].url;
     const url_linkdn = social[1].url;
     const url_twitch = social[3].url;
+    const url_discord = social[4].url;
 
     return(
         <StyleSocialWrapper >    
@@ -109,7 +110,7 @@ const SocialComponent = ({ isRevealed }) => {
           <SocialTitle>Erick Rodriguez<br /><span>Software Engineer</span></SocialTitle>
           <StyledSci>
             <li>
-              <a href="/#">
+              <a href={url_discord}>
                 <FontAwesomeIcon icon={faDiscord} />
               </a>
             </li>
