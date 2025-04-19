@@ -1,12 +1,12 @@
-import { faDiscord, faLinkedinIn, faTelegram, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.19 - SocialComponent -
+/**Portfolio-erick - version 15.20 - SocialComponent -
 * Features:
 
-    --> Clearing 'faInstagram'
+    --> Clearing 'faTwitter'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
