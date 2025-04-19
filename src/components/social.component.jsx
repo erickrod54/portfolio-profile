@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 16.00 - SocialComponent -
+/**Portfolio-erick - version 16.01 - SocialComponent -
 * Features:
 
-    --> Setting new size '40px' for social icons
+    --> Adding 'target' and 'rel' to anchor tags
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -110,22 +110,22 @@ const SocialComponent = ({ isRevealed }) => {
           <SocialTitle>Erick Rodriguez<br /><span>Software Engineer</span></SocialTitle>
           <StyledSci>
             <li>
-              <a href={url_discord}>
+              <a href={url_discord} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faDiscord} />
               </a>
             </li>
             <li>
-              <a href={url_xtwitter}>
+              <a href={url_xtwitter} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faXTwitter}/>
               </a>
             </li>
             <li>
-              <a href={url_linkdn}>
+              <a href={url_linkdn} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>
             <li>
-              <a href={url_twitch}>
+              <a href={url_twitch} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitch} />
               </a>
             </li>
