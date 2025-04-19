@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 15.20 - SocialComponent -
+/**Portfolio-erick - version 16.00 - SocialComponent -
 * Features:
 
-    --> Clearing 'faTwitter'
+    --> Setting new size '40px' for social icons
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -74,8 +74,8 @@ const StyledSci = styled.ul`
     color: rgba(255, 255, 255, 0.5);
     background: rgba(0, 0, 0, 0.2);
     fill: currentColor;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
