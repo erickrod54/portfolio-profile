@@ -50,11 +50,12 @@ import { AnchorTag,
          IconAngularCustom,
          IconReactCustom,
          IconGitAltCustom,
+         StyleSocialWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 15.02 - styled.components - Features:
+/**Portfolio-erick - version 16.03 - styled.components - Features:
  * 
- *      --> Importing and exporting 'IconGitAltCustom'
+ *      --> Importing and exporting 'StyleSocialWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -112,5 +113,6 @@ export { FooterContainer,
          IconAngularCustom,
          IconReactCustom,
          IconGitAltCustom,
+         StyleSocialWrapper,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
