@@ -3,21 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { PortfolioProvider } from './context';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-/**Portfolio-erick - version 6.06 - index js file -
+/**Portfolio-erick - version 16.02 - index js file -
  * Features:
  * 
- *      --> Wrapping the App with the provider
+ *      --> Adding Helmet for SEO and custom props
  * 
- * Notes: This file is gonna be changed later.
+ * Notes: Is pending to make a data structure to hold Helmet 
+ * data and also develop a meta tag.
  */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PortfolioProvider>
-    < App />
-    </PortfolioProvider>
+    <HelmetProvider>
+      <Helmet>
+        <title>erickdev 👨🏾‍💻 {'{}'}</title>
+        <link rel='canonical' href='https://erickrod54.dev/'/>
+      </Helmet>
+      <PortfolioProvider>
+        < App />  
+      </PortfolioProvider>
+    </HelmetProvider>
   </React.StrictMode>
 );
 
