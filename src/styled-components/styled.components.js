@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 15.05 - styled.components - Features:
+/**Portfolio-erick - version 16.03 - styled.components - Features:
  * 
- *      --> Refactoring 'CardWrapper'
+ *      --> Adding 'StyleSocialWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -12,6 +12,12 @@ import styled, { css } from "styled-components"
 
 /** Styled Components for new Portfolio - START */
 
+/**SocialComponent styles - START */
+
+export const StyleSocialWrapper = styled.div`
+
+
+`
 /**OuterCircleIcons component styles - Begin */
 
 export const ProfileItemInnerSpan = styled.span`
