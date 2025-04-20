@@ -2,11 +2,12 @@ import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
+import { StyleSocialWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 16.01 - SocialComponent -
+/**Portfolio-erick - version 16.03 - SocialComponent -
 * Features:
 
-    --> Adding 'target' and 'rel' to anchor tags
+    --> Migrating 'StyleSocialWrapper'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -88,11 +89,6 @@ const StyledSci = styled.ul`
     fill: currentColor;
     color: rgba(255, 255, 255, 1);
   }
-`
-const StyleSocialWrapper = styled.div`
-
- 
-
 `
 
 const SocialComponent = ({ isRevealed }) => {
