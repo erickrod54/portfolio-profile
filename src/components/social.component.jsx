@@ -2,12 +2,12 @@ import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { StyleSocialWrapper, StyledSci } from '../styled-components/styled.components.index';
+import { StyleSocialWrapper, StyledSci, SocialTitle } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 16.04 - SocialComponent -
+/**Portfolio-erick - version 16.05 - SocialComponent -
 * Features:
 
-    --> Migrating 'StyledSci'
+    --> Migrating 'SocialTitle'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -30,24 +30,6 @@ const SocialContent = styled.div`
     transform: scale(1);
     bottom: 25px;
   }
-`
-
-const SocialTitle = styled.p`
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1em;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 1rem;
-
-  span {
-    font-weight: 300;
-    font-size: 0.70em;
-  }
-
 `
 
 const SocialComponent = ({ isRevealed }) => {
