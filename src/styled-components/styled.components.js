@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.03 - styled.components - Features:
+/**Portfolio-erick - version 16.04 - styled.components - Features:
  * 
- *      --> Adding 'StyleSocialWrapper'
+ *      --> Adding 'StyledSci'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -18,6 +18,49 @@ export const StyleSocialWrapper = styled.div`
 
 
 `
+
+export const StyledSci = styled.ul`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  margin-left: 1.5rem;
+  
+  li {
+    list-style: none;
+  }
+  
+  // Icon size adjustments
+  li svg { 
+    width: 14px;
+    height: 14px; /* Added height for better centering */
+  }
+  
+  li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-right: 2rem;
+  }
+  
+  li a:hover {
+    fill: currentColor;
+    color: rgba(255, 255, 255, 1);
+  }
+`
+/**SocialComponent styles - END */
+
 /**OuterCircleIcons component styles - Begin */
 
 export const ProfileItemInnerSpan = styled.span`
