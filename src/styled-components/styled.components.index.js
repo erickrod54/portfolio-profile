@@ -51,11 +51,12 @@ import { AnchorTag,
          IconReactCustom,
          IconGitAltCustom,
          StyleSocialWrapper,
+         StyledSci,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 16.03 - styled.components - Features:
+/**Portfolio-erick - version 16.04- styled.components - Features:
  * 
- *      --> Importing and exporting 'StyleSocialWrapper'
+ *      --> Importing and exporting 'StyledSci'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -114,5 +115,6 @@ export { FooterContainer,
          IconReactCustom,
          IconGitAltCustom,
          StyleSocialWrapper,
+         StyledSci,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
