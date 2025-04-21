@@ -52,11 +52,12 @@ import { AnchorTag,
          IconGitAltCustom,
          StyleSocialWrapper,
          StyledSci,
+         SocialTitle,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 16.04- styled.components - Features:
+/**Portfolio-erick - version 16.05- styled.components - Features:
  * 
- *      --> Importing and exporting 'StyledSci'
+ *      --> Importing and exporting 'SocialTitle'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -116,5 +117,6 @@ export { FooterContainer,
          IconGitAltCustom,
          StyleSocialWrapper,
          StyledSci,
+         SocialTitle,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
