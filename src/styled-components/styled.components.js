@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.05 - styled.components - Features:
+/**Portfolio-erick - version 16.06 - styled.components - Features:
  * 
- *      --> Adding 'SocialTitle'
+ *      --> Adding 'SocialContent'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,22 @@ import styled, { css } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
 /**SocialComponent styles - START */
+
+export const SocialContent = styled.div`
+  position: absolute; 
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0); 
+  transition: 0.5s;
+  
+  &.is-revealed {
+    transform: scale(1);
+    bottom: 25px;
+  }
+`
 
 export const SocialTitle = styled.p`
     position: relative;
