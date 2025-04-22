@@ -2,35 +2,18 @@ import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { StyleSocialWrapper, StyledSci, SocialTitle } from '../styled-components/styled.components.index';
+import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 16.05 - SocialComponent -
+/**Portfolio-erick - version 16.06 - SocialComponent -
 * Features:
 
-    --> Migrating 'SocialTitle'
+    --> Migrating 'SocialContent'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
 * but will be controlled by a handler from the parent
 * component
 **/
-
-
-const SocialContent = styled.div`
-  position: absolute; 
-  z-index: 3;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: scale(0); 
-  transition: 0.5s;
-  
-  &.is-revealed {
-    transform: scale(1);
-    bottom: 25px;
-  }
-`
 
 const SocialComponent = ({ isRevealed }) => {
 
