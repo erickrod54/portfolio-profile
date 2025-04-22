@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.07 - styled.components - Features:
+/**Portfolio-erick - version 16.08 - styled.components - Features:
  * 
- *      --> Adding 'ExperimentalUIWrapper' responsiveness
+ *      --> Adding 'CardWrapper' responsiveness
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -248,16 +248,34 @@ export const StyleBneonCard = styled.b`
 
 export const CardWrapper = styled.div`
     position: relative;
-    width: 190px;
-    height: 254px;
+    width: 90vw;
+    height: 90vw;
+    max-width:450px;
+    max-height:450px;
     background: #f00;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 18rem;
-    padding: 18rem;
+    margin: 40px auto;
+    padding: 0;
+    background: #f00; /* This color might be temporary */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer; /* Suggesting a pointer to indicate clickability */
 
+    @media (max-width: 480px) {
+        /* Introduce the white space (margin) you requested */
+        width: calc(100vw - 40px); /* 100% width minus 20px padding on each side */
+        margin: 20px 20px; /* 20px margin all around for white space */
+        height: calc(100vw - 40px); /* Keep it square, matching the new constrained width */
+        
+        /* Ensure content doesn't get squeezed too small */
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+ 
     &::before{
       content: '';
       position: absolute;
