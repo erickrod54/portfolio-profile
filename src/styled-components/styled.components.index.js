@@ -53,11 +53,12 @@ import { AnchorTag,
          StyleSocialWrapper,
          StyledSci,
          SocialTitle,
+         SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 16.05- styled.components - Features:
+/**Portfolio-erick - version 16.06 - styled.components - Features:
  * 
- *      --> Importing and exporting 'SocialTitle'
+ *      --> Importing and exporting 'SocialContent'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -118,5 +119,6 @@ export { FooterContainer,
          StyleSocialWrapper,
          StyledSci,
          SocialTitle,
+         SocialContent,
          ButtonsWrapper, ButtonsList, CenterListItem, HeaderButtonsWrapper, HeaderWrapper, HeaderLogo }
 
