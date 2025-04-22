@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.06 - styled.components - Features:
+/**Portfolio-erick - version 16.07 - styled.components - Features:
  * 
- *      --> Adding 'SocialContent'
+ *      --> Adding 'ExperimentalUIWrapper' responsiveness
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -308,7 +308,19 @@ export const ExperimentalUIWrapper = styled.div`
     align-items: center; 
     justify-content: center;
     background: linear-gradient(to bottom right, #1C1C1C, #0A0A0A);  
-`
+    /* Add for potential content overflow on small screens */
+    overflow-y: auto; 
+
+    /* Media query for smaller mobile screens (e.g., height < 600px) */
+    @media (max-height: 600px) {
+        /* Allow content to scroll if it doesn't fit in the viewport height */
+        height: auto; 
+        min-height: 100vh;
+        /* Add some padding for better spacing around the edges */
+        padding: 20px 0; 
+    }
+`;
+
   /**Avatar component styles - START */
   // --- Image Styles (The Picture Itself) ---
 export const ProfilePictureImg = styled.img`
