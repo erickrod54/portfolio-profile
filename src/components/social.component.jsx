@@ -1,13 +1,12 @@
 import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 16.06 - SocialComponent -
+/**Portfolio-erick - version 16.07 - SocialComponent -
 * Features:
 
-    --> Migrating 'SocialContent'
+    --> Clearing 'styled'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
