@@ -100,3 +100,13 @@ Based on the observed structure (file structure, imports, and React style), here
 **Risk:** If you ever change the icon library or asset structure, this file (and anything that uses it) will need extensive updates. If many components consume objects or arrays defined here, they indirectly become coupled to this single implementation.
 
 **⚠️ High Coupling** — This is the biggest dependency cluster in the data layer.
+
+## Current Stage to the date:
+
+Based on the observed structure (file structure, imports, and React style), here are the places where **decoupling** was **made**:
+
+### 1. `src/App.js`
+
+**Main Component:** `HomePage` 
+
+**Observation:** This main component was decoupled and the website portfolio has been started to be updated.
