@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.08 - styled.components - Features:
+/**Portfolio-erick - version 16.09 - styled.components - Features:
  * 
- *      --> Adding 'CardWrapper' responsiveness
+ *      --> Adding 'CardWrapper', 'StyleSci' and 'StyleSocialWrapper' 
+ *          responsiveness
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -49,8 +50,16 @@ export const SocialTitle = styled.p`
 `
 
 export const StyleSocialWrapper = styled.div`
+  margin-top:8rem;
+  width:100%
 
-
+  @media(max-width:768px){
+    margin-top:4rem;
+  }
+  
+  @media(max-width:480px){
+    margin-top:2rem;
+  }
 `
 
 export const StyledSci = styled.ul`
@@ -61,6 +70,11 @@ export const StyledSci = styled.ul`
   gap: 8px;
   margin-top: 5px;
   margin-left: 1.5rem;
+
+  @meadia (max-width:480px){
+    margin-top:15px;
+    margin-left:0;
+  }
   
   li {
     list-style: none;
@@ -249,15 +263,15 @@ export const StyleBneonCard = styled.b`
 export const CardWrapper = styled.div`
     position: relative;
     width: 90vw;
-    height: 90vw;
     max-width:450px;
-    max-height:450px;
+    min-height:450px;
     background: #f00;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px auto;
-    padding: 0;
+    padding: 40px;
+    box-sizing:border-box;
     background: #f00; /* This color might be temporary */
     display: flex;
     justify-content: center;
