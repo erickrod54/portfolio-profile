@@ -110,3 +110,6 @@ Based on the observed structure (file structure, imports, and React style), here
 **Main Component:** `HomePage` 
 
 **Observation:** This main component was decoupled and the website portfolio has been started to be updated.
+the legacy code of the portfolio will be placed in:
+
+### 1. `src/legacy_portfolio`
