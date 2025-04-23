@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.09 - styled.components - Features:
+/**Portfolio-erick - version 16.10 - styled.components - Features:
  * 
- *      --> Adding 'CardWrapper', 'StyleSci' and 'StyleSocialWrapper' 
+ *      --> Adding 'CardWrapper' and 'StyleSocialWrapper' 
  *          responsiveness
  * 
  * Notes: This components is adapted to the new layout
@@ -59,6 +59,7 @@ export const StyleSocialWrapper = styled.div`
   
   @media(max-width:480px){
     margin-top:2rem;
+    padding:3rem
   }
 `
 
@@ -265,6 +266,7 @@ export const CardWrapper = styled.div`
     width: 90vw;
     max-width:450px;
     min-height:450px;
+    heigth:auto;
     background: #f00;
     display: flex;
     justify-content: center;
@@ -283,10 +285,9 @@ export const CardWrapper = styled.div`
         width: calc(100vw - 40px); /* 100% width minus 20px padding on each side */
         margin: 20px 20px; /* 20px margin all around for white space */
         height: calc(100vw - 40px); /* Keep it square, matching the new constrained width */
-        
+        min-height:450px;        
         /* Ensure content doesn't get squeezed too small */
         min-width: 300px;
-        min-height: 300px;
     }
 
  
