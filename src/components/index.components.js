@@ -1,6 +1,5 @@
 import HeaderComponent from "./header.component";
 import IntroComponent from "./intro.component";
-import SkillsComponent from "./skills.component";
 import Footer from "./footer.component";
 import HeaderButtons from "./header.buttons.component";
 import Contact from "./contact.component";
@@ -10,18 +9,16 @@ import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
 import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 12.04 - index > components
+/**Portfolio-erick - version 16.11 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting 'OuterCircleIcons'.
+ *      --> Clearing 'SkillsComponent'.
  * 
- * Notes: By this version all tasks are done 
- * for this component
+ * Notes: This component now is on legacy directory
  */
 
 export { HeaderComponent,
          IntroComponent,
-         SkillsComponent,
          HeaderButtons,
          Footer,
          Contact,
