@@ -1,19 +1,29 @@
 import { usePortfolioContext } from "../context";
 import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
+import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 9.20 - SkillsComponent
+/**Portfolio-erick - version 16.11 - SkillsComponent
  *  - Features:
  * 
- *      --> Clearing Imports
+ *      --> Migrating back 'SkillsSection'
  * 
- * Notes: This components is adapted to the new layout
- * and is functional working, pending for layout the 
- * component itself
+ * Notes: Styled components and logic will be placed 
+ * in one place
  */
 
+
 const SkillsComponent = () => {
-    
+  
+const SkillsSection = styled.section`
+    display: grid;
+    grid-column: container-start / container-end;
+    place-content: center;
+    background: var(--gradient-bkgd);
+    margin: 4rem;
+    border-radius: 4rem;
+  `;
+
   const { ResumeData, skillIcons } = usePortfolioContext();
  
   // Extract the skills array from the second object in ResumeData
