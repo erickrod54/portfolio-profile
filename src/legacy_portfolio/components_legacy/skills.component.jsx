@@ -1,12 +1,12 @@
 import { usePortfolioContext } from "../context";
-import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsSection, SkillsTitle } from "../styled-components/styled.components";
+import { SkillItem, SkillsBox, SkillsList, SkillsListWrapper, SkillsTitle } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 16.11 - SkillsComponent
+/**Portfolio-erick - version 16.12 - SkillsComponent
  *  - Features:
  * 
- *      --> Migrating back 'SkillsSection'
+ *      --> Clearing 'SkillsSection' import
  * 
  * Notes: Styled components and logic will be placed 
  * in one place
