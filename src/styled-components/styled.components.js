@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.11 - styled.components - Features:
+/**Portfolio-erick - version 16.13 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsSection'
+ *      --> Clearing 'SkillsBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -528,16 +528,6 @@ export const SkillsTitle = styled.h2`
   text-transform: capitalize;
   color: var(--clr-white);
 `;
-
-export const SkillsBox = styled.div`
-  display: grid;
-  border: 1px solid white;
-  margin: 1.7em;
-  border-radius: 0.75em;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-`; 
 
 export const DownloadCV = styled.div`
   margin-top: 3rem;
