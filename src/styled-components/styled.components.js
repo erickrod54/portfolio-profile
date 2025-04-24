@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.10 - styled.components - Features:
+/**Portfolio-erick - version 16.11 - styled.components - Features:
  * 
- *      --> Adding 'CardWrapper' and 'StyleSocialWrapper' 
- *          responsiveness
+ *      --> Clearing 'SkillsSection'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -539,15 +538,6 @@ export const SkillsBox = styled.div`
   align-items: center;
   text-align: center;
 `; 
-
-export const SkillsSection = styled.section`
-  display: grid;
-  grid-column: container-start / container-end;
-  place-content: center;
-  background: var(--gradient-bkgd);
-  margin: 4rem;
-  border-radius: 4rem;
-`;
 
 export const DownloadCV = styled.div`
   margin-top: 3rem;
