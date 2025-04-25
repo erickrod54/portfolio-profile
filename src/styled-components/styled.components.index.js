@@ -22,7 +22,6 @@ import { AnchorTag,
          IntroTitle,
          ModalContent,
          SkillItem,
-         SkillsBox,
          SkillsList,
          SkillsListWrapper,
          SkillsTitle,
@@ -55,9 +54,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 16.11 - styled.components - Features:
+/**Portfolio-erick - version 16.13 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsSection'
+ *      --> Clearing 'SkillsBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -74,7 +73,6 @@ export { FooterContainer,
          IntroSection,
          IntroTitle,
          DownloadCV,
-         SkillsBox,
          SkillsTitle,
          SkillsList,
          SkillItem,
