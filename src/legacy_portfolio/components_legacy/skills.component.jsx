@@ -1,12 +1,12 @@
 import { usePortfolioContext } from "../context";
-import { SkillItem, SkillsList, SkillsListWrapper, SkillsTitle } from "../styled-components/styled.components";
+import { SkillItem, SkillsList, SkillsListWrapper } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 16.15 - SkillsComponent
+/**Portfolio-erick - version 16.16 - SkillsComponent
  *  - Features:
  * 
- *      --> Migrating back 'SkillsBox' 
+ *      --> Clearing 'SkillsTitle' 
  * 
  * Notes: Styled components and logic will be placed 
  * in one place
@@ -32,8 +32,6 @@ const SkillsBox = styled.div`
   text-align: center;
 `; 
 
-const SkillsComponent = () => {
-
 const SkillsTitle = styled.h2`
   display: grid;
   margin: 1rem;
@@ -43,6 +41,9 @@ const SkillsTitle = styled.h2`
   text-transform: capitalize;
   color: var(--clr-white);
 `;
+
+const SkillsComponent = () => {
+
 
 
   const { ResumeData, skillIcons } = usePortfolioContext();
