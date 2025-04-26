@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.17 - styled.components - Features:
+/**Portfolio-erick - version 16.19 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsListWrapper'
+ *      --> Clearing 'SkillItem'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -486,14 +486,6 @@ export const StyledModal = styled.div`
   opacity: ${(props) => (props.isOpen ? "1" : "0")};
   z-index: ${(props) => (props.isOpen ? "999" : "-1")};
   transition: var(--transition);
-`;
-
-export const SkillItem = styled.li`
-  background: var(--gradient-btn);
-  margin: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-  color: var(--clr-white);
 `;
 
 export const SkillsList = styled.ul`
