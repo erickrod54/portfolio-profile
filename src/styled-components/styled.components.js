@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.15 - styled.components - Features:
+/**Portfolio-erick - version 16.17 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsTitle'
+ *      --> Clearing 'SkillsListWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -412,13 +412,6 @@ export const ProfileCardCenterButton = styled.button`
 `;
 /** Card component styles - END */
 /** Styled Components for new Portfolio - END */
-
-export const SkillsListWrapper = styled.div`
-  width: 100%;
-  overflow: hidden; /* Prevents overflowing */
-  display: flex;
-  justify-content: center;
-`
 
 export const ContactListItem = styled.ul`
     
