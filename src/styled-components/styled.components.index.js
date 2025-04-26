@@ -23,7 +23,6 @@ import { AnchorTag,
          ModalContent,
          SkillItem,
          SkillsList,
-         SkillsListWrapper,
          StyledModal,
          StyleBneonCard,
          StyleProfileWrapper,
@@ -53,9 +52,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 16.15 - styled.components - Features:
+/**Portfolio-erick - version 16.17 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsTitle'
+ *      --> Clearing 'SkillsListWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -85,7 +84,6 @@ export { FooterContainer,
          ContactList,
          ContactTitle,
          ContactListItem,
-         SkillsListWrapper,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
