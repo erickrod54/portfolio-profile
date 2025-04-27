@@ -3,10 +3,10 @@ import { SkillItem, SkillsList } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 16.18 - SkillsComponent
+/**Portfolio-erick - version 16.19 - SkillsComponent
  *  - Features:
  * 
- *      --> Clearing 'SkillsListWrapper' import 
+ *      --> Clearing 'SkillItem' import 
  * 
  * Notes: Styled components and logic will be placed 
  * in one place
@@ -51,6 +51,13 @@ const SkillsListWrapper = styled.div`
 
 const SkillsComponent = () => {
   
+const SkillItem = styled.li`
+  background: var(--gradient-btn);
+  margin: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--clr-white);
+`;
 
   const { ResumeData, skillIcons } = usePortfolioContext();
  
