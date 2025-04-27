@@ -3,10 +3,10 @@ import { SkillsList } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 16.20 - SkillsComponent
+/**Portfolio-erick - version 17.00 - SkillsComponent
  *  - Features:
  * 
- *      --> Clearing 'SkillItem' import 
+ *      --> Migrating back 'SkillsList'
  * 
  * Notes: Styled components and logic will be placed 
  * in one place
@@ -59,6 +59,20 @@ const SkillItem = styled.li`
 
 const SkillsComponent = () => {
   
+const SkillsList = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adds some spacing but prevents excessive gaps */
+  margin: 0 auto; /* Center the skills */
+  padding: 0;
+  list-style: none;
+  white-space: nowrap; /* Prevents wrapping */
+
+  @media screen and (max-width: 520px) {
+    flex-direction: column;
+    align-items: center;
+    }
+`;
 
   const { ResumeData, skillIcons } = usePortfolioContext();
  
