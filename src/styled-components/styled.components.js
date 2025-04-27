@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 16.19 - styled.components - Features:
+/**Portfolio-erick - version 17.00 - styled.components - Features:
  * 
- *      --> Clearing 'SkillItem'
+ *      --> Clearing 'SkillsList'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -486,21 +486,6 @@ export const StyledModal = styled.div`
   opacity: ${(props) => (props.isOpen ? "1" : "0")};
   z-index: ${(props) => (props.isOpen ? "999" : "-1")};
   transition: var(--transition);
-`;
-
-export const SkillsList = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Adds some spacing but prevents excessive gaps */
-  margin: 0 auto; /* Center the skills */
-  padding: 0;
-  list-style: none;
-  white-space: nowrap; /* Prevents wrapping */
-
-  @media screen and (max-width: 520px) {
-    flex-direction: column;
-    align-items: center;
-    }
 `;
 
 export const DownloadCV = styled.div`
