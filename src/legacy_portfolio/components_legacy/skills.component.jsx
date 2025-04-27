@@ -1,9 +1,9 @@
 import { usePortfolioContext } from "../context";
-import { SkillItem, SkillsList } from "../styled-components/styled.components";
+import { SkillsList } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 16.19 - SkillsComponent
+/**Portfolio-erick - version 16.20 - SkillsComponent
  *  - Features:
  * 
  *      --> Clearing 'SkillItem' import 
@@ -49,8 +49,6 @@ const SkillsListWrapper = styled.div`
   justify-content: center;
 `
 
-const SkillsComponent = () => {
-  
 const SkillItem = styled.li`
   background: var(--gradient-btn);
   margin: 1rem;
@@ -58,6 +56,9 @@ const SkillItem = styled.li`
   border-radius: 0.5rem;
   color: var(--clr-white);
 `;
+
+const SkillsComponent = () => {
+  
 
   const { ResumeData, skillIcons } = usePortfolioContext();
  
