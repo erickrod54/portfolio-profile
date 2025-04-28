@@ -1,12 +1,11 @@
 import { usePortfolioContext } from "../context";
-import { SkillsList } from "../styled-components/styled.components";
 import { motion } from "framer-motion";
 import { styled } from 'styled-components';
 
-/**Portfolio-erick - version 17.00 - SkillsComponent
+/**Portfolio-erick - version 17.01 - SkillsComponent
  *  - Features:
  * 
- *      --> Migrating back 'SkillsList'
+ *      --> Clearing 'SkillsList' import 
  * 
  * Notes: Styled components and logic will be placed 
  * in one place
@@ -57,8 +56,6 @@ const SkillItem = styled.li`
   color: var(--clr-white);
 `;
 
-const SkillsComponent = () => {
-  
 const SkillsList = styled.ul`
   display: flex;
   align-items: center;
@@ -73,6 +70,9 @@ const SkillsList = styled.ul`
     align-items: center;
     }
 `;
+
+const SkillsComponent = () => {
+  
 
   const { ResumeData, skillIcons } = usePortfolioContext();
  
