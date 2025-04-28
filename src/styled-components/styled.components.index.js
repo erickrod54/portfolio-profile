@@ -21,7 +21,6 @@ import { AnchorTag,
          IntroSection,
          IntroTitle,
          ModalContent,
-         StyledModal,
          StyleBneonCard,
          StyleProfileWrapper,
          CardWrapper,
@@ -50,9 +49,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 17.00 - styled.components - Features:
+/**Portfolio-erick - version 17.02 - styled.components - Features:
  * 
- *      --> Clearing 'SkillsList'
+ *      --> Clearing 'StyledModal'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -69,7 +68,6 @@ export { FooterContainer,
          IntroSection,
          IntroTitle,
          DownloadCV,
-         StyledModal,
          ModalContent,
          ContactForm,
          ContactInput,
