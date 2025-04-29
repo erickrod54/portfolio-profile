@@ -1,18 +1,15 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { ModalContent, StyledModal } from "../styled-components/styled.components";
+import { ModalContent } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 17.02 - Modal - Features:
+/**Portfolio-erick - version 17.03 - Modal - Features:
  * 
- *      --> Migrating back 'StyledModal'
+ *      --> Clearing 'StyledModal' import
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-const Modal = ({ children }) => {
-  
 const StyledModal = styled.div`
   position: fixed;
   top: 0;
@@ -27,6 +24,9 @@ const StyledModal = styled.div`
   z-index: ${(props) => (props.isOpen ? "999" : "-1")};
   transition: var(--transition);
 `;
+
+const Modal = ({ children }) => {
+  
 
     const { isModalOpen } = usePortfolioContext();
   
