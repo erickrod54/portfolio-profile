@@ -2,17 +2,16 @@ import HeaderComponent from "./header.component";
 import IntroComponent from "./intro.component";
 import Footer from "./footer.component";
 import HeaderButtons from "./header.buttons.component";
-import Contact from "./contact.component";
 import Card from "./card.component";
 import AvatarPicture from "./avatar.component";
 import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
 import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 16.11 - index > components
+/**Portfolio-erick - version 17.05 - index > components
  *  - Features:
  * 
- *      --> Clearing 'SkillsComponent'.
+ *      --> Clearing 'Contact'.
  * 
  * Notes: This component now is on legacy directory
  */
@@ -21,7 +20,6 @@ export { HeaderComponent,
          IntroComponent,
          HeaderButtons,
          Footer,
-         Contact,
          SocialComponent,
          IconComponent,
          OuterCircleIcons,
