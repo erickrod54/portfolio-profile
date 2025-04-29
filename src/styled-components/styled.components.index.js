@@ -49,9 +49,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 17.02 - styled.components - Features:
+/**Portfolio-erick - version 17.06 - styled.components - Features:
  * 
- *      --> Clearing 'StyledModal'
+ *      --> Clearing 'ContactWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
