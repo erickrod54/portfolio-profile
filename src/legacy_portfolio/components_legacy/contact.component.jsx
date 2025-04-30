@@ -9,24 +9,25 @@ import { CloseButton,
          ContactInput,
          ContactList,
          ContactListItem,
-         ContactTextArea, ContactTitle, ContactWrapper } from "../styled-components/styled.components";
+         ContactTextArea, ContactTitle } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.07 - Contact - Features:
+/**Portfolio-erick - version 17.08 - Contact - Features:
  * 
- *      --> Migrating back 'ContactWrapper'
+ *      --> Clearing 'ContactWrapper' import
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
 
+const ContactWrapper = styled.section`
+   
+`
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-const ContactWrapper = styled.section`
-   
-`
 
   const sendEmail = (e) => {
     e.preventDefault();
