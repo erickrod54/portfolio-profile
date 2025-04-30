@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 17.06 - styled.components - Features:
+/**Portfolio-erick - version 17.09 - styled.components - Features:
  * 
- *      --> Clearing 'ContactWrapper'
+ *      --> Clearing 'CloseButton'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -425,10 +425,6 @@ export   const ContactTitle = styled.label`
 
 export const ContactList = styled.ul`
   
-`
-
-export   const CloseButton = styled.button`
-  cursor: pointer;
 `
 
 export const ContactButton = styled.input`
