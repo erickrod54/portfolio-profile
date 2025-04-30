@@ -10,10 +10,11 @@ import { CloseButton,
          ContactList,
          ContactListItem,
          ContactTextArea, ContactTitle, ContactWrapper } from "../styled-components/styled.components";
+import styled from "styled-components";
 
-/**Portfolio-erick - version 17.05 - Contact - Features:
+/**Portfolio-erick - version 17.07 - Contact - Features:
  * 
- *      --> Moving 'Contact' to legacy code
+ *      --> Migrating back 'ContactWrapper'
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -22,6 +23,10 @@ import { CloseButton,
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
+
+const ContactWrapper = styled.section`
+   
+`
 
   const sendEmail = (e) => {
     e.preventDefault();
