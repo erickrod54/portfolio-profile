@@ -3,7 +3,6 @@ import { AnchorTag,
          ButtonsWrapper,
          CenterList,
          CenterListItem,
-         CloseButton,
          ContactButton,
          ContactForm,
          ContactInput,
@@ -48,9 +47,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 17.07 - styled.components - Features:
+/**Portfolio-erick - version 17.09 - styled.components - Features:
  * 
- *      --> Clearing again 'ContactWrapper'
+ *      --> Clearing 'CloseButton'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -72,7 +71,6 @@ export { FooterContainer,
          ContactInput,
          ContactTextArea,
          ContactButton,
-         CloseButton,
          ContactList,
          ContactTitle,
          ContactListItem,
