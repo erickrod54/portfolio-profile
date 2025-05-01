@@ -3,8 +3,7 @@ import Modal from "./modal.component";
 import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
-import { CloseButton,
-         ContactButton,
+import { ContactButton,
          ContactForm,
          ContactInput,
          ContactList,
@@ -12,9 +11,9 @@ import { CloseButton,
          ContactTextArea, ContactTitle } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.09 - Contact - Features:
+/**Portfolio-erick - version 17.10 - Contact - Features:
  * 
- *      --> Migrating back 'CloseButton' 
+ *      --> Clearing 'CloseButton' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -24,13 +23,14 @@ const ContactWrapper = styled.section`
    
 `
 
+const CloseButton = styled.button`
+  cursor: pointer;
+`
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-const CloseButton = styled.button`
-  cursor: pointer;
-`
 
   const sendEmail = (e) => {
     e.preventDefault();
