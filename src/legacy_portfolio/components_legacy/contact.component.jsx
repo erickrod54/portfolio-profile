@@ -5,14 +5,13 @@ import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import { ContactButton,
          ContactInput,
-         ContactList,
          ContactListItem,
          ContactTextArea, ContactTitle } from "../styled-components/styled.components";
 import styled from "styled-components";
 
 /**Portfolio-erick - version 17.13  - Contact - Features:
  * 
- *      --> Migrating back 'ContactList'  
+ *      --> Clearing 'ContactList' import  
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -32,13 +31,14 @@ const ContactForm = styled.form`
   background-color: rgba(127, 255, 212, 0.5);
 `;
 
+const ContactList = styled.ul`
+ 
+`
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
- const ContactList = styled.ul`
-  
- `
 
   const sendEmail = (e) => {
     e.preventDefault();
