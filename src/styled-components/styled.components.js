@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 17.16 - styled.components - Features:
+/**Portfolio-erick - version 17.18 - styled.components - Features:
  * 
- *      --> Clearing 'ContactListItem'
+ *      --> Clearing 'ContactInput'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -426,11 +426,6 @@ export const ContactButton = styled.input`
 `;
 
 export const ContactTextArea = styled.textarea`
-  padding: 10px;
-  margin: 10px 0;
-`;
-
-export const ContactInput = styled.input`
   padding: 10px;
   margin: 10px 0;
 `;
