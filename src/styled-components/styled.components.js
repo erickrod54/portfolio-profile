@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 17.14 - styled.components - Features:
+/**Portfolio-erick - version 17.16 - styled.components - Features:
  * 
- *      --> Clearing 'ContactTitle'
+ *      --> Clearing 'ContactListItem'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -412,10 +412,6 @@ export const ProfileCardCenterButton = styled.button`
 `;
 /** Card component styles - END */
 /** Styled Components for new Portfolio - END */
-
-export const ContactListItem = styled.ul`
-    
-`
 
 export const ContactButton = styled.input`
   padding: 10px 20px;
