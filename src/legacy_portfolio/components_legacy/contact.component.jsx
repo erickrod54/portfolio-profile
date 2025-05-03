@@ -6,12 +6,12 @@ import { FaTimes } from 'react-icons/fa';
 import { ContactButton,
          ContactInput,
          ContactListItem,
-         ContactTextArea, ContactTitle } from "../styled-components/styled.components";
+         ContactTextArea } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.14  - Contact - Features:
+/**Portfolio-erick - version 17.15  - Contact - Features:
  * 
- *      --> Migrating back 'ContactTitle' 
+ *      --> Clearing 'ContactTitle' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -35,15 +35,16 @@ const ContactList = styled.ul`
  
 `
 
-const Contact = () => {
-  const { closeModal } = usePortfolioContext()
-  const form = useRef();
-
 const ContactTitle = styled.label`
     font-weight: 700;
     text-transform: capitalize;
     font-size: larger;
 `
+
+const Contact = () => {
+  const { closeModal } = usePortfolioContext()
+  const form = useRef();
+
 
 
   const sendEmail = (e) => {
