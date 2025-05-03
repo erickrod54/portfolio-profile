@@ -5,7 +5,6 @@ import { AnchorTag,
          CenterListItem,
          ContactButton,
          ContactInput,
-         ContactListItem,
          ContactTextArea,
          DownloadCV,
          EachBtn,
@@ -44,9 +43,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 17.14 - styled.components - Features:
+/**Portfolio-erick - version 17.16 - styled.components - Features:
  * 
- *      --> Clearing 'ContactTitle'
+ *      --> Clearing 'ContactListItem'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -67,7 +66,6 @@ export { FooterContainer,
          ContactInput,
          ContactTextArea,
          ContactButton,
-         ContactListItem,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
