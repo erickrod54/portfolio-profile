@@ -5,13 +5,12 @@ import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import { ContactButton,
          ContactInput,
-         ContactListItem,
          ContactTextArea } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.15  - Contact - Features:
+/**Portfolio-erick - version 17.17  - Contact - Features:
  * 
- *      --> Clearing 'ContactTitle' import 
+ *      --> Clearing 'ContactListItem' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -45,7 +44,9 @@ const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-
+const ContactListItem = styled.ul`
+    
+`
 
   const sendEmail = (e) => {
     e.preventDefault();
