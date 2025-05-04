@@ -7,9 +7,9 @@ import { ContactButton,
          ContactTextArea } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.19  - Contact - Features:
+/**Portfolio-erick - version 17.20  - Contact - Features:
  * 
- *      --> Clearing 'ContactInput' import 
+ *      --> Migrating back 'ContactTextArea'  
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -43,11 +43,16 @@ const ContactListItem = styled.ul`
     
 `
 
+const ContactInput = styled.input`
+  padding: 10px;
+  margin: 10px 0;
+`;
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-const ContactInput = styled.input`
+const ContactTextArea = styled.textarea`
   padding: 10px;
   margin: 10px 0;
 `;
