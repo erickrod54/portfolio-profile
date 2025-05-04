@@ -4,13 +4,12 @@ import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
 import { ContactButton,
-         ContactInput,
          ContactTextArea } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.18  - Contact - Features:
+/**Portfolio-erick - version 17.19  - Contact - Features:
  * 
- *      --> Migrating back 'ContactInput' import 
+ *      --> Clearing 'ContactInput' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
