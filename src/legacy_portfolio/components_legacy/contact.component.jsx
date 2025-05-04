@@ -8,9 +8,9 @@ import { ContactButton,
          ContactTextArea } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 17.17  - Contact - Features:
+/**Portfolio-erick - version 17.18  - Contact - Features:
  * 
- *      --> Clearing 'ContactListItem' import 
+ *      --> Migrating back 'ContactInput' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -40,13 +40,18 @@ const ContactTitle = styled.label`
     font-size: larger;
 `
 
+const ContactListItem = styled.ul`
+    
+`
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-const ContactListItem = styled.ul`
-    
-`
+const ContactInput = styled.input`
+  padding: 10px;
+  margin: 10px 0;
+`;
 
   const sendEmail = (e) => {
     e.preventDefault();
