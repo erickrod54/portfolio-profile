@@ -6,9 +6,9 @@ import { FaTimes } from 'react-icons/fa';
 import { ContactButton } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 18.00  - Contact - Features:
+/**Portfolio-erick - version 18.01  - Contact - Features:
  * 
- *      --> Clearing 'ContactTextArea'  
+ *      --> Migrating back 'ContactButton'  
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -47,13 +47,25 @@ const ContactInput = styled.input`
   margin: 10px 0;
 `;
 
+const ContactTextArea = styled.textarea`
+  padding: 10px;
+  margin: 10px 0;
+`;
+
 const Contact = () => {
   const { closeModal } = usePortfolioContext()
   const form = useRef();
 
-const ContactTextArea = styled.textarea`
-  padding: 10px;
+const ContactButton = styled.input`
+  padding: 10px 20px;
   margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: yellow;
+  background-color: transparent;
+  border: 2px solid yellow;
+  transition: 0.5s ease;
+  user-select: none;
 `;
 
   const sendEmail = (e) => {
