@@ -3,12 +3,11 @@ import Modal from "./modal.component";
 import { usePortfolioContext } from "../context";
 import emailjs from '@emailjs/browser';
 import { FaTimes } from 'react-icons/fa';
-import { ContactButton } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 18.01  - Contact - Features:
+/**Portfolio-erick - version 18.03  - Contact - Features:
  * 
- *      --> Migrating back 'ContactButton'  
+ *      --> Clearing 'ContactButton' import  
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -52,10 +51,6 @@ const ContactTextArea = styled.textarea`
   margin: 10px 0;
 `;
 
-const Contact = () => {
-  const { closeModal } = usePortfolioContext()
-  const form = useRef();
-
 const ContactButton = styled.input`
   padding: 10px 20px;
   margin: 10px 0;
@@ -67,6 +62,11 @@ const ContactButton = styled.input`
   transition: 0.5s ease;
   user-select: none;
 `;
+
+const Contact = () => {
+  const { closeModal } = usePortfolioContext()
+  const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
