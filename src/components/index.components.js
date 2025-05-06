@@ -1,5 +1,4 @@
 import HeaderComponent from "./header.component";
-import IntroComponent from "./intro.component";
 import Footer from "./footer.component";
 import HeaderButtons from "./header.buttons.component";
 import Card from "./card.component";
@@ -8,16 +7,15 @@ import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
 import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 17.05 - index > components
+/**Portfolio-erick - version 18.02 - index > components
  *  - Features:
  * 
- *      --> Clearing 'Contact'.
+ *      --> Clearing 'IntroComponent'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { HeaderComponent,
-         IntroComponent,
          HeaderButtons,
          Footer,
          SocialComponent,
