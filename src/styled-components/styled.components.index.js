@@ -9,7 +9,6 @@ import { AnchorTag,
          FooterCenter,
          FooterContainer, FooterRight, HeaderButtonsWrapper, HeaderLogo, HeaderWrapper, 
          IntroMessage, 
-         IntroSection,
          IntroTitle,
          ModalContent,
          StyleBneonCard,
@@ -40,9 +39,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 18.01 - styled.components - Features:
+/**Portfolio-erick - version 18.02 - styled.components - Features:
  * 
- *      --> Clearing 'ContactButton'
+ *      --> Clearing 'IntroSection'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -56,7 +55,6 @@ export { FooterContainer,
          AnchorTag,
          EachBtn,
          IntroMessage,
-         IntroSection,
          IntroTitle,
          DownloadCV,
          ModalContent,
