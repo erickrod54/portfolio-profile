@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 18.02 - styled.components - Features:
+/**Portfolio-erick - version 18.03 - styled.components - Features:
  * 
- *      --> Clearing 'IntroSection'
+ *      --> Clearing 'IntroMessage'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -454,24 +454,6 @@ export const IntroText = styled.p`
 export const IntroTitle = styled.h2`
     color: yellow;
     margin-bottom: 2rem;
-`;
-
-export const IntroMessage = styled.div`
-  line-height: 2rem;
-  grid-column: col-start 6 / col-end 8;
-  padding: 3rem;
-  
-  @media screen and (max-width: 2000px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    width: 27rem;
-  }
 `;
 
 export const HeaderButtonsWrapper = styled.div`
