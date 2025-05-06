@@ -1,36 +1,38 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { DownloadCV, IntroMessage, IntroSection, IntroText, IntroTitle } from "../styled-components/styled.components";
+import { DownloadCV, IntroMessage, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.02 - Intro - Features:
+/**Portfolio-erick - version 18.03 - Intro - Features:
  * 
- *      --> Migrating back 'IntroSection'
+ *      --> Clearing 'IntroSection' import 
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+
+const IntroSection = styled.section`
+   display: grid;
+   grid-column: container-start / container-end;
+   place-content: center;
+   background: linear-gradient(
+   to left,
+   rgb(48, 7, 82) 0%,
+   rgba(0, 128, 128, 1) 100%
+   );
+   margin: 4rem;
+   border-radius: 4rem;
+
+   @media screen and (max-width: 520px) {
+   width: 20rem;
+   }
+`;
+
 const IntroComponent = () => {
 
     const { filePdf } = usePortfolioContext();
 
- const IntroSection = styled.section`
-    display: grid;
-    grid-column: container-start / container-end;
-    place-content: center;
-    background: linear-gradient(
-    to left,
-    rgb(48, 7, 82) 0%,
-    rgba(0, 128, 128, 1) 100%
-    );
-    margin: 4rem;
-    border-radius: 4rem;
-
-    @media screen and (max-width: 520px) {
-    width: 20rem;
-    }
-`;
 
     const { ResumeData } = usePortfolioContext()
     console.log('resume data ==>', ResumeData)
