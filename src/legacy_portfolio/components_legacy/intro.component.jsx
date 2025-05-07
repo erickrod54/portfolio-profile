@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { DownloadCV, IntroMessage, IntroText, IntroTitle } from "../styled-components/styled.components";
+import { DownloadCV, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.04 - Intro - Features:
+/**Portfolio-erick - version 18.05 - Intro - Features:
  * 
- *      --> Migrating back 'IntroMessage'
+ *      --> Clearing 'IntroMessage' import
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
