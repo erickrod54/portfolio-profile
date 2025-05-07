@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { DownloadCV, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.05 - Intro - Features:
+/**Portfolio-erick - version 18.06 - Intro - Features:
  * 
- *      --> Clearing 'IntroMessage' import
+ *      --> Migrating back 'IntroTitle'
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -29,26 +29,31 @@ const IntroSection = styled.section`
    }
 `;
 
+const IntroMessage = styled.div`
+ line-height: 2rem;
+ grid-column: col-start 6 / col-end 8;
+ padding: 3rem;
+ 
+ @media screen and (max-width: 2000px) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 50rem;
+ }
+
+ @media screen and (max-width: 900px) {
+   width: 27rem;
+ }
+`;
+
 const IntroComponent = () => {
 
     const { filePdf } = usePortfolioContext();
 
- const IntroMessage = styled.div`
-  line-height: 2rem;
-  grid-column: col-start 6 / col-end 8;
-  padding: 3rem;
-  
-  @media screen and (max-width: 2000px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    width: 27rem;
-  }
+ const IntroTitle = styled.h2`
+    color: yellow;
+    margin-bottom: 2rem;
 `;
 
     const { ResumeData } = usePortfolioContext()
