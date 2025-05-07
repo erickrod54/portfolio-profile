@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { DownloadCV, IntroMessage, IntroText, IntroTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.03 - Intro - Features:
+/**Portfolio-erick - version 18.04 - Intro - Features:
  * 
- *      --> Clearing 'IntroSection' import 
+ *      --> Migrating back 'IntroMessage'
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -33,6 +33,23 @@ const IntroComponent = () => {
 
     const { filePdf } = usePortfolioContext();
 
+ const IntroMessage = styled.div`
+  line-height: 2rem;
+  grid-column: col-start 6 / col-end 8;
+  padding: 3rem;
+  
+  @media screen and (max-width: 2000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 27rem;
+  }
+`;
 
     const { ResumeData } = usePortfolioContext()
     console.log('resume data ==>', ResumeData)
