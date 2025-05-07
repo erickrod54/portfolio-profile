@@ -8,7 +8,6 @@ import { AnchorTag,
          ExperimentalUIWrapper,
          FooterCenter,
          FooterContainer, FooterRight, HeaderButtonsWrapper, HeaderLogo, HeaderWrapper, 
-         IntroMessage, 
          IntroTitle,
          ModalContent,
          StyleBneonCard,
@@ -39,9 +38,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 18.02 - styled.components - Features:
+/**Portfolio-erick - version 18.03 - styled.components - Features:
  * 
- *      --> Clearing 'IntroSection'
+ *      --> Clearing 'IntroMessage'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -54,7 +53,6 @@ export { FooterContainer,
          FooterRight,
          AnchorTag,
          EachBtn,
-         IntroMessage,
          IntroTitle,
          DownloadCV,
          ModalContent,
