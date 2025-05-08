@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { DownloadCV, IntroText, IntroTitle } from "../styled-components/styled.components";
+import { DownloadCV, IntroText } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.06 - Intro - Features:
+/**Portfolio-erick - version 18.07 - Intro - Features:
  * 
- *      --> Migrating back 'IntroTitle'
+ *      --> Clearing 'IntroTitle' import
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
