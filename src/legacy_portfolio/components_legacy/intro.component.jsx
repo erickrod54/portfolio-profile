@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { DownloadCV, IntroText } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.07 - Intro - Features:
+/**Portfolio-erick - version 18.08 - Intro - Features:
  * 
- *      --> Clearing 'IntroTitle' import
+ *      --> Migrating back 'IntroText' 
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -47,15 +47,18 @@ const IntroMessage = styled.div`
  }
 `;
 
+const IntroTitle = styled.h2`
+   color: yellow;
+   margin-bottom: 2rem;
+`;
+
 const IntroComponent = () => {
 
     const { filePdf } = usePortfolioContext();
 
- const IntroTitle = styled.h2`
-    color: yellow;
-    margin-bottom: 2rem;
-`;
-
+const IntroText = styled.p`
+    color: var(--clr-white);
+`; 
     const { ResumeData } = usePortfolioContext()
     console.log('resume data ==>', ResumeData)
     return(
