@@ -3,7 +3,6 @@ import { AnchorTag,
          ButtonsWrapper,
          CenterList,
          CenterListItem,
-         DownloadCV,
          EachBtn,
          ExperimentalUIWrapper,
          FooterCenter,
@@ -37,9 +36,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 18.06 - styled.components - Features:
+/**Portfolio-erick - version 18.09 - styled.components - Features:
  * 
- *      --> Clearing 'IntroTitle'
+ *      --> Clearing 'DownloadCV'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -52,7 +51,6 @@ export { FooterContainer,
          FooterRight,
          AnchorTag,
          EachBtn,
-         DownloadCV,
          ModalContent,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
