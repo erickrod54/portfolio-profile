@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 18.06 - styled.components - Features:
+/**Portfolio-erick - version 18.08 - styled.components - Features:
  * 
- *      --> Clearing 'IntroTitle'
+ *      --> Clearing 'IntroText'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -446,10 +446,6 @@ export const DownloadCV = styled.div`
     cursor: pointer;
   }
 `;
-
-export const IntroText = styled.p`
-    color: var(--clr-white);
-`; 
 
 export const HeaderButtonsWrapper = styled.div`
     display: flex;
