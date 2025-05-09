@@ -1,4 +1,3 @@
-import HeaderComponent from "./header.component";
 import Footer from "./footer.component";
 import HeaderButtons from "./header.buttons.component";
 import Card from "./card.component";
@@ -7,16 +6,15 @@ import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
 import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 18.02 - index > components
+/**Portfolio-erick - version 18.11 - index > components
  *  - Features:
  * 
- *      --> Clearing 'IntroComponent'.
+ *      --> Clearing 'HeaderComponent'.
  * 
  * Notes: This component now is on legacy directory
  */
 
-export { HeaderComponent,
-         HeaderButtons,
+export { HeaderButtons,
          Footer,
          SocialComponent,
          IconComponent,
