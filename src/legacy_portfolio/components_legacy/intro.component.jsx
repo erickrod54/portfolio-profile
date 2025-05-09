@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { DownloadCV } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.09 - Intro - Features:
+/**Portfolio-erick - version 18.10 - Intro - Features:
  * 
- *      --> Migrating back 'DownloadCV'  
+ *      --> Clearing 'DownloadCV' impor  
 *     
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -56,12 +55,6 @@ const IntroText = styled.p`
     color: var(--clr-white);
 `; 
 
-const IntroComponent = () => {
-
-    const { filePdf } = usePortfolioContext();
-    const { ResumeData } = usePortfolioContext()
-    console.log('resume data ==>', ResumeData)
-
 const DownloadCV = styled.div`
   margin-top: 3rem;
   padding: 10px 20px;
@@ -85,6 +78,13 @@ const DownloadCV = styled.div`
     cursor: pointer;
   }
 `;
+
+const IntroComponent = () => {
+
+    const { filePdf } = usePortfolioContext();
+    const { ResumeData } = usePortfolioContext()
+    console.log('resume data ==>', ResumeData)
+
 
     return(
         <IntroSection>
