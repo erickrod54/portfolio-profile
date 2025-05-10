@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 18.12 - styled.components - Features:
+/**Portfolio-erick - version 18.13 - styled.components - Features:
  * 
- *      --> Clearing 'HeaderWrapper'
+ *      --> Clearing 'HeaderLogo'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -429,11 +429,6 @@ export const HeaderButtonsWrapper = styled.div`
     margin: 2rem;
     grid-column: col-start 7 / col-end 8;
 `;
-
-export const HeaderLogo = styled.div`
-    grid-column: col-start 0 / col-end 1;
-`;
-
 
 export const ButtonsList = styled.ul`
 
