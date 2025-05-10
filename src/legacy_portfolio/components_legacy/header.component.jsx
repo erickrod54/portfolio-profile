@@ -1,7 +1,7 @@
 import { logo } from "../assets/index.assets";
 import { usePortfolioContext } from "../context";
 import HeaderButtons from "./header.buttons.component";
-import { HeaderButtonsWrapper, HeaderLogo, HeaderWrapper } from "../styled-components/styled.components";
+import { HeaderButtonsWrapper, HeaderLogo } from "../styled-components/styled.components";
 import styled from "styled-components";
 
 /**Portfolio-erick - version 18.12 - HeaderComponent - Features:
@@ -13,20 +13,20 @@ import styled from "styled-components";
  */
 
 
+const HeaderWrapper = styled.section`
+   display: grid;
+   margin: 2rem;
+   padding: 2rem;
+   grid-column: container-start / container-end;
+   height: fit-content;
+   background: linear-gradient(to left, rgb(48, 7, 82) 0%, rgba(0, 128, 128, 1) 100%);
+   border-radius: 4rem;
+`
 
 const HeaderComponent = () => {
 
     const { openModal, NavBarData } = usePortfolioContext()
 
- const HeaderWrapper = styled.section`
-    display: grid;
-    margin: 2rem;
-    padding: 2rem;
-    grid-column: container-start / container-end;
-    height: fit-content;
-    background: linear-gradient(to left, rgb(48, 7, 82) 0%, rgba(0, 128, 128, 1) 100%);
-    border-radius: 4rem;
-`
 
     return(
         <HeaderWrapper>
