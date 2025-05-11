@@ -4,9 +4,9 @@ import HeaderButtons from "./header.buttons.component";
 import { HeaderButtonsWrapper } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 18.14 - HeaderComponent - Features:
+/**Portfolio-erick - version 18.15 - HeaderComponent - Features:
  * 
- *      --> Clearing 'HeaderLogo' import
+ *      --> Migrating back 'HeaderButtonsWrapper' 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -31,6 +31,12 @@ const HeaderComponent = () => {
 
     const { openModal, NavBarData } = usePortfolioContext()
 
+const HeaderButtonsWrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+    grid-column: col-start 7 / col-end 8;
+`;
 
     return(
         <HeaderWrapper>
