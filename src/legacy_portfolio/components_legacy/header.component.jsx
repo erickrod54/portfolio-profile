@@ -1,12 +1,11 @@
 import { logo } from "../assets/index.assets";
 import { usePortfolioContext } from "../context";
 import HeaderButtons from "./header.buttons.component";
-import { HeaderButtonsWrapper } from "../styled-components/styled.components";
 import styled from "styled-components";
 
-/**Portfolio-erick - version 18.15 - HeaderComponent - Features:
+/**Portfolio-erick - version 18.16 - HeaderComponent - Features:
  * 
- *      --> Migrating back 'HeaderButtonsWrapper' 
+ *      --> Clearing 'HeaderButtonsWrapper' import 
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -27,16 +26,17 @@ const HeaderLogo = styled.div`
     grid-column: col-start 0 / col-end 1;
 `;
 
-const HeaderComponent = () => {
-
-    const { openModal, NavBarData } = usePortfolioContext()
-
 const HeaderButtonsWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     margin: 2rem;
     grid-column: col-start 7 / col-end 8;
 `;
+
+const HeaderComponent = () => {
+
+    const { openModal, NavBarData } = usePortfolioContext()
+
 
     return(
         <HeaderWrapper>
