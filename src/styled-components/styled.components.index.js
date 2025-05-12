@@ -1,5 +1,4 @@
 import { AnchorTag,
-         ButtonsList,
          CenterList,
          CenterListItem,
          EachBtn,
@@ -35,9 +34,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 18.18 - styled.components - Features:
+/**Portfolio-erick - version 18.20 - styled.components - Features:
  * 
- *      --> Clearing 'ButtonsWrapper'
+ *      --> Clearing 'ButtonsList'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -79,5 +78,5 @@ export { FooterContainer,
          StyledSci,
          SocialTitle,
          SocialContent,
-         ButtonsList, CenterListItem }
+         CenterListItem }
 
