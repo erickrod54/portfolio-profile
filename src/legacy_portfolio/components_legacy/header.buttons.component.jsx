@@ -1,20 +1,14 @@
 import styled from "styled-components";
-import { ButtonsList, ButtonsWrapper, EachBtn } from "../styled-components/styled.components";
+import { ButtonsList, EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.18 - HeaderButtons - Features:
+/**Portfolio-erick - version 18.19 - HeaderButtons - Features:
  * 
- *      --> Migrating back 'ButtonsWrapper'
+ *      --> Clearing 'ButtonsWrapper' import
  * 
  * Notes: By this version all tasks are done 
  * for this component
  */
 
-
-const HeaderButtons = ({ id, urlname, openModal }) => {
-
-    console.log('open modal value ==>', openModal)
-
-    /**className={'header--buttons--each' ? 'header--buttons--each' : 'header--buttons--each-small'} */
 
 const ButtonsWrapper = styled.section`
     display: grid;
@@ -24,6 +18,13 @@ const ButtonsWrapper = styled.section`
     border-radius: 0.7rem;
     cursor: pointer;
 `
+
+const HeaderButtons = ({ id, urlname, openModal }) => {
+
+    console.log('open modal value ==>', openModal)
+
+    /**className={'header--buttons--each' ? 'header--buttons--each' : 'header--buttons--each-small'} */
+
 
     return(
         <ButtonsWrapper>
