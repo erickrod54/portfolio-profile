@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 18.14 - styled.components - Features:
+/**Portfolio-erick - version 18.20 - styled.components - Features:
  * 
- *      --> Clearing 'HeaderButtonsWrapper'
+ *      --> Clearing 'ButtonsList'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -422,10 +422,6 @@ export const ModalContent = styled.div`
   text-align: center;
   position: relative;
 `;
-
-export const ButtonsList = styled.ul`
-
-`
 
 export const ButtonsWrapper = styled.section`
     display: grid;
