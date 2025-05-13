@@ -1,7 +1,6 @@
 import { AnchorTag,
          CenterList,
          CenterListItem,
-         EachBtn,
          ExperimentalUIWrapper,
          FooterCenter,
          FooterContainer, FooterRight,
@@ -34,9 +33,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 18.20 - styled.components - Features:
+/**Portfolio-erick - version 19.01 - styled.components - Features:
  * 
- *      --> Clearing 'ButtonsList'
+ *      --> Clearing 'EachBtn'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -48,7 +47,6 @@ export { FooterContainer,
          CenterList,
          FooterRight,
          AnchorTag,
-         EachBtn,
          ModalContent,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
