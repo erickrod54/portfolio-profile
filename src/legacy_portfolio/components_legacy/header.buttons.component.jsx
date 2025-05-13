@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { ButtonsList, EachBtn } from "../styled-components/styled.components";
+import {  EachBtn } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 18.19 - HeaderButtons - Features:
+/**Portfolio-erick - version 19.00 - HeaderButtons - Features:
  * 
- *      --> Clearing 'ButtonsWrapper' import
+ *      --> Clearing 'ButtonsList' import
  * 
  * Notes: By this version all tasks are done 
  * for this component
@@ -17,6 +17,10 @@ const ButtonsWrapper = styled.section`
     height: 5vh;
     border-radius: 0.7rem;
     cursor: pointer;
+`
+
+const ButtonsList = styled.ul`
+
 `
 
 const HeaderButtons = ({ id, urlname, openModal }) => {
