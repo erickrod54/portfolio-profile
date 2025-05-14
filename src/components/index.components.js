@@ -6,16 +6,15 @@ import SocialComponent from "./social.component";
 import IconComponent from './icon.component'
 import OuterCircleIcons from "./outer.circle.icons.component";
 
-/**Portfolio-erick - version 18.11 - index > components
+/**Portfolio-erick - version 19.04 - index > components
  *  - Features:
  * 
- *      --> Clearing 'HeaderComponent'.
+ *      --> Clearing 'HeaderButtons'.
  * 
  * Notes: This component now is on legacy directory
  */
 
-export { HeaderButtons,
-         Footer,
+export { Footer,
          SocialComponent,
          IconComponent,
          OuterCircleIcons,
