@@ -3,7 +3,7 @@ import { AnchorTag,
          CenterListItem,
          ExperimentalUIWrapper,
          FooterCenter,
-         FooterContainer, FooterRight,
+         FooterRight,
          ModalContent,
          StyleBneonCard,
          StyleProfileWrapper,
@@ -33,17 +33,16 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 19.01 - styled.components - Features:
+/**Portfolio-erick - version 19.07 - styled.components - Features:
  * 
- *      --> Clearing 'EachBtn'
+ *      --> Clearing 'FooterContainer'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-export { FooterContainer,
-         FooterCenter,
+export { FooterCenter,
          CenterList,
          FooterRight,
          AnchorTag,
