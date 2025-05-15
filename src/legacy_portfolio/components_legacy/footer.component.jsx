@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { AnchorTag, CenterList, CenterListItem, FooterCenter, FooterRight } from "../styled-components/styled.components";
+import { AnchorTag, CenterList, CenterListItem, FooterRight } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 19.09 - Footer - Features:
+/**Portfolio-erick - version 19.10 - Footer - Features:
  * 
- *      --> Migrating back 'FooterCenter' 
+ *      --> Clearing 'FooterCenter' import 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -27,13 +27,14 @@ const FooterContainer = styled.section`
     margin-right: 4.3rem;
 `
 
+const FooterCenter = styled.div`
+    justify-self: end;
+` 
+
 const Footer = () => {
 
     const { social } = usePortfolioContext()
 
-const FooterCenter = styled.div`
-    justify-self: end;
-` 
 
     return(
         <FooterContainer>
