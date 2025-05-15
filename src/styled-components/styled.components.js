@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 19.07 - styled.components - Features:
+/**Portfolio-erick - version 19.09 - styled.components - Features:
  * 
- *      --> Clearing 'FooterContainer'
+ *      --> Clearing 'FooterCenter'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -449,7 +449,3 @@ export const CenterListItem = styled.li`
 export const CenterList = styled.ul`
 
 `
-
-export const FooterCenter = styled.div`
-    justify-self: end;
-` 
