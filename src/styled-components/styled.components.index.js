@@ -1,6 +1,5 @@
 import { AnchorTag,
          CenterList,
-         CenterListItem,
          ExperimentalUIWrapper,
          ModalContent,
          StyleBneonCard,
@@ -31,9 +30,9 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 19.12 - styled.components - Features:
+/**Portfolio-erick - version 19.13 - styled.components - Features:
  * 
- *      --> Clearing 'FooterRight'
+ *      --> Clearing again 'CenterListItem'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
