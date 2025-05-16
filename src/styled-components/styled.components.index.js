@@ -32,17 +32,16 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 19.09 - styled.components - Features:
+/**Portfolio-erick - version 19.11 - styled.components - Features:
  * 
- *      --> Clearing 'FooterCenter'
+ *      --> Clearing 'CenterList'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-export { CenterList,
-         FooterRight,
+export { FooterRight,
          AnchorTag,
          ModalContent,
          ExperimentalUIWrapper,
@@ -72,6 +71,6 @@ export { CenterList,
          StyleSocialWrapper,
          StyledSci,
          SocialTitle,
-         SocialContent,
-         CenterListItem }
+         SocialContent
+         }
 
