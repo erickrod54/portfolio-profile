@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { usePortfolioContext } from "../context";
 import { AnchorTag, CenterListItem } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 19.15 - Footer - Features:
+/**Portfolio-erick - version 19.16 - Footer - Features:
  *  
- *      --> Clearing 'FooterRight' import 
+ *      --> Migrating back 'CenterListItem' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -35,15 +35,19 @@ const CenterList = styled.ul`
 
 `
 
-const Footer = () => {
-
-    const { social } = usePortfolioContext()
-
 const FooterRight = styled.div`
     justify-self: end;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 `
+
+const Footer = () => {
+
+    const { social } = usePortfolioContext()
+
+    const CenterListItem = styled.li`
+
+    `
 
     return(
         <FooterContainer>
