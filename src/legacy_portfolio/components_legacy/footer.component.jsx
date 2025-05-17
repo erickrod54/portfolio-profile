@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { AnchorTag, CenterListItem } from "../styled-components/styled.components";
+import { AnchorTag } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 19.16 - Footer - Features:
+/**Portfolio-erick - version 19.17 - Footer - Features:
  *  
- *      --> Migrating back 'CenterListItem' 
+ *      --> Clearing 'CenterListItem' import 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
