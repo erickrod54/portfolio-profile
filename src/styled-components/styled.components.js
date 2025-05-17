@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 19.12 - styled.components - Features:
+/**Portfolio-erick - version 19.17 - styled.components - Features:
  * 
- *      --> Clearing 'FooterRight'
+ *      --> Clearing 'AnchorTag'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -430,10 +430,6 @@ export const ButtonsWrapper = styled.section`
     height: 5vh;
     border-radius: 0.7rem;
     cursor: pointer;
-`
-
-export const AnchorTag = styled.a`
-
 `
 
 export const CenterList = styled.ul`
