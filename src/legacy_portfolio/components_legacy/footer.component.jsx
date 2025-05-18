@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { usePortfolioContext } from "../context";
-import { AnchorTag } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 19.19 - Footer - Features:
+/**Portfolio-erick - version 19.20 - Footer - Features:
  *  
- *      --> Migrating back 'AnchorTag'  
+ *      --> Clearing 'AnchorTag' import  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -45,13 +44,14 @@ const CenterListItem = styled.li`
 
 `
 
+const AnchorTag = styled.a`
+
+`
+
 const Footer = () => {
 
     const { social } = usePortfolioContext()
 
-    const AnchorTag = styled.a`
-
-    `
 
     return(
         <FooterContainer>
