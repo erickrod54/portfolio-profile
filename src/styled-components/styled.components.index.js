@@ -1,5 +1,4 @@
-import { AnchorTag,
-         ExperimentalUIWrapper,
+import { ExperimentalUIWrapper,
          ModalContent,
          StyleBneonCard,
          StyleProfileWrapper,
@@ -29,17 +28,16 @@ import { AnchorTag,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 19.14 - styled.components - Features:
+/**Portfolio-erick - version 19.19 - styled.components - Features:
  * 
- *      --> Clearing again 'CenterList'
+ *      --> Clearing again 'AnchorTag'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-export { AnchorTag,
-         ModalContent,
+export { ModalContent,
          ExperimentalUIWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
