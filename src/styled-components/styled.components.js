@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 19.20 - styled.components - Features:
+/**Portfolio-erick - version 20.00 - styled.components - Features:
  * 
- *      --> Clearing 'ButtonsWrapper'
+ *      --> Clearing 'ModalContent'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -413,12 +413,3 @@ export const ProfileCardCenterButton = styled.button`
 /** Card component styles - END */
 /** Styled Components for new Portfolio - END */
 
-export const ModalContent = styled.div`
-  background: var(--clr-white);
-  width: 90vw;
-  max-width: var(--fixed-width);
-  padding: 3rem;
-  border-radius: var(--radius);
-  text-align: center;
-  position: relative;
-`;
