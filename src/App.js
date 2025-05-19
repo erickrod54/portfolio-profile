@@ -1,10 +1,11 @@
+import { HeaderTitle } from "./components/index.components.js";
 import { Card } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 
-/**Portfolio-erick - version 20.02 - App  js file -
+/**Portfolio-erick - version 20.04 - App  js file -
  * Features:
  * 
- *      --> Clearing HomePage import
+ *      --> Adding 'HeaderTitle'
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -12,6 +13,7 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 function App() {
   return (
     <ExperimentalUIWrapper>
+      <HeaderTitle />
       <Card />
     </ExperimentalUIWrapper>
   );
