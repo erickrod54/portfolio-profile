@@ -2,10 +2,10 @@
 import { Card } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 
-/**Portfolio-erick - version 10.06 - App  js file -
+/**Portfolio-erick - version 20.01 - App  js file -
  * Features:
  * 
- *      --> Rendering 'Card' Component
+ *      --> Clearing HomePage
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -13,7 +13,6 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 function App() {
   return (
     <ExperimentalUIWrapper>
-    {/*<HomePage />*/}
       <Card />
     </ExperimentalUIWrapper>
   );
