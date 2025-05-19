@@ -1,5 +1,4 @@
 import { ExperimentalUIWrapper,
-         ModalContent,
          StyleBneonCard,
          StyleProfileWrapper,
          CardWrapper,
@@ -28,17 +27,16 @@ import { ExperimentalUIWrapper,
          SocialContent,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 19.19 - styled.components - Features:
+/**Portfolio-erick - version 20.00 - styled.components - Features:
  * 
- *      --> Clearing again 'AnchorTag'
+ *      --> Clearing again 'ModalContent'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-export { ModalContent,
-         ExperimentalUIWrapper,
+export { ExperimentalUIWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
          CardWrapper,
