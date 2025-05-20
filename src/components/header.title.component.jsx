@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.05 - HeaderTitle - Features:
+/**Portfolio-erick - version 20.06 - HeaderTitle - Features:
  * 
- *      --> Building 'isAriaHidden'
+ *      --> Implementing 'useEffect' to control AriaEffect
+ *          on mount
  * 
  * Notes: This state is going to be use to trigger the 
  * Aria effect ( color the title ) once the component
@@ -12,10 +13,19 @@ import styled from 'styled-components';
 
 const HeaderTitle = () => {
 
-  const [ isAriaHidden, setIsAriaHidden ] = useState(true);
-
+  const [ isTextFilled, setIsTextFilled ] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsTextFilled(false)
+    },5000)
+    
+    return () => clearTimeout(timer);
+    
+  }, [])
+   
   return (
-    <StyledWrapper>
+    <StyledWrapper $isFilled={isTextFilled}>
       <button className="button" data-text="Awesome">
         <span className="actual-text">&nbsp;@erickdev&nbsp;</span>
         <span aria-hidden="true" className="front-text">&nbsp;@erickdev&nbsp;</span>
@@ -55,6 +65,14 @@ const StyledWrapper = styled.div`
     animation: 8s ani infinite;
     border-bottom: 2px solid transparent;
   }
+
+   ${props => props.$isFilled && ` 
+    .front-text {
+      width: 100%;
+      border-bottom: 2px solid #03a9f4;
+      -webkit-text-stroke: 1px var(--ani-color);
+    }
+    `}
 
   .button:hover .front-text {
     width: 100%;
