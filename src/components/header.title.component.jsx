@@ -1,15 +1,19 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.04 - HeaderTitle - Features:
+/**Portfolio-erick - version 20.05 - HeaderTitle - Features:
  * 
- *      --> Clearing 'FooterCenter'
+ *      --> Building 'isAriaHidden'
  * 
- * Notes: This components is adapted to the new layout
- * and is functional working, pending for layout the 
- * component itself
+ * Notes: This state is going to be use to trigger the 
+ * Aria effect ( color the title ) once the component
+ * mounts
  */
 
 const HeaderTitle = () => {
+
+  const [ isAriaHidden, setIsAriaHidden ] = useState(true);
+
   return (
     <StyledWrapper>
       <button className="button" data-text="Awesome">
