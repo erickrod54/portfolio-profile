@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.06 - HeaderTitle - Features:
+/**Portfolio-erick - version 20.07 - HeaderTitle - Features:
  * 
- *      --> Implementing 'useEffect' to control AriaEffect
- *          on mount
+ *      --> Inreasing 'useEffect' > 'timer' to 6s
  * 
  * Notes: This state is going to be use to trigger the 
  * Aria effect ( color the title ) once the component
@@ -18,7 +17,7 @@ const HeaderTitle = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTextFilled(false)
-    },5000)
+    },6000)
     
     return () => clearTimeout(timer);
     
