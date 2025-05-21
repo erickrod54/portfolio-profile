@@ -1,13 +1,25 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.08 - WaterTitle  -
+/**Portfolio-erick - version 20.09 - WaterTitle  -
  * Features:
  * 
- *      --> Building 'WaterTitle'
+ *      --> Building 'WaterTitleData'
  * 
- * Notes: To substite the legacy body implementation.
+ * Notes: This data is to test WaterTitle, the data
+ * will be relocated or provided to the component
+ * that will consume this data.
  */
 
+
+
+const WaterTitleData = [
+  { id: 1, title: 'Open' },
+  { id: 2, title: 'Sourcerer' }
+];
+
+// Destructure the second element (index 1) of the array - by leaving the 
+// comma - before of that is the index 0 and so on after 1 will be 2..
+const [{ title: firstTitle }, { title: secondTitle }] = WaterTitleData;
 
 const WaterTitle = ({ title }) => {
 
