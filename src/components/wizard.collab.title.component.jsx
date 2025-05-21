@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { WaterTitle } from "./index.components";
 
-/**Portfolio-erick - version 20.11 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 20.12 - WizardCollabTitle - Features:
  * 
- *      --> Building 'WizardCollabTitle'
+ *      --> Changing test to 'water'
  * 
  * Notes: This is the component title for open source collab 
  * section
@@ -20,7 +20,7 @@ const WizardCollabTitle = () => {
     return(
         <WizardCollabWrapper>
             {/**here i am passing down test data */}
-            <WaterTitle title={'testing water title'}/>
+            <WaterTitle title={'water'}/>
         </WizardCollabWrapper>
     )
 }
