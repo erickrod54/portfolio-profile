@@ -1,11 +1,12 @@
 import { HeaderTitle } from "./components/index.components.js";
 import { Card } from "./components/index.components.js";
+import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 
-/**Portfolio-erick - version 20.13 - App  js file -
+/**Portfolio-erick - version 20.14 - App  js file -
  * Features:
  * 
- *      --> Removing 'WizardCollabTitle' test
+ *      --> Adding 'SectionDivider'
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -15,6 +16,7 @@ function App() {
     <ExperimentalUIWrapper>
       <HeaderTitle />
       <Card />
+      <SectionDivider />
     </ExperimentalUIWrapper>
   );
 }
