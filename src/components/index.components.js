@@ -6,11 +6,12 @@ import OuterCircleIcons from "./outer.circle.icons.component";
 import HeaderTitle from "./header.title.component";
 import WaterTitle from "./collaborations.title.component";
 import WizardCollabTitle from "./wizard.collab.title.component";
+import SectionDivider from "./section.divider.component";
 
-/**Portfolio-erick - version 20.11 - index > components
+/**Portfolio-erick - version 20.14 - index > components
  *  - Features:
  * 
- *      --> Adding 'WizardCollabTitle'.
+ *      --> Adding 'SectionDivider'.
  * 
  * Notes: This component now is on legacy directory
  */
@@ -21,4 +22,5 @@ export { SocialComponent,
          OuterCircleIcons,
          WaterTitle,
          WizardCollabTitle,
+         SectionDivider,
          AvatarPicture, Card }
