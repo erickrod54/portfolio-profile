@@ -3,9 +3,9 @@ import {  WaterTitle } from "./index.components";
 import { faHatWizard, faWandSparkles } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-/**Portfolio-erick - version 20.16 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 20.17 - WizardCollabTitle - Features:
  * 
- *      --> Refactoring 'WizardCollabWrapper'
+ *      --> Adding 'faWandSparkles' icon
  * 
  * Notes: This is the component title for open source collab 
  * section
@@ -34,7 +34,7 @@ const WizardCollabTitle = () => {
 
     return(
         <WizardCollabWrapper>
-
+            <FontAwesomeIcon icon={faWandSparkles} style={{color: "#FFD43B", width:'30px', height:'30px'}} />
             <WaterTitle title={firstTitle}/>
             <WaterTitle title={secondTitle}/>
 
