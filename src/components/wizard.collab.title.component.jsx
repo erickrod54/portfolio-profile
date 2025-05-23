@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import { WaterTitle } from "./index.components";
+import {  WaterTitle } from "./index.components";
+import { faHatWizard, faWandSparkles } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-/**Portfolio-erick - version 20.15 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 20.16 - WizardCollabTitle - Features:
  * 
- *      --> Placing 'WaterTitleData'
+ *      --> Refactoring 'WizardCollabWrapper'
  * 
  * Notes: This is the component title for open source collab 
  * section
@@ -21,15 +23,21 @@ const [{ title: firstTitle }, { title: secondTitle }] = WaterTitleData;
 
 
 const WizardCollabWrapper = styled.div`
-
+display: flex;
+justify-content: center; 
+align-items: center;
+width: 100%; 
+gap: 2rem; 
 `
 
 const WizardCollabTitle = () => {
 
     return(
         <WizardCollabWrapper>
-            {/**here i am passing down test data */}
-            <WaterTitle title={'water'}/>
+
+            <WaterTitle title={firstTitle}/>
+            <WaterTitle title={secondTitle}/>
+
         </WizardCollabWrapper>
     )
 }
