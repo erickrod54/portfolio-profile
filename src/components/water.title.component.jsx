@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.15 - WaterTitle  -
+/**Portfolio-erick - version 20.19 - WaterTitle  -
  * Features:
  * 
- *      --> Migrating 'WaterTitleData' to WizardCollabTitle
+ *      --> Refactoring 'StyledWrapper'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -23,17 +23,25 @@ const WaterTitle = ({ title }) => {
 }
 
 const StyledWrapper = styled.div` 
-.loader {
-  position: relative;
-}
+  width: auto;
+  align-self: center;
 
-.loader span {
-  position: absolute;
-  color: #fff;
-  transform: translate(-50%, -50%);
-  font-size: 38px;
-  letter-spacing: 5px;
-}
+  .loader {
+    position: relative; 
+    width: 140px; 
+    height: 60px; 
+  }
+
+  .loader span {
+    position: absolute;
+    color: #fff;
+    /* Keep centering relative to the .loader div */
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
 
 .loader span:nth-child(1) {
   color: transparent;
