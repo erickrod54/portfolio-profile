@@ -7,16 +7,18 @@ import HeaderTitle from "./header.title.component";
 import WaterTitle from "./water.title.component";
 import WizardCollabTitle from "./wizard.collab.title.component";
 import SectionDivider from "./section.divider.component";
+import Collaborations from "./collaborations.component";
 
-/**Portfolio-erick - version 20.19 - index > components
+/**Portfolio-erick - version 21.00 - index > components
  *  - Features:
  * 
- *      --> Adding 'WaterTitle'.
+ *      --> Adding 'Collaborations'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
+         Collaborations,
          HeaderTitle,   
          IconComponent,
          OuterCircleIcons,
