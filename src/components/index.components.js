@@ -9,11 +9,12 @@ import WizardCollabTitle from "./wizard.collab.title.component";
 import SectionDivider from "./section.divider.component";
 import Collaborations from "./collaborations.component";
 import CollabTitle from "./collaborations.title.component";
+import GitChart from "./git.chart.component";
 
-/**Portfolio-erick - version 21.01 - index > components
+/**Portfolio-erick - version 21.02 - index > components
  *  - Features:
  * 
- *      --> Adding 'CollabTitle'.
+ *      --> Adding 'GitChart'.
  * 
  * Notes: This component now is on legacy directory
  */
@@ -21,6 +22,7 @@ import CollabTitle from "./collaborations.title.component";
 export { SocialComponent,
          CollabTitle,
          Collaborations,
+         GitChart,
          HeaderTitle,   
          IconComponent,
          OuterCircleIcons,
