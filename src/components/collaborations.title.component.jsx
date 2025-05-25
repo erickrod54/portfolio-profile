@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 21.05 - CollabTitle - Features:
+/**Portfolio-erick - version 21.06 - CollabTitle - Features:
  * 
- *      --> Building 'CollabTitleData' 
+ *      --> testing 'firstTitle' 
  * 
  * Notes: This is the component will be refactored to received 
  * data from sources
@@ -19,7 +19,7 @@ const CollabTitle = () => {
 
   return (
     <StyledWrapper> 
-      <div className="animation">Daily Contributions !</div>
+      <div className="animation">{firstTitle}</div>
     </StyledWrapper>
   );
 }
