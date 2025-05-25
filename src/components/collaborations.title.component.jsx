@@ -1,18 +1,25 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 21.04 - CollabTitle - Features:
+/**Portfolio-erick - version 21.05 - CollabTitle - Features:
  * 
- *      --> Building 'CollabTitle' 
+ *      --> Building 'CollabTitleData' 
  * 
  * Notes: This is the component will be refactored to received 
  * data from sources
  */
 
+const CollabTitleData = [
+  { id: 1, title: 'Daily Contributions !' },
+  { id: 2, title: 'Lets Flow together! ' }
+];
+
+const [{ title: firstTitle }, ] = CollabTitleData;
+
 const CollabTitle = () => {
 
   return (
     <StyledWrapper> 
-      <div className="animation">Daily Contributions!</div>
+      <div className="animation">Daily Contributions !</div>
     </StyledWrapper>
   );
 }
