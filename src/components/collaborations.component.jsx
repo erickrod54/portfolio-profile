@@ -1,39 +1,47 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 21.00 - Collaborations Component - Features:
+/**Portfolio-erick - version 21.08 - Collaborations Component - Features:
  * 
- *      --> Building 'Collaborations'
+ *      --> Adding white space to 'CollaborationsWrapper'
  * 
  * Notes: This component receives 'children' components
  */
 
 const CollaborationsWrapper = styled.div` 
-    display:flex;
-    margin:4rem;
-    padding:4rem;
-    width:70%;
+    display: flex;
+    flex-direction: row; 
+    
+    /* 🔑 REDUCED EXTERNAL SPACE: Reduced margin and padding for a tighter fit */
+    margin: 2rem auto; 
+    padding: 2rem; 
+    
+    width: 70%;
     border: 1px solid white;
-    border-radius:0.50rem;
+    border-radius: 0.50rem;
 
     > * {
-      flex:1;
-      min-width:0;
-     
+      flex: 1;
+      min-width: 0;
+      /* 🔑 INCREASED SPACE BETWEEN CHILDREN: Increased margin for better separation */
+      margin: 3rem; 
     }
-    
+
     @media (max-width: 768px) {
         flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        width: 90%; /* Increase width to fill more of the mobile screen */
-        margin: 2rem auto; /* Center the wrapper and reduce vertical margin */
-        padding: 4rem 1rem;
+        align-items: center; 
+        width: 90%; 
+        
+        /* Reduced margin and padding further for tight mobile space */
+        margin: 1rem auto; 
+        padding: 1rem;
 
         > * {
-            /* On column layout, flex: 1 makes the items take up full width */
-            flex: none; /* Reset flex-grow so children take up only necessary height */
-            max-width: 100%; /* Ensure children take full available width */
-            margin: 1rem 0;
+            flex: none; 
+            max-width: 100%; 
+            /* Ensure text-align is still center for mobile stacking */
+            text-align: center; 
+            /* Adjusted margin for mobile stacking separation */
+            margin: 1.5rem 0;
         }
     }
 `
