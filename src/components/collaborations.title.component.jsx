@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 21.06 - CollabTitle - Features:
+/**Portfolio-erick - version 21.07 - CollabTitle - Features:
  * 
- *      --> testing 'firstTitle' 
+ *      --> Changing 'border-right' color 
  * 
  * Notes: This is the component will be refactored to received 
  * data from sources
@@ -57,7 +57,7 @@ const StyledWrapper = styled.div`
   font: bold 200% Consolas, Monaco, monospace;
   
   /* The border-right will still be a solid color */
-  border-right: .1em solid black; 
+  border-right: .1em solid white; 
   
   /* You can adjust the width based on the number of characters in the text "Text writing!" (13 characters including space and exclamation) */
   width: 20ch; 
