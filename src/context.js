@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social, amazonAwsData, pythonData } from "./data";
+import { filePdf, NavBarData, profileImagePic, ResumeData, skillIcons, social, amazonAwsData, pythonData, CollabTitleData } from "./data";
 
-/**Portfolio-erick - version 12.03 - context js
+/**Portfolio-erick - version 21.10 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'pythonData'.
+ *      --> Importing and providing 'CollabTitleData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -29,6 +29,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                CollabTitleData,
                 social,
                 NavBarData,
                 isModalOpen,
