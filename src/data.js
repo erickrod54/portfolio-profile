@@ -10,15 +10,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 15.16 - data js
+/**Portfolio-erick - version 21.10 - data js
  *  - Features:
  * 
- *      --> Updating 'social' data set with discord url.
+ *      --> Adding 'CollabTitleData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/** Data sets for titles  */
+
+export const CollabTitleData = [
+  { id: 1, title: 'Daily Contributions !' },
+  { id: 2, title: 'Lets Flow together! ' }
+];
 
 /**Data sets for IconComponent - START */
 
