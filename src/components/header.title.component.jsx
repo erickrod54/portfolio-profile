@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.07 - HeaderTitle - Features:
+/**Portfolio-erick - version 21.09 - HeaderTitle - Features:
  * 
- *      --> Inreasing 'useEffect' > 'timer' to 6s
+ *      --> Adding white space to 'StyledWrapper'
  * 
- * Notes: This state is going to be use to trigger the 
- * Aria effect ( color the title ) once the component
- * mounts
+ * Notes: This White space will be above '@erickdev' title
  */
 
 const HeaderTitle = () => {
@@ -34,6 +32,7 @@ const HeaderTitle = () => {
 }
 
 const StyledWrapper = styled.div`
+  padding-top:4rem;
   .button {
     position: relative;
     border: none;
