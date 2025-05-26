@@ -3,16 +3,23 @@ import { HeaderTitle, WizardCollabTitle } from "./components/index.components.js
 import { Card } from "./components/index.components.js";
 import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
+import { usePortfolioContext } from './context.js'
 
-/**Portfolio-erick - version 21.04 - App  js file -
+/**Portfolio-erick - version 21.12 - App  js file -
  * Features:
  * 
- *      --> Adding 'Collaborations' and rendering children
+ *      --> Providing 'CollabTitleData' from context
+ *          and sending 'firstTItle' 
  * 
  * Notes: To substite the legacy body implementation.
  */
 
 function App() {
+
+  const { CollabTitleData } = usePortfolioContext();
+
+  const [{ title: firstTitle }, ] = CollabTitleData;
+
   return (
     <ExperimentalUIWrapper>
       <HeaderTitle />
@@ -20,7 +27,7 @@ function App() {
       <SectionDivider />
       <WizardCollabTitle />
       <Collaborations>
-        <CollabTitle />
+        <CollabTitle title={firstTitle}/>
         <GitChart />      
       </Collaborations>
     </ExperimentalUIWrapper>
