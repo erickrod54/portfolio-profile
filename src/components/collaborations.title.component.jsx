@@ -1,25 +1,18 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 21.07 - CollabTitle - Features:
+/**Portfolio-erick - version 21.12 - CollabTitle - Features:
  * 
- *      --> Changing 'border-right' color 
+ *      --> Migrating 'CollabTitleData'
  * 
- * Notes: This is the component will be refactored to received 
- * data from sources
+ * Notes: 'CollabTitleData' is going to be placed where the 
+ * 'CollabTitle' is going to consume it.
  */
 
-const CollabTitleData = [
-  { id: 1, title: 'Daily Contributions !' },
-  { id: 2, title: 'Lets Flow together! ' }
-];
-
-const [{ title: firstTitle }, ] = CollabTitleData;
-
-const CollabTitle = () => {
+const CollabTitle = ({title}) => {
 
   return (
     <StyledWrapper> 
-      <div className="animation">{firstTitle}</div>
+      <div className="animation">{title}</div>
     </StyledWrapper>
   );
 }
