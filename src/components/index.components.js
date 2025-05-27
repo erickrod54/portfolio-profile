@@ -10,17 +10,19 @@ import SectionDivider from "./section.divider.component";
 import Collaborations from "./collaborations.component";
 import CollabTitle from "./collaborations.title.component";
 import GitChart from "./git.chart.component";
+import GitFlowComponent from './git.flow.component.jsx'
 
-/**Portfolio-erick - version 21.02 - index > components
+/**Portfolio-erick - version 21.13 - index > components
  *  - Features:
  * 
- *      --> Adding 'GitChart'.
+ *      --> Adding 'GitFlowComponent'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
          CollabTitle,
+         GitFlowComponent,
          Collaborations,
          GitChart,
          HeaderTitle,   
