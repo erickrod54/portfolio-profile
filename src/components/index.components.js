@@ -11,17 +11,19 @@ import Collaborations from "./collaborations.component";
 import CollabTitle from "./collaborations.title.component";
 import GitChart from "./git.chart.component";
 import GitFlowComponent from './git.flow.component.jsx'
+import Footer from "./footer.component.jsx";
 
-/**Portfolio-erick - version 21.13 - index > components
+/**Portfolio-erick - version 21.14 - index > components
  *  - Features:
  * 
- *      --> Adding 'GitFlowComponent'.
+ *      --> Adding 'Footer'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
          CollabTitle,
+         Footer,
          GitFlowComponent,
          Collaborations,
          GitChart,
