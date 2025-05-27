@@ -1,14 +1,14 @@
-import { Collaborations, CollabTitle, GitChart, GitFlowComponent } from "./components/index.components.js";
+import { Collaborations, CollabTitle, Footer, GitChart, GitFlowComponent } from "./components/index.components.js";
 import { HeaderTitle, WizardCollabTitle } from "./components/index.components.js";
 import { Card } from "./components/index.components.js";
 import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js'
 
-/**Portfolio-erick - version 21.13 - App  js file -
+/**Portfolio-erick - version 21.14 - App  js file -
  * Features:
  * 
- *      --> Adding second section for 'Collaborations' 
+ *      --> Adding 'Footer' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -33,6 +33,8 @@ function App() {
           <GitFlowComponent />
           <CollabTitle title={secondTitle}/>
       </Collaborations>
+      <SectionDivider />
+      <Footer />
     </ExperimentalUIWrapper>
   );
 }
