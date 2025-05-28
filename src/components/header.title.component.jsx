@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 21.16 - HeaderTitle - Features:
+/**Portfolio-erick - version 21.18 - HeaderTitle - Features:
  * 
- *      --> Adding 'scrollToHeader' and 
+ *      --> Implementing 'keyframes' helper 
  * 
  * Notes: This White space will be above '@erickdev' title
  * 'scrollToHeader' will handle to make '@erickdev' title
@@ -50,6 +50,19 @@ const HeaderTitle = () => {
   );
 };
 
+const backgroundAnimation = keyframes`
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 400%;
+    }
+    100% {
+      background-position: 0%;
+    }
+`
+
 const StyledWrapper = styled.div`
   padding-top: 4rem;
   .button {
@@ -79,7 +92,7 @@ const StyledWrapper = styled.div`
     background-size: 200%;
     overflow: hidden;
     transition: all 1s;
-    animation: 8s ani infinite;
+    animation: ${backgroundAnimation} 8s ani infinite;
     border-bottom: 2px solid transparent;
   }
 
@@ -98,17 +111,6 @@ const StyledWrapper = styled.div`
     border-bottom: 2px solid #03a9f4;
     -webkit-text-stroke: 1px var(--ani-color);
   }
-
-  @keyframes ani {
-    0% {
-      background-position: 0%;
-    }
-    50% {
-      background-position: 400%;
-    }
-    100% {
-      background-position: 0%;
-    }
   }
 `;
 
