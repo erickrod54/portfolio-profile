@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 21.19 - HeaderTitle - Features:
+/**Portfolio-erick - version 21.20 - HeaderTitle - Features:
  * 
- *      --> Implementing 'ButtonTitle'
+ *      --> Building 'FrontText' and parsing 'isTextFilled'
  * 
  * Notes: This White space will be above '@erickdev' title
  * 'scrollToHeader' will handle to make '@erickdev' title
@@ -43,7 +43,7 @@ const HeaderTitle = () => {
   return (
     <StyledWrapper ref={headerRef} $isFilled={isTextFilled}>
       <ButtonTitle className="button" data-text="@erickdev">
-        <span className="actual-text">&nbsp;@erickdev&nbsp;</span>
+        <FrontText $isFilled={isTextFilled}>&nbsp;@erickdev&nbsp;</FrontText>
         <span aria-hidden="true" className="front-text">&nbsp;@erickdev&nbsp;</span>
       </ButtonTitle>
     </StyledWrapper>
@@ -63,7 +63,34 @@ const backgroundAnimation = keyframes`
     }
 `
 
-const ButtonTitle = styled.button`
+
+
+const FrontText = styled.span`
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+background: var(--color-gar);
+-webkit-background-clip: text;
+background-clip: text;
+background-size: 200%;
+overflow: hidden;
+transition: all 1s;
+animation: ${backgroundAnimation} 8s infinite;
+border-bottom: 2px solid transparent;
+
+${props =>
+  props.$isFilled &&
+  css`
+  width: 100%;
+  border-bottom: 2px solid #03a9f4;
+  -webkit-text-stroke: 1px var(--ani-color);
+  `}
+  
+  
+  `
+
+  const ButtonTitle = styled.button`
     position: relative;
     border: none;
     background: transparent;
@@ -78,41 +105,17 @@ const ButtonTitle = styled.button`
     -webkit-text-stroke: 1px var(--stroke-color);
     cursor: pointer;
   
-`
-
-const StyledWrapper = styled.div`
-  padding-top: 4rem;
-
-  .front-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    background: var(--color-gar);
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 200%;
-    overflow: hidden;
-    transition: all 1s;
-    animation: ${backgroundAnimation} 8s infinite;
-    border-bottom: 2px solid transparent;
-  }
-
-  ${props =>
-    props.$isFilled &&
-    `
-    .front-text {
+  
+    &:hover ${FrontText} {
       width: 100%;
       border-bottom: 2px solid #03a9f4;
       -webkit-text-stroke: 1px var(--ani-color);
     }
-  `}
-
-  ${ButtonTitle}:hover .front-text {
-    width: 100%;
-    border-bottom: 2px solid #03a9f4;
-    -webkit-text-stroke: 1px var(--ani-color);
-  }
+  `
+  
+  const StyledWrapper = styled.div`
+  padding-top: 4rem;
+  
   }
 `;
 
