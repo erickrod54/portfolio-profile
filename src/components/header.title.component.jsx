@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 21.18 - HeaderTitle - Features:
+/**Portfolio-erick - version 21.19 - HeaderTitle - Features:
  * 
- *      --> Implementing 'keyframes' helper 
+ *      --> Implementing 'ButtonTitle'
  * 
  * Notes: This White space will be above '@erickdev' title
  * 'scrollToHeader' will handle to make '@erickdev' title
@@ -42,16 +42,16 @@ const HeaderTitle = () => {
 
   return (
     <StyledWrapper ref={headerRef} $isFilled={isTextFilled}>
-      <button className="button" data-text="Awesome">
+      <ButtonTitle className="button" data-text="@erickdev">
         <span className="actual-text">&nbsp;@erickdev&nbsp;</span>
         <span aria-hidden="true" className="front-text">&nbsp;@erickdev&nbsp;</span>
-      </button>
+      </ButtonTitle>
     </StyledWrapper>
   );
 };
 
 const backgroundAnimation = keyframes`
-  @keyframes ani {
+  @keyframes {
     0% {
       background-position: 0%;
     }
@@ -63,9 +63,7 @@ const backgroundAnimation = keyframes`
     }
 `
 
-const StyledWrapper = styled.div`
-  padding-top: 4rem;
-  .button {
+const ButtonTitle = styled.button`
     position: relative;
     border: none;
     background: transparent;
@@ -79,7 +77,11 @@ const StyledWrapper = styled.div`
     color: transparent;
     -webkit-text-stroke: 1px var(--stroke-color);
     cursor: pointer;
-  }
+  
+`
+
+const StyledWrapper = styled.div`
+  padding-top: 4rem;
 
   .front-text {
     position: absolute;
@@ -92,7 +94,7 @@ const StyledWrapper = styled.div`
     background-size: 200%;
     overflow: hidden;
     transition: all 1s;
-    animation: ${backgroundAnimation} 8s ani infinite;
+    animation: ${backgroundAnimation} 8s infinite;
     border-bottom: 2px solid transparent;
   }
 
@@ -106,7 +108,7 @@ const StyledWrapper = styled.div`
     }
   `}
 
-  .button:hover .front-text {
+  ${ButtonTitle}:hover .front-text {
     width: 100%;
     border-bottom: 2px solid #03a9f4;
     -webkit-text-stroke: 1px var(--ani-color);
