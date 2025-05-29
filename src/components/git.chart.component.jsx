@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-/**Portfolio-erick - version 22.05 - GitChart - Features:
+/**Portfolio-erick - version 22.06 - GitChart - Features:
  * 
- *      --> Building 'MainChart'
+ *      --> Building 'CommitChart'
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
@@ -16,9 +16,7 @@ const MainChart = styled.div`
   justify-content: center;
 `
 
-const GitChartWrapper = styled.div` 
-
-.card {
+const CommitCard = styled.div`
   width: 40px;
   height: 40px;
   border-top-left-radius: 10px;
@@ -31,49 +29,29 @@ const GitChartWrapper = styled.div`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   animation: 2s loading90 infinite;
-}
 
-.card:nth-child(2) {
-  animation-delay: 1s;
-}
+  ${props => props.$index % 2 === 0 && css`
+    animation-delay:1s
+    `};
 
-.card:nth-child(4) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(6) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(8) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(10) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(12) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(14) {
-  animation-delay: 1s;
-}
-
-@keyframes loading90 {
-  0% {
-    background: rgba(255, 255, 255, 0.2);
+  @keyframes loading90 {
+    0% {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  
+    50% {
+      background: limegreen;
+    }
+  
+    100% {
+      background: rgba(255, 255, 255, 0.2);
+    }
   }
+`
 
-  50% {
-    background: limegreen;
-  }
+const GitChartWrapper = styled.div` 
 
-  100% {
-    background: rgba(255, 255, 255, 0.2);
-  }
-}
+
 `
 
 const GitChart = () => {
@@ -81,21 +59,49 @@ const GitChart = () => {
   return(
     <GitChartWrapper>
     <MainChart>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+       {/* Card 1: Index 1 (Odd: No delay) */}
+        <CommitCard $index={1} /> 
+        
+        {/* Card 2: Index 2 (Even: 1s delay) */}
+        <CommitCard $index={2} /> 
+        
+        {/* Card 3: Index 3 (Odd: No delay) */}
+        <CommitCard $index={3} /> 
+        
+        {/* Card 4: Index 4 (Even: 1s delay) */}
+        <CommitCard $index={4} /> 
+        
+        {/* Card 5: Index 5 (Odd: No delay) */}
+        <CommitCard $index={5} /> 
+        
+        {/* Card 6: Index 6 (Even: 1s delay) */}
+        <CommitCard $index={6} /> 
+        
+        {/* Card 7: Index 7 (Odd: No delay) */}
+        <CommitCard $index={7} /> 
+        
+        {/* Card 8: Index 8 (Even: 1s delay) */}
+        <CommitCard $index={8} /> 
+        
+        {/* Card 9: Index 9 (Odd: No delay) */}
+        <CommitCard $index={9} /> 
+        
+        {/* Card 10: Index 10 (Even: 1s delay) */}
+        <CommitCard $index={10} /> 
+        
+        {/* Card 11: Index 11 (Odd: No delay) */}
+        <CommitCard $index={11} /> 
+        
+        {/* Card 12: Index 12 (Even: 1s delay) */}
+        <CommitCard $index={12} /> 
+        
+        {/* Card 13: Index 13 (Odd: No delay) */}
+        <CommitCard $index={13} /> 
+        
+        {/* Card 14: Index 14 (Even: 1s delay) */}
+        <CommitCard $index={14} />
+
+        <CommitCard $index={15} />  
     </MainChart>
     </GitChartWrapper>
  )
