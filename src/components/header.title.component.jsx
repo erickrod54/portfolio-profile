@@ -1,13 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 22.02 - HeaderTitle - Features:
+/**Portfolio-erick - version 22.03 - HeaderTitle - Features:
  * 
- *      --> Building 'BackText'
+ *      --> Adding 'aria-hidden="true"'
  * 
- * Notes: This White space will be above '@erickdev' title
- * 'scrollToHeader' will handle to make '@erickdev' title
- * as the first visible element when the page loads
+ * Notes: This attribute tells assistive technologies 
+ * (like screen readers) to ignore the element and 
+ * its children. 
+ * 
+ * Since both the actual-text and the
+ * front-text spans contain the exact same text 
+ * ("@erickdev"), a screen reader would normally read 
+ * the text twice. The aria-hidden="true" on the 
+ * animated copy ensures that the user only hears 
+ * the title once, which is necessary for 
+ * a good user experience.
  */
 
 const HeaderTitle = () => {
@@ -44,7 +52,7 @@ const HeaderTitle = () => {
     <StyledWrapper ref={headerRef}>
       <ButtonTitle data-text="@erickdev">
         <FrontText $isFilled={isTextFilled}>&nbsp;@erickdev&nbsp;</FrontText>
-        <BackText>&nbsp;@erickdev&nbsp;</BackText>
+        <BackText aria-hidden="true" >&nbsp;@erickdev&nbsp;</BackText>
       </ButtonTitle>
     </StyledWrapper>
   );
