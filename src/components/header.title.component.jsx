@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 22.01 - HeaderTitle - Features:
+/**Portfolio-erick - version 22.02 - HeaderTitle - Features:
  * 
- *      --> Removing 'button' class from ButtonTitle
+ *      --> Building 'BackText'
  * 
  * Notes: This White space will be above '@erickdev' title
  * 'scrollToHeader' will handle to make '@erickdev' title
@@ -44,11 +44,15 @@ const HeaderTitle = () => {
     <StyledWrapper ref={headerRef}>
       <ButtonTitle data-text="@erickdev">
         <FrontText $isFilled={isTextFilled}>&nbsp;@erickdev&nbsp;</FrontText>
-        <span aria-hidden="true" className="front-text">&nbsp;@erickdev&nbsp;</span>
+        <BackText>&nbsp;@erickdev&nbsp;</BackText>
       </ButtonTitle>
     </StyledWrapper>
   );
 };
+
+const BackText = styled.span`
+
+`
 
 const backgroundAnimation = keyframes`
   @keyframes {
