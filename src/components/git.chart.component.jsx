@@ -1,21 +1,22 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 21.04 - GitChart - Features:
+/**Portfolio-erick - version 22.05 - GitChart - Features:
  * 
- *      --> Building 'GitChart'
+ *      --> Building 'MainChart'
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
  */
 
-const GitChartWrapper = styled.div` 
-.main {
+const MainChart = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 15em;
   align-items: center;
   justify-content: center;
-}
+`
+
+const GitChartWrapper = styled.div` 
 
 .card {
   width: 40px;
@@ -79,7 +80,7 @@ const GitChart = () => {
 
   return(
     <GitChartWrapper>
-    <div class="main">
+    <MainChart>
       <div class="card"></div>
       <div class="card"></div>
       <div class="card"></div>
@@ -95,7 +96,7 @@ const GitChart = () => {
       <div class="card"></div>
       <div class="card"></div>
       <div class="card"></div>
-    </div>
+    </MainChart>
     </GitChartWrapper>
  )
 }
