@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 22.00 - HeaderTitle - Features:
+/**Portfolio-erick - version 22.01 - HeaderTitle - Features:
  * 
- *      --> Removing 'isTextFilled' from StyledWrapper
+ *      --> Removing 'button' class from ButtonTitle
  * 
  * Notes: This White space will be above '@erickdev' title
  * 'scrollToHeader' will handle to make '@erickdev' title
@@ -42,7 +42,7 @@ const HeaderTitle = () => {
 
   return (
     <StyledWrapper ref={headerRef}>
-      <ButtonTitle className="button" data-text="@erickdev">
+      <ButtonTitle data-text="@erickdev">
         <FrontText $isFilled={isTextFilled}>&nbsp;@erickdev&nbsp;</FrontText>
         <span aria-hidden="true" className="front-text">&nbsp;@erickdev&nbsp;</span>
       </ButtonTitle>
