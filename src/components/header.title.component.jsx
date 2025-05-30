@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 22.04 - HeaderTitle - Features:
+/**Portfolio-erick - version 22.09 - HeaderTitle - Features:
  * 
- *      --> Removing 'data-text=erickdev'
+ *      --> Building 'HeaderTitleData'
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
  */
+
+
+const HeaderTitleData = '@erickdev';
 
 const HeaderTitle = () => {
   const [isTextFilled, setIsTextFilled] = useState(true);
@@ -42,8 +45,8 @@ const HeaderTitle = () => {
   return (
     <StyledWrapper ref={headerRef}>
       <ButtonTitle>
-        <FrontText $isFilled={isTextFilled}>&nbsp;@erickdev&nbsp;</FrontText>
-        <BackText aria-hidden="true" >&nbsp;@erickdev&nbsp;</BackText>
+        <FrontText $isFilled={isTextFilled}>&nbsp;{HeaderTitleData}&nbsp;</FrontText>
+        <BackText aria-hidden="true" >&nbsp;{HeaderTitleData}&nbsp;</BackText>
       </ButtonTitle>
     </StyledWrapper>
   );
