@@ -1,8 +1,9 @@
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 22.06 - GitChart - Features:
+/**Portfolio-erick - version 22.07 - GitChart - Features:
  * 
- *      --> Building 'CommitChart'
+ *      --> Building 'loading90' keyframe and including it in 
+ *          'CommitCard'
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
@@ -14,6 +15,20 @@ const MainChart = styled.div`
   width: 15em;
   align-items: center;
   justify-content: center;
+`
+
+const loading90 = keyframes`
+    0% {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+      background: limegreen;
+    }
+
+    100% {
+      background: rgba(255, 255, 255, 0.2);
+    }
 `
 
 const CommitCard = styled.div`
@@ -28,25 +43,12 @@ const CommitCard = styled.div`
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: 2s loading90 infinite;
+  animation: ${loading90} 2s infinite;
 
   ${props => props.$index % 2 === 0 && css`
     animation-delay:1s
     `};
 
-  @keyframes loading90 {
-    0% {
-      background: rgba(255, 255, 255, 0.2);
-    }
-  
-    50% {
-      background: limegreen;
-    }
-  
-    100% {
-      background: rgba(255, 255, 255, 0.2);
-    }
-  }
 `
 
 const GitChartWrapper = styled.div` 
