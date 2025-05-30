@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 22.07 - GitChart - Features:
+/**Portfolio-erick - version 22.08 - GitChart - Features:
  * 
- *      --> Building 'loading90' keyframe and including it in 
+ *      --> Building 'cards' array and maping into 
  *          'CommitCard'
  * 
  * Notes: This component soon will be refactored to work more efficent
@@ -58,52 +58,15 @@ const GitChartWrapper = styled.div`
 
 const GitChart = () => {
 
+  const cardCount = 15;
+  const cards = Array.from({ length: cardCount });
+
   return(
     <GitChartWrapper>
     <MainChart>
-       {/* Card 1: Index 1 (Odd: No delay) */}
-        <CommitCard $index={1} /> 
-        
-        {/* Card 2: Index 2 (Even: 1s delay) */}
-        <CommitCard $index={2} /> 
-        
-        {/* Card 3: Index 3 (Odd: No delay) */}
-        <CommitCard $index={3} /> 
-        
-        {/* Card 4: Index 4 (Even: 1s delay) */}
-        <CommitCard $index={4} /> 
-        
-        {/* Card 5: Index 5 (Odd: No delay) */}
-        <CommitCard $index={5} /> 
-        
-        {/* Card 6: Index 6 (Even: 1s delay) */}
-        <CommitCard $index={6} /> 
-        
-        {/* Card 7: Index 7 (Odd: No delay) */}
-        <CommitCard $index={7} /> 
-        
-        {/* Card 8: Index 8 (Even: 1s delay) */}
-        <CommitCard $index={8} /> 
-        
-        {/* Card 9: Index 9 (Odd: No delay) */}
-        <CommitCard $index={9} /> 
-        
-        {/* Card 10: Index 10 (Even: 1s delay) */}
-        <CommitCard $index={10} /> 
-        
-        {/* Card 11: Index 11 (Odd: No delay) */}
-        <CommitCard $index={11} /> 
-        
-        {/* Card 12: Index 12 (Even: 1s delay) */}
-        <CommitCard $index={12} /> 
-        
-        {/* Card 13: Index 13 (Odd: No delay) */}
-        <CommitCard $index={13} /> 
-        
-        {/* Card 14: Index 14 (Even: 1s delay) */}
-        <CommitCard $index={14} />
-
-        <CommitCard $index={15} />  
+        {cards.map((_,index) => (
+          <CommitCard key={index} $index={index + 1} />
+        ))}  
     </MainChart>
     </GitChartWrapper>
  )
