@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 21.10 - data js
+/**Portfolio-erick - version 22.10 - data js
  *  - Features:
  * 
- *      --> Adding 'CollabTitleData' data set.
+ *      --> Adding 'WaterTitleData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -25,6 +25,11 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
 export const CollabTitleData = [
   { id: 1, title: 'Daily Contributions !' },
   { id: 2, title: 'Lets Flow together! ' }
+];
+
+export const WaterTitleData = [
+  { id: 1, title: 'Open' },
+  { id: 2, title: 'Sourcerer' }
 ];
 
 /**Data sets for IconComponent - START */
