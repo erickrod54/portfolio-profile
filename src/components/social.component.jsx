@@ -3,16 +3,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from "../context";
 import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 16.07 - SocialComponent -
+/**Portfolio-erick - version 22.09 - SocialComponent -
 * Features:
 
-    --> Clearing 'styled'
+    --> Building 'social_title'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
 * but will be controlled by a handler from the parent
 * component
 **/
+
+const social_title = [
+  {
+    id:1,
+    name:'Erick Rodriguez',
+    career:'Software Engineer'
+  }
+]
+
+const [{ name, career:engineer }] = social_title;
 
 const SocialComponent = ({ isRevealed }) => {
 
@@ -26,7 +36,7 @@ const SocialComponent = ({ isRevealed }) => {
     return(
         <StyleSocialWrapper >    
         <SocialContent className={isRevealed ? 'is-revealed' : ''}>
-          <SocialTitle>Erick Rodriguez<br /><span>Software Engineer</span></SocialTitle>
+          <SocialTitle>{name}<br /><span>{engineer}</span></SocialTitle>
           <StyledSci>
             <li>
               <a href={url_discord} target="_blank" rel="noopener noreferrer">
