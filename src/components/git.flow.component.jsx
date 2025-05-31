@@ -1,22 +1,22 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 21.17 - styled.components - Features:
+/**Portfolio-erick - version 22.11 - styled.components - Features:
  * 
- *      --> Building 'Fixing' anchor tags warnings
+ *      --> Building 'CardContainer' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
+export const CardContainer = styled.div`
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 1em;
+  margin: 0 2em;
+`;
 const GitFlowWrapper = styled.div`
-    .card-container {
-    position: relative;
-    width: 400px;
-    height: 300px;
-    border-radius: 1em;
-    margin: 0 2em;
-    }
 
     .card-border {
     position: absolute;
@@ -384,7 +384,7 @@ const GitFlowComponent = () => {
             ></feColorMatrix>
         </filter>
         </svg>
-        <div class="card-container">
+        <CardContainer>
         <div class="spin spin-blur"></div>
         <div class="spin spin-intense"></div>
         <div class="backdrop"></div>
@@ -575,7 +575,7 @@ const GitFlowComponent = () => {
             </div>
             </div>
         </div>
-        </div>
+        </CardContainer>
         </GitFlowWrapper>
     )
 
