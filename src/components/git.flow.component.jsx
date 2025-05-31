@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.11 - styled.components - Features:
+/**Portfolio-erick - version 22.12 - styled.components - Features:
  * 
- *      --> Building 'CardContainer' 
+ *      --> Building 'Spin' and 'SpinBlur' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -16,6 +16,41 @@ export const CardContainer = styled.div`
   border-radius: 1em;
   margin: 0 2em;
 `;
+
+export const Spin = styled.div`
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -30%;
+    animation: speen 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
+  }
+
+  @keyframes speen {
+    0% {
+      rotate: 10deg;
+    }
+    50% {
+      rotate: 190deg;
+    }
+    to {
+      rotate: 370deg;
+    }
+  }
+`;
+
+export const SpinBlur = styled(Spin)`
+  filter: blur(3em) url(#unopaq);
+
+  &::before {
+    background: linear-gradient(-45deg, #f50, #0000 46% 54%, #05f);
+  }
+`;
+
 const GitFlowWrapper = styled.div`
 
     .card-border {
@@ -385,7 +420,7 @@ const GitFlowComponent = () => {
         </filter>
         </svg>
         <CardContainer>
-        <div class="spin spin-blur"></div>
+        <SpinBlur />
         <div class="spin spin-intense"></div>
         <div class="backdrop"></div>
         <div class="card-border">
