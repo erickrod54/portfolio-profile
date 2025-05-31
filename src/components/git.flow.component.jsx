@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.14 - styled.components - Features:
+/**Portfolio-erick - version 22.15 - GitFlowComponent - Features:
  * 
- *      --> Building 'Backdrop' styles 
+ *      --> Building 'CardBorder' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -87,6 +87,22 @@ const Backdrop = styled.div`
   -webkit-backdrop-filter: blur(20px);
   pointer-events: none; /* ✅ Prevents mouse blocking */
   border-radius: inherit;
+`;
+
+
+const CardBorder = styled.div`
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, #111215, #0005);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  
+  /* Example hover effect */
+  .card:hover & {
+    opacity: 1;
+  }
 `;
 
 const GitFlowWrapper = styled.div`
@@ -461,9 +477,9 @@ const GitFlowComponent = () => {
         <SpinBlur />
         <SpinIntense />
         <Backdrop />
-        <div class="card-border">
+        <CardBorder>
             <SpinInside />
-        </div>
+        </CardBorder>
         <div class="card">
             <div class="header">
             <div class="top-header">
