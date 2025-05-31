@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.13 - styled.components - Features:
+/**Portfolio-erick - version 22.14 - styled.components - Features:
  * 
- *      --> Building 'SpinIntense' and 'SpinIntense' 
+ *      --> Building 'Backdrop' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -70,6 +70,23 @@ export const SpinInside = styled(Spin)`
   &::before {
     background: linear-gradient(-45deg, #fc9, #0000 35% 65%, #9cf);
   }
+`;
+
+const Backdrop = styled.div`
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #0000 0%,
+    #0000 25%,
+    #111111aa 65%
+  );
+  background-size: 3px 3px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  pointer-events: none; /* ✅ Prevents mouse blocking */
+  border-radius: inherit;
 `;
 
 const GitFlowWrapper = styled.div`
@@ -443,7 +460,7 @@ const GitFlowComponent = () => {
         <CardContainer>
         <SpinBlur />
         <SpinIntense />
-        <div class="backdrop"></div>
+        <Backdrop />
         <div class="card-border">
             <SpinInside />
         </div>
