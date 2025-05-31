@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.12 - styled.components - Features:
+/**Portfolio-erick - version 22.13 - styled.components - Features:
  * 
- *      --> Building 'Spin' and 'SpinBlur' 
+ *      --> Building 'SpinIntense' and 'SpinIntense' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -48,6 +48,27 @@ export const SpinBlur = styled(Spin)`
 
   &::before {
     background: linear-gradient(-45deg, #f50, #0000 46% 54%, #05f);
+  }
+`;
+
+export const SpinIntense = styled(Spin)`
+  inset: -0.125em;
+  filter: blur(0.5em) url(#unopaq2);
+  border-radius: 0.75em;
+
+  &::before {
+    background: linear-gradient(-45deg, #f95, #0000 35% 65%, #59f);
+  }
+`;
+
+export const SpinInside = styled(Spin)`
+  inset: -2px;
+  border-radius: inherit;
+  filter: blur(2px) url(#unopaq3);
+  z-index: 0;
+
+  &::before {
+    background: linear-gradient(-45deg, #fc9, #0000 35% 65%, #9cf);
   }
 `;
 
@@ -421,10 +442,10 @@ const GitFlowComponent = () => {
         </svg>
         <CardContainer>
         <SpinBlur />
-        <div class="spin spin-intense"></div>
+        <SpinIntense />
         <div class="backdrop"></div>
         <div class="card-border">
-            <div class="spin spin-inside"></div>
+            <SpinInside />
         </div>
         <div class="card">
             <div class="header">
