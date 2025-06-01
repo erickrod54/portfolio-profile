@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 22.16 - GitFlowComponent - Features:
  * 
- *      --> Building 'CardBorder' styles 
+ *      --> Building 'Icon' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -102,6 +102,31 @@ const CardBorder = styled.div`
   /* Example hover effect */
   .card:hover & {
     opacity: 1;
+  }
+`;
+
+const Icon = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 1.5em;
+  width: 1.5em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  outline: 1px solid #303236;
+  fill: #797d86;
+  transition: background 0.3s ease, fill 0.3s ease;
+
+  &:hover {
+    background: hsl(0 0% 100% / 7%);
+    fill: #fff;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
   }
 `;
 
@@ -483,13 +508,13 @@ const GitFlowComponent = () => {
         <div class="card">
             <div class="header">
             <div class="top-header">
-                <div class="icon">
+                <Icon>
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path
                     d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
                     ></path>
                 </svg>
-                </div>
+                </Icon>
                 <a class="gh-icon" href="/#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
