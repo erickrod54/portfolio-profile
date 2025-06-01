@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.18 - GitFlowComponent - Features:
+/**Portfolio-erick - version 22.19 - GitFlowComponent - Features:
  * 
- *      --> Building 'Repo' styles 
+ *      --> Building 'RepoOwner' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -178,6 +178,10 @@ const Repo = styled.div`
     > a:hover::before {
     opacity: 1;
     }
+`
+
+const RepoOwner = styled.a`
+
 `
 
 const GitFlowWrapper = styled.div`
@@ -573,7 +577,7 @@ const GitFlowComponent = () => {
                 </svg>
                 </GhIcon>
                 <Repo>
-                    <a class="repo-owner" href="/#">sms</a>
+                    <RepoOwner href="/#">sms</RepoOwner>
                     <span class="repo-slash">/</span>
                     <a class="repo-name" href="/#">my-api</a>
                 </Repo>
