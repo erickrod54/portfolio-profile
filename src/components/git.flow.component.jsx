@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 22.17 - GitFlowComponent - Features:
+/**Portfolio-erick - version 22.18 - GitFlowComponent - Features:
  * 
- *      --> Building 'GhIcon' styles 
+ *      --> Building 'Repo' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -148,6 +148,37 @@ const GhIcon = styled.div`
   }
 `;
 
+const Repo = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    :where( a, span) {
+    text-decoration: none;
+    color: #bebebe;
+    font-weight: 300;
+    font-size: 14px;
+    }
+
+    > a {
+    position: relative;
+    }
+
+    > a::before {
+    content: "";
+    position: absolute;
+    inset: -2px -4px;
+    border-radius: 6px;
+    background: hsl(0 0 100 / 7%);
+    opacity: 0;
+    transition: 0.3s;
+    }
+
+    > a:hover::before {
+    opacity: 1;
+    }
+`
 
 const GitFlowWrapper = styled.div`
 
@@ -541,11 +572,11 @@ const GitFlowComponent = () => {
                     ></path>
                 </svg>
                 </GhIcon>
-                <div class="repo">
-                <a class="repo-owner" href="/#">sms</a>
-                <span class="repo-slash">/</span>
-                <a class="repo-name" href="/#">my-api</a>
-                </div>
+                <Repo>
+                    <a class="repo-owner" href="/#">sms</a>
+                    <span class="repo-slash">/</span>
+                    <a class="repo-name" href="/#">my-api</a>
+                </Repo>
                 <div class="space"></div>
                 <div class="icon">
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
