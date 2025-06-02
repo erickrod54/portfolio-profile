@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 23.05 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.06 - GitFlowComponent - Features:
  * 
- *      --> Building 'TopHeader'  
+ *      --> Building 'TabIcon'  
  * 
  * Notes: these are the icons on the top right corner
  */
@@ -215,6 +215,12 @@ const TopHeader = styled.div`
     gap: 8px;
     padding: 0 12px;
     padding-top: 10px;
+`
+
+const TabIcon = styled.div`
+    width: 1em;
+    height: 1.25em;
+    fill: #797d86;        
 `
 const GitFlowWrapper = styled.div`
 
@@ -632,13 +638,13 @@ const GitFlowComponent = () => {
             </TopHeader>
             <div class="btm-header">
                 <div class="tab">
-                <div class="tab-icon">
+                <TabIcon>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                     <path
                         d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"
                     ></path>
                     </svg>
-                </div>
+                </TabIcon>
                 <div class="tab-text">Code</div>
                 </div>
                 <div class="tab">
