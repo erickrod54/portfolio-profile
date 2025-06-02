@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 23.00 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.01 - GitFlowComponent - Features:
  * 
- *      --> Building 'RepoName' styles 
+ *      --> Building 'Space' styles 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -192,6 +192,10 @@ const RepoSlash = styled.span`
 const RepoName = styled.a`
     color: #fff;
     font-weight: 400;
+`
+
+const Space = styled.div`
+    flex-grow: 1;
 `
 
 const GitFlowWrapper = styled.div`
@@ -591,7 +595,7 @@ const GitFlowComponent = () => {
                     <RepoSlash>/</RepoSlash>
                     <RepoName href="/#">my-api</RepoName>
                 </Repo>
-                <div class="space"></div>
+                <Space></Space>
                 <div class="icon">
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path
