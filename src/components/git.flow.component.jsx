@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 23.11 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.12 - GitFlowComponent - Features:
  * 
- *      --> Replacing third 'tab-text' to 'TabText'
+ *      --> Replacing first 'tab' to 'TabStyled'
  * 
  * Notes: these are the icons on the top right corner
  */
@@ -225,6 +225,35 @@ const TabIcon = styled.div`
 
 const TabText = styled.div`
 
+`
+
+const TabStyled = styled.div`
+    position: relative;
+    padding: 4px 4px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    isolation: isolate;
+
+     &::before{
+        content: "";
+        position: absolute;
+        background: #fff;
+        border-radius: 8px;
+        opacity: 0;
+        inset: 0;
+        bottom: 8px;
+        z-index: -1;
+        transition: 0.3s;
+     }
+
+     &:hover::before {
+        opacity: 0.07;
+     }
 `
 
 const GitFlowWrapper = styled.div`
@@ -642,7 +671,7 @@ const GitFlowComponent = () => {
                 <Pfp></Pfp>
             </TopHeader>
             <div class="btm-header">
-                <div class="tab">
+                <TabStyled>
                 <TabIcon>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                     <path
@@ -651,7 +680,7 @@ const GitFlowComponent = () => {
                     </svg>
                 </TabIcon>
                 <TabText>Code</TabText>
-                </div>
+                </TabStyled>
                 <div class="tab">
                 <TabIcon>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
