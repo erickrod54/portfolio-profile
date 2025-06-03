@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 23.08 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.09 - GitFlowComponent - Features:
  * 
- *      --> Replacing second 'TabIcon'
+ *      --> Replacing second 'tab-text' to 'TabText'
  * 
  * Notes: these are the icons on the top right corner
  */
@@ -661,7 +661,7 @@ const GitFlowComponent = () => {
                     ></path>
                     </svg>
                 </TabIcon>
-                <div class="tab-text">Issues</div>
+                <TabText>Issues</TabText>
                 </div>
                 <div class="tab active">
                 <div class="tab-icon">
