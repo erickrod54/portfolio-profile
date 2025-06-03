@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 23.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.07 - GitFlowComponent - Features:
  * 
- *      --> Building 'TabIcon'  
+ *      --> Replacing first 'tab-text' to 'TabText'  
  * 
  * Notes: these are the icons on the top right corner
  */
@@ -222,6 +222,11 @@ const TabIcon = styled.div`
     height: 1.25em;
     fill: #797d86;        
 `
+
+const TabText = styled.div`
+
+`
+
 const GitFlowWrapper = styled.div`
 
     .card-border {
@@ -645,7 +650,7 @@ const GitFlowComponent = () => {
                     ></path>
                     </svg>
                 </TabIcon>
-                <div class="tab-text">Code</div>
+                <TabText>Code</TabText>
                 </div>
                 <div class="tab">
                 <div class="tab-icon">
