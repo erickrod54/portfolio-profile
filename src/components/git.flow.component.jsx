@@ -1,26 +1,11 @@
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 23.14 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.15 - GitFlowComponent - Features:
  * 
- *      --> Building 'TabStyled' active 
+ *      --> Building 'BtmHeader' 
  * 
  * Notes: 'TabStyled' active is going to replace tab.active:
  * 
- *   tab.active was:
- * 
- *             .tab.active {
- *               border-bottom: 2px solid #e98463;
- *               }
- * and on styled components the 'css' is going to inject the css:
- * 
- *  /* 
- * ✅ Active tab state (preserving original CSS)
- * \${({ active }) => 
- *  active && 
- *  css\`
- *    border-bottom: 2px solid #e98463;
- *  \`
- *   }
 */
 
 export const CardContainer = styled.div`
@@ -277,7 +262,15 @@ const TabStyled = styled.div`
     css`
         border-bottom: 2px solid #e98463;
     `}
+`
 
+const BtmHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    gap: 8px;
+    color: #fff;
+    fill: #fff;
 `
 
 const GitFlowWrapper = styled.div`
@@ -694,7 +687,7 @@ const GitFlowComponent = () => {
                 </Icon>
                 <Pfp></Pfp>
             </TopHeader>
-            <div class="btm-header">
+            <BtmHeader>
                 <TabStyled>
                 <TabIcon>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -726,7 +719,7 @@ const GitFlowComponent = () => {
                 </TabIcon>
                 <TabText>Pull Requests</TabText>
                 </TabStyled>
-            </div>
+            </BtmHeader>
             </div>
             <div class="content">
             <div class="prs">
