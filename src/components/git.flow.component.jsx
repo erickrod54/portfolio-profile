@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 23.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.16 - GitFlowComponent - Features:
  * 
- *      --> Building 'BtmHeader' 
+ *      --> Replacing first 'checkbox' to 'HiddenCheckbox' 
  * 
- * Notes: 'TabStyled' active is going to replace tab.active:
+ * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
 
@@ -272,6 +272,13 @@ const BtmHeader = styled.div`
     color: #fff;
     fill: #fff;
 `
+
+const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+`;
 
 const GitFlowWrapper = styled.div`
 
@@ -725,7 +732,7 @@ const GitFlowComponent = () => {
             <div class="prs">
                 <div class="pr">
                 <label>
-                    <input type="checkbox" />
+                    <HiddenCheckbox />
                     <div class="checkbox"></div>
                 </label>
                 <div class="pr-icon">
