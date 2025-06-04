@@ -1,11 +1,27 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 23.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.14 - GitFlowComponent - Features:
  * 
- *      --> Replacing second 'tab' to 'TabStyled'
+ *      --> Building 'TabStyled' active 
  * 
- * Notes: these are the icons on the top right corner
- */
+ * Notes: 'TabStyled' active is going to replace tab.active:
+ * 
+ *   tab.active was:
+ * 
+ *             .tab.active {
+ *               border-bottom: 2px solid #e98463;
+ *               }
+ * and on styled components the 'css' is going to inject the css:
+ * 
+ *  /* 
+ * ✅ Active tab state (preserving original CSS)
+ * \${({ active }) => 
+ *  active && 
+ *  css\`
+ *    border-bottom: 2px solid #e98463;
+ *  \`
+ *   }
+*/
 
 export const CardContainer = styled.div`
   position: relative;
@@ -254,6 +270,14 @@ const TabStyled = styled.div`
      &:hover::before {
         opacity: 0.07;
      }
+
+  /* ✅ Active tab state (preserving original CSS) */
+  ${({ active }) =>
+    active &&
+    css`
+        border-bottom: 2px solid #e98463;
+    `}
+
 `
 
 const GitFlowWrapper = styled.div`
@@ -692,7 +716,7 @@ const GitFlowComponent = () => {
                 </TabIcon>
                 <TabText>Issues</TabText>
                 </TabStyled>
-                <div class="tab active">
+                <TabStyled active>
                 <TabIcon>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                     <path
@@ -701,7 +725,7 @@ const GitFlowComponent = () => {
                     </svg>
                 </TabIcon>
                 <TabText>Pull Requests</TabText>
-                </div>
+                </TabStyled>
             </div>
             </div>
             <div class="content">
