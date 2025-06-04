@@ -1,8 +1,9 @@
+import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 23.16 - GitFlowComponent - Features:
+/**Portfolio-erick - version 23.17 - GitFlowComponent - Features:
  * 
- *      --> Replacing first 'checkbox' to 'HiddenCheckbox' 
+ *      --> Building 'StyledCheckbox' and 'CheckboxWrapper'
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -278,6 +279,56 @@ const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
   opacity: 0;
   width: 0;
   height: 0;
+`;
+
+/* Styled Checkbox (the visible box) */
+export const StyledCheckbox = styled.div`
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border-radius: 2px;
+  outline: 1px solid #343539;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: hsl(0 0% 100% / 5%);
+  }
+
+  &:active {
+    outline-color: #2a2c2f;
+    background: hsl(0 0% 100% / 0%);
+  }
+
+  /* Checked State (linked to HiddenCheckbox) */
+  ${({ checked }) =>
+    checked &&
+    css`
+      outline-color: #797d86;
+      &::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        width: 4px;
+        height: 8px;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        border-color: #fff;
+        transform: translate(5.5px, 2.5px) rotate(45deg);
+      }
+
+      &:active {
+        outline-color: #56585c;
+      }
+    `}
+`;
+
+const CheckboxWrapper = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
 `;
 
 const GitFlowWrapper = styled.div`
@@ -620,6 +671,8 @@ const GitFlowWrapper = styled.div`
 
 const GitFlowComponent = () => {
 
+    const [checked, setChecked] = useState(false);
+
     return(
         <GitFlowWrapper>
         <svg style={{position: 'absolute', width: 0, height: 0}}>
@@ -732,8 +785,13 @@ const GitFlowComponent = () => {
             <div class="prs">
                 <div class="pr">
                 <label>
-                    <HiddenCheckbox />
-                    <div class="checkbox"></div>
+                    <CheckboxWrapper>
+                        <HiddenCheckbox 
+                            checked={checked}
+                            onChange={() => setChecked(!checked)}
+                        />
+                        <StyledCheckbox checked={checked}></StyledCheckbox>
+                    </CheckboxWrapper>
                 </label>
                 <div class="pr-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
