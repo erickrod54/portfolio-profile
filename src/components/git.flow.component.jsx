@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 23.20 - GitFlowComponent - Features:
+/**Portfolio-erick - version 24.00 - GitFlowComponent - Features:
  * 
- *      --> Placing second 'HiddenCheckbox'
+ *      --> Placing second 'HiddenCheckbox' state
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -672,6 +672,7 @@ const GitFlowWrapper = styled.div`
 const GitFlowComponent = () => {
 
     const [checked, setChecked] = useState(false);
+    const [checked2, setChecked2 ] = useState(false);
 
     return(
         <GitFlowWrapper>
