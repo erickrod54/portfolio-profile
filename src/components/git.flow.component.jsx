@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 24.02 - GitFlowComponent - Features:
+/**Portfolio-erick - version 24.03 - GitFlowComponent - Features:
  * 
- *      --> Placing second 'StyledCheckbox'
+ *      --> Removing second 'label'
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -805,7 +805,6 @@ const GitFlowComponent = () => {
                 </div>
                 </div>
                 <div class="pr">
-                <label>
                     <CheckboxWrapper>
                         <HiddenCheckbox
                             checked={checked2}
@@ -813,7 +812,6 @@ const GitFlowComponent = () => {
                         />
                         <StyledCheckbox checked={checked2}></StyledCheckbox>
                     </CheckboxWrapper>
-                </label>
                 <div class="pr-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                     <path
