@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 24.04 - GitFlowComponent - Features:
+/**Portfolio-erick - version 24.05 - GitFlowComponent - Features:
  * 
- *      --> Placing third 'CheckboxWrapper'
+ *      --> Placing third 'HiddenCheckbox'
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -827,7 +827,7 @@ const GitFlowComponent = () => {
                 <div class="pr">
                 <label>
                     <CheckboxWrapper>
-                        <input type="checkbox" />
+                        <HiddenCheckbox />
                         <div class="checkbox"></div>
                     </CheckboxWrapper>
                 </label>
