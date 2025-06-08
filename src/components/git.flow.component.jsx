@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 24.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 24.16 - GitFlowComponent - Features:
  * 
- *      --> Removing fourth 'label' 
+ *      --> Placing fifth 'HiddenCheckbox' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -870,7 +870,7 @@ const GitFlowComponent = () => {
                 </div>
                 <div class="pr">
                 <label>
-                    <input type="checkbox" />
+                    <HiddenCheckbox />
                     <div class="checkbox"></div>
                 </label>
                 <div class="pr-icon">
