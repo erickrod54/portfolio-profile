@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 25.03 - GitFlowComponent - Features:
+/**Portfolio-erick - version 25.04 - GitFlowComponent - Features:
  * 
- *      --> Building sixth 'HiddenCheckbox' state 
+ *      --> Placing sixth 'HiddenCheckbox' state 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -895,7 +895,10 @@ const GitFlowComponent = () => {
                 <div class="pr">
                 <label>
                     <CheckboxWrapper>
-                        <HiddenCheckbox />
+                        <HiddenCheckbox 
+                            checked={checked6}
+                            onChange={() => setChecked6(!checked6)}
+                        />
                         <div class="checkbox"></div>
                     </CheckboxWrapper>
                 </label>
