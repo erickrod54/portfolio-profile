@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 25.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 25.07 - GitFlowComponent - Features:
  * 
- *      --> Removing sixth 'label' 
+ *      --> Building 'PrIcon' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -330,6 +330,13 @@ const CheckboxWrapper = styled.label`
   position: relative;
   cursor: pointer;
 `;
+
+const PrIcon = styled.div`
+    display: flex;
+    width: 1em;
+    height: 1em;
+    fill: #63d188;
+`
 
 const GitFlowWrapper = styled.div`
 
