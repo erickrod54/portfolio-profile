@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 25.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 25.14 - GitFlowComponent - Features:
  * 
- *      --> Replacing sixth 'pr-icon' to 'PrIcon' 
+ *      --> Building 'PrText' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -336,6 +336,11 @@ const PrIcon = styled.div`
     width: 1em;
     height: 1em;
     fill: #63d188;
+`
+
+const PrText = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
 const GitFlowWrapper = styled.div`
