@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 26.01 - GitFlowComponent - Features:
+/**Portfolio-erick - version 26.02 - GitFlowComponent - Features:
  * 
- *      --> Replacing first 'pr-title' to 'PrTitle' 
+ *      --> Replacing second 'pr-title' to 'PrTitle' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -846,7 +846,7 @@ const GitFlowComponent = () => {
                     </svg>
                 </PrIcon>
                 <PrText>
-                    <div class="pr-title">Store markup as JSON</div>
+                    <PrTitle>Store markup as JSON</PrTitle>
                     <div class="pr-desc">#5038 opened 3 hours ago by gaylord</div>
                 </PrText>
                 </div>
