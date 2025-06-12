@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 25.19 - GitFlowComponent - Features:
+/**Portfolio-erick - version 25.20 - GitFlowComponent - Features:
  * 
- *      --> Replacing fifth 'pr-text' to 'PrText' 
+ *      --> Replacing sixth 'pr-text' to 'PrText' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -919,10 +919,10 @@ const GitFlowComponent = () => {
                     ></path>
                     </svg>
                 </PrIcon>
-                <div class="pr-text">
+                <PrText>
                     <div class="pr-title">Improve documentation I guess</div>
                     <div class="pr-desc">#4206 opened 2 months ago by yourmom69</div>
-                </div>
+                </PrText>
                 </div>
             </div>
             </div>
