@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 26.11 - GitFlowComponent - Features:
+/**Portfolio-erick - version 26.12 - GitFlowComponent - Features:
  * 
- *      --> Replacing fourth 'pr-desc' to 'PrDesc' 
+ *      --> Replacing fifth 'pr-desc' to 'PrDesc' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -917,7 +917,7 @@ const GitFlowComponent = () => {
                     <PrTitle>
                     Bug: I am running out of ideas for names of PRs
                     </PrTitle>
-                    <div class="pr-desc">#4869 opened 1 month ago by plshelp</div>
+                    <PrDesc>#4869 opened 1 month ago by plshelp</PrDesc>
                 </PrText>
                 </div>
                 <div class="pr">
