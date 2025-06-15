@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 26.20 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.00 - GitFlowComponent - Features:
  * 
- *      --> Replacing sixth 'pr' to 'Pr' 
+ *      --> Building 'PrsBox' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -366,6 +366,22 @@ const Pr = styled.div`
     width: 100%;
     outline: 1px solid #343539;
     padding: 8px;
+`
+
+const PrsBox = styled.div`
+    margin: 12px;
+    height: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border: 1px solid #343539;
+    border-radius: 6px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+    width: 0;
+    }
+
 `
 
 const GitFlowWrapper = styled.div`
