@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 26.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 26.16 - GitFlowComponent - Features:
  * 
- *      --> Replacing first 'pr' to 'Pr' 
+ *      --> Replacing second 'pr' to 'Pr' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -845,7 +845,7 @@ const GitFlowComponent = () => {
                         <PrDesc>#5054 opened 1 minute ago by yourmom69</PrDesc>
                     </PrText>
                 </Pr>
-                <div class="pr">
+                <Pr>
                     <CheckboxWrapper>
                         <HiddenCheckbox
                             checked={checked2}
@@ -853,18 +853,18 @@ const GitFlowComponent = () => {
                         />
                         <StyledCheckbox checked={checked2}></StyledCheckbox>
                     </CheckboxWrapper>
-                <PrIcon>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                    <path
-                        d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
-                    ></path>
-                    </svg>
-                </PrIcon>
-                <PrText>
-                    <PrTitle>Store markup as JSON</PrTitle>
-                    <PrDesc>#5038 opened 3 hours ago by gaylord</PrDesc>
-                </PrText>
-                </div>
+                    <PrIcon>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                        ></path>
+                        </svg>
+                    </PrIcon>
+                    <PrText>
+                        <PrTitle>Store markup as JSON</PrTitle>
+                        <PrDesc>#5038 opened 3 hours ago by gaylord</PrDesc>
+                    </PrText>
+                </Pr>
                 <div class="pr">
                     <CheckboxWrapper>
                         <HiddenCheckbox 
