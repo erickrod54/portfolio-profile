@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 27.02 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.03 - GitFlowComponent - Features:
  * 
- *      --> Building 'ContentBox' 
+ *      --> Replacing 'content' to 'ContentBox' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -844,7 +844,7 @@ const GitFlowComponent = () => {
                 </TabStyled>
             </BtmHeader>
             </div>
-            <div class="content">
+            <ContentBox>
             <PrsBox>
                 <Pr>
                     <CheckboxWrapper>
@@ -971,7 +971,7 @@ const GitFlowComponent = () => {
                     </PrText>
                 </Pr>
             </PrsBox>
-            </div>
+            </ContentBox>
         </div>
         </CardContainer>
         </GitFlowWrapper>
