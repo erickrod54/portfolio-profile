@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 27.03 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.04 - GitFlowComponent - Features:
  * 
- *      --> Replacing 'content' to 'ContentBox' 
+ *      --> Building 'HeaderBox'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -389,6 +389,13 @@ const ContentBox = styled.div`
     overflow: hidden;
 `
 
+const HeaderBox = styled.div`
+    background: #0b0d10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid #1d1f23;
+`
 const GitFlowWrapper = styled.div`
 
     .card-border {
