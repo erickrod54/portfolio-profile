@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 27.01 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.02 - GitFlowComponent - Features:
  * 
- *      --> Replacing 'prs' to 'PrsBox' 
+ *      --> Building 'ContentBox' 
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -382,6 +382,11 @@ const PrsBox = styled.div`
     width: 0;
     }
 
+`
+
+const ContentBox = styled.div`
+    height: 100%;
+    overflow: hidden;
 `
 
 const GitFlowWrapper = styled.div`
