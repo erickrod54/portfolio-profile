@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.10 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.11 - GitFlowComponent - Features:
  * 
- *      --> Removing 'card-border' from 'GitFlowWrapper'  
+ *      --> Removing 'card' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,17 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .card {
-    position: absolute;
-    inset: 0.125em;
-    border-radius: 0.875em;
-    background: #111215;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    overflow: hidden;
-    }
 
     .header {
     background: #0b0d10;
