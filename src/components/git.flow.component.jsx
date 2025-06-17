@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.09 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.10 - GitFlowComponent - Features:
  * 
- *      --> Placing 'SpeenKeyFrames' helper on 'SpeenKeyFrames'  
+ *      --> Removing 'card-border' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,13 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .card-border {
-    position: absolute;
-    inset: 0;
-    background: #0005;
-    border-radius: inherit;
-    }
 
     .card {
     position: absolute;
