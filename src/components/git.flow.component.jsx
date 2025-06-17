@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.08 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.09 - GitFlowComponent - Features:
  * 
- *      --> Building first 'SpeenKeyFrames' helper  
+ *      --> Placing 'SpeenKeyFrames' helper on 'SpeenKeyFrames'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -39,19 +39,7 @@ export const Spin = styled.div`
     content: "";
     position: absolute;
     inset: -30%;
-    animation: speen 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
-  }
-
-  @keyframes speen {
-    0% {
-      rotate: 10deg;
-    }
-    50% {
-      rotate: 190deg;
-    }
-    to {
-      rotate: 370deg;
-    }
+    animation: ${SpeenKeyFrames} 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
   }
 `;
 
