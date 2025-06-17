@@ -1,9 +1,9 @@
 import { useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.07 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.08 - GitFlowComponent - Features:
  * 
- *      --> Replacing 'card' to 'GitFlowCardBox'  
+ *      --> Building first 'SpeenKeyFrames' helper  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -16,6 +16,18 @@ export const CardContainer = styled.div`
   border-radius: 1em;
   margin: 0 2em;
 `;
+
+const SpeenKeyFrames = keyframes`
+    0% {
+        rotate: 10deg;
+    }
+    50% {
+        rotate: 190deg;
+    }
+    to {
+        rotate: 370deg;
+    }
+`
 
 export const Spin = styled.div`
   position: absolute;
