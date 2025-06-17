@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 27.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.07 - GitFlowComponent - Features:
  * 
- *      --> Building 'GitFlowCardBox'  
+ *      --> Replacing 'card' to 'GitFlowCardBox'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -790,7 +790,7 @@ const GitFlowComponent = () => {
         <CardBorder>
             <SpinInside />
         </CardBorder>
-        <div class="card">
+        <GitFlowCardBox>
             <HeaderBox>
                 <TopHeader>
                     <Icon>
@@ -991,7 +991,7 @@ const GitFlowComponent = () => {
                 </Pr>
             </PrsBox>
             </ContentBox>
-        </div>
+        </GitFlowCardBox>
         </CardContainer>
         </GitFlowWrapper>
     )
