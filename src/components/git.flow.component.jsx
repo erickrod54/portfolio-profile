@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.14 - GitFlowComponent - Features:
  * 
- *      --> Removing 'top-header' from 'GitFlowWrapper'  
+ *      --> Removing 'where' css selector from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,13 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    :where(.repo > a, .repo > span) {
-    text-decoration: none;
-    color: #bebebe;
-    font-weight: 300;
-    font-size: 14px;
-    }
 
     .repo {
     display: flex;
