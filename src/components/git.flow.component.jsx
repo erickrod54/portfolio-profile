@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.16 - GitFlowComponent - Features:
+/**Portfolio-erick - version 27.17 - GitFlowComponent - Features:
  * 
- *      --> Removing 'repo-slash' from 'GitFlowWrapper'  
+ *      --> Removing 'repo-name' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,11 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .repo-name {
-    color: #fff;
-    font-weight: 400;
-    }
 
     .repo > a {
     position: relative;
