@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.00 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.01 - GitFlowComponent - Features:
  * 
- *      --> Removing 'gh-icon' from 'GitFlowWrapper'  
+ *      --> Removing 'space' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,10 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .space {
-    flex-grow: 1;
-    }
 
     .icon {
     cursor: pointer;
