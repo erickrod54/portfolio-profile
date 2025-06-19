@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 27.20 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.00 - GitFlowComponent - Features:
  * 
- *      --> Removing 'repo > a:hover::before' from 'GitFlowWrapper'  
+ *      --> Removing 'gh-icon' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,12 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .gh-icon,
-    .gh-icon svg {
-    height: 2em;
-    fill: #fff;
-    }
 
     .space {
     flex-grow: 1;
