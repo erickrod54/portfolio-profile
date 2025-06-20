@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.07 - GitFlowComponent - Features:
  * 
- *      --> Removing 'tab' from 'GitFlowWrapper'  
+ *      --> Removing 'tab-icon' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,12 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .tab-icon {
-    width: 1em;
-    height: 1.25em;
-    fill: #797d86;
-    }
 
     .tab.active {
     border-bottom: 2px solid #e98463;
