@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.05 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.06 - GitFlowComponent - Features:
  * 
- *      --> Removing 'btm-header' from 'GitFlowWrapper'  
+ *      --> Removing 'tab' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,19 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .tab {
-    position: relative;
-    padding: 4px 4px;
-    padding-bottom: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    isolation: isolate;
-    }
 
     .tab-icon {
     width: 1em;
