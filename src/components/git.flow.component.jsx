@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.14 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.15 - GitFlowComponent - Features:
  * 
- *      --> Removing 'pr' from 'GitFlowWrapper'  
+ *      --> Removing 'checkbox' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,15 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .checkbox {
-    position: relative;
-    width: 1em;
-    height: 1em;
-    border-radius: 2px;
-    outline: 1px solid #343539;
-    transition: 0.3s;
-    }
 
     .checkbox:hover {
     background: hsl(0 0 100 / 5%);
