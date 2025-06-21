@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.09 - GitFlowComponent - Features:
+/**Portfolio-erick - version 28.10 - GitFlowComponent - Features:
  * 
- *      --> Removing 'tab::before' from 'GitFlowWrapper'  
+ *      --> Removing 'tab:hover::before' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,10 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .tab:hover::before {
-    opacity: 0.07;
-    }
 
     .content {
     height: 100%;
