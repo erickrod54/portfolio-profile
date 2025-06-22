@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 28.20 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.00 - GitFlowComponent - Features:
  * 
- *      --> Removing 'card input:checked ~ .checkbox::before' from 'GitFlowWrapper'  
+ *      --> Removing 'pr-icon' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,13 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .pr-icon {
-    display: flex;
-    width: 1em;
-    height: 1em;
-    fill: #63d188;
-    }
 
     .pr-text {
     display: flex;
