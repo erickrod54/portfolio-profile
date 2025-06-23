@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.04 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.05 - GitFlowComponent - Features:
  * 
- *      --> Removing 'pr-desc' from 'GitFlowWrapper'  
+ *      --> Removing 'backdrop' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,19 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .backdrop {
-    position: absolute;
-    inset: -100%;
-    background: radial-gradient(
-        circle at 50% 50%,
-        #0000 0,
-        #0000 20%,
-        #111111aa 50%
-    );
-    background-size: 3px 3px;
-    z-index: -1;
-    }
 
     .spin {
     position: absolute;
