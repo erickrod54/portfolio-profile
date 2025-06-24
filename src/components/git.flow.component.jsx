@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.08 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.09 - GitFlowComponent - Features:
  * 
- *      --> Removing 'spin-intense' from 'GitFlowWrapper'  
+ *      --> Removing 'spin-inside' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,13 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .spin-inside {
-    inset: -2px;
-    border-radius: inherit;
-    filter: blur(2px) url(#unopaq3);
-    z-index: 0;
-    }
 
     .spin::before {
     content: "";
