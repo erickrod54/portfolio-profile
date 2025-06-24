@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.10 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.11 - GitFlowComponent - Features:
  * 
- *      --> Removing 'spin::before' from 'GitFlowWrapper'  
+ *      --> Removing 'spin-blur::before' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,10 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .spin-blur::before {
-    background: linear-gradient(-45deg, #f50, #0000 46% 54%, #05f);
-    }
 
     .spin-intense::before {
     background: linear-gradient(-45deg, #f95, #0000 35% 65%, #59f);
