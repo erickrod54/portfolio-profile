@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.14 - GitFlowComponent - Features:
  * 
- *      --> Removing 'spin-inside::before' from 'GitFlowWrapper'  
+ *      --> Removing 'speen' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,18 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    @keyframes speen {
-    0% {
-        rotate: 10deg;
-    }
-    50% {
-        rotate: 190deg;
-    }
-    to {
-        rotate: 370deg;
-    }
-    }
 
     .card input {
     display: none;
