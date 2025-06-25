@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.16 - GitFlowComponent - Features:
  * 
- *      --> Removing 'card input' from 'GitFlowWrapper'  
+ *      --> Removing 'pfp' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -410,16 +410,7 @@ const GitFlowCardBox = styled.div`
 
 const GitFlowWrapper = styled.div`
 
-    .pfp {
-    cursor: pointer;
-    display: flex;
-    width: 1.75em;
-    height: 1.75em;
-    border-radius: 100%;
-    background-color: #fff1;
-    background-size: cover;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADy0lEQVRYw+2Xa4hOYRTHf4aBMSyW+GBCQjEyqDwwGzMvskJpM5MsxZ+2yY0NhpLMg70I2Yt82JCYM4rKxIyyhDGRlF0rWvE06d6e3e5n74872+Vz/3e/nuf8zu4+e8/Pec45eB6o7+p6eX31t+eI0L0QohMho1Qql361+c+Zc0v9U8+k4q3f2vYvH/r+XpXg2/RkP+bB7Q8P3/y/s49/W1rJ/y/z4P4h2D5w9/B83d0hIuD0tLSwvr5euq4jEoqhS1V81L+T6+U1u92xubmJtbW1MhY+Q21tLV1dHdHVhY/f+6C/f+k1O+D0dHRw8vLyk21+0QyOjo7Y2dlh4uLiw4rX0xNqamvFp/2c9vj4mH/65z8wMTGh7c3Nq0N1b4Q+PT3F0dHR0dXVtW/j9eF33N3dYWVlhYeHh/e1u91xcnLCwcGB9vT0vG/f3u0+h+a3jY+PY25ujqOjoxe1vb8fOzs7WFhYwNbWFhsbG2NnZ4e3t7e1W3Z2dqg97yF2vMvLy9bV1e3b+E2+vr7Y2trCzMwMbW1tsbGxwcrKCgsLC6yvr7G3t8fS0pKKi4uR93XkR8/g/X8CgQ/2h/q3i4uLGB0dRSQSuLq6Ynl5mYWFBVtbW6ysrLC+vs7c3BwDAwM0NDRwcnLC8/NzjI+P4+fnB7//fA+JkK+vr7GwsIC7u7t0vH76Nnx8fLCwsICLi4sYGRlhYWGBubk5ZmdnmJqaYmFhgebmZpYWFnj5+eHg4OCW/w6N+4iJkJeXFzM7YWHhx/t28d5eXlhaWkJOTo7T6XQyFfLx8YGHhwfKy8uxsbHB1tYWzc3NbGxsYGVlhZaWFlpaWmhoacHj8fje3u5D6F2g/X9cZlJSUrK9vW2/xuvD/8eGhnB0dIRIJHJ86q9Wq+Hk5ISnpyfKysrIz88Xv7+//Hh4eMDZ2RkDAwMYGRkRn5/vdc/Xm4h8gqG+vp6dnR0mJyeV+OPl5YXl5WVubm4yFfH7+/v5/v4+fn5+ODs7w9raGjMzM7i4uKCjowM9PT0cHR0xNzdHQ0MDjY2Njo6OmJqaQlVVFWVlZaQn3O4hVn9f7tBQUVFhYWFh/e12X//t7e2xsrLC2toaMTExrKurI+t8g/b2duTl5RGVld+e4t274OHhgd3d3W47OzuV+OLt7R3W1tbY39/H3d0dW1tbGBkZwe/vLzs7O2xvb/Pz88PExARNTU1OTk7Y2NhAWVkZra2tsbGxwcnJCX5+fng8Hk59yA2v2+1T3jI3NycnJyfu5ubmN23+8/DwwMDAAEMjOzs7bW9vt+xsbW1tNTU1s/F/zD//x/Wp+YjW1tYUFBR8v+1tbXlVVVX4VbQkXf7v3j9DqA+c8g+0l5qGAAAAAElFTkSuQmCC");
-    }
+
 `
 
 const GitFlowComponent = () => {
