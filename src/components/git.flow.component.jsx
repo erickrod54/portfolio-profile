@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 
-/**Portfolio-erick - version 29.14 - GitFlowComponent - Features:
+/**Portfolio-erick - version 29.15 - GitFlowComponent - Features:
  * 
- *      --> Removing 'speen' from 'GitFlowWrapper'  
+ *      --> Removing 'card input' from 'GitFlowWrapper'  
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -409,10 +409,6 @@ const GitFlowCardBox = styled.div`
 `
 
 const GitFlowWrapper = styled.div`
-
-    .card input {
-    display: none;
-    }
 
     .pfp {
     cursor: pointer;
