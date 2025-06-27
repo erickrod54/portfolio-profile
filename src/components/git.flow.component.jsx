@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 30.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 30.07 - GitFlowComponent - Features:
  * 
- *      --> Building 'issuesData'   
+ *      --> Implementing 'IconComponent' with 'issuesData'   
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -579,12 +579,7 @@ const GitFlowComponent = () => {
                     <TabStyled>
                     <TabIcon>
                         {/**Issues Icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                        <path
-                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
-                        ></path>
-                        </svg>
+                        <IconComponent data={issuesData} />
                     </TabIcon>
                     <TabText>Issues</TabText>
                     </TabStyled>
