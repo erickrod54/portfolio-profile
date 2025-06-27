@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 30.05 - GitFlowComponent - Features:
+/**Portfolio-erick - version 30.06 - GitFlowComponent - Features:
  * 
- *      --> Building 'codeData'   
+ *      --> Building 'issuesData'   
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -479,6 +479,23 @@ const codeData = [
   },
 ];
 
+const issuesData = [
+  {
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    width: '16',
+    height: '16',
+  },
+  {
+    fill: '',
+    d: 'M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z'
+  } ,
+  {
+    fill: '',
+    d: 'M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z'
+  }
+];
+
 
 const GitFlowComponent = () => {
 
@@ -555,16 +572,13 @@ const GitFlowComponent = () => {
                     <TabStyled>
                     <TabIcon>
                         {/**Code icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                        <path
-                            d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"
-                        ></path>
-                        </svg>
+                        <IconComponent data={codeData} />
                     </TabIcon>
                     <TabText>Code</TabText>
                     </TabStyled>
                     <TabStyled>
                     <TabIcon>
+                        {/**Issues Icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                         <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
                         <path
