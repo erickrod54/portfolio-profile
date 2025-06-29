@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.00 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.01 - GitFlowComponent - Features:
  * 
- *      --> Building 'sixthPrData'     
+ *      --> Building 'PrMessages'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -587,6 +587,33 @@ const sixthPrData = [
   } ,
 ];
 
+const PrMessages = [
+{
+  title:'Feature request: Document analysis',
+  description:'#5054 opened 1 minute ago by zkhomeny'
+}, 
+{
+  title:'Store markup as JSON',
+  description:'#5038 opened 3 hours ago by goldfish'
+}, 
+{
+  title:'[Bug fix]: Various improvements',
+  description:'#4969 opened 3 days ago by xX_druidLord_Xx'
+}, 
+{
+  title:'Feature request: Storage of cats',
+  description:'#4931 opened 12 days ago by helmetx10'
+}, 
+{
+  title:'Bug: four repeated names of PRs',
+  description:'#4869 opened 1 month ago by bluefish'
+}, 
+{
+  title:'Improve documentation',
+  description:'#4206 opened 2 months ago by goldfish'
+},
+]
+
 const GitFlowComponent = () => {
 
     const [checked, setChecked] = useState(false);
@@ -595,6 +622,8 @@ const GitFlowComponent = () => {
     const [checked4, setChecked4] = useState(false);
     const [checked5, setChecked5] = useState(false);
     const [checked6, setChecked6] = useState(false);
+
+    const [{ title: firstTitle, description: firstDescription },] = PrMessages
 
     return(
         <GitFlowWrapper>
