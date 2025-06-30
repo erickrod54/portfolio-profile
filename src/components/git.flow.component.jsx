@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.05 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.06 - GitFlowComponent - Features:
  * 
- *      --> Rendering fourth 'PrMessages'     
+ *      --> Rendering fifth 'PrMessages'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -627,7 +627,8 @@ const GitFlowComponent = () => {
            { title: firstTitle, description: firstDescription },
            { title:secondTitle, description:secondDescription },
            { title:thirdTitle, description:thirdDescription },
-           { title: fourthTitle, description:fourthDescription }
+           { title: fourthTitle, description:fourthDescription },
+           {title: fifthTitle, description: fifthDescription },
           ] = PrMessages
 
     return(
@@ -802,9 +803,9 @@ const GitFlowComponent = () => {
                     </PrIcon>
                     <PrText>
                         <PrTitle>
-                        Bug: I am running out of ideas for names of PRs
+                          {fifthTitle}
                         </PrTitle>
-                        <PrDesc>#4869 opened 1 month ago by plshelp</PrDesc>
+                        <PrDesc>{fifthDescription}</PrDesc>
                     </PrText>
                 </Pr>
                 <Pr>
