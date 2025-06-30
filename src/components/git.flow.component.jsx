@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.04 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.05 - GitFlowComponent - Features:
  * 
- *      --> Rendering third 'PrMessages'     
+ *      --> Rendering fourth 'PrMessages'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -626,7 +626,8 @@ const GitFlowComponent = () => {
     const [
            { title: firstTitle, description: firstDescription },
            { title:secondTitle, description:secondDescription },
-           { title:thirdTitle, description:thirdDescription }
+           { title:thirdTitle, description:thirdDescription },
+           { title: fourthTitle, description:fourthDescription }
           ] = PrMessages
 
     return(
@@ -783,8 +784,8 @@ const GitFlowComponent = () => {
                         <IconComponent data={fourthPrData}/>
                     </PrIcon>
                     <PrText>
-                        <PrText>Feature request: Storage of cats</PrText>
-                        <PrDesc>#4931 opened 12 days ago by cat_lover69</PrDesc>
+                        <PrText>{fourthTitle}</PrText>
+                        <PrDesc>{fourthDescription}</PrDesc>
                     </PrText>
                 </Pr>
                 <Pr>
