@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.01 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.02 - GitFlowComponent - Features:
  * 
- *      --> Building 'PrMessages'     
+ *      --> Remedring first 'PrMessages'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -726,8 +726,8 @@ const GitFlowComponent = () => {
                         <IconComponent data={firstPrData} />
                     </PrIcon>
                     <PrText>
-                        <PrTitle>Feature request: Document analysis</PrTitle>
-                        <PrDesc>#5054 opened 1 minute ago by yourmom69</PrDesc>
+                        <PrTitle>{firstTitle}</PrTitle>
+                        <PrDesc>{firstDescription}</PrDesc>
                     </PrText>
                 </Pr>
                 <Pr>
