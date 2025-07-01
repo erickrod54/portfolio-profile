@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.12 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.13 - GitFlowComponent - Features:
  * 
- *      --> Destructuring tab titles from 'TabsTitles'     
+ *      --> Rendering 'tab_title_1'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -726,7 +726,7 @@ const GitFlowComponent = () => {
                         {/**Code icon */}
                         <IconComponent data={codeData} />
                     </TabIcon>
-                    <TabText>Code</TabText>
+                    <TabText>{tab_title_1}</TabText>
                     </TabStyled>
                     <TabStyled>
                     <TabIcon>
