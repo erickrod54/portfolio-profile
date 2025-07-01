@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.10 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.11 - GitFlowComponent - Features:
  * 
- *      --> Rendering 'secondPath' from 'HeaderData'     
+ *      --> Building 'TabsTitles'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -623,6 +623,19 @@ const HeaderData = [
   }
 ]
 
+const TabsTitles = [
+  {
+    title:'Code'  
+  },
+  {
+    title:''  
+  },
+  {
+    title:''  
+  }
+
+]
+
 const GitFlowComponent = () => {
 
     const [checked, setChecked] = useState(false);
@@ -641,7 +654,7 @@ const GitFlowComponent = () => {
            {title:sixthTitle, description:sixthDescription }
           ] = PrMessages;
 
-    const [{ path:firstPath }, { path:secondPath }] = HeaderData
+    const [{ path:firstPath }, { path:secondPath }] = HeaderData;
 
     return(
         <GitFlowWrapper>
