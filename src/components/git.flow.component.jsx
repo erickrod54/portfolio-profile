@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.07 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.08 - GitFlowComponent - Features:
  * 
- *      --> Rendering sixth 'PrMessages'     
+ *      --> Building 'HeaderData'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -612,6 +612,15 @@ const PrMessages = [
   title:'Improve documentation',
   description:'#4206 opened 2 months ago by goldfish'
 },
+]
+
+const HeaderData = [
+  {
+    path:'sms'
+  },
+  {
+    path:'my-api'
+  }
 ]
 
 const GitFlowComponent = () => {
