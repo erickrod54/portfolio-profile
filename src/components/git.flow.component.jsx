@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.09 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.10 - GitFlowComponent - Features:
  * 
- *      --> Rendering 'firstPath' from 'HeaderData'     
+ *      --> Rendering 'secondPath' from 'HeaderData'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -692,7 +692,7 @@ const GitFlowComponent = () => {
                     <Repo>
                         <RepoOwner href="/#">{firstPath}</RepoOwner>
                         <RepoSlash>/</RepoSlash>
-                        <RepoName href="/#">my-api</RepoName>
+                        <RepoName href="/#">{secondPath}</RepoName>
                     </Repo>
                     <Space></Space>
                     <Icon>
