@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.08 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.09 - GitFlowComponent - Features:
  * 
- *      --> Building 'HeaderData'     
+ *      --> Rendering 'firstPath' from 'HeaderData'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -639,7 +639,9 @@ const GitFlowComponent = () => {
            { title: fourthTitle, description:fourthDescription },
            {title: fifthTitle, description: fifthDescription },
            {title:sixthTitle, description:sixthDescription }
-          ] = PrMessages
+          ] = PrMessages;
+
+    const [{ path:firstPath }, { path:secondPath }] = HeaderData
 
     return(
         <GitFlowWrapper>
@@ -688,7 +690,7 @@ const GitFlowComponent = () => {
                         <IconComponent data={ghIconData} />
                     </GhIcon>
                     <Repo>
-                        <RepoOwner href="/#">sms</RepoOwner>
+                        <RepoOwner href="/#">{firstPath}</RepoOwner>
                         <RepoSlash>/</RepoSlash>
                         <RepoName href="/#">my-api</RepoName>
                     </Repo>
