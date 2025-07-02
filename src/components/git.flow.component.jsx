@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.14 - GitFlowComponent - Features:
  * 
- *      --> Rendering 'tab_title_1'     
+ *      --> Completing 'TabsTitles'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -628,10 +628,10 @@ const TabsTitles = [
     title:'Code'  
   },
   {
-    title:''  
+    title:'Issues'  
   },
   {
-    title:''  
+    title:'Pull Requests'  
   }
 
 ]
