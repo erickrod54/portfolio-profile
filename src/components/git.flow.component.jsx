@@ -2,9 +2,9 @@ import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
 
-/**Portfolio-erick - version 31.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.16 - GitFlowComponent - Features:
  * 
- *      --> Placing 'tab_title_2'     
+ *      --> Placing 'tab_title_3'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -740,7 +740,7 @@ const GitFlowComponent = () => {
                         {/**Pull Request data */}
                         <IconComponent data={prData} />
                     </TabIcon>
-                    <TabText>Pull Requests</TabText>
+                    <TabText>{tab_title_3}</TabText>
                     </TabStyled>
                 </BtmHeader>
             </HeaderBox>
