@@ -25,11 +25,12 @@ import { ExperimentalUIWrapper,
          StyledSci,
          SocialTitle,
          SocialContent,
+         CollaborationsWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 20.00 - styled.components - Features:
+/**Portfolio-erick - version 31.17 - styled.components - Features:
  * 
- *      --> Clearing again 'ModalContent'
+ *      --> Importing and exporting 'CollaborationsWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -63,6 +64,7 @@ export { ExperimentalUIWrapper,
          StyleSocialWrapper,
          StyledSci,
          SocialTitle,
+         CollaborationsWrapper,
          SocialContent
          }
 
