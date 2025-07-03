@@ -26,11 +26,12 @@ import { ExperimentalUIWrapper,
          SocialTitle,
          SocialContent,
          CollaborationsWrapper,
+         TypingKeyFrame,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 31.17 - styled.components - Features:
+/**Portfolio-erick - version 32.00 - styled.components - Features:
  * 
- *      --> Importing and exporting 'CollaborationsWrapper'
+ *      --> Importing and exporting 'TypingKeyFrame'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -65,6 +66,7 @@ export { ExperimentalUIWrapper,
          StyledSci,
          SocialTitle,
          CollaborationsWrapper,
-         SocialContent
+         SocialContent,
+         TypingKeyFrame
          }
 
