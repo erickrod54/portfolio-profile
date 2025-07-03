@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 31.19 - CollabTitle - Features:
+/**Portfolio-erick - version 31.20 - CollabTitle - Features:
  * 
- *      --> Spliting 'TypingKeyframe' 
+ *      --> Spliting 'BlinkCaretKeyframe' 
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
@@ -21,17 +21,16 @@ const TypingKeyframe = keyframes`
   from {
     width: 0;
   }
+`
+
+const BlinkCaretKeyframe = keyframes`
+  50% {
+    border-color: transparent;
+  }
 
 `
 
 const StyledWrapper = styled.div`
-
-
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
 
 .animation {
   /* 1. Define the gradient as the background */
@@ -62,7 +61,7 @@ const StyledWrapper = styled.div`
 
   /* Adjust steps(13, end) for 13 characters */
   -webkit-animation: ${TypingKeyframe} 5s steps(13, end),
-	           blink-caret .5s step-end infinite alternate;
+	           ${BlinkCaretKeyframe} .5s step-end infinite alternate;
 }
 `;
 
