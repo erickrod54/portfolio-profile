@@ -1,9 +1,8 @@
-import styled from "styled-components";
 import { CollaborationsWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 31.17 - Collaborations Component - Features:
+/**Portfolio-erick - version 31.18 - Collaborations Component - Features:
  * 
- *      --> Migrating 'CollaborationsWrapper'
+ *      --> Clearing 'Styled'
  * 
  * Notes: This component receives 'children' components
  */
