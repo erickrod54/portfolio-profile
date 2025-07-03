@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 31.17 - styled.components - Features:
+/**Portfolio-erick - version 32.00 - styled.components - Features:
  * 
- *      --> Building 'CollaborationsWrapper'
+ *      --> Building 'TypingKeyFrame'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,12 @@ import styled, { css } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Collaborations Component styles - START */
+
+export const TypingKeyFrame = keyframes`
+from{
+  width:0;
+}
+`
 
 export const CollaborationsWrapper = styled.div` 
     display: flex;
