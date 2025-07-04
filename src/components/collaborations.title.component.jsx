@@ -1,8 +1,9 @@
 import styled, { keyframes } from 'styled-components';
+import { TypingKeyFrame } from '../styled-components/styled.components';
 
-/**Portfolio-erick - version 32.00 - CollabTitle - Features:
+/**Portfolio-erick - version 32.01 - CollabTitle - Features:
  * 
- *      --> Migrating 'TypingKeyFrame' 
+ *      --> Injecting 'TypingKeyFrame' StyledWrapper
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
@@ -54,7 +55,7 @@ const StyledWrapper = styled.div`
   overflow: hidden;
 
   /* Adjust steps(13, end) for 13 characters */
-  -webkit-animation: typing 5s steps(13, end),
+  -webkit-animation: ${TypingKeyFrame} 5s steps(13, end),
 	           ${BlinkCaretKeyframe} .5s step-end infinite alternate;
 }
 `;
