@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 32.00 - styled.components - Features:
+/**Portfolio-erick - version 32.02 - styled.components - Features:
  * 
- *      --> Building 'TypingKeyFrame'
+ *      --> Building 'BlinkCaretKeyframe'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,12 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Collaborations Component styles - START */
+
+export const BlinkCaretKeyframe = keyframes`
+  50% {
+    border-color:transparent;
+  }
+`
 
 export const TypingKeyFrame = keyframes`
 from{
