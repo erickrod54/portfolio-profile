@@ -27,11 +27,12 @@ import { ExperimentalUIWrapper,
          SocialContent,
          CollaborationsWrapper,
          TypingKeyFrame,
+         BlinkCaretKeyframe,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 32.00 - styled.components - Features:
+/**Portfolio-erick - version 32.02 - styled.components - Features:
  * 
- *      --> Importing and exporting 'TypingKeyFrame'
+ *      --> Importing and exporting 'BlinkCaretKeyframe'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -39,6 +40,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         BlinkCaretKeyframe,
          StyleProfileWrapper,
          StyleBneonCard,
          CardWrapper,
