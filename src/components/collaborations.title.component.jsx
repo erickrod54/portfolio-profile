@@ -1,9 +1,9 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { BlinkCaretKeyframe, TypingKeyFrame } from '../styled-components/styled.components';
 
-/**Portfolio-erick - version 32.03 - CollabTitle - Features:
+/**Portfolio-erick - version 32.04 - CollabTitle - Features:
  * 
- *      --> Injecting 'BlinkCaretKeyframe' into StyledWrapper  
+ *      --> Clearing 'keyframes' helper  
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
