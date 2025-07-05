@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { BlinkCaretKeyframe, TypingKeyFrame, AnimationWrapper } from '../styled-components/styled.components';
+import { TypingKeyFrame, AnimationWrapper } from '../styled-components/styled.components';
 
-/**Portfolio-erick - version 32.05 - CollabTitle - Features:
+/**Portfolio-erick - version 32.07 - CollabTitle - Features:
  * 
- *      --> Migrating 'AnimationWrapper' styles   
+ *      --> Clearing 'BlinkCaretKeyframe'   
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
