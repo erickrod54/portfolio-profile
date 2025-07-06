@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 32.07- styled.components - Features:
+/**Portfolio-erick - version 32.08 - styled.components - Features:
  * 
- *      --> Clearing 'BlinkCaretKeyframe' export 
+ *      --> Clearing 'TypingKeyFrame' export 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,7 +21,7 @@ const BlinkCaretKeyframe = keyframes`
   }
 `
 
-export const TypingKeyFrame = keyframes`
+const TypingKeyFrame = keyframes`
 from{
   width:0;
 }
