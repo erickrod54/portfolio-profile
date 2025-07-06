@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import {  AnimationWrapper } from '../styled-components/styled.components';
 
-/**Portfolio-erick - version 32.08 - CollabTitle - Features:
+/**Portfolio-erick - version 32.09 - CollabTitle - Features:
  * 
- *      --> Clearing 'TypingKeyFrame'   
+ *      --> Renaming 'StyledWrapper' to 'CollabWrapper'   
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
@@ -12,13 +12,13 @@ import {  AnimationWrapper } from '../styled-components/styled.components';
 const CollabTitle = ({title}) => {
 
   return (
-    <StyledWrapper> 
+    <CollabWrapper> 
       <AnimationWrapper>{title}</AnimationWrapper>
-    </StyledWrapper>
+    </CollabWrapper>
   );
 }
 
-const StyledWrapper = styled.div`
+const CollabWrapper = styled.div`
 `;
 
 export default CollabTitle;
