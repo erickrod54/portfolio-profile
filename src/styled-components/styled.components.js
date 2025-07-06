@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 32.08 - styled.components - Features:
+/**Portfolio-erick - version 32.10 - styled.components - Features:
  * 
- *      --> Clearing 'TypingKeyFrame' export 
+ *      --> Building 'CollabWrapper'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -14,6 +14,9 @@ import styled, { css, keyframes } from "styled-components"
 
   /**Collaborations Component styles - START */
 
+export const CollabWrapper = styled.div`
+
+`;
 
 const BlinkCaretKeyframe = keyframes`
   50% {
