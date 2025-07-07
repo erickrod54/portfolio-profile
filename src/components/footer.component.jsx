@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 32.13 - Footer 
+/** Portfolio-erick - version 32.14 - Footer 
  * Features:
  * 
- *   --> Destructuring 'BrandInfoData' fields.
+ *   --> Placing 'brandname'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -177,7 +177,7 @@ const Footer = () => {
         <BrandInfo>
           <Logo>
             <LogoIcon />
-            @erickdev
+            {brandname}
           </Logo>
           <Tagline>Components + AI for the new Tech Era.</Tagline>
         </BrandInfo>
