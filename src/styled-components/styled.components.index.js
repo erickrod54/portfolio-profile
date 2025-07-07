@@ -27,11 +27,12 @@ import { ExperimentalUIWrapper,
          SocialContent,
          CollaborationsWrapper,
          AnimationWrapper,
+         CollabWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 32.08 - styled.components - Features:
+/**Portfolio-erick - version 32.10 - styled.components - Features:
  * 
- *      --> Clearing 'TypingKeyFrame'
+ *      --> Importing and exporting 'CollabWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -39,6 +40,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         CollabWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
          CardWrapper,
