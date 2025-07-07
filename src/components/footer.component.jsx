@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 21.14 - Footer 
+/** Portfolio-erick - version 32.12 - Footer 
  * Features:
  * 
- *   --> Building 'Footer'.
+ *   --> Building 'BrandInfoData'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -156,6 +156,15 @@ const PolicyLinks = styled.div`
     }
   }
 `;
+
+const BrandInfoData = [
+  {
+    brandfield:'@erickdev'
+  },
+  {
+    brandfield:'Components + AI for the new Tech Era'
+  } 
+]
 
 // Footer Component
 const Footer = () => {
