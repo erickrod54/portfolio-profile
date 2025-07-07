@@ -1,9 +1,8 @@
-import styled from 'styled-components';
 import {  AnimationWrapper, CollabWrapper } from '../styled-components/styled.components';
 
-/**Portfolio-erick - version 32.10 - CollabTitle - Features:
+/**Portfolio-erick - version 32.11 - CollabTitle - Features:
  * 
- *      --> Migrating 'CollabWrapper'   
+ *      --> Clearing 'styled'   
  * 
  * Notes: 'CollabTitleData' is going to be placed where the 
  * 'CollabTitle' is going to consume it.
