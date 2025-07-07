@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 32.12 - Footer 
+/** Portfolio-erick - version 32.13 - Footer 
  * Features:
  * 
- *   --> Building 'BrandInfoData'.
+ *   --> Destructuring 'BrandInfoData' fields.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -168,6 +168,9 @@ const BrandInfoData = [
 
 // Footer Component
 const Footer = () => {
+
+  const [{ brandfield: brandname }, { brandfield: brand_slogan}] = BrandInfoData;
+
   return (
     <FooterWrapper>
       <TopSection>
