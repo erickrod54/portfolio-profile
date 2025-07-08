@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 32.14 - Footer 
+/** Portfolio-erick - version 32.15 - Footer 
  * Features:
  * 
- *   --> Placing 'brandname'.
+ *   --> Placing 'brand_slogan'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -179,7 +179,7 @@ const Footer = () => {
             <LogoIcon />
             {brandname}
           </Logo>
-          <Tagline>Components + AI for the new Tech Era.</Tagline>
+          <Tagline>{brand_slogan}</Tagline>
         </BrandInfo>
 
         <NavColumns>
