@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 32.17 - Footer 
+/** Portfolio-erick - version 32.18 - Footer 
  * Features:
  * 
- *   --> Destructuring 'MenthorshipProgram' data.
+ *   --> Placing 'program_title' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -212,7 +212,7 @@ const Footer = () => {
 
         <NavColumns>
           <NavColumn>
-            <h4>AI & Classic Engineering Program</h4>
+            <h4>{program_title}</h4>
             <ul>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#pricing">Pricing</a></li>
