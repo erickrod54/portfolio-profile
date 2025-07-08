@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 32.15 - Footer 
+/** Portfolio-erick - version 32.16 - Footer 
  * Features:
  * 
- *   --> Placing 'brand_slogan'.
+ *   --> Building 'MenthorshipProgram'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -164,6 +164,27 @@ const BrandInfoData = [
   {
     brandfield:'Components + AI for the new Tech Era'
   } 
+]
+
+const MenthorshipProgram = [
+  {
+    title:'AI & Classic Engineering Program'
+  },
+  {
+    item:'Overview'
+  },
+  {
+    item:'Pricing'
+  },
+  {
+    item:'Marketplace'
+  },
+  {
+    item:'Features'
+  },
+  {
+    item:'Integrations'
+  }  
 ]
 
 // Footer Component
