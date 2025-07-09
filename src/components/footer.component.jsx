@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.05 - Footer 
+/** Portfolio-erick - version 33.06 - Footer 
  * Features:
  * 
- *   --> Building 'MenthorshipProgram'.
+ *   --> Destructuring 'MenthorshipProgram' fields.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -219,6 +219,15 @@ const Footer = () => {
           { item: third_item },
           { item: fourth_item },
           { item: fifth_item }] = AI_AND_Classic_Eng;
+
+  const [ 
+    {title: menthorship_title },
+    {item:m_first_item},
+    {item:m_second_item},
+    {item:m_third_item},
+    {item:m_fourth_item},
+    {item:m_fifth_item} 
+    ] = MenthorshipProgram
 
   return (
     <FooterWrapper>
