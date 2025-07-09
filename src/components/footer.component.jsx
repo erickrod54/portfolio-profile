@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.04 - Footer 
+/** Portfolio-erick - version 33.05 - Footer 
  * Features:
  * 
- *   --> Renaming 'MenthorshipProgram' to 'AI_AND_Classic_Eng'.
+ *   --> Building 'MenthorshipProgram'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -185,6 +185,27 @@ const AI_AND_Classic_Eng = [
   {
     item:'Integrations'
   }  
+]
+
+const MenthorshipProgram = [
+  {
+    title:'Menthorship Program'
+  },
+  {
+    item:'About'
+  },
+  {
+    item:'Team'
+  },
+  {
+    item:'Blog'
+  },
+  {
+    item:'Careers'
+  },
+  {
+    item:'Privacy'
+  }
 ]
 
 // Footer Component
