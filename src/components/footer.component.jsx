@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.02 - Footer 
+/** Portfolio-erick - version 33.03 - Footer 
  * Features:
  * 
- *   --> Placing 'fourth_item' field.
+ *   --> Placing 'fifth_item' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -218,7 +218,7 @@ const Footer = () => {
               <li><a href="#pricing">{second_item}</a></li>
               <li><a href="#marketplace">{third_item}</a></li>
               <li><a href="#features">{fourth_item}</a></li>
-              <li><a href="#integrations">Integrations</a></li>
+              <li><a href="#integrations">{fifth_item}</a></li>
             </ul>
           </NavColumn>
 
