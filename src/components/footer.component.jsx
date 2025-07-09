@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.03 - Footer 
+/** Portfolio-erick - version 33.04 - Footer 
  * Features:
  * 
- *   --> Placing 'fifth_item' field.
+ *   --> Renaming 'MenthorshipProgram' to 'AI_AND_Classic_Eng'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -166,7 +166,7 @@ const BrandInfoData = [
   } 
 ]
 
-const MenthorshipProgram = [
+const AI_AND_Classic_Eng = [
   {
     title:'AI & Classic Engineering Program'
   },
@@ -197,7 +197,7 @@ const Footer = () => {
           { item: second_item },
           { item: third_item },
           { item: fourth_item },
-          { item: fifth_item }] = MenthorshipProgram;
+          { item: fifth_item }] = AI_AND_Classic_Eng;
 
   return (
     <FooterWrapper>
