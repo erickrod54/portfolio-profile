@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.07 - Footer 
+/** Portfolio-erick - version 33.08 - Footer 
  * Features:
  * 
- *   --> Placing 'menthorship_title' field.
+ *   --> Placing 'm_first_item' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -255,7 +255,7 @@ const Footer = () => {
           <NavColumn>
             <h4>{menthorship_title}</h4>
             <ul>
-              <li><a href="#about">About</a></li>
+              <li><a href="#about">{m_first_item}</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#blog">Blog</a></li>
               <li><a href="#careers">Careers</a></li>
