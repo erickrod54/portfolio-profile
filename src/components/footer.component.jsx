@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.12 - Footer 
+/** Portfolio-erick - version 33.13 - Footer 
  * Features:
  * 
- *   --> Placing 'm_fifth_item' field.
+ *   --> Building 'ResourcesData'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -206,6 +206,16 @@ const MenthorshipProgram = [
   {
     item:'Privacy'
   }
+]
+
+const ResourcesData = [
+  {
+    title:'Resources'
+  },
+  {
+    item:'Docs'
+  }
+
 ]
 
 // Footer Component
