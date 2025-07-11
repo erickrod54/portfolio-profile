@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.16 - Footer 
+/** Portfolio-erick - version 33.17 - Footer 
  * Features:
  * 
- *   --> Placing 'r_first_item' field.
+ *   --> Building 'SocialFooterData'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -214,6 +214,18 @@ const ResourcesData = [
   },
   {
     item:'Docs'
+  }
+]
+
+const SocialFooterData = [
+  {
+    title:'Social'
+  },
+  {
+    item:'X'
+  },
+  {
+    item:'LinkedIn'
   }
 
 ]
