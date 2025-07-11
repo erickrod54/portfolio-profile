@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.13 - Footer 
+/** Portfolio-erick - version 33.14 - Footer 
  * Features:
  * 
- *   --> Building 'ResourcesData'.
+ *   --> Destructuring 'ResourcesData' fields.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -237,7 +237,12 @@ const Footer = () => {
     {item:m_third_item},
     {item:m_fourth_item},
     {item:m_fifth_item} 
-    ] = MenthorshipProgram
+    ] = MenthorshipProgram;
+
+    const [
+      {title: resources_title},
+      {item: r_first_item}
+    ] = ResourcesData;
 
   return (
     <FooterWrapper>
