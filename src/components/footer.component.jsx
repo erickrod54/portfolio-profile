@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.14 - Footer 
+/** Portfolio-erick - version 33.15 - Footer 
  * Features:
  * 
- *   --> Destructuring 'ResourcesData' fields.
+ *   --> Placing 'resources_title' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -279,7 +279,7 @@ const Footer = () => {
           </NavColumn>
 
           <NavColumn>
-            <h4>Resources</h4>
+            <h4>{resources_title}</h4>
             <ul>
               <li><a href="#help">Docs</a></li>
             </ul>
