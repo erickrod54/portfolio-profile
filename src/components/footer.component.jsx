@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { getCurrentYear } from '../utils/utils.index';
 
-/** Portfolio-erick - version 34.00 - Footer 
+/** Portfolio-erick - version 34.01 - Footer 
  * Features:
  * 
- *   --> Placing 's_second_item' field.
+ *   --> Placing 'getCurrentYear' util.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -312,7 +313,7 @@ const Footer = () => {
       </TopSection>
 
       <BottomSection>
-        <Copyright>&copy; 2025 erick54.dev All rights reserved.</Copyright>
+        <Copyright>&copy; {getCurrentYear()} erick54.dev All rights reserved.</Copyright>
         <PolicyLinks>
           <a href="#terms">Terms and Conditions</a>
           <a href="#privacy">Privacy Policy</a>
