@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.20 - Footer 
+/** Portfolio-erick - version 34.00 - Footer 
  * Features:
  * 
- *   --> Placing 's_first_item' field.
+ *   --> Placing 's_second_item' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -305,7 +305,7 @@ const Footer = () => {
             <h4>{social_title}</h4>
             <ul>
               <li><a href="#twitter">{s_first_item}</a></li>
-              <li><a href="#linkedin">LinkedIn</a></li>
+              <li><a href="#linkedin">{s_second_item}</a></li>
             </ul>
           </NavColumn>
         </NavColumns>
