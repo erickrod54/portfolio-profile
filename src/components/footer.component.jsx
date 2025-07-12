@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/** Portfolio-erick - version 33.18 - Footer 
+/** Portfolio-erick - version 33.19 - Footer 
  * Features:
  * 
- *   --> Destructuring 'SocialFooterData' fields.
+ *   --> Placing 'social_title' field.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -302,7 +302,7 @@ const Footer = () => {
           </NavColumn>
 
           <NavColumn>
-            <h4>Social</h4>
+            <h4>{social_title}</h4>
             <ul>
               <li><a href="#twitter">X</a></li>
               <li><a href="#linkedin">LinkedIn</a></li>
