@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
 
-/** Portfolio-erick - version 34.02- Footer 
+/** Portfolio-erick - version 34.03- Footer 
  * Features:
  * 
- *   --> Building 'BottomData' 
+ *   --> Remaning 'copyright' to 'title' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -233,7 +233,7 @@ const SocialFooterData = [
 
 const BottomData = [
   {
-    copyright:'erick54.dev All rights reserved'  
+    title:'erick54.dev All rights reserved'  
   },
   {
     item:'Terms and Conditions'  
