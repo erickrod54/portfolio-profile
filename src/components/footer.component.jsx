@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
 
-/** Portfolio-erick - version 34.05- Footer 
+/** Portfolio-erick - version 34.06- Footer 
  * Features:
  * 
- *   --> Placing 'copyright' 
+ *   --> Placing 'conditions' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -332,7 +332,7 @@ const Footer = () => {
       <BottomSection>
         <Copyright>&copy; {getCurrentYear()} {copyright} </Copyright>
         <PolicyLinks>
-          <a href="#terms">Terms and Conditions</a>
+          <a href="#terms">{conditions}</a>
           <a href="#privacy">Privacy Policy</a>
         </PolicyLinks>
       </BottomSection>
