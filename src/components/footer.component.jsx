@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
 
-/** Portfolio-erick - version 34.01 - Footer 
+/** Portfolio-erick - version 34.02- Footer 
  * Features:
  * 
- *   --> Placing 'getCurrentYear' util.
+ *   --> Building 'BottomData' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -227,6 +227,19 @@ const SocialFooterData = [
   },
   {
     item:'LinkedIn'
+  }
+
+]
+
+const BottomData = [
+  {
+    copyright:'erick54.dev All rights reserved'  
+  },
+  {
+    item:'Terms and Conditions'  
+  },
+  {
+    item:'Privacy Policy'  
   }
 
 ]
