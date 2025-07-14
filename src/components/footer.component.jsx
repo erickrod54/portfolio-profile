@@ -1,22 +1,15 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
+import { FooterWrapper } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.07- Footer 
+/** Portfolio-erick - version 34.08 - Footer 
  * Features:
  * 
- *   --> Placing 'privacy' 
+ *   --> Migrating 'FooterWrapper' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-// Styled Components
-const FooterWrapper = styled.footer`
-  color: #ffffff; /* Dark text color */
-  padding: 4rem 2rem; /* Adjusted padding for better spacing */
-  font-family: Arial, sans-serif;
-  border-top: 1px solid #e0e0e0; /* Subtle top border */
-`;
 
 const TopSection = styled.div`
   display: flex;
