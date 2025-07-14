@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.08 - styled.components - Features:
+/**Portfolio-erick - version 34.09 - styled.components - Features:
  * 
- *      --> Migrating 'FooterWrapper'  
+ *      --> Building 'TopSection'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -19,6 +19,21 @@ import styled, { css, keyframes } from "styled-components"
     padding: 4rem 2rem; /* Adjusted padding for better spacing */
     font-family: Arial, sans-serif;
     border-top: 1px solid #e0e0e0; /* Subtle top border */
+`;
+
+export const TopSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 2rem; /* Space between columns */
+  margin-bottom: 3rem; /* Space between top and bottom sections */
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
   /**Footer Component styles - END */
