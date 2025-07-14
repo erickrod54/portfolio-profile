@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 32.10 - styled.components - Features:
+/**Portfolio-erick - version 34.08 - styled.components - Features:
  * 
- *      --> Building 'CollabWrapper'  
+ *      --> Migrating 'FooterWrapper'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,6 +11,17 @@ import styled, { css, keyframes } from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+  /**Footer Component styles - START */
+
+  export const FooterWrapper = styled.footer`
+    color: #ffffff; /* Dark text color */
+    padding: 4rem 2rem; /* Adjusted padding for better spacing */
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+`;
+
+  /**Footer Component styles - END */
 
   /**Collaborations Component styles - START */
 
