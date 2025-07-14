@@ -28,11 +28,12 @@ import { ExperimentalUIWrapper,
          CollaborationsWrapper,
          AnimationWrapper,
          CollabWrapper,
+         FooterWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 32.10 - styled.components - Features:
+/**Portfolio-erick - version 34.08 - styled.components - Features:
  * 
- *      --> Importing and exporting 'CollabWrapper'
+ *      --> Importing and exporting 'FooterWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -41,6 +42,7 @@ import { ExperimentalUIWrapper,
 
 export { ExperimentalUIWrapper,
          CollabWrapper,
+         FooterWrapper,
          StyleProfileWrapper,
          StyleBneonCard,
          CardWrapper,
