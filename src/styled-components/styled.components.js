@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.09 - styled.components - Features:
+/**Portfolio-erick - version 34.10 - styled.components - Features:
  * 
- *      --> Building 'TopSection'  
+ *      --> Building 'BrandInfo'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,16 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const BrandInfo = styled.div`
+  flex-basis: 25%; /* Take up about a quarter of the space */
+  min-width: 200px; /* Minimum width to prevent content from shrinking too much */
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+`;
 
   export const FooterWrapper = styled.footer`
     color: #ffffff; /* Dark text color */
