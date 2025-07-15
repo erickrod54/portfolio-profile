@@ -1,26 +1,15 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
-import { FooterWrapper, TopSection } from '../styled-components/styled.components.index';
+import { FooterWrapper, TopSection, BrandInfo } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.09 - Footer 
+/** Portfolio-erick - version 34.10 - Footer 
  * Features:
  * 
- *   --> Migrating 'TopSection' 
+ *   --> Migrating 'BrandInfo' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-
-const BrandInfo = styled.div`
-  flex-basis: 25%; /* Take up about a quarter of the space */
-  min-width: 200px; /* Minimum width to prevent content from shrinking too much */
-
-  @media (max-width: 768px) {
-    flex-basis: 100%;
-    margin-bottom: 2rem;
-  }
-`;
 
 const Logo = styled.div`
   font-size: 1.5rem;
