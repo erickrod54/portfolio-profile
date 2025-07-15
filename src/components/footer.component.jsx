@@ -1,28 +1,15 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
-import { FooterWrapper, TopSection, BrandInfo } from '../styled-components/styled.components.index';
+import { FooterWrapper, TopSection, BrandInfo, Logo } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.10 - Footer 
+/** Portfolio-erick - version 34.11 - Footer 
  * Features:
  * 
- *   --> Migrating 'BrandInfo' 
+ *   --> Migrating 'Logo' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const Logo = styled.div`
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
-`;
 
 const LogoIcon = styled.span`
   display: inline-block;
