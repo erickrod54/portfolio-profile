@@ -30,11 +30,12 @@ import { ExperimentalUIWrapper,
          CollabWrapper,
          FooterWrapper,
          TopSection,
+         BrandInfo,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 34.09 - styled.components - Features:
+/**Portfolio-erick - version 34.10 - styled.components - Features:
  * 
- *      --> Importing and exporting 'TopSection'
+ *      --> Importing and exporting 'BrandInfo'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -43,6 +44,7 @@ import { ExperimentalUIWrapper,
 
 export { ExperimentalUIWrapper,
          TopSection,
+         BrandInfo,
          CollabWrapper,
          FooterWrapper,
          StyleProfileWrapper,
