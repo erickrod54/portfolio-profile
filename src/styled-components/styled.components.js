@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.10 - styled.components - Features:
+/**Portfolio-erick - version 34.11 - styled.components - Features:
  * 
- *      --> Building 'BrandInfo'  
+ *      --> Building 'Logo'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -14,14 +14,27 @@ import styled, { css, keyframes } from "styled-components"
 
   /**Footer Component styles - START */
 
-  export const BrandInfo = styled.div`
-  flex-basis: 25%; /* Take up about a quarter of the space */
-  min-width: 200px; /* Minimum width to prevent content from shrinking too much */
+  export const Logo = styled.div`
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-  @media (max-width: 768px) {
-    flex-basis: 100%;
-    margin-bottom: 2rem;
-  }
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+`;
+
+  export const BrandInfo = styled.div`
+    flex-basis: 25%; /* Take up about a quarter of the space */
+    min-width: 200px; /* Minimum width to prevent content from shrinking too much */
+
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+    }
 `;
 
   export const FooterWrapper = styled.footer`
