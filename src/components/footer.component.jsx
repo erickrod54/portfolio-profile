@@ -1,21 +1,15 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
-import { FooterWrapper, TopSection, BrandInfo, Logo, LogoIcon } from '../styled-components/styled.components.index';
+import { FooterWrapper, TopSection, BrandInfo, Logo, LogoIcon, Tagline } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.12 - Footer 
+/** Portfolio-erick - version 34.13 - Footer 
  * Features:
  * 
- *   --> Migrating 'Logo' 
+ *   --> Migrating 'Tagline' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const Tagline = styled.p`
-  font-size: 0.9rem;
-  color: #B197FC;
-  line-height: 1.5;
-`;
 
 const NavColumns = styled.div`
   display: flex;
