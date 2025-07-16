@@ -33,11 +33,12 @@ import { ExperimentalUIWrapper,
          BrandInfo,
          Logo,
          LogoIcon,
+         Tagline,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 34.12 - styled.components - Features:
+/**Portfolio-erick - version 34.13 - styled.components - Features:
  * 
- *      --> Importing and exporting 'LogoIcon'
+ *      --> Importing and exporting 'Tagline'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -45,6 +46,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         Tagline,
          TopSection,
          LogoIcon,
          Logo,
