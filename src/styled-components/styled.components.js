@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.12 - styled.components - Features:
+/**Portfolio-erick - version 34.13 - styled.components - Features:
  * 
- *      --> Building 'LogoIcon'  
+ *      --> Building 'Tagline'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,12 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const Tagline = styled.p`
+    font-size: 0.9rem;
+    color: #B197FC;
+    line-height: 1.5;
+`;
 
   export const LogoIcon = styled.span`
     display: inline-block;
