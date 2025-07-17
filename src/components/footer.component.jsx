@@ -1,27 +1,15 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
-import { FooterWrapper, TopSection, BrandInfo, Logo, LogoIcon, Tagline } from '../styled-components/styled.components.index';
+import { FooterWrapper, TopSection, BrandInfo, Logo, LogoIcon, Tagline, NavColumns } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.13 - Footer 
+/** Portfolio-erick - version 34.14 - Footer 
  * Features:
  * 
- *   --> Migrating 'Tagline' 
+ *   --> Migrating 'NavColumns' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const NavColumns = styled.div`
-  display: flex;
-  flex-grow: 1; /* Allow columns to grow and take remaining space */
-  justify-content: space-around; /* Distribute columns evenly */
-  gap: 1rem; /* Space between columns */
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    width: 100%;
-  }
-`;
 
 const NavColumn = styled.div`
   h4 {
