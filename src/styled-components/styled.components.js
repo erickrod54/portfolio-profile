@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.13 - styled.components - Features:
+/**Portfolio-erick - version 34.14 - styled.components - Features:
  * 
- *      --> Building 'Tagline'  
+ *      --> Building 'NavColumns'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,18 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const NavColumns = styled.div`
+    display: flex;
+    flex-grow: 1; /* Allow columns to grow and take remaining space */
+    justify-content: space-around; /* Distribute columns evenly */
+    gap: 1rem; /* Space between columns */
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+`;
 
   export const Tagline = styled.p`
     font-size: 0.9rem;
