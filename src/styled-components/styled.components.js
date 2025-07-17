@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.14 - styled.components - Features:
+/**Portfolio-erick - version 34.15 - styled.components - Features:
  * 
- *      --> Building 'NavColumns'  
+ *      --> Building 'NavColumn'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,41 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const NavColumn = styled.div`
+    h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #F5F5F5;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #CCF5FF;
+      font-size: 0.9rem;
+      &:hover {
+        color: #007bff; /* Example hover color */
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 1.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+`;
 
   export const NavColumns = styled.div`
     display: flex;
