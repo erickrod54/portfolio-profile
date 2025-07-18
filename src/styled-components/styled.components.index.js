@@ -37,11 +37,12 @@ import { ExperimentalUIWrapper,
          NavColumns,
          NavColumn,
          BottomSection,
+         Copyright,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 34.16 - styled.components - Features:
+/**Portfolio-erick - version 34.17 - styled.components - Features:
  * 
- *      --> Importing and exporting 'BottomSection'
+ *      --> Importing and exporting 'Copyright'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -49,6 +50,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         Copyright,
          BottomSection,
          Tagline,
          NavColumn,
