@@ -1,33 +1,20 @@
 import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
-import { FooterWrapper, TopSection, BrandInfo, Logo, LogoIcon, Tagline, NavColumns, NavColumn } from '../styled-components/styled.components.index';
+import { FooterWrapper, TopSection,
+         BrandInfo,
+         Logo,
+         LogoIcon,
+         Tagline,
+         NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.15 - Footer 
+/** Portfolio-erick - version 34.16 - Footer 
  * Features:
  * 
- *   --> Migrating 'NavColumn' 
+ *   --> Migrating 'BottomSection' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const BottomSection = styled.div`
-  border-top: 1px solid #e0e0e0;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-  color: #666666;
-  gap: 1rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 1.5rem;
-  }
-`;
 
 const Copyright = styled.p`
   margin: 0;
