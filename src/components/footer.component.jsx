@@ -5,20 +5,17 @@ import { FooterWrapper, TopSection,
          Logo,
          LogoIcon,
          Tagline,
+         Copyright,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.16 - Footer 
+/** Portfolio-erick - version 34.17 - Footer 
  * Features:
  * 
- *   --> Migrating 'BottomSection' 
+ *   --> Migrating 'Copyright' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const Copyright = styled.p`
-  margin: 0;
-`;
 
 const PolicyLinks = styled.div`
   a {
