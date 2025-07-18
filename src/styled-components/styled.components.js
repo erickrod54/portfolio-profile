@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.15 - styled.components - Features:
+/**Portfolio-erick - version 34.16 - styled.components - Features:
  * 
- *      --> Building 'NavColumn'  
+ *      --> Building 'BottomSection'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,24 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const BottomSection = styled.div`
+  border-top: 1px solid #e0e0e0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #666666;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+`;
 
   export const NavColumn = styled.div`
     h4 {
