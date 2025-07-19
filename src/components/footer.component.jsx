@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { getCurrentYear } from '../utils/utils.index';
 import { FooterWrapper, TopSection,
          BrandInfo,
@@ -9,10 +8,10 @@ import { FooterWrapper, TopSection,
          PolicyLinks,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.18 - Footer 
+/** Portfolio-erick - version 34.19 - Footer 
  * Features:
  * 
- *   --> Migrating 'PolicyLinks' 
+ *   --> Clearing 'styled' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
