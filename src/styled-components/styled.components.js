@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.17 - styled.components - Features:
+/**Portfolio-erick - version 34.18 - styled.components - Features:
  * 
- *      --> Building 'Copyright'  
+ *      --> Building 'PolicyLinks'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,22 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const PolicyLinks = styled.div`
+  a {
+    color: #CCF5FF;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    &:hover {
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0.5rem;
+      display: inline-block;
+    }
+  }
+`;
 
   export const Copyright = styled.p`
     margin: 0;
