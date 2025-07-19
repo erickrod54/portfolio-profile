@@ -10,15 +10,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 22.10 - data js
+/**Portfolio-erick - version 34.20 - data js
  *  - Features:
  * 
- *      --> Adding 'WaterTitleData' data set.
+ *      --> Adding 'BrandInfoData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/**Data sets for Footer */
+
+export const BrandInfoData = [
+  {
+    brandfield:'@erickdev'
+  },
+  {
+    brandfield:'Components + AI for the new Tech Era'
+  } 
+]
 
 /** Data sets for titles  */
 
