@@ -6,32 +6,17 @@ import { FooterWrapper, TopSection,
          LogoIcon,
          Tagline,
          Copyright,
+         PolicyLinks,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 
-/** Portfolio-erick - version 34.17 - Footer 
+/** Portfolio-erick - version 34.18 - Footer 
  * Features:
  * 
- *   --> Migrating 'Copyright' 
+ *   --> Migrating 'PolicyLinks' 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const PolicyLinks = styled.div`
-  a {
-    color: #CCF5FF;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    &:hover {
-      color: #007bff;
-    }
-
-    @media (max-width: 768px) {
-      margin: 0 0.5rem;
-      display: inline-block;
-    }
-  }
-`;
 
 const BrandInfoData = [
   {
