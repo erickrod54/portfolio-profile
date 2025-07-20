@@ -9,35 +9,14 @@ import { FooterWrapper, TopSection,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 35.01 - Footer 
+/** Portfolio-erick - version 35.02 - Footer 
  * Features:
  * 
- *   --> Fixing 's_second_item'  
+ *   --> Destructuring 'AI_AND_Classic_Eng' from context  
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const AI_AND_Classic_Eng = [
-  {
-    title:'AI & Classic Engineering Program'
-  },
-  {
-    item:'Overview'
-  },
-  {
-    item:'Pricing'
-  },
-  {
-    item:'Marketplace'
-  },
-  {
-    item:'Features'
-  },
-  {
-    item:'Integrations'
-  }  
-]
 
 const MenthorshipProgram = [
   {
@@ -98,7 +77,7 @@ const BottomData = [
 // Footer Component
 const Footer = () => {
 
-  const { BrandInfoData } = usePortfolioContext()
+  const { BrandInfoData, AI_AND_Classic_Eng } = usePortfolioContext()
 
   const [{ brandfield: brandname }, { brandfield: brand_slogan}] = BrandInfoData;
 
