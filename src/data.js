@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 34.20 - data js
+/**Portfolio-erick - version 35.02 - data js
  *  - Features:
  * 
- *      --> Adding 'BrandInfoData' data set.
+ *      --> Adding 'AI_AND_Classic_Eng' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,27 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**Data sets for Footer */
+
+export const AI_AND_Classic_Eng = [
+  {
+    title:'AI & Classic Engineering Program'
+  },
+  {
+    item:'Overview'
+  },
+  {
+    item:'Pricing'
+  },
+  {
+    item:'Marketplace'
+  },
+  {
+    item:'Features'
+  },
+  {
+    item:'Integrations'
+  }  
+]
 
 export const BrandInfoData = [
   {
