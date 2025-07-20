@@ -4,12 +4,13 @@ import { filePdf,
          profileImagePic,
          ResumeData,
          skillIcons,
+         AI_AND_Classic_Eng,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 34.20 - context js
+/**Portfolio-erick - version 35.02 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'BrandInfoData'.
+ *      --> Importing and providing 'AI_AND_Classic_Eng'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -34,6 +35,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                AI_AND_Classic_Eng,
                 BrandInfoData,
                 WaterTitleData,
                 CollabTitleData,
