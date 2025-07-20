@@ -9,10 +9,10 @@ import { FooterWrapper, TopSection,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 34.20 - Footer 
+/** Portfolio-erick - version 35.00 - Footer 
  * Features:
  * 
- *   --> Destructuring 'BrandInfoData' from usePortfolioContext 
+ *   --> Fixing 's_first_item'  
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -124,7 +124,7 @@ const Footer = () => {
     ] = ResourcesData;
 
     const [
-      {title: social_title },{s_first_item},{s_second_item}
+      {title: social_title },{iterm:s_first_item},{s_second_item}
     ] = SocialFooterData;
 
     const [
