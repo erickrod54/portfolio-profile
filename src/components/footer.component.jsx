@@ -7,24 +7,16 @@ import { FooterWrapper, TopSection,
          Copyright,
          PolicyLinks,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
+import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 34.19 - Footer 
+/** Portfolio-erick - version 34.20 - Footer 
  * Features:
  * 
- *   --> Clearing 'styled' 
+ *   --> Destructuring 'BrandInfoData' from usePortfolioContext 
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const BrandInfoData = [
-  {
-    brandfield:'@erickdev'
-  },
-  {
-    brandfield:'Components + AI for the new Tech Era'
-  } 
-]
 
 const AI_AND_Classic_Eng = [
   {
@@ -105,6 +97,8 @@ const BottomData = [
 
 // Footer Component
 const Footer = () => {
+
+  const { BrandInfoData } = usePortfolioContext()
 
   const [{ brandfield: brandname }, { brandfield: brand_slogan}] = BrandInfoData;
 
