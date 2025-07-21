@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 35.02 - data js
+/**Portfolio-erick - version 35.03 - data js
  *  - Features:
  * 
- *      --> Adding 'AI_AND_Classic_Eng' data set.
+ *      --> Adding 'MenthorshipProgram' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,28 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**Data sets for Footer */
+
+export const MenthorshipProgram = [
+  {
+    title:'Menthorship Program'
+  },
+  {
+    item:'About'
+  },
+  {
+    item:'Team'
+  },
+  {
+    item:'Blog'
+  },
+  {
+    item:'Careers'
+  },
+  {
+    item:'Privacy'
+  }
+]
+
 
 export const AI_AND_Classic_Eng = [
   {
