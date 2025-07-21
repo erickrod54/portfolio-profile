@@ -5,12 +5,13 @@ import { filePdf,
          ResumeData,
          skillIcons,
          AI_AND_Classic_Eng,
+         MenthorshipProgram,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 35.02 - context js
+/**Portfolio-erick - version 35.03 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'AI_AND_Classic_Eng'.
+ *      --> Importing and providing 'MenthorshipProgram'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -36,6 +37,7 @@ export const PortfolioProvider = ({ children }) => {
             value={{
                 ResumeData,
                 AI_AND_Classic_Eng,
+                MenthorshipProgram,
                 BrandInfoData,
                 WaterTitleData,
                 CollabTitleData,
