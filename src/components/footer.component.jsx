@@ -9,27 +9,14 @@ import { FooterWrapper, TopSection,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 35.04 - Footer 
+/** Portfolio-erick - version 35.05 - Footer 
  * Features:
  * 
- *   --> Destructuring 'ResourcesData' from context  
+ *   --> Destructuring 'SocialFooterData' from context  
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-const SocialFooterData = [
-  {
-    title:'Social'
-  },
-  {
-    item:'X'
-  },
-  {
-    item:'LinkedIn'
-  }
-
-]
 
 const BottomData = [
   {
@@ -50,6 +37,7 @@ const Footer = () => {
   const { BrandInfoData,
           AI_AND_Classic_Eng,
           ResourcesData,
+          SocialFooterData,
           MenthorshipProgram } = usePortfolioContext()
 
   const [{ brandfield: brandname }, { brandfield: brand_slogan}] = BrandInfoData;
