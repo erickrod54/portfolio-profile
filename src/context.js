@@ -8,12 +8,13 @@ import { filePdf,
          MenthorshipProgram,
          ResourcesData,
          SocialFooterData,
+         BottomData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 35.05 - context js
+/**Portfolio-erick - version 35.06 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'SocialFooterData'.
+ *      --> Importing and providing 'BottomData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -38,6 +39,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                BottomData,
                 SocialFooterData,
                 ResourcesData,
                 AI_AND_Classic_Eng,
