@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 35.05 - data js
+/**Portfolio-erick - version 35.06 - data js
  *  - Features:
  * 
- *      --> Adding 'SocialFooterData' data set.
+ *      --> Adding 'BottomData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,19 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**Data sets for Footer */
+
+export const BottomData = [
+  {
+    title:'erick54.dev All rights reserved'  
+  },
+  {
+    item:'Terms and Conditions'  
+  },
+  {
+    item:'Privacy Policy'  
+  }
+
+]
 
 export const SocialFooterData = [
   {
