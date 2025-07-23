@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 34.18 - styled.components - Features:
+/**Portfolio-erick - version 35.07 - styled.components - Features:
  * 
- *      --> Building 'PolicyLinks'  
+ *      --> Building 'MainChart'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,14 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+  export const MainChart = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 15em;
+    align-items: center;
+    justify-content: center;
+`
 
   export const PolicyLinks = styled.div`
   a {
