@@ -1,27 +1,13 @@
 import styled, { css, keyframes } from "styled-components"
-import { MainChart } from '../styled-components/styled.components.index';
+import { MainChart, loading90 } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 35.07 - GitChart - Features:
+/**Portfolio-erick - version 35.08 - GitChart - Features:
  * 
  *      --> Migrating 'MainChart' 
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
  */
-
-const loading90 = keyframes`
-    0% {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    50% {
-      background: limegreen;
-    }
-
-    100% {
-      background: rgba(255, 255, 255, 0.2);
-    }
-`
 
 const CommitCard = styled.div`
   width: 40px;
@@ -35,7 +21,7 @@ const CommitCard = styled.div`
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  animation: ${loading90} 2s infinite;
+  animation: ${loading90} infinite;
 
   ${props => props.$index % 2 === 0 && css`
     animation-delay:1s
