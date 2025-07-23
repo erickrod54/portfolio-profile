@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.07 - styled.components - Features:
+/**Portfolio-erick - version 35.08 - styled.components - Features:
  * 
- *      --> Building 'MainChart'  
+ *      --> Building 'loading90'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,20 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+export const loading90 = keyframes`
+    0% {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+      background: limegreen;
+    }
+
+    100% {
+      background: rgba(255, 255, 255, 0.2);
+    }
+`
 
   export const MainChart = styled.div`
     display: flex;
