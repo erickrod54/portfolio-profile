@@ -40,11 +40,12 @@ import { ExperimentalUIWrapper,
          Copyright,
          PolicyLinks,
          MainChart,
+         loading90,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 35.07 - styled.components - Features:
+/**Portfolio-erick - version 35.08 - styled.components - Features:
  * 
- *      --> Importing and exporting 'MainChart'
+ *      --> Importing and exporting 'loading90'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -52,6 +53,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         loading90,   
          MainChart,
          PolicyLinks,
          Copyright,
