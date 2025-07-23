@@ -39,11 +39,12 @@ import { ExperimentalUIWrapper,
          BottomSection,
          Copyright,
          PolicyLinks,
+         MainChart,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 34.18 - styled.components - Features:
+/**Portfolio-erick - version 35.07 - styled.components - Features:
  * 
- *      --> Importing and exporting 'PolicyLinks'
+ *      --> Importing and exporting 'MainChart'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -51,6 +52,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         MainChart,
          PolicyLinks,
          Copyright,
          BottomSection,
