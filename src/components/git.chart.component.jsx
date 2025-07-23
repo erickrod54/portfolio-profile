@@ -1,21 +1,13 @@
 import styled, { css, keyframes } from "styled-components"
+import { MainChart } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 22.08 - GitChart - Features:
+/**Portfolio-erick - version 35.07 - GitChart - Features:
  * 
- *      --> Building 'cards' array and maping into 
- *          'CommitCard'
+ *      --> Migrating 'MainChart' 
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
  */
-
-const MainChart = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 15em;
-  align-items: center;
-  justify-content: center;
-`
 
 const loading90 = keyframes`
     0% {
