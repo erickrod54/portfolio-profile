@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.08 - styled.components - Features:
+/**Portfolio-erick - version 35.09 - styled.components - Features:
  * 
- *      --> Building 'loading90'  
+ *      --> Building 'CommitCard'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -26,6 +26,26 @@ export const loading90 = keyframes`
     100% {
       background: rgba(255, 255, 255, 0.2);
     }
+`
+
+export const CommitCard = styled.div`
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  background: lightgrey;
+  transition: 0.4s ease-in-out, 0.2s background-color;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 0.2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: ${loading90} 2s infinite;
+
+  ${props => props.$index % 2 === 0 && css`
+    animation-delay:1s
+    `};
+
 `
 
   export const MainChart = styled.div`
