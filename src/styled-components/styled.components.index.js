@@ -41,11 +41,12 @@ import { ExperimentalUIWrapper,
          PolicyLinks,
          MainChart,
          loading90,
+         CommitCard,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 35.08 - styled.components - Features:
+/**Portfolio-erick - version 35.09 - styled.components - Features:
  * 
- *      --> Importing and exporting 'loading90'
+ *      --> Importing and exporting 'CommitCard'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -53,7 +54,8 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
-         loading90,   
+         loading90,
+         CommitCard,   
          MainChart,
          PolicyLinks,
          Copyright,
