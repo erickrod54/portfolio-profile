@@ -1,9 +1,9 @@
 import styled, { css, keyframes } from "styled-components"
 import { MainChart, CommitCard } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 35.10 - GitChart - Features:
+/**Portfolio-erick - version 35.11 - GitChart - Features:
  * 
- *      --> Migrating 'loading90' 
+ *      --> Clearing 'css' 
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
