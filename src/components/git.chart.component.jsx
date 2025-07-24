@@ -1,9 +1,9 @@
-import styled, { css, keyframes } from "styled-components"
+import styled from "styled-components"
 import { MainChart, CommitCard } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 35.11 - GitChart - Features:
+/**Portfolio-erick - version 35.12 - GitChart - Features:
  * 
- *      --> Clearing 'css' 
+ *      --> Clearing 'keyframes' 
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
