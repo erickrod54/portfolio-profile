@@ -42,11 +42,12 @@ import { ExperimentalUIWrapper,
          MainChart,
          loading90,
          CommitCard,
+         GitChartWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 35.09 - styled.components - Features:
+/**Portfolio-erick - version 35.13 - styled.components - Features:
  * 
- *      --> Importing and exporting 'CommitCard'
+ *      --> Importing and exporting 'GitChartWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -54,6 +55,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         GitChartWrapper,
          loading90,
          CommitCard,   
          MainChart,
