@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.09 - styled.components - Features:
+/**Portfolio-erick - version 35.13 - styled.components - Features:
  * 
- *      --> Building 'CommitCard'  
+ *      --> Building 'GitChartWrapper'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,10 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**Footer Component styles - START */
+
+export const GitChartWrapper = styled.div` 
+
+`
 
 export const loading90 = keyframes`
     0% {
