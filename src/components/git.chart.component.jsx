@@ -1,18 +1,13 @@
 import styled from "styled-components"
-import { MainChart, CommitCard } from '../styled-components/styled.components.index';
+import { MainChart, CommitCard, GitChartWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 35.12 - GitChart - Features:
+/**Portfolio-erick - version 35.13 - GitChart - Features:
  * 
- *      --> Clearing 'keyframes' 
+ *      --> Migrating 'GitChartWrapper' 
  * 
  * Notes: This component soon will be refactored to work more efficent
  * and hold more complete information
  */
-
-const GitChartWrapper = styled.div` 
-
-
-`
 
 const GitChart = () => {
 
