@@ -44,11 +44,12 @@ import { ExperimentalUIWrapper,
          CommitCard,
          GitChartWrapper,
          CardContainer,
+         SpeenKeyFrames,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 35.15 - styled.components - Features:
+/**Portfolio-erick - version 35.16 - styled.components - Features:
  * 
- *      --> Importing and exporting 'CardContainer'
+ *      --> Importing and exporting 'SpeenKeyFrames'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -57,6 +58,7 @@ import { ExperimentalUIWrapper,
 
 export { ExperimentalUIWrapper,
          CardContainer,
+         SpeenKeyFrames,
          GitChartWrapper,
          loading90,
          CommitCard,   
