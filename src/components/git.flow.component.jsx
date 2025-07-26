@@ -1,22 +1,15 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
+import { CardContainer } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 31.16 - GitFlowComponent - Features:
+/**Portfolio-erick - version 31.15 - GitFlowComponent - Features:
  * 
- *      --> Placing 'tab_title_3'     
+ *      --> Migrating 'CardContainer'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-export const CardContainer = styled.div`
-  position: relative;
-  width: 400px;
-  height: 300px;
-  border-radius: 1em;
-  margin: 0 2em;
-`;
 
 const SpeenKeyFrames = keyframes`
     0% {
