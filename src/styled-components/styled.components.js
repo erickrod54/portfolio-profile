@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.16  - styled.components - Features:
+/**Portfolio-erick - version 35.18  - styled.components - Features:
  * 
- *      --> Building 'SpeenKeyFrames'  
+ *      --> Building 'Spin'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -23,7 +23,22 @@ import styled, { css, keyframes } from "styled-components"
     to {
         rotate: 370deg;
     }
-`
+  `
+  
+  export const Spin = styled.div`
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      animation: ${SpeenKeyFrames} 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
+    }
+`;
+
 
   export const CardContainer = styled.div`
     position: relative;
