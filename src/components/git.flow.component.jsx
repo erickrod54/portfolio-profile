@@ -1,27 +1,15 @@
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer } from '../styled-components/styled.components.index'
+import { CardContainer, SpeenKeyFrames } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 31.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 34.16 - GitFlowComponent - Features:
  * 
  *      --> Migrating 'CardContainer'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const SpeenKeyFrames = keyframes`
-    0% {
-        rotate: 10deg;
-    }
-    50% {
-        rotate: 190deg;
-    }
-    to {
-        rotate: 370deg;
-    }
-`
 
 export const Spin = styled.div`
   position: absolute;
