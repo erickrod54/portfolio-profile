@@ -1,11 +1,11 @@
 import { useState } from "react";
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
 import { CardContainer, SpeenKeyFrames } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 34.16 - GitFlowComponent - Features:
+/**Portfolio-erick - version 34.17 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'CardContainer'     
+ *      --> Clearing 'keyframes'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
