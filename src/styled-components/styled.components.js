@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.15 - styled.components - Features:
+/**Portfolio-erick - version 35.16  - styled.components - Features:
  * 
- *      --> Building 'CardContainer'  
+ *      --> Building 'SpeenKeyFrames'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,18 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const SpeenKeyFrames = keyframes`
+    0% {
+        rotate: 10deg;
+    }
+    50% {
+        rotate: 190deg;
+    }
+    to {
+        rotate: 370deg;
+    }
+`
+
   export const CardContainer = styled.div`
     position: relative;
     width: 400px;
