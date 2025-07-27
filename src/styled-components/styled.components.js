@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 35.18  - styled.components - Features:
+/**Portfolio-erick - version 35.20  - styled.components - Features:
  * 
- *      --> Building 'Spin'  
+ *      --> Building 'SpinBlur'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -37,6 +37,14 @@ import styled, { css, keyframes } from "styled-components"
       inset: -30%;
       animation: ${SpeenKeyFrames} 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
     }
+`;
+
+export const SpinBlur = styled(Spin)`
+  filter: blur(3em) url(#unopaq);
+
+  &::before {
+    background: linear-gradient(-45deg, #f50, #0000 46% 54%, #05f);
+  }
 `;
 
 
