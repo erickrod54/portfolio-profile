@@ -1,29 +1,15 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, SpeenKeyFrames } from '../styled-components/styled.components.index'
+import { CardContainer, SpeenKeyFrames, Spin } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 34.17 - GitFlowComponent - Features:
+/**Portfolio-erick - version 34.18 - GitFlowComponent - Features:
  * 
- *      --> Clearing 'keyframes'     
+ *      --> Migrating 'SpinBlur'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-export const Spin = styled.div`
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -30%;
-    animation: ${SpeenKeyFrames} 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
-  }
-`;
 
 export const SpinBlur = styled(Spin)`
   filter: blur(3em) url(#unopaq);
