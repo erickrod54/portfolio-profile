@@ -1,25 +1,15 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, Spin, SpinBlur } from '../styled-components/styled.components.index'
+import { CardContainer, Spin, SpinBlur, SpinIntense } from '../styled-components/styled.components.index'
 
 /**Portfolio-erick - version 35.20 - GitFlowComponent - Features:
  * 
- *      --> Clearing again 'SpeenKeyFrames'     
+ *      --> Migrating 'SpinIntense'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-export const SpinIntense = styled(Spin)`
-  inset: -0.125em;
-  filter: blur(0.5em) url(#unopaq2);
-  border-radius: 0.75em;
-
-  &::before {
-    background: linear-gradient(-45deg, #f95, #0000 35% 65%, #59f);
-  }
-`;
 
 export const SpinInside = styled(Spin)`
   inset: -2px;
