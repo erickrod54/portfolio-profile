@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.00  - styled.components - Features:
+/**Portfolio-erick - version 36.01  - styled.components - Features:
  * 
- *      --> Building 'SpinIntense'  
+ *      --> Building 'SpinInside'  
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -37,6 +37,17 @@ import styled, { css, keyframes } from "styled-components"
       inset: -30%;
       animation: ${SpeenKeyFrames} 8s cubic-bezier(0.56, 0.15, 0.28, 0.86) infinite;
     }
+`;
+
+export const SpinInside = styled(Spin)`
+  inset: -2px;
+  border-radius: inherit;
+  filter: blur(2px) url(#unopaq3);
+  z-index: 0;
+
+  &::before {
+    background: linear-gradient(-45deg, #fc9, #0000 35% 65%, #9cf);
+  }
 `;
 
 export const SpinIntense = styled(Spin)`
