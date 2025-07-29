@@ -48,11 +48,12 @@ import { ExperimentalUIWrapper,
          SpinBlur,
          SpinIntense,
          SpinInside,
+         Backdrop,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.02 - styled.components - Features:
+/**Portfolio-erick - version 36.03 - styled.components - Features:
  * 
- *      --> Clearing 'Spin'
+ *      --> Importing and exporting 'Backdrop'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -60,6 +61,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         Backdrop,
          SpinInside,
          SpinIntense,   
          SpinBlur,
