@@ -45,15 +45,14 @@ import { ExperimentalUIWrapper,
          GitChartWrapper,
          CardContainer,
          SpeenKeyFrames,
-         Spin,
          SpinBlur,
          SpinIntense,
          SpinInside,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.01 - styled.components - Features:
+/**Portfolio-erick - version 36.02 - styled.components - Features:
  * 
- *      --> Importing and exporting 'SpinInside'
+ *      --> Clearing 'Spin'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -63,7 +62,6 @@ import { ExperimentalUIWrapper,
 export { ExperimentalUIWrapper,
          SpinInside,
          SpinIntense,   
-         Spin,
          SpinBlur,
          CardContainer,
          SpeenKeyFrames,
