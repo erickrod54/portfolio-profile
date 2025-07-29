@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.02  - styled.components - Features:
+/**Portfolio-erick - version 36.03  - styled.components - Features:
  * 
- *      --> Clearing 'Spin' export   
+ *      --> Building 'Backdrop'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,23 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const Backdrop = styled.div`
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+      circle at 50% 50%,
+      #0000 0%,
+      #0000 25%,
+      #111111aa 65%
+    );
+    background-size: 3px 3px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    pointer-events: none; /* ✅ Prevents mouse blocking */
+    border-radius: inherit;
+`;
+
   export const SpeenKeyFrames = keyframes`
     0% {
         rotate: 10deg;
