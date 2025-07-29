@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, Spin, SpinBlur, SpinIntense, SpinInside } from '../styled-components/styled.components.index'
+import { CardContainer, SpinBlur, SpinIntense, SpinInside } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.01 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.02 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'SpinInside'     
+ *      --> Clearing 'Spin'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
