@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.01  - styled.components - Features:
+/**Portfolio-erick - version 36.02  - styled.components - Features:
  * 
- *      --> Building 'SpinInside'  
+ *      --> Clearing 'Spin' export   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -25,7 +25,7 @@ import styled, { css, keyframes } from "styled-components"
     }
   `
   
-  export const Spin = styled.div`
+  const Spin = styled.div`
     position: absolute;
     inset: 0;
     z-index: -2;
