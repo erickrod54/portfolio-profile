@@ -1,33 +1,15 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, SpinBlur, SpinIntense, SpinInside } from '../styled-components/styled.components.index'
+import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.02 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.03 - GitFlowComponent - Features:
  * 
- *      --> Clearing 'Spin'     
+ *      --> Migrating 'Backdrop'     
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-
-const Backdrop = styled.div`
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: radial-gradient(
-    circle at 50% 50%,
-    #0000 0%,
-    #0000 25%,
-    #111111aa 65%
-  );
-  background-size: 3px 3px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  pointer-events: none; /* ✅ Prevents mouse blocking */
-  border-radius: inherit;
-`;
 
 
 const CardBorder = styled.div`
