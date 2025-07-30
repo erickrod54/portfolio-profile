@@ -49,11 +49,12 @@ import { ExperimentalUIWrapper,
          SpinIntense,
          SpinInside,
          Backdrop,
+         CardBorder,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.03 - styled.components - Features:
+/**Portfolio-erick - version 36.06 - styled.components - Features:
  * 
- *      --> Importing and exporting 'Backdrop'
+ *      --> Importing and exporting 'CardBorder'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -61,6 +62,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         CardBorder,
          Backdrop,
          SpinInside,
          SpinIntense,   
