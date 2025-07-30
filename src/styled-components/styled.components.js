@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.03  - styled.components - Features:
+/**Portfolio-erick - version 36.06  - styled.components - Features:
  * 
- *      --> Building 'Backdrop'   
+ *      --> Building 'CardBorder'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,21 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const CardBorder = styled.div`
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, #111215, #0005);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  
+  /* Example hover effect */
+  .card:hover & {
+    opacity: 1;
+  }
+`;
+
   export const Backdrop = styled.div`
     position: absolute;
     inset: 0;
