@@ -1,31 +1,15 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop } from '../styled-components/styled.components.index'
+import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop, CardBorder } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.05 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.06 - GitFlowComponent - Features:
  * 
- *      --> Removing 'card' to apply & in 'CardBorder'      
+ *      --> Migrating 'CardBorder'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-
-const CardBorder = styled.div`
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 2px;
-  background: linear-gradient(45deg, #111215, #0005);
-  z-index: 0;
-  transition: opacity 0.3s ease;
-  
-  /* Example hover effect */
-  &:hover & {
-    opacity: 1;
-  }
-`;
 
 const Icon = styled.div`
   cursor: pointer;
