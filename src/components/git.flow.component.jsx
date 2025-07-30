@@ -3,9 +3,9 @@ import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
 import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.03 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.05 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'Backdrop'     
+ *      --> Removing 'card' to apply & in 'CardBorder'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -22,7 +22,7 @@ const CardBorder = styled.div`
   transition: opacity 0.3s ease;
   
   /* Example hover effect */
-  .card:hover & {
+  &:hover & {
     opacity: 1;
   }
 `;
