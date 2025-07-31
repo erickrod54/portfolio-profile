@@ -52,11 +52,12 @@ import { ExperimentalUIWrapper,
          CardBorder,
          Icon,
          GhIcon,
+         Repo,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.08 - styled.components - Features:
+/**Portfolio-erick - version 36.09 - styled.components - Features:
  * 
- *      --> Importing and exporting 'GhIcon'
+ *      --> Importing and exporting 'Repo'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -64,6 +65,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         Repo,
          GhIcon,
          Icon,
          CardBorder,
