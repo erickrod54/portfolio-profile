@@ -1,40 +1,15 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop, CardBorder } from '../styled-components/styled.components.index'
+import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop, CardBorder, Icon } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.07 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'CardBorder'      
+ *      --> Migrating 'Icon'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const Icon = styled.div`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 1.5em;
-  width: 1.5em;
-  padding: 0.25em;
-  border-radius: 0.25em;
-  outline: 1px solid #303236;
-  fill: #797d86;
-  transition: background 0.3s ease, fill 0.3s ease;
-
-  &:hover {
-    background: hsl(0 0% 100% / 7%);
-    fill: #fff;
-  }
-
-  svg {
-    width: 1em;
-    height: 1em;
-  }
-`;
 
 const GhIcon = styled.div`
   display: flex;
