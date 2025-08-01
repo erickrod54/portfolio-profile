@@ -1,47 +1,18 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { IconComponent } from './index.components';
-import { CardContainer, SpinBlur, SpinIntense, SpinInside, Backdrop, CardBorder,GhIcon, Icon } from '../styled-components/styled.components.index'
+import { CardContainer,
+         SpinBlur,
+         SpinIntense,
+         SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.08 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.09 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'Icon'      
+ *      --> Migrating 'Repo'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const Repo = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-
-    :where( a, span) {
-    text-decoration: none;
-    color: #bebebe;
-    font-weight: 300;
-    font-size: 14px;
-    }
-
-    > a {
-    position: relative;
-    }
-
-    > a::before {
-    content: "";
-    position: absolute;
-    inset: -2px -4px;
-    border-radius: 6px;
-    background: hsl(0 0 100 / 7%);
-    opacity: 0;
-    transition: 0.3s;
-    }
-
-    > a:hover::before {
-    opacity: 1;
-    }
-`
 
 const RepoOwner = styled.a`
 
