@@ -54,11 +54,12 @@ import { ExperimentalUIWrapper,
          GhIcon,
          Repo,
          RepoOwner,
+         RepoSlash,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.10 - styled.components - Features:
+/**Portfolio-erick - version 36.11 - styled.components - Features:
  * 
- *      --> Importing and exporting 'RepoOwner'
+ *      --> Importing and exporting 'RepoSlash'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -66,6 +67,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         RepoSlash,
          RepoOwner,
          Repo,
          GhIcon,
