@@ -4,19 +4,16 @@ import { IconComponent } from './index.components';
 import { CardContainer,
          SpinBlur,
          SpinIntense,
+         RepoOwner,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.09 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.10 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'Repo'      
+ *      --> Migrating 'RepoOwner'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const RepoOwner = styled.a`
-
-`
 
 const RepoSlash = styled.span`
     font-size: 10px;
