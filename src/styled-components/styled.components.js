@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.11  - styled.components - Features:
+/**Portfolio-erick - version 36.12  - styled.components - Features:
  * 
- *      --> Building 'RepoSlash'   
+ *      --> Building 'RepoName'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,11 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+export const RepoName = styled.a`
+    color: #fff;
+    font-weight: 400;
+`
+
 export const RepoSlash = styled.span`
     font-size: 10px;
     pointer-events: none;
