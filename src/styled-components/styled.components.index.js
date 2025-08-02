@@ -56,11 +56,12 @@ import { ExperimentalUIWrapper,
          RepoOwner,
          RepoSlash,
          RepoName,
+         Space,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.12 - styled.components - Features:
+/**Portfolio-erick - version 36.13 - styled.components - Features:
  * 
- *      --> Importing and exporting 'RepoName'
+ *      --> Importing and exporting 'Space'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -69,6 +70,7 @@ import { ExperimentalUIWrapper,
 
 export { ExperimentalUIWrapper,
          RepoName,
+         Space,
          RepoSlash,
          RepoOwner,
          Repo,
