@@ -6,20 +6,16 @@ import { CardContainer,
          SpinIntense,
          RepoOwner,
          RepoSlash,
+         RepoName,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.11 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.12 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'RepoSlash'      
+ *      --> Migrating 'RepoName'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const RepoName = styled.a`
-    color: #fff;
-    font-weight: 400;
-`
 
 const Space = styled.div`
     flex-grow: 1;
