@@ -11,13 +11,13 @@ import { CardContainer,
          Pfp,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.14 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.15 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'Pfp'      
+ *      --> fixing typo      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
-*/s
+*/
 
 const TopHeader = styled.div`
     background: #0b0d10;
