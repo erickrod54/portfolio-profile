@@ -7,19 +7,16 @@ import { CardContainer,
          RepoOwner,
          RepoSlash,
          RepoName,
+         Space,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.12 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.13 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'RepoName'      
+ *      --> Migrating 'Space'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const Space = styled.div`
-    flex-grow: 1;
-`
 
 const Pfp = styled.div`
     cursor: pointer;
