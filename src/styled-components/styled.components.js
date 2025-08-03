@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.14  - styled.components - Features:
+/**Portfolio-erick - version 36.15  - styled.components - Features:
  * 
- *      --> Building 'Pfp'   
+ *      --> Adding 'Pfp' export   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,7 +13,7 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
-  const Pfp = styled.div`
+  export const Pfp = styled.div`
     cursor: pointer;
     display: flex;
     width: 1.75em;
