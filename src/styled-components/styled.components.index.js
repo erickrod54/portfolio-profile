@@ -58,11 +58,12 @@ import { ExperimentalUIWrapper,
          RepoName,
          Space,
          Pfp,
+         TopHeader,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.14 - styled.components - Features:
+/**Portfolio-erick - version 36.16 - styled.components - Features:
  * 
- *      --> Importing and exporting 'Pfp'
+ *      --> Importing and exporting 'TopHeader'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -71,6 +72,7 @@ import { ExperimentalUIWrapper,
 
 export { ExperimentalUIWrapper,
          Pfp,
+         TopHeader,
          RepoName,
          Space,
          RepoSlash,
