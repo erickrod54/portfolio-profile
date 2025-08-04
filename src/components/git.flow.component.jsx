@@ -9,25 +9,16 @@ import { CardContainer,
          RepoName,
          Space,
          Pfp,
+         TopHeader,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.15 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.16 - GitFlowComponent - Features:
  * 
- *      --> fixing typo      
+ *      --> Migrating 'TopHeader'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const TopHeader = styled.div`
-    background: #0b0d10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    padding: 0 12px;
-    padding-top: 10px;
-`
 
 const TabIcon = styled.div`
     width: 1em;
