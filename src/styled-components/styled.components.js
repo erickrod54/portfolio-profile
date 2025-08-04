@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.15  - styled.components - Features:
+/**Portfolio-erick - version 36.16  - styled.components - Features:
  * 
- *      --> Adding 'Pfp' export   
+ *      --> Adding 'TopHeader' export   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,16 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const TopHeader = styled.div`
+    background: #0b0d10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    padding-top: 10px;
+`
+
   export const Pfp = styled.div`
     cursor: pointer;
     display: flex;
