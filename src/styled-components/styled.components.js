@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.18  - styled.components - Features:
+/**Portfolio-erick - version 36.19  - styled.components - Features:
  * 
- *      --> Building 'TabText'   
+ *      --> Building 'TabStyled'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,42 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const TabStyled = styled.div`
+    position: relative;
+    padding: 4px 4px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    isolation: isolate;
+
+     &::before{
+        content: "";
+        position: absolute;
+        background: #fff;
+        border-radius: 8px;
+        opacity: 0;
+        inset: 0;
+        bottom: 8px;
+        z-index: -1;
+        transition: 0.3s;
+     }
+
+     &:hover::before {
+        opacity: 0.07;
+     }
+
+  /* ✅ Active tab state (preserving original CSS) */
+  ${({ active }) =>
+    active &&
+    css`
+        border-bottom: 2px solid #e98463;
+    `}
+`
+
   export const TabText = styled.div`
 
   `
