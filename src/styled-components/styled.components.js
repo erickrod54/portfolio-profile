@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.17  - styled.components - Features:
+/**Portfolio-erick - version 36.18  - styled.components - Features:
  * 
- *      --> Adding 'TabIcon' export   
+ *      --> Building 'TabText'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,9 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const TabText = styled.div`
+
+  `
   export const TabIcon = styled.div`
     width: 1em;
     height: 1.25em;
