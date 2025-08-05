@@ -61,11 +61,12 @@ import { ExperimentalUIWrapper,
          TopHeader,
          TabIcon,
          TabText,
+         TabStyled,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.18 - styled.components - Features:
+/**Portfolio-erick - version 36.19 - styled.components - Features:
  * 
- *      --> Importing and exporting 'TabText'
+ *      --> Importing and exporting 'TabStyled'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -73,6 +74,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         TabStyled,
          TabText,
          Pfp,
          TabIcon,
