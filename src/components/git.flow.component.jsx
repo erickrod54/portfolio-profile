@@ -11,19 +11,16 @@ import { CardContainer,
          Pfp,
          TopHeader,
          TabIcon,
+         TabText,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 36.17 - GitFlowComponent - Features:
+/**Portfolio-erick - version 36.18 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'TabIcon'      
+ *      --> Migrating 'TabText'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const TabText = styled.div`
-
-`
 
 const TabStyled = styled.div`
     position: relative;
