@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.20  - styled.components - Features:
+/**Portfolio-erick - version 37.00  - styled.components - Features:
  * 
- *      --> Building 'BtmHeader'   
+ *      --> Building 'HiddenCheckbox'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,13 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+`;
+
   export const BtmHeader = styled.div`
     display: flex;
     flex-direction: row;
