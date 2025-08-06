@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 36.19  - styled.components - Features:
+/**Portfolio-erick - version 36.20  - styled.components - Features:
  * 
- *      --> Building 'TabStyled'   
+ *      --> Building 'BtmHeader'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,15 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const BtmHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    gap: 8px;
+    color: #fff;
+    fill: #fff;
+`
+
   export const TabStyled = styled.div`
     position: relative;
     padding: 4px 4px;
