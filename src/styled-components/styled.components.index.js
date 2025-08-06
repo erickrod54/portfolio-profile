@@ -63,11 +63,12 @@ import { ExperimentalUIWrapper,
          TabText,
          TabStyled,
          BtmHeader,
+         HiddenCheckbox,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 36.20 - styled.components - Features:
+/**Portfolio-erick - version 37.00 - styled.components - Features:
  * 
- *      --> Importing and exporting 'BtmHeader'
+ *      --> Importing and exporting 'HiddenCheckbox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -75,6 +76,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         HiddenCheckbox,   
          BtmHeader,   
          TabStyled,
          TabText,
