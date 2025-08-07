@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.01  - styled.components - Features:
+/**Portfolio-erick - version 37.02  - styled.components - Features:
  * 
- *      --> Building 'StyledCheckbox'   
+ *      --> Building 'CheckboxWrapper'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,14 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const CheckboxWrapper = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+`;
+
   export const StyledCheckbox = styled.div`
   position: relative;
   width: 1em;
