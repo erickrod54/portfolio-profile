@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.00  - styled.components - Features:
+/**Portfolio-erick - version 37.01  - styled.components - Features:
  * 
- *      --> Building 'HiddenCheckbox'   
+ *      --> Building 'StyledCheckbox'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,47 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const StyledCheckbox = styled.div`
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border-radius: 2px;
+  outline: 1px solid #343539;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: hsl(0 0% 100% / 5%);
+  }
+
+  &:active {
+    outline-color: #2a2c2f;
+    background: hsl(0 0% 100% / 0%);
+  }
+
+  /* Checked State (linked to HiddenCheckbox) */
+  ${({ checked }) =>
+    checked &&
+    css`
+      outline-color: #797d86;
+      &::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        width: 4px;
+        height: 8px;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        border-color: #fff;
+        transform: translate(5.5px, 2.5px) rotate(45deg);
+      }
+
+      &:active {
+        outline-color: #56585c;
+      }
+    `}
+`;
+
   export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
   position: absolute;
   opacity: 0;
