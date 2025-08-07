@@ -15,57 +15,16 @@ import { CardContainer,
          TabStyled,
          BtmHeader,
          HiddenCheckbox,
+         StyledCheckbox,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 37.00 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.01 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'HiddenCheckbox'      
+ *      --> Migrating 'StyledCheckbox'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-/* Styled Checkbox (the visible box) */
-export const StyledCheckbox = styled.div`
-  position: relative;
-  width: 1em;
-  height: 1em;
-  border-radius: 2px;
-  outline: 1px solid #343539;
-  transition: 0.3s;
-  cursor: pointer;
-
-  &:hover {
-    background: hsl(0 0% 100% / 5%);
-  }
-
-  &:active {
-    outline-color: #2a2c2f;
-    background: hsl(0 0% 100% / 0%);
-  }
-
-  /* Checked State (linked to HiddenCheckbox) */
-  ${({ checked }) =>
-    checked &&
-    css`
-      outline-color: #797d86;
-      &::before {
-        content: "";
-        position: absolute;
-        pointer-events: none;
-        width: 4px;
-        height: 8px;
-        border-bottom: 2px solid;
-        border-right: 2px solid;
-        border-color: #fff;
-        transform: translate(5.5px, 2.5px) rotate(45deg);
-      }
-
-      &:active {
-        outline-color: #56585c;
-      }
-    `}
-`;
 
 const CheckboxWrapper = styled.label`
   display: flex;
