@@ -66,11 +66,12 @@ import { ExperimentalUIWrapper,
          HiddenCheckbox,
          StyledCheckbox,
          CheckboxWrapper,
+         PrIcon,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 37.02 - styled.components - Features:
+/**Portfolio-erick - version 37.03 - styled.components - Features:
  * 
- *      --> Importing and exporting 'CheckboxWrapper'
+ *      --> Importing and exporting 'PrIcon'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -78,6 +79,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         PrIcon,
          CheckboxWrapper,
          StyledCheckbox,
          HiddenCheckbox,   
