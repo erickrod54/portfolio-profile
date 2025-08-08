@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.02  - styled.components - Features:
+/**Portfolio-erick - version 37.03  - styled.components - Features:
  * 
- *      --> Building 'CheckboxWrapper'   
+ *      --> Building 'PrIcon'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,13 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const PrIcon = styled.div`
+    display: flex;
+    width: 1em;
+    height: 1em;
+    fill: #63d188;
+`
+
   export const CheckboxWrapper = styled.label`
   display: flex;
   align-items: center;
