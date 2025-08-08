@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.03  - styled.components - Features:
+/**Portfolio-erick - version 37.04  - styled.components - Features:
  * 
- *      --> Building 'PrIcon'   
+ *      --> Building 'PrText'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,10 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const PrText = styled.div`
+    display: flex;
+    flex-direction: column;
+  `
   export const PrIcon = styled.div`
     display: flex;
     width: 1em;
