@@ -17,22 +17,16 @@ import { CardContainer,
          HiddenCheckbox,
          StyledCheckbox,
          CheckboxWrapper,
+         PrIcon,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 37.02 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.03 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'CheckboxWrapper'      
+ *      --> Migrating 'PrIcon'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const PrIcon = styled.div`
-    display: flex;
-    width: 1em;
-    height: 1em;
-    fill: #63d188;
-`
 
 const PrText = styled.div`
     display: flex;
