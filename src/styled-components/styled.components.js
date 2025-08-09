@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.04  - styled.components - Features:
+/**Portfolio-erick - version 37.05  - styled.components - Features:
  * 
- *      --> Building 'PrText'   
+ *      --> Building 'PrTitle'   
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,17 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const PrTitle = styled.div`
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+    color: #4493f8;
+    }
+
+`
+
   export const PrText = styled.div`
     display: flex;
     flex-direction: column;
