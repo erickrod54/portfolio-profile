@@ -71,11 +71,12 @@ import { ExperimentalUIWrapper,
          PrTitle,
          PrDesc,
          Pr,
+         PrsBox,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 37.07 - styled.components - Features:
+/**Portfolio-erick - version 37.08 - styled.components - Features:
  * 
- *      --> Importing and exporting 'Pr'
+ *      --> Importing and exporting 'PrsBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -83,6 +84,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         PrsBox,
          Pr,
          PrDesc,
          PrTitle,
