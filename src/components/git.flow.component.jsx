@@ -21,24 +21,16 @@ import { CardContainer,
          PrText,
          PrTitle,
          PrDesc,
+         Pr,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 37.06 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.07 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'PrDesc'      
+ *      --> Migrating 'Pr'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const Pr = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    width: 100%;
-    outline: 1px solid #343539;
-    padding: 8px;
-`
 
 const PrsBox = styled.div`
     margin: 12px;
