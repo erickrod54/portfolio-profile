@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.07  - styled.components - Features:
+/**Portfolio-erick - version 37.08  - styled.components - Features:
  * 
- *      --> Building 'Pr'
+ *      --> Building 'PrsBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,22 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const PrsBox = styled.div`
+    margin: 12px;
+    height: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border: 1px solid #343539;
+    border-radius: 6px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+    width: 0;
+    }
+
+`
+
   export const Pr = styled.div`
     display: flex;
     flex-direction: row;
