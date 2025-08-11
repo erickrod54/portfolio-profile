@@ -23,20 +23,16 @@ import { CardContainer,
          PrDesc,
          Pr,
          PrsBox,
+         ContentBox,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
 /**Portfolio-erick - version 37.08 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'PrsBox'      
+ *      --> Migrating 'ContentBox'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const ContentBox = styled.div`
-    height: 100%;
-    overflow: hidden;
-`
 
 const HeaderBox = styled.div`
     background: #0b0d10;
