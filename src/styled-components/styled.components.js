@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.09  - styled.components - Features:
+/**Portfolio-erick - version 37.10  - styled.components - Features:
  * 
- *      --> Building 'ContentBox'
+ *      --> Building 'HeaderBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,14 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const HeaderBox = styled.div`
+    background: #0b0d10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-bottom: 1px solid #1d1f23;
+`
+
   export const ContentBox = styled.div`
     height: 100%;
     overflow: hidden;
