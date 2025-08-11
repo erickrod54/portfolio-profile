@@ -73,11 +73,12 @@ import { ExperimentalUIWrapper,
          Pr,
          PrsBox,
          ContentBox,
+         HeaderBox,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 37.09 - styled.components - Features:
+/**Portfolio-erick - version 37.10 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ContentBox'
+ *      --> Importing and exporting 'HeaderBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -85,6 +86,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         HeaderBox,
          ContentBox,
          PrsBox,
          Pr,
