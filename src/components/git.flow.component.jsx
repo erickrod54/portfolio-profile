@@ -25,26 +25,16 @@ import { CardContainer,
          PrsBox,
          ContentBox,
          HeaderBox,
+         GitFlowCardBox,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
 
-/**Portfolio-erick - version 37.10 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.11 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'HeaderBox'      
+ *      --> Migrating 'GitFlowCardBox'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const GitFlowCardBox = styled.div`
-    position: absolute;
-    inset: 0.125em;
-    border-radius: 0.875em;
-    background: #111215;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    overflow: hidden;
-`
 
 const GitFlowWrapper = styled.div`
 
