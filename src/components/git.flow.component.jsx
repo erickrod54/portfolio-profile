@@ -26,11 +26,12 @@ import { CardContainer,
          ContentBox,
          HeaderBox,
          GitFlowCardBox,
-         SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index'
+         SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 37.11 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.12 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'GitFlowCardBox'      
+ *      --> Destructuring 'burgerMenuData' from context      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -40,19 +41,6 @@ const GitFlowWrapper = styled.div`
 
 
 `
-
-export const burgerMenuData = [
-  {
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 16 16',
-    width: '16',
-    height: '16',
-  },
-  {
-    fill: '',
-    d: 'M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z'
-  },
-];
 
 const ghIconData = [
   {
@@ -264,6 +252,8 @@ const TabsTitles = [
 ]
 
 const GitFlowComponent = () => {
+
+    const { burgerMenuData } = usePortfolioContext()
 
     const [checked, setChecked] = useState(false);
     const [checked2, setChecked2 ] = useState(false);
