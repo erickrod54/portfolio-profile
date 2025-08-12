@@ -9,12 +9,13 @@ import { filePdf,
          ResourcesData,
          SocialFooterData,
          BottomData,
+         burgerMenuData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 35.06 - context js
+/**Portfolio-erick - version 37.12 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'BottomData'.
+ *      --> Importing and providing 'burgerMenuData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -39,6 +40,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                burgerMenuData,
                 BottomData,
                 SocialFooterData,
                 ResourcesData,
