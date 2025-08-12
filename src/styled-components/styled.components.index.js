@@ -74,11 +74,12 @@ import { ExperimentalUIWrapper,
          PrsBox,
          ContentBox,
          HeaderBox,
+         GitFlowCardBox,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 37.10 - styled.components - Features:
+/**Portfolio-erick - version 37.11 - styled.components - Features:
  * 
- *      --> Importing and exporting 'HeaderBox'
+ *      --> Importing and exporting 'GitFlowCardBox'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -86,6 +87,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         GitFlowCardBox,
          HeaderBox,
          ContentBox,
          PrsBox,
