@@ -10,15 +10,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 35.06 - data js
+/**Portfolio-erick - version 37.12 - data js
  *  - Features:
  * 
- *      --> Adding 'BottomData' data set.
+ *      --> Adding 'burgerMenuData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/**GitFlowComponent data sets */
+export const burgerMenuData = [
+  {
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    width: '16',
+    height: '16',
+  },
+  {
+    fill: '',
+    d: 'M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z'
+  },
+];
+
 
 /**Data sets for Footer */
 
