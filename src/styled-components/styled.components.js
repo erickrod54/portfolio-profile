@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.11  - styled.components - Features:
+/**Portfolio-erick - version 37.13  - styled.components - Features:
  * 
- *      --> Building 'GitFlowCardBox'
+ *      --> Building 'GitFlowWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,11 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**GitFlow Component styles - START */
+  export const GitFlowWrapper = styled.div`
+
+
+`
+
   export const GitFlowCardBox = styled.div`
     position: absolute;
     inset: 0.125em;
