@@ -26,21 +26,17 @@ import { CardContainer,
          ContentBox,
          HeaderBox,
          GitFlowCardBox,
+         GitFlowWrapper,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 37.12 - GitFlowComponent - Features:
+/**Portfolio-erick - version 37.13 - GitFlowComponent - Features:
  * 
- *      --> Destructuring 'burgerMenuData' from context      
+ *      --> Migrating 'GitFlowWrapper'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const GitFlowWrapper = styled.div`
-
-
-`
 
 const ghIconData = [
   {
