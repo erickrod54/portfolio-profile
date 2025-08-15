@@ -13,12 +13,13 @@ import { filePdf,
          ghIconData,
          sourceControlData,
          notificationsData,
+         codeData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 37.16 - context js
+/**Portfolio-erick - version 37.17 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'notificationsData'.
+ *      --> Importing and providing 'codeData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -43,6 +44,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                codeData,
                 notificationsData,
                 sourceControlData,
                 ghIconData,
