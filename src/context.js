@@ -16,10 +16,10 @@ import { filePdf,
          codeData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 37.17 - context js
+/**Portfolio-erick - version 37.18 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'codeData'.
+ *      --> Importing and providing 'issuesData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -44,6 +44,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                issuesData,
                 codeData,
                 notificationsData,
                 sourceControlData,
