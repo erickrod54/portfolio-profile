@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 37.17 - data js
+/**Portfolio-erick - version 37.18 - data js
  *  - Features:
  * 
- *      --> Adding 'codeData' data set.
+ *      --> Adding 'issuesData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,23 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**GitFlowComponent data sets */
+export const issuesData = [
+  {
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 16 16',
+    width: '16',
+    height: '16',
+  },
+  {
+    fill: '',
+    d: 'M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z'
+  } ,
+  {
+    fill: '',
+    d: 'M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z'
+  }
+];
+
 export const codeData = [
   {
     xmlns: 'http://www.w3.org/2000/svg',
