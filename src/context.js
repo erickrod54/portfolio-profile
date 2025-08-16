@@ -14,12 +14,13 @@ import { filePdf,
          sourceControlData,
          notificationsData,
          codeData,
+         issuesData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 37.18 - context js
+/**Portfolio-erick - version 37.19 - context js
  *  - Features:
  *  
- *      --> Importing and providing 'issuesData'.
+ *      --> Importing and providing again 'issuesData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
