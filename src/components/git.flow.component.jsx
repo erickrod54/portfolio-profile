@@ -30,9 +30,9 @@ import { CardContainer,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 38.01 - GitFlowComponent - Features:
+/**Portfolio-erick - version 38.02 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'secondPrData'      
+ *      --> Migrating 'thirdPrData'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -146,6 +146,7 @@ const GitFlowComponent = () => {
             sourceControlData,
             notificationsData,
             secondPrData,
+            thirdPrData,
             codeData, issuesData, prData, firstPrData } = usePortfolioContext()
 
     const [checked, setChecked] = useState(false);
