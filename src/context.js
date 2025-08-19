@@ -21,12 +21,13 @@ import { filePdf,
          thirdPrData,
          fourthPrData,
          fifthPrData,
+         sixthPrData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
 
-/**Portfolio-erick - version 38.07 - context js
+/**Portfolio-erick - version 38.09 - context js
  *  - Features:
  *  
- *      --> Importing and providing  'fifthPrData'.
+ *      --> Importing and providing  'sixthPrData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -51,6 +52,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                sixthPrData,
                 fifthPrData,
                 fourthPrData,
                 thirdPrData,
