@@ -27,12 +27,13 @@ import { CardContainer,
          HeaderBox,
          GitFlowCardBox,
          GitFlowWrapper,
+         PrMessages,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 38.10 - GitFlowComponent - Features:
+/**Portfolio-erick - version 38.11 - GitFlowComponent - Features:
  * 
- *      --> Clearing local 'sixthPrData'      
+ *      --> Migrating 'PrMessages'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
@@ -99,6 +100,7 @@ const GitFlowComponent = () => {
             fourthPrData,
             fifthPrData,
             sixthPrData,
+            PrMessages,
             codeData, issuesData, prData, firstPrData } = usePortfolioContext()
 
     const [checked, setChecked] = useState(false);
