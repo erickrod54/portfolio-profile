@@ -31,22 +31,13 @@ import { CardContainer,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 38.13 - GitFlowComponent - Features:
+/**Portfolio-erick - version 38.14 - GitFlowComponent - Features:
  * 
  *      --> Migrating 'HeaderData'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const HeaderData = [
-  {
-    path:'sms'
-  },
-  {
-    path:'my-api'
-  }
-]
 
 const TabsTitles = [
   {
