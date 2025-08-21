@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 38.13 - data js
+/**Portfolio-erick - version 38.16 - data js
  *  - Features:
  * 
- *      --> Adding 'HeaderData' data set.
+ *      --> Adding 'TabsTitles' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,19 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**GitFlowComponent data sets */
+export const TabsTitles = [
+  {
+    title:'Code'  
+  },
+  {
+    title:'Issues'  
+  },
+  {
+    title:'Pull Requests'  
+  }
+
+]
+
 export const HeaderData = [
   {
     path:'sms'
