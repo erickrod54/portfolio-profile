@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 38.11 - data js
+/**Portfolio-erick - version 38.13 - data js
  *  - Features:
  * 
- *      --> Adding 'PrMessages' data set.
+ *      --> Adding 'HeaderData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -21,6 +21,15 @@ import { BiCloudDrizzle  } from 'react-icons/bi';
  */
 
 /**GitFlowComponent data sets */
+export const HeaderData = [
+  {
+    path:'sms'
+  },
+  {
+    path:'my-api'
+  }
+]
+
 export const PrMessages = [
 {
   title:'Feature request: Document analysis',
