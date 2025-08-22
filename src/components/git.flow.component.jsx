@@ -27,30 +27,16 @@ import { CardContainer,
          HeaderBox,
          GitFlowCardBox,
          GitFlowWrapper,
-         PrMessages,
          SpinInside, Backdrop, CardBorder,GhIcon, Icon, Repo } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 38.14 - GitFlowComponent - Features:
+/**Portfolio-erick - version 38.17 - GitFlowComponent - Features:
  * 
- *      --> Migrating 'HeaderData'      
+ *      --> Clearing local 'TabsTitles'      
  * 
  * Notes: 'HiddenCheckbox' is the actual input
  * 
 */
-
-const TabsTitles = [
-  {
-    title:'Code'  
-  },
-  {
-    title:'Issues'  
-  },
-  {
-    title:'Pull Requests'  
-  }
-
-]
 
 const GitFlowComponent = () => {
 
@@ -65,6 +51,7 @@ const GitFlowComponent = () => {
             sixthPrData,
             PrMessages,
             HeaderData,
+            TabsTitles,
             codeData, issuesData, prData, firstPrData } = usePortfolioContext()
 
     const [checked, setChecked] = useState(false);
