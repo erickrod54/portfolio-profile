@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 38.17  - styled.components - Features:
+/**Portfolio-erick - version 38.18  - styled.components - Features:
  * 
- *      --> Building 'BackText'
+ *      --> Building 'backgroundAnimation'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,19 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**HeadertTitle styles  - START */
+  export const backgroundAnimation = keyframes`
+  @keyframes {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 400%;
+    }
+    100% {
+      background-position: 0%;
+    }
+`
+
   export const BackText = styled.span`
 
   `
