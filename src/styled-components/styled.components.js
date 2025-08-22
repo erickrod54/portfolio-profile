@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 37.13  - styled.components - Features:
+/**Portfolio-erick - version 38.17  - styled.components - Features:
  * 
- *      --> Building 'GitFlowWrapper'
+ *      --> Building 'BackText'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,6 +11,11 @@ import styled, { css, keyframes } from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+  /**HeadertTitle styles  - START */
+  export const BackText = styled.span`
+
+  `
 
   /**GitFlow Component styles - START */
   export const GitFlowWrapper = styled.div`
