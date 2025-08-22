@@ -76,11 +76,12 @@ import { ExperimentalUIWrapper,
          HeaderBox,
          GitFlowCardBox,
          GitFlowWrapper,
+         BackText,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 37.13 - styled.components - Features:
+/**Portfolio-erick - version 38.17 - styled.components - Features:
  * 
- *      --> Importing and exporting 'GitFlowWrapper'
+ *      --> Importing and exporting 'BackText'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -88,6 +89,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         BackText,
          GitFlowWrapper,
          GitFlowCardBox,
          HeaderBox,
