@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 38.18  - styled.components - Features:
+/**Portfolio-erick - version 38.19  - styled.components - Features:
  * 
- *      --> Building 'backgroundAnimation'
+ *      --> Building 'FrontText'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -28,6 +28,30 @@ import styled, { css, keyframes } from "styled-components"
 
   export const BackText = styled.span`
 
+  `
+  export const FrontText = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background: var(--color-gar);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    overflow: hidden;
+    transition: all 1s;
+    animation: ${backgroundAnimation} 8s infinite;
+    border-bottom: 2px solid transparent;
+
+    ${props =>
+      props.$isFilled &&
+      css`
+      width: 100%;
+      border-bottom: 2px solid #03a9f4;
+      -webkit-text-stroke: 1px var(--ani-color);
+      `}
+      
+  
   `
 
   /**GitFlow Component styles - START */
