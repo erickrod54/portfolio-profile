@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { BackText } from '../styled-components/styled.components.index';
+import { BackText, backgroundAnimation } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 38.17 - HeaderTitle - Features:
+/**Portfolio-erick - version 38.18 - HeaderTitle - Features:
  * 
- *      --> Migrating 'BackText'
+ *      --> Migrating 'backgroundAnimation'
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -52,21 +52,6 @@ const HeaderTitle = () => {
     </StyledWrapper>
   );
 };
-
-const backgroundAnimation = keyframes`
-  @keyframes {
-    0% {
-      background-position: 0%;
-    }
-    50% {
-      background-position: 400%;
-    }
-    100% {
-      background-position: 0%;
-    }
-`
-
-
 
 const FrontText = styled.span`
 position: absolute;
