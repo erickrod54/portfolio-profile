@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 38.20  - styled.components - Features:
+/**Portfolio-erick - version 39.02  - styled.components - Features:
  * 
- *      --> Clearing 'backgroundAnimation' export 
+ *      --> Building 'ButtonTitle' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -52,6 +52,29 @@ import styled, { css, keyframes } from "styled-components"
       `}
       
   
+  `
+
+  export const ButtonTitle = styled.button`
+    position: relative;
+    border: none;
+    background: transparent;
+    --stroke-color: #ffffff7c;
+    --ani-color: rgba(95, 3, 244, 0);
+    --color-gar: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    letter-spacing: 3px;
+    font-size: 2em;
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--stroke-color);
+    cursor: pointer;
+  
+  
+    &:hover ${FrontText} {
+      width: 100%;
+      border-bottom: 2px solid #03a9f4;
+      -webkit-text-stroke: 1px var(--ani-color);
+    }
   `
 
   /**GitFlow Component styles - START */
