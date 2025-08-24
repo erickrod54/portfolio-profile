@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { BackText, backgroundAnimation, FrontText } from '../styled-components/styled.components.index';
+import { BackText, FrontText } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 38.19 - HeaderTitle - Features:
+/**Portfolio-erick - version 38.20 - HeaderTitle - Features:
  * 
- *      --> Migrating 'FrontText'
+ *      --> Clearing 'backgroundAnimation'
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
