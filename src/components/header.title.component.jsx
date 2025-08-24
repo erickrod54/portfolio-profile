@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { BackText, FrontText } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.00 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.01 - HeaderTitle - Features:
  * 
- *      --> Clearing 'css' helper
+ *      --> Clearing 'keyframes' 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -14,7 +14,7 @@ import { BackText, FrontText } from '../styled-components/styled.components.inde
 const HeaderTitleData = '@erickdev';
 
 const HeaderTitle = () => {
-  const [isTextFilled, setIsTextFilled] = useState(true);
+  const [isTextFilled, setIsTextFilled] = useState(true)
   const headerRef = useRef(null);
 
   useEffect(() => {
