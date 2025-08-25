@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { BackText, FrontText, ButtonTitle } from '../styled-components/styled.components.index';
+import { BackText, FrontText, ButtonTitle, HeaderTitleWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.04 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.05 - HeaderTitle - Features:
  * 
- *      --> Renaming 'StyledWrapper' to 'HeaderTitleWrapper' 
+ *      --> Migrating 'HeadertTitleWrapper' 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -54,10 +54,5 @@ const HeaderTitle = () => {
 };
 
   
-  const HeaderTitleWrapper = styled.div`
-  padding-top: 4rem;
-  
-  }
-`;
 
 export default HeaderTitle;
