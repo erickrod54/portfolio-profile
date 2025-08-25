@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { BackText, FrontText } from '../styled-components/styled.components.index';
+import { BackText, FrontText, ButtonTitle } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.01 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.02 - HeaderTitle - Features:
  * 
- *      --> Clearing 'keyframes' 
+ *      --> Migrating 'ButtonTitle' 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -53,29 +53,6 @@ const HeaderTitle = () => {
   );
 };
 
-
-  const ButtonTitle = styled.button`
-    position: relative;
-    border: none;
-    background: transparent;
-    --stroke-color: #ffffff7c;
-    --ani-color: rgba(95, 3, 244, 0);
-    --color-gar: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    letter-spacing: 3px;
-    font-size: 2em;
-    font-family: "Arial";
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--stroke-color);
-    cursor: pointer;
-  
-  
-    &:hover ${FrontText} {
-      width: 100%;
-      border-bottom: 2px solid #03a9f4;
-      -webkit-text-stroke: 1px var(--ani-color);
-    }
-  `
   
   const StyledWrapper = styled.div`
   padding-top: 4rem;
