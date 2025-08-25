@@ -78,11 +78,12 @@ import { ExperimentalUIWrapper,
          GitFlowWrapper,
          BackText,
          FrontText,
+         ButtonTitle,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 38.20 - styled.components - Features:
+/**Portfolio-erick - version 39.02 - styled.components - Features:
  * 
- *      --> Clearing 'backgroundAnimation'
+ *      --> Importing and exporting 'ButtonTitle'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -90,6 +91,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         ButtonTitle,
          FrontText,
          BackText,
          GitFlowWrapper,
