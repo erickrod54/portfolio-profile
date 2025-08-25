@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 39.02  - styled.components - Features:
+/**Portfolio-erick - version 39.05  - styled.components - Features:
  * 
- *      --> Building 'ButtonTitle' 
+ *      --> Building 'HeadertTitleWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,12 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
   /**HeadertTitle styles  - START */
+  export const HeaderTitleWrapper = styled.div`
+  padding-top: 4rem;
+  
+  }
+`;
+
   const backgroundAnimation = keyframes`
   @keyframes {
     0% {
