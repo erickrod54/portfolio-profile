@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { BackText, FrontText, ButtonTitle } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.02 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.04 - HeaderTitle - Features:
  * 
- *      --> Migrating 'ButtonTitle' 
+ *      --> Renaming 'StyledWrapper' to 'HeaderTitleWrapper' 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -44,17 +44,17 @@ const HeaderTitle = () => {
   }, []);
 
   return (
-    <StyledWrapper ref={headerRef}>
+    <HeaderTitleWrapper ref={headerRef}>
       <ButtonTitle>
         <FrontText $isFilled={isTextFilled}>&nbsp;{HeaderTitleData}&nbsp;</FrontText>
         <BackText aria-hidden="true" >&nbsp;{HeaderTitleData}&nbsp;</BackText>
       </ButtonTitle>
-    </StyledWrapper>
+    </HeaderTitleWrapper>
   );
 };
 
   
-  const StyledWrapper = styled.div`
+  const HeaderTitleWrapper = styled.div`
   padding-top: 4rem;
   
   }
