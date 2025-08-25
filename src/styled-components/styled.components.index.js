@@ -79,11 +79,12 @@ import { ExperimentalUIWrapper,
          BackText,
          FrontText,
          ButtonTitle,
+         HeaderTitleWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 39.02 - styled.components - Features:
+/**Portfolio-erick - version 39.05 - styled.components - Features:
  * 
- *      --> Importing and exporting 'ButtonTitle'
+ *      --> Importing and exporting 'HeaderTitleWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -91,6 +92,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         HeaderTitleWrapper,
          ButtonTitle,
          FrontText,
          BackText,
