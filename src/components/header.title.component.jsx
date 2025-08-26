@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { BackText, FrontText, ButtonTitle, HeaderTitleWrapper } from '../styled-components/styled.components.index';
+import { usePortfolioContext } from '../context';
 
-/**Portfolio-erick - version 39.06 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.07 - HeaderTitle - Features:
  * 
- *      --> Clearing 'styled' 
+ *      --> Destructuring 'HeaderTitleData' from the context 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
@@ -15,6 +16,8 @@ const HeaderTitleData = '@erickdev';
 const HeaderTitle = () => {
   const [isTextFilled, setIsTextFilled] = useState(true)
   const headerRef = useRef(null);
+
+  const { HeaderTitleData } = usePortfolioContext();
 
   useEffect(() => {
     const timer = setTimeout(() => {
