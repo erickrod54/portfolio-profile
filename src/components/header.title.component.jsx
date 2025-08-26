@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
 import { BackText, FrontText, ButtonTitle, HeaderTitleWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.05 - HeaderTitle - Features:
+/**Portfolio-erick - version 39.06 - HeaderTitle - Features:
  * 
- *      --> Migrating 'HeadertTitleWrapper' 
+ *      --> Clearing 'styled' 
  * 
  * Notes: None of your current CSS or styled components 
  * are referencing or using the data-text attribute
