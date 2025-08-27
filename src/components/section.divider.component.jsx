@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 20.14 - styled.components - Features:
+/**Portfolio-erick - version 39.12 - styled.components - Features:
  * 
- *      --> Building 'SectionDivider'
+ *      --> Building 'DividerColors'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -30,6 +30,25 @@ const DividerLine = styled.div`
   /* Dynamically set the background color using props */
   background-color: ${props => props.$color}; 
 `;
+
+export const DividerColors = [
+  {
+    name:'Electric Cyan',
+    color:'#00FFFF'
+  },
+  {
+    name:'Vibrant Magenta',
+    color:'#FF00FF'
+  },
+  {
+    name:'Electric Lime',
+    color:'#CCFF00'
+  },
+  {
+    name:'Safety Orange',
+    color:'#FF9900'
+  }
+]
 
 const SectionDivider = ({ color = '#00FFFF' }) => {
   return (
