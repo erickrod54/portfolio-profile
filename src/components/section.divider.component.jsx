@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 39.13 - styled.components - Features:
+/**Portfolio-erick - version 39.14 - styled.components - Features:
  * 
- *      --> Destructuring 'electric_cyan' from 'DividerColors'
+ *      --> Setting 'electric_cyan' as default color
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -52,7 +52,7 @@ export const DividerColors = [
 
 const [{ color: electric_cyan }] = DividerColors;
 
-const SectionDivider = ({ color = '#00FFFF' }) => {
+const SectionDivider = ({ color = electric_cyan }) => {
   return (
     // Apply the box-shadow (glow) and height/alignment styles to the container
     <DividerContainer 
