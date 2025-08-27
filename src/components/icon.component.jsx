@@ -1,19 +1,14 @@
 import styled from "styled-components";
-
+import { IconComponentWrapper } from '../styled-components/styled.components.index';
 /**
- * Portfolio-erick - version 13.16 - IconComponent 
+ * Portfolio-erick - version 39.10 - IconComponent 
  * Features:
  * 
- *   --> Building 'IconComponentWrapper'.
+ *   --> Clearing local 'IconComponentWrapper'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
  */
-
-
-const IconComponentWrapper = styled.svg`
-
-`
 
 const IconComponent = ({ data }) => {
   if (!data || !Array.isArray(data) || data.length < 2) {
