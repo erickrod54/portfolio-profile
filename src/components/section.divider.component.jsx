@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 39.12 - styled.components - Features:
+/**Portfolio-erick - version 39.13 - styled.components - Features:
  * 
- *      --> Building 'DividerColors'
+ *      --> Destructuring 'electric_cyan' from 'DividerColors'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -49,6 +49,8 @@ export const DividerColors = [
     color:'#FF9900'
   }
 ]
+
+const [{ color: electric_cyan }] = DividerColors;
 
 const SectionDivider = ({ color = '#00FFFF' }) => {
   return (
