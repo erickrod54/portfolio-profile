@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 39.09  - styled.components - Features:
+/**Portfolio-erick - version 39.15  - styled.components - Features:
  * 
- *      --> Building 'IconComponentWrapper' 
+ *      --> Building 'DividerContainer' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -12,10 +12,23 @@ import styled, { css, keyframes } from "styled-components"
 
 /** Styled Components for new Portfolio - START */
 
-  /**HeadertTitle styles  - START */
-  export const IconComponentWrapper = styled.svg`
+/**SectionDivider Styles */
+export const DividerContainer = styled.div`
+  /* This outer div acts as a container to control the divider's width */
+  width: 80%; /* Adjust this to control how long the line is */
+  margin: 50px auto; /* Centers the divider and provides vertical spacing */
+  height: 1px; /* The container height is minimal, the line inside does the work */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
-`
+
+/**IconComponent styles */
+ export const IconComponentWrapper = styled.svg`
+
+ `
+  /**HeadertTitle styles  - START */
 
   export const HeaderTitleWrapper = styled.div`
   padding-top: 4rem;
