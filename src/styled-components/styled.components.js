@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 39.15  - styled.components - Features:
+/**Portfolio-erick - version 39.16  - styled.components - Features:
  * 
- *      --> Building 'DividerContainer' 
+ *      --> Building 'DividerLine' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,16 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
 /**SectionDivider Styles */
+export const DividerLine = styled.div`
+  /* The actual visible line */
+  width: 100%;
+  height: 1px;
+  opacity: 0.7; /* Soften the line color */
+
+  /* Dynamically set the background color using props */
+  background-color: ${props => props.$color}; 
+`;
+
 export const DividerContainer = styled.div`
   /* This outer div acts as a container to control the divider's width */
   width: 80%; /* Adjust this to control how long the line is */
