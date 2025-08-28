@@ -81,11 +81,12 @@ import { ExperimentalUIWrapper,
          ButtonTitle,
          HeaderTitleWrapper,
          IconComponentWrapper,
+         DividerContainer,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 39.10 - styled.components - Features:
+/**Portfolio-erick - version 39.15 - styled.components - Features:
  * 
- *      --> Importing and exporting 'IconComponentWrapper'
+ *      --> Importing and exporting 'DividerContainer'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -93,6 +94,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         DividerContainer,
          IconComponentWrapper,
          HeaderTitleWrapper,
          ButtonTitle,
