@@ -1,24 +1,14 @@
 import styled from "styled-components";
+import { DividerContainer } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 39.14 - styled.components - Features:
+/**Portfolio-erick - version 39.15 - styled.components - Features:
  * 
- *      --> Setting 'electric_cyan' as default color
+ *      --> Migrating 'DividerContainer'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-// 1. Define the outer container component (replaces .section-divider class)
-const DividerContainer = styled.div`
-  /* This outer div acts as a container to control the divider's width */
-  width: 80%; /* Adjust this to control how long the line is */
-  margin: 50px auto; /* Centers the divider and provides vertical spacing */
-  height: 1px; /* The container height is minimal, the line inside does the work */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 // 2. Define the inner line component (replaces .divider-line class)
 const DividerLine = styled.div`
