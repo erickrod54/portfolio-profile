@@ -10,15 +10,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 39.17 - data js
+/**Portfolio-erick - version 39.19 - data js
  *  - Features:
  * 
- *      --> Adding 'DividerColors' data set.
+ *      --> Adding 'social_title' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/**SocialComponent styles */
+export const social_title = [
+  {
+    id:1,
+    name:'Erick Rodriguez',
+    career:'Software Engineer'
+  }
+]
 
 /**DividerColors data - SectionDivdider */
 export const DividerColors = [
