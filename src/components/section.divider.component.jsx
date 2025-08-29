@@ -1,35 +1,16 @@
 import styled from "styled-components";
 import { DividerContainer, DividerLine } from '../styled-components/styled.components.index';
+import { usePortfolioContext } from '../context';
+import { electric_cyan } from '../data';
 
-/**Portfolio-erick - version 39.16 - styled.components - Features:
+/**Portfolio-erick - version 39.17 - styled.components - Features:
  * 
- *      --> Migrating 'DividerLine'
+ *      --> Importing  'electric_cyan'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
-
-export const DividerColors = [
-  {
-    name:'Electric Cyan',
-    color:'#00FFFF'
-  },
-  {
-    name:'Vibrant Magenta',
-    color:'#FF00FF'
-  },
-  {
-    name:'Electric Lime',
-    color:'#CCFF00'
-  },
-  {
-    name:'Safety Orange',
-    color:'#FF9900'
-  }
-]
-
-const [{ color: electric_cyan }] = DividerColors;
 
 const SectionDivider = ({ color = electric_cyan }) => {
   return (
