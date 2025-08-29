@@ -10,18 +10,43 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 39.07 - data js
+/**Portfolio-erick - version 39.17 - data js
  *  - Features:
  * 
- *      --> Adding 'HeaderTitleData' data set.
+ *      --> Adding 'DividerColors' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-/**GitFlowComponent data sets */
+/**DividerColors data - SectionDivdider */
+export const DividerColors = [
+  {
+    name:'Electric Cyan',
+    color:'#00FFFF'
+  },
+  {
+    name:'Vibrant Magenta',
+    color:'#FF00FF'
+  },
+  {
+    name:'Electric Lime',
+    color:'#CCFF00'
+  },
+  {
+    name:'Safety Orange',
+    color:'#FF9900'
+  }
+]
+
+export const [{ color: electric_cyan }] = DividerColors;
+
+
+/**HeaderTitle data */
 export const HeaderTitleData = '@erickdev';
+
+/**GitFlowComponent data sets */
 
 export const TabsTitles = [
   {
