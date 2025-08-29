@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { DividerContainer, DividerLine } from '../styled-components/styled.components.index';
-import { usePortfolioContext } from '../context';
 import { electric_cyan } from '../data';
 
-/**Portfolio-erick - version 39.17 - styled.components - Features:
+/**Portfolio-erick - version 39.18 - styled.components - Features:
  * 
- *      --> Importing  'electric_cyan'
+ *      --> Clearing  'usePortfolioContext'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
