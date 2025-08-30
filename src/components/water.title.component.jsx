@@ -1,10 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 40.02 - WaterTitle  -
+/**Portfolio-erick - version 40.03 - WaterTitle  -
  * Features:
  * 
- *      --> Splitting 'Universe723' keyframes 
- *          and injecting css into Loader
+ *      --> Building 'TitleSpan'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -16,13 +15,16 @@ const WaterTitle = ({ title }) => {
   return (
     <WaterTitleWrapper> 
       <Loader>
-          <span>{title}</span>
+          <TitleSpan>{title}</TitleSpan>
           <span>{title}</span>
       </Loader>
     </WaterTitleWrapper>
   );
 }
 
+const TitleSpan = styled.span`
+
+`
 
 const Universe723 = keyframes`
     0%, 100% {
