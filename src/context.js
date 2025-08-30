@@ -27,12 +27,13 @@ import { filePdf,
          TabsTitles,
          HeaderTitleData,
          electric_cyan,
+         social_title,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
-
-/**Portfolio-erick - version 39.17 - context js
+         
+/**Portfolio-erick - version 39.18 - context js
  *  - Features:
  *  
- *      --> Importing and providing  'electric_cyan'.
+ *      --> Importing and providing  'social_title'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -57,6 +58,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                social_title,
                 electric_cyan,
                 HeaderTitleData,
                 TabsTitles,
