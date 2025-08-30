@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from "../context";
 import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 22.09 - SocialComponent -
+/**Portfolio-erick - version 39.20 - SocialComponent -
 * Features:
 
-    --> Building 'social_title'
+    --> Destructuring  'social' data in a cleaner way
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -14,24 +14,15 @@ import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../st
 * component
 **/
 
-const social_title = [
-  {
-    id:1,
-    name:'Erick Rodriguez',
-    career:'Software Engineer'
-  }
-]
-
-const [{ name, career:engineer }] = social_title;
 
 const SocialComponent = ({ isRevealed }) => {
+  
+    const { social, social_title } = usePortfolioContext();
 
-    const { social } = usePortfolioContext();
+    const [{ name, career:engineer }] = social_title;
     
-    const url_xtwitter = social[2].url;
-    const url_linkdn = social[1].url;
-    const url_twitch = social[3].url;
-    const url_discord = social[4].url;
+    /**the comma before the url_linkdn skips the first data field */
+    const [,{ url:url_linkdn},{ url: url_xtwitter },{ url:url_twitch }, { url:url_discord}] = social;
 
     return(
         <StyleSocialWrapper >    
