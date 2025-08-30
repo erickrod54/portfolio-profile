@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 20.19 - WaterTitle  -
+/**Portfolio-erick - version 40.00 - WaterTitle  -
  * Features:
  * 
- *      --> Refactoring 'StyledWrapper'
+ *      --> Renaming 'StyledWrapper' to 'WaterTitleWrapper'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -13,16 +13,16 @@ import styled from 'styled-components';
 const WaterTitle = ({ title }) => {
 
   return (
-    <StyledWrapper> 
+    <WaterTitleWrapper> 
       <div class="loader">
           <span>{title}</span>
           <span>{title}</span>
       </div>
-    </StyledWrapper>
+    </WaterTitleWrapper>
   );
 }
 
-const StyledWrapper = styled.div` 
+const WaterTitleWrapper = styled.div` 
   width: auto;
   align-self: center;
 
