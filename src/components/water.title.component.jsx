@@ -1,9 +1,10 @@
 import styled, { keyframes } from 'styled-components';
+import { TitleSpan } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 40.04 - WaterTitle  -
+/**Portfolio-erick - version 40.05 - WaterTitle  -
  * Features:
  * 
- *      --> Building 'AlterTitleSpan'
+ *      --> Migrating 'TitleSpan'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -23,10 +24,6 @@ const WaterTitle = ({ title }) => {
 }
 
 const AlterTitleSpan = styled.span`
-
-`
-
-const TitleSpan = styled.span`
 
 `
 
