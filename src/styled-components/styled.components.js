@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 39.16  - styled.components - Features:
+/**Portfolio-erick - version 40.05  - styled.components - Features:
  * 
- *      --> Building 'DividerLine' 
+ *      --> Building 'TitleSpan' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,6 +11,11 @@ import styled, { css, keyframes } from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+/**WaterTitle Comoonent styles */
+export const TitleSpan = styled.span`
+
+`
 
 /**SectionDivider Styles */
 export const DividerLine = styled.div`
