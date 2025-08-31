@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 40.05  - styled.components - Features:
+/**Portfolio-erick - version 40.06  - styled.components - Features:
  * 
- *      --> Building 'TitleSpan' 
+ *      --> Building 'WaterTitleWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,11 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
 /**WaterTitle Comoonent styles */
+export const WaterTitleWrapper = styled.div` 
+  width: auto;
+  align-self: center;
+`;
+
 export const TitleSpan = styled.span`
 
 `
