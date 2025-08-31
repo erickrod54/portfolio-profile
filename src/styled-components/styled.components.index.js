@@ -83,11 +83,12 @@ import { ExperimentalUIWrapper,
          IconComponentWrapper,
          DividerContainer,
          DividerLine,
+         TitleSpan,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 39.16 - styled.components - Features:
+/**Portfolio-erick - version 40.05 - styled.components - Features:
  * 
- *      --> Importing and exporting 'DividerLine'
+ *      --> Importing and exporting 'TitleSpan'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -95,6 +96,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         TitleSpan,
          DividerLine,
          DividerContainer,
          IconComponentWrapper,
