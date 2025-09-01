@@ -86,11 +86,12 @@ import { ExperimentalUIWrapper,
          TitleSpan,
          WaterTitleWrapper,
          AlterTitleSpan,
+         Universe723,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 40.07 - styled.components - Features:
+/**Portfolio-erick - version 40.08 - styled.components - Features:
  * 
- *      --> Importing and exporting 'AlterTitleSpan'
+ *      --> Importing and exporting 'Universe723'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -98,6 +99,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         Universe723,
          AlterTitleSpan,
          WaterTitleWrapper,
          TitleSpan,
