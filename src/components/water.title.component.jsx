@@ -1,10 +1,10 @@
 import styled, { keyframes } from 'styled-components';
-import { TitleSpan } from '../styled-components/styled.components.index';
+import { TitleSpan, WaterTitleWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 40.05 - WaterTitle  -
+/**Portfolio-erick - version 40.06 - WaterTitle  -
  * Features:
  * 
- *      --> Migrating 'TitleSpan'
+ *      --> Migrating 'WaterTitleWrapper'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -68,12 +68,5 @@ const Loader = styled.div`
   animation: ${Universe723} 3s ease-in-out infinite;
   }
 `
-
-const WaterTitleWrapper = styled.div` 
-  width: auto;
-  align-self: center;
-
-
-`;
 
 export default WaterTitle;
