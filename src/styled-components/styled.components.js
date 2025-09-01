@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 40.07  - styled.components - Features:
+/**Portfolio-erick - version 40.08  - styled.components - Features:
  * 
- *      --> Building 'AlterTitleSpan' 
+ *      --> Building 'Universe723' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -13,6 +13,18 @@ import styled, { css, keyframes } from "styled-components"
 /** Styled Components for new Portfolio - START */
 
 /**WaterTitle Comoonent styles */
+export const Universe723 = keyframes`
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+      54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+      51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+`
+
 export const AlterTitleSpan = styled.span`
 
 `
