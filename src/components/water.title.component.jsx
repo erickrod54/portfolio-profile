@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { TitleSpan, WaterTitleWrapper, AlterTitleSpan } from '../styled-components/styled.components.index';
+import { TitleSpan, WaterTitleWrapper, AlterTitleSpan, Universe723 } from '../styled-components/styled.components.index';
 
 /**Portfolio-erick - version 40.07 - WaterTitle  -
  * Features:
@@ -22,18 +22,6 @@ const WaterTitle = ({ title }) => {
     </WaterTitleWrapper>
   );
 }
-
-const Universe723 = keyframes`
-    0%, 100% {
-      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
-      54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-    }
-
-    50% {
-      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
-      51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-    }
-`
 
 /**the loader class is converted to a component the span are marked 
  * as direct child of the Loader styled component by '>'*/
