@@ -1,10 +1,10 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { TitleSpan, WaterTitleWrapper, AlterTitleSpan, Universe723 } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 40.07 - WaterTitle  -
+/**Portfolio-erick - version 40.08 - WaterTitle  -
  * Features:
  * 
- *      --> Migrating 'AlterTitleSpan'
+ *      --> Clearing 'keyframes'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
