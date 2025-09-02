@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 40.08  - styled.components - Features:
+/**Portfolio-erick - version 40.09  - styled.components - Features:
  * 
- *      --> Building 'Universe723' 
+ *      --> Building 'Loader' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -23,6 +23,35 @@ export const Universe723 = keyframes`
       clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
+`
+export /**the loader class is converted to a component the span are marked 
+ * as direct child of the Loader styled component by '>'*/
+const Loader = styled.div`
+    position: relative; 
+    width: 140px; 
+    height: 60px; 
+  
+  & > span {
+    position: absolute;
+    color: #fff;
+    /* Keep centering relative to the .loader div */
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+
+  & > span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+  }
+
+  & > span:nth-child(2) {
+  color: rgb(128, 198, 255);
+  -webkit-text-stroke: 1px rgb(128, 198, 255);
+  animation: ${Universe723} 3s ease-in-out infinite;
+  }
 `
 
 export const AlterTitleSpan = styled.span`
