@@ -88,11 +88,12 @@ import { ExperimentalUIWrapper,
          AlterTitleSpan,
          Universe723,
          Loader,
+         WizardCollabWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 40.09 - styled.components - Features:
+/**Portfolio-erick - version 40.12 - styled.components - Features:
  * 
- *      --> Importing and exporting 'Loader'
+ *      --> Importing and exporting 'WizardCollabWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -100,6 +101,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         WizardCollabWrapper,
          Loader,
          Universe723,
          AlterTitleSpan,
