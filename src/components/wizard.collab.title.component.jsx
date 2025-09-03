@@ -1,13 +1,12 @@
-import styled from "styled-components";
 import {  WaterTitle } from "./index.components";
 import { faHatWizard, faWandSparkles } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from '../context.js';
 import { WizardCollabWrapper } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 40.12 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 40.13 - WizardCollabTitle - Features:
  * 
- *      --> Migrating 'WizardCollabWrapper'
+ *      --> Clearing 'styled'
  * 
  * Notes: This is the component title for open source collab 
  * section
