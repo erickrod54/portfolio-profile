@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 40.09  - styled.components - Features:
+/**Portfolio-erick - version 40.12  - styled.components - Features:
  * 
- *      --> Building 'Loader' 
+ *      --> Building 'WizardCollabWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,6 +11,15 @@ import styled, { css, keyframes } from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+/**WizardCollabTitle styles - START */
+export const WizardCollabWrapper = styled.div`
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%; 
+  gap: 2rem; 
+`
 
 /**WaterTitle Comoonent styles */
 export const Universe723 = keyframes`
