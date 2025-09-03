@@ -1,10 +1,9 @@
-import styled from 'styled-components';
 import { TitleSpan, WaterTitleWrapper, AlterTitleSpan, Loader } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 40.10 - WaterTitle  -
+/**Portfolio-erick - version 40.11 - WaterTitle  -
  * Features:
  * 
- *      --> Migrating 'Universe723'
+ *      --> Clearing 'styled'
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
