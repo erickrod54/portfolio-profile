@@ -3,25 +3,15 @@ import {  WaterTitle } from "./index.components";
 import { faHatWizard, faWandSparkles } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from '../context.js';
+import { WizardCollabWrapper } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 22.10 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 40.12 - WizardCollabTitle - Features:
  * 
- *      --> Providing 'WaterTitleData' from the context
+ *      --> Migrating 'WizardCollabWrapper'
  * 
  * Notes: This is the component title for open source collab 
  * section
  */
-
-
-
-
-const WizardCollabWrapper = styled.div`
-display: flex;
-justify-content: center; 
-align-items: center;
-width: 100%; 
-gap: 2rem; 
-`
 
 const WizardCollabTitle = () => {
     
