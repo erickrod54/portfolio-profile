@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from '../context.js';
 import { WizardCollabWrapper } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 40.17 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 40.18 - WizardCollabTitle - Features:
  * 
- *      --> Placing 'light_purple' color
+ *      --> Destructuring 'IconColorsData' from context
  * 
  * Notes: This is the component title for open source collab 
  * section
@@ -22,11 +22,9 @@ const IconColorsData = [
     }
 ]
 
-const [{color: mustard_yellow },{color:light_purple}] = IconColorsData;
-
 const WizardCollabTitle = () => {
     
-    const { WaterTitleData } = usePortfolioContext()
+    const { WaterTitleData, IconColorsData } = usePortfolioContext()
     
     // Destructure the second element (index 1) of the array - by leaving the 
     // comma - before of that is the index 0 and so on after 1 will be 2..
@@ -34,12 +32,13 @@ const WizardCollabTitle = () => {
 
     return(
         <WizardCollabWrapper>
-            <FontAwesomeIcon icon={faWandSparkles} style={{color: mustard_yellow, width:'30px', height:'30px'}} />
+            <FontAwesomeIcon icon={faWandSparkles} style={{color: "#FFD43B", width:'30px', height:'30px'}} />
             <WaterTitle title={firstTitle}/>
             <WaterTitle title={secondTitle}/>
-            <FontAwesomeIcon icon={faHatWizard} style={{color: light_purple, width:'30px', height:'30px', marginLeft:'2rem'}} />
+            <FontAwesomeIcon icon={faHatWizard} style={{color: "#B197FC", width:'30px', height:'30px', marginLeft:'2rem'}} />
         </WizardCollabWrapper>
     )
 }
 
 export default WizardCollabTitle;
+
