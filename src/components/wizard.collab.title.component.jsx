@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from '../context.js';
 import { WizardCollabWrapper } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 40.15 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 40.16 - WizardCollabTitle - Features:
  * 
- *      --> Destructuring 'IconColorsData' colors
+ *      --> Placing 'mustard_yellow' color
  * 
  * Notes: This is the component title for open source collab 
  * section
@@ -34,7 +34,7 @@ const WizardCollabTitle = () => {
 
     return(
         <WizardCollabWrapper>
-            <FontAwesomeIcon icon={faWandSparkles} style={{color: "#FFD43B", width:'30px', height:'30px'}} />
+            <FontAwesomeIcon icon={faWandSparkles} style={{color: mustard_yellow, width:'30px', height:'30px'}} />
             <WaterTitle title={firstTitle}/>
             <WaterTitle title={secondTitle}/>
             <FontAwesomeIcon icon={faHatWizard} style={{color: "#B197FC", width:'30px', height:'30px', marginLeft:'2rem'}} />
