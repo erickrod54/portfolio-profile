@@ -10,17 +10,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 39.19 - data js
+/**Portfolio-erick - version 40.18 - data js
  *  - Features:
  * 
- *      --> Adding 'social_title' data set.
+ *      --> Adding 'IconColorsData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
 
-/**SocialComponent styles */
+/**WizardCollab data */
+export const IconColorsData = [
+    {
+      name:'faWandSparkles',
+      color:'#FFD43B'       
+    },{
+      name:'faHatWizard',
+      color:'#B197FC'       
+    }
+]
+
+/**SocialComponent data */
 export const social_title = [
   {
     id:1,
