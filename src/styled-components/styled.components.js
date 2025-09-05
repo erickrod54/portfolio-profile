@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 40.12  - styled.components - Features:
+/**Portfolio-erick - version 41.03  - styled.components - Features:
  * 
- *      --> Building 'WizardCollabWrapper' 
+ *      --> Clearing 'IconJsCustom' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -1025,10 +1025,6 @@ export const IconTwentyEight = styled(FontAwesomeIcon)`
   width:30px;
   height:30px;
   display:block;
-`
-
-export const IconJsCustom = styled(IconTwentyEight)`
-  color:#F7DF1E;
 `
 
 export const ProfileItemWordpress = styled.button`
