@@ -15,10 +15,10 @@ import { ProfileItemInnerSpan,
          IconGitAltCustom,
          IconWordpressCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 41.01 - OuterCircleIcons -
+/**Portfolio-erick - version 41.02 - OuterCircleIcons -
 * Features:
 
-    --> Building 'js_SquareData'  
+    --> Switching 'IconJsCustom' to 'IconComponent'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -78,7 +78,7 @@ const OuterCircleIcons = () => {
         {/* JS Button */}
         <ProfileItemJs className="profile_item">
           <ProfileItemInnerSpan>
-            <IconJsCustom icon={faSquareJs}/>
+            <IconComponent data={js_SquareData}/>
           </ProfileItemInnerSpan>
         </ProfileItemJs>
 
