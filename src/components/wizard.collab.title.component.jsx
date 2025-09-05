@@ -4,23 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from '../context.js';
 import { WizardCollabWrapper } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 40.19 - WizardCollabTitle - Features:
+/**Portfolio-erick - version 40.20 - WizardCollabTitle - Features:
  * 
- *      --> Placing 'yellow_mustard' from context
+ *      --> Clearing local 'IconColorsData' 
  * 
  * Notes: This is the component title for open source collab 
  * section
  */
-
-const IconColorsData = [
-    {
-      name:'faWandSparkles',
-      color:'#FFD43B'       
-    },{
-      name:'faHatWizard',
-      color:'#B197FC'       
-    }
-]
 
 const WizardCollabTitle = () => {
     
