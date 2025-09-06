@@ -1,5 +1,5 @@
 import { IconComponent } from './index.components';
-import { faGitAlt, faReact, faAngular, faWordpress, faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faReact, faAngular, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { usePortfolioContext } from '../context.js'
 import { ProfileItemInnerSpan,
          ProfileItemAws,
@@ -14,10 +14,10 @@ import { ProfileItemInnerSpan,
          IconGitAltCustom,
          IconWordpressCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 41.03 - OuterCircleIcons -
+/**Portfolio-erick - version 41.04 - OuterCircleIcons -
 * Features:
 
-    --> Clearing 'IconJsCustom'  
+    --> Clearing 'faSquareJs'  
 
 * Notes: This component will hold the outer circle
 * with icons.
