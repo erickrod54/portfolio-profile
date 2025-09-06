@@ -12,7 +12,6 @@ import { ExperimentalUIWrapper,
          ProfileItemAws,
          ProfileItemPython,
          ProfileItemJs,
-         IconJsCustom,
          IconTwentyEight,
          ProfileItemWordpress,
          ProfileItemAngular,
@@ -91,9 +90,9 @@ import { ExperimentalUIWrapper,
          WizardCollabWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 40.12 - styled.components - Features:
+/**Portfolio-erick - version 41.03 - styled.components - Features:
  * 
- *      --> Importing and exporting 'WizardCollabWrapper'
+ *      --> Clearing 'IconJsCustom'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -177,7 +176,6 @@ export { ExperimentalUIWrapper,
          ProfileItemAws,
          ProfileItemPython,
          ProfileItemJs,
-         IconJsCustom,
          IconTwentyEight,
          ProfileItemWordpress,
          ProfileItemAngular,
