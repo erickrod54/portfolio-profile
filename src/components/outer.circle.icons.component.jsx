@@ -5,7 +5,6 @@ import { ProfileItemInnerSpan,
          ProfileItemAws,
          ProfileItemPython,
          ProfileItemJs,
-         IconJsCustom,
          ProfileItemWordpress,
          ProfileItemAngular,
          ProfileItemReact,
@@ -15,10 +14,10 @@ import { ProfileItemInnerSpan,
          IconGitAltCustom,
          IconWordpressCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 41.02 - OuterCircleIcons -
+/**Portfolio-erick - version 41.03 - OuterCircleIcons -
 * Features:
 
-    --> Switching 'IconJsCustom' to 'IconComponent'  
+    --> Clearing 'IconJsCustom'  
 
 * Notes: This component will hold the outer circle
 * with icons.
