@@ -1,9 +1,9 @@
 import { IconComponentWrapper } from '../styled-components/styled.components.index';
 /**
- * Portfolio-erick - version 41.06 - IconComponent 
+ * Portfolio-erick - version 41.07 - IconComponent 
  * Features:
  * 
- *   --> Rules to receive 'gradients, stops, and offsets'.
+ *   --> Placing right stop attributes.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -41,11 +41,14 @@ const IconComponent = ({ data }) => {
             >
               {/**rendering stop attribs */}
               {gradient.stops.map((stop, sIndex) => (
-                <stop>
-                  key={sIndex}
-                  offset={stop.offset}
-                  style={{ stopColor: stop.color, stopOpacity: stop.opacity }}
-                </stop>
+                <stop
+                  key={sIndex} 
+                  offset={stop.offset} 
+                  style={{ 
+                      stopColor: stop.color, 
+                      stopOpacity: stop.opacity 
+                  }} 
+                />
               ))}
             </linearGradient>
           ))}
