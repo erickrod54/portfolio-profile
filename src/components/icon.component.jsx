@@ -1,9 +1,9 @@
 import { IconComponentWrapper } from '../styled-components/styled.components.index';
 /**
- * Portfolio-erick - version 39.11 - IconComponent 
+ * Portfolio-erick - version 41.05 - IconComponent 
  * Features:
  * 
- *   --> Clearing 'styled'.
+ *   --> Building 'hasGradients'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -17,6 +17,9 @@ const IconComponent = ({ data }) => {
 
   const svgProps = data[0];
   const paths = data.slice(1);
+
+  /**Checking existence of gradient props */
+  const hasGradients = svgProps.gradients && Array.isArray(svgProps.gradients);
 
   return (
     <IconComponentWrapper
