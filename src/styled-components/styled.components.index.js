@@ -18,7 +18,6 @@ import { ExperimentalUIWrapper,
          ProfileItemGitAlt,
          IconWordpressCustom,
          IconAngularCustom,
-         IconReactCustom,
          IconGitAltCustom,
          StyleSocialWrapper,
          StyledSci,
@@ -90,9 +89,9 @@ import { ExperimentalUIWrapper,
          WizardCollabWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 41.03 - styled.components - Features:
+/**Portfolio-erick - version 41.10 - styled.components - Features:
  * 
- *      --> Clearing 'IconJsCustom'
+ *      --> Clearing 'IconReactCustom'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -182,7 +181,6 @@ export { ExperimentalUIWrapper,
          ProfileItemGitAlt,
          IconWordpressCustom,
          IconAngularCustom,
-         IconReactCustom,
          IconGitAltCustom,
          StyleSocialWrapper,
          StyledSci,
