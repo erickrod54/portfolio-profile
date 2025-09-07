@@ -1,9 +1,9 @@
 import { IconComponentWrapper } from '../styled-components/styled.components.index';
 /**
- * Portfolio-erick - version 41.07 - IconComponent 
+ * Portfolio-erick - version 41.08 - IconComponent 
  * Features:
  * 
- *   --> Placing right stop attributes.
+ *   --> Adding 'fillRule'.
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -59,6 +59,7 @@ const IconComponent = ({ data }) => {
           key={index}
           fill={path.fill}
           d={path.d}
+          fillRule={path.fillRule} //rule to not fill inner shapes explicitly
         />
       ))}
     </IconComponentWrapper>
