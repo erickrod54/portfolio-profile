@@ -14,10 +14,10 @@ import { ProfileItemInnerSpan,
          IconGitAltCustom,
          IconWordpressCustom } from '../styled-components/styled.components.index.js';
 
-/**Portfolio-erick - version 41.08 - OuterCircleIcons -
+/**Portfolio-erick - version 41.09 - OuterCircleIcons -
 * Features:
 
-    --> Building 'react_GradientData'  
+    --> Implementing 'react_GradientData'  
 
 * Notes: This component will hold the outer circle
 * with icons.
@@ -90,7 +90,7 @@ const OuterCircleIcons = () => {
         {/* React Button */}
         <ProfileItemReact className="profile_item">
           <ProfileItemInnerSpan>
-            <IconReactCustom icon={faReact} />
+            <IconComponent data={react_GradientData} />
           </ProfileItemInnerSpan>
         </ProfileItemReact>
         
