@@ -2,11 +2,12 @@ import { faDiscord, faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePortfolioContext } from "../context";
 import { StyleSocialWrapper, StyledSci, SocialTitle, SocialContent } from '../styled-components/styled.components.index';
+import IconComponent from "./icon.component";
 
-/**Portfolio-erick - version 41.14 - SocialComponent -
+/**Portfolio-erick - version 41.15 - SocialComponent -
 * Features:
 
-    --> Building  'DiscordIconData'
+    --> Building  'DiscordIcon' Component to re-use
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -27,6 +28,14 @@ const DiscordIconData = [
   }
 ];
 
+const DiscordIcon = () => {
+
+  return(
+              <a href='https://discord.gg/t8Ka7me4en' target="_blank" rel="noopener noreferrer">
+                <IconComponent data={DiscordIconData} />
+              </a>
+  )
+}
 const SocialComponent = ({ isRevealed }) => {
   
     const { social, social_title } = usePortfolioContext();
@@ -42,9 +51,7 @@ const SocialComponent = ({ isRevealed }) => {
           <SocialTitle>{name}<br /><span>{engineer}</span></SocialTitle>
           <StyledSci>
             <li>
-              <a href={url_discord} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faDiscord} />
-              </a>
+                <DiscordIcon />
             </li>
             <li>
               <a href={url_xtwitter} target="_blank" rel="noopener noreferrer">
