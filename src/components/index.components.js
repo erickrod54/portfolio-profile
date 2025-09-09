@@ -12,16 +12,18 @@ import CollabTitle from "./collaborations.title.component";
 import GitChart from "./git.chart.component";
 import GitFlowComponent from './git.flow.component.jsx'
 import Footer from "./footer.component.jsx";
+import DiscordIcon from './discord.icon.component.jsx'
 
-/**Portfolio-erick - version 21.14 - index > components
+/**Portfolio-erick - version 42.00 - index > components
  *  - Features:
  * 
- *      --> Adding 'Footer'.
+ *      --> Adding 'DiscordIcon'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
+         DiscordIcon,
          CollabTitle,
          Footer,
          GitFlowComponent,
