@@ -1,9 +1,10 @@
+import { usePortfolioContext } from "../context";
 import { IconComponent } from "./index.components";
 
-/**Portfolio-erick - version 41.16 - SocialComponent -
+/**Portfolio-erick - version 41.18 - SocialComponent -
 * Features:
 
-    --> Building  'DiscordIcon' Component in its own
+    --> Destructuring 'social' from the context
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -25,6 +26,8 @@ const DiscordIconData = [
 ];
 
 const DiscordIcon = () => {
+
+  const { social } = usePortfolioContext()
 
   return(
               <a href='https://discord.gg/t8Ka7me4en' target="_blank" rel="noopener noreferrer">
