@@ -1,10 +1,10 @@
 import { usePortfolioContext } from "../context";
 import { IconComponent } from "./index.components";
 
-/**Portfolio-erick - version 41.19 - SocialComponent -
+/**Portfolio-erick - version 41.20 - SocialComponent -
 * Features:
 
-    --> Destructuring 'url_discord ' from 'social'
+    --> Placing 'url_discord'
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -32,7 +32,7 @@ const DiscordIcon = () => {
   const [,,,,{url: url_discord }] = social;
 
   return(
-              <a href='https://discord.gg/t8Ka7me4en' target="_blank" rel="noopener noreferrer">
+              <a href={url_discord} target="_blank" rel="noopener noreferrer">
                 <IconComponent data={DiscordIconData} />
               </a>
   )
