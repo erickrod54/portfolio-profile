@@ -1,15 +1,13 @@
 import { usePortfolioContext } from "../context";
 import { IconComponent } from "./index.components";
 
-/**Portfolio-erick - version 41.20 - SocialComponent -
+/**Portfolio-erick - version 42.06 - SocialComponent -
 * Features:
 
-    --> Placing 'url_discord'
+    --> Receiving 'className' as prop
 
-* Notes: Temperorally the state of the recent created
-* 'is-revealed' is set to 'true' for testing porpouse
-* but will be controlled by a handler from the parent
-* component
+* Notes: className has .svg class for this component
+*later will be refacotored
 **/
 
 const DiscordIconData = [
@@ -25,7 +23,7 @@ const DiscordIconData = [
   }
 ];
 
-const DiscordIcon = () => {
+const DiscordIcon = ({ className }) => {
 
   const { social } = usePortfolioContext()
 
@@ -33,7 +31,7 @@ const DiscordIcon = () => {
 
   return(
               <a href={url_discord} target="_blank" rel="noopener noreferrer">
-                <IconComponent data={DiscordIconData} />
+                <IconComponent className={className} data={DiscordIconData} />
               </a>
   )
 }
