@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 42.05 - FloatCard
+/**Portfolio-erick - version 42.07 - FloatCard
  *  - Features:
  * 
- *      --> Replacing 'twitter' to 'DiscordIcon'.
+ *      --> Replacing second 'IsoPro'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -196,13 +196,13 @@ const FloatCard = () => {
                 </a>
             <div class="text">Log in</div>
             </IsoPro>
-            <li class="iso-pro">
+            <IsoPro>
             <span></span>
             <span></span>
             <span></span>
               <DiscordIcon className={'svg'}/>
             <div class="text">Discord</div>
-            </li>
+            </IsoPro>
             <li class="iso-pro">
             <span></span>
             <span></span>
