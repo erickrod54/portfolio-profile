@@ -1,15 +1,62 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 41.14 - FloatCard
+/**Portfolio-erick - version 42.03 - FloatCard
  *  - Features:
  * 
- *      --> Switching 'facebook' to 'user' icon.
+ *      --> Building 'IsoPro'.
  * 
- * Notes: This components is adapted to the new layout
- * and is functional working, pending for layout the 
- * component itself
+ * Notes: This component isolates the isometric
+ * proyection styles in its own component 
  */
 
+const IsoPro = styled.li`
+  transition: 0.5s;
+
+&:hover a > .svg {
+  transform: translate(15px, -15px);
+  border-radius: 100%;
+}
+
+&:hover .text {
+  opacity: 1;
+  transform: translate(25px, -2px) skew(-5deg);
+}
+
+&:hover .svg {
+  transform: translate(5px, -5px);
+}
+
+& > span {
+  opacity: 0;
+  position: absolute;
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 60px;
+  width: 60px;
+}
+
+&:hover > span {
+  opacity: 1;
+}
+
+&:hover > span:nth-child(1) {
+  opacity: 0.2;
+}
+
+&:hover > span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+&:hover > span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+`
 const FloatCardWrapper = styled.div` 
 .card {
   position:fixed;
