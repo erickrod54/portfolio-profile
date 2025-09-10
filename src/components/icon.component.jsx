@@ -1,15 +1,15 @@
 import { IconComponentWrapper } from '../styled-components/styled.components.index';
 /**
- * Portfolio-erick - version 41.08 - IconComponent 
+ * Portfolio-erick - version 42.05 - IconComponent 
  * Features:
  * 
- *   --> Adding 'fillRule'.
+ *   --> Adding 'className' prop.
  * 
- * Note: This component is the base component for a 
- * generic SVG icon component
+ * Note: This way classic styles can be applied to 
+ * this component when is required
  */
 
-const IconComponent = ({ data }) => {
+const IconComponent = ({ data, className }) => {
   if (!data || !Array.isArray(data) || data.length < 2) {
     console.error("Invalid or empty data passed to IconComponent.");
     return null;
@@ -27,6 +27,7 @@ const IconComponent = ({ data }) => {
       viewBox={svgProps.viewBox}
       width={svgProps.width}
       height={svgProps.height}
+      className={className}
     >
       {hasGradients && (
         <defs>
