@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 42.10 - FloatCard
+/**Portfolio-erick - version 42.11 - FloatCard
  *  - Features:
  * 
- *      --> Building 'TextIso'.
+ *      --> Replacing '.text' class to 'div'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -18,7 +18,7 @@ const IsoPro = styled.li`
   border-radius: 100%;
 }
 
-&:hover .text {
+&:hover > div {
   opacity: 1;
   transform: translate(25px, -2px) skew(-5deg);
 }
