@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 42.17 - FloatCard
+/**Portfolio-erick - version 42.18 - FloatCard
  *  - Features:
  * 
- *      --> Building 'IsoShape'.
+ *      --> Placing first 'IsoShape'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -246,7 +246,7 @@ const FloatCard = () => {
         <FloatList>
         <ul>
             <IsoPro>
-            <span></span>
+            <IsoShape></IsoShape>
             <span></span>
             <span></span>
             <a href="/#">
