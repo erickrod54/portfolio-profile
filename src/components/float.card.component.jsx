@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 42.14 - FloatCard
+/**Portfolio-erick - version 42.15 - FloatCard
  *  - Features:
  * 
- *      --> Replacing third '.text' to 'TextIso'.
+ *      --> Building 'FloatList'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -73,6 +73,48 @@ const TextIso = styled.div`
     inset 0 0 20px rgba(255, 255, 255, 0.3),
     inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
 `
+
+const FloatList = styled.div`
+    position:fixed;
+    top:50%;
+    left:20px;
+    transform:translateY(-50%);
+    z-index:999;
+
+    max-width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+      inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+    transition: 0.5s;
+  
+  &:hover {
+  animation: ease-out 5s;
+  background: rgba(173, 173, 173, 0.05);
+  }
+
+  & ul {
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  & ul li {
+    cursor: pointer;
+  }
+`
+
 const FloatCardWrapper = styled.div` 
 .card {
   position:fixed;
