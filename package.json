@@ -19,7 +19,8 @@
     "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.0-rc.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wouter": "^3.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
