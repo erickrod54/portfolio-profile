@@ -13,16 +13,18 @@ import GitChart from "./git.chart.component";
 import GitFlowComponent from './git.flow.component.jsx'
 import Footer from "./footer.component.jsx";
 import DiscordIcon from './discord.icon.component.jsx'
+import FloatCard from "./float.card.component.jsx";
 
-/**Portfolio-erick - version 42.00 - index > components
+/**Portfolio-erick - version 43.07 - index > components
  *  - Features:
  * 
- *      --> Adding 'DiscordIcon'.
+ *      --> Adding 'FloatCard'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
+         FloatCard,
          DiscordIcon,
          CollabTitle,
          Footer,
