@@ -1,9 +1,9 @@
-import { Card, FloatCard, HeaderTitle } from "../components/index.components";
+import { Card, FloatCard, HeaderTitle, SectionDivider } from "../components/index.components";
 
-/**Portfolio-erick - version 43.12 - HomePageComponent -
+/**Portfolio-erick - version 43.13 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'FloatCard' to HomePageComponent
+ *      --> Adding 'SectionDivider' to HomePageComponent
  * 
  * Notes: This file is gonna be changed later.
  */
@@ -15,6 +15,7 @@ const HomePageComponent = () => {
          <HeaderTitle />
          <Card/>
          <FloatCard />
+         <SectionDivider />
         </>
     )
 }
