@@ -1,9 +1,9 @@
-import { Card, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
+import { Card, Collaborations, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
 
-/**Portfolio-erick - version 43.14 - HomePageComponent -
+/**Portfolio-erick - version 43.15 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'WizardCollabTitle' to HomePageComponent
+ *      --> Adding 'Collaborations' to HomePageComponent
  * 
  * Notes: This file is gonna be changed later.
  */
@@ -17,6 +17,9 @@ const HomePageComponent = () => {
          <FloatCard />
          <SectionDivider />
          <WizardCollabTitle />
+         <Collaborations>
+         
+         </Collaborations>
         </>
     )
 }
