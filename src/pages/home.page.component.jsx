@@ -1,9 +1,9 @@
-import { Card, FloatCard, HeaderTitle, SectionDivider } from "../components/index.components";
+import { Card, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
 
-/**Portfolio-erick - version 43.13 - HomePageComponent -
+/**Portfolio-erick - version 43.14 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'SectionDivider' to HomePageComponent
+ *      --> Adding 'WizardCollabTitle' to HomePageComponent
  * 
  * Notes: This file is gonna be changed later.
  */
@@ -16,6 +16,7 @@ const HomePageComponent = () => {
          <Card/>
          <FloatCard />
          <SectionDivider />
+         <WizardCollabTitle />
         </>
     )
 }
