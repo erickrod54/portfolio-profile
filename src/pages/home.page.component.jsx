@@ -1,9 +1,9 @@
-import { HeaderTitle } from "../components/index.components";
+import { Card, HeaderTitle } from "../components/index.components";
 
-/**Portfolio-erick - version 43.10 - HomePageComponent -
+/**Portfolio-erick - version 43.11 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'HeaderTitle'
+ *      --> Adding 'Card' to HomePageComponent
  * 
  * Notes: This file is gonna be changed later.
  */
@@ -13,6 +13,7 @@ const HomePageComponent = () => {
     return(
         <>
          <HeaderTitle />
+         <Card/>
         </>
     )
 }
