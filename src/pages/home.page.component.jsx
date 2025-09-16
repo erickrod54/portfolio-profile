@@ -1,9 +1,9 @@
-import { } from "../components/index.components";
+import { HeaderTitle } from "../components/index.components";
 
-/**Portfolio-erick - version 43.09 - HomePageComponent -
+/**Portfolio-erick - version 43.10 - HomePageComponent -
  * Features:
  * 
- *      --> Building 'HomePageComponent'
+ *      --> Adding 'HeaderTitle'
  * 
  * Notes: This file is gonna be changed later.
  */
@@ -12,7 +12,7 @@ const HomePageComponent = () => {
 
     return(
         <>
-        
+         <HeaderTitle />
         </>
     )
 }
