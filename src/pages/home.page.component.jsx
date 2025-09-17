@@ -1,10 +1,10 @@
 import { Card, Collaborations, CollabTitle, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 43.18 - HomePageComponent -
+/**Portfolio-erick - version 43.19 - HomePageComponent -
  * Features:
  * 
- *      --> Destructuring 'firstTtile' from 'CollabTitleData'
+ *      --> Placing 'firstTtile' 
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -22,7 +22,7 @@ const HomePageComponent = () => {
          <SectionDivider />
          <WizardCollabTitle />
          <Collaborations>
-            <CollabTitle/>
+            <CollabTitle title={firstTtile}/>
          </Collaborations>
         </>
     )
