@@ -1,14 +1,17 @@
 import { Card, Collaborations, CollabTitle, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 43.16 - HomePageComponent -
+/**Portfolio-erick - version 43.17 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'CollabTitle' to HomePageComponent
+ *      --> Destructuring 'CollabTitleData' from context
  * 
  * Notes: This file is gonna be changed later.
- */
+*/
 
 const HomePageComponent = () => {
+    
+    const { CollabTitleData } = usePortfolioContext()
 
     return(
         <>
