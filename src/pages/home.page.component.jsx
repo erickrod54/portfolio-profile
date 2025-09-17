@@ -1,10 +1,17 @@
-import { Card, Collaborations, CollabTitle, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from "../components/index.components";
+import { Card, Collaborations,
+         CollabTitle,
+         FloatCard,
+         GitChart,
+         HeaderTitle,
+         SectionDivider,
+         WizardCollabTitle } from "../components/index.components";
+
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 43.19 - HomePageComponent -
+/**Portfolio-erick - version 43.20- HomePageComponent -
  * Features:
  * 
- *      --> Placing 'firstTtile' 
+ *      --> Adding 'GitChart' to HomePageComponent 
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -23,6 +30,7 @@ const HomePageComponent = () => {
          <WizardCollabTitle />
          <Collaborations>
             <CollabTitle title={firstTtile}/>
+            <GitChart/>
          </Collaborations>
         </>
     )
