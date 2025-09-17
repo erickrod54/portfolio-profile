@@ -8,10 +8,10 @@ import { Card, Collaborations,
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 43.20- HomePageComponent -
+/**Portfolio-erick - version 44.00- HomePageComponent -
  * Features:
  * 
- *      --> Adding 'GitChart' to HomePageComponent 
+ *      --> Adding 'Collaborations' section 
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -31,6 +31,9 @@ const HomePageComponent = () => {
          <Collaborations>
             <CollabTitle title={firstTtile}/>
             <GitChart/>
+         </Collaborations>
+         <Collaborations>
+         
          </Collaborations>
         </>
     )
