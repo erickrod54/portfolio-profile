@@ -9,10 +9,10 @@ import { Card, Collaborations,
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 44.02- HomePageComponent -
+/**Portfolio-erick - version 44.03- HomePageComponent -
  * Features:
  * 
- *      --> Destructuring 'secondTitle' from 'CollabTitle' 
+ *      --> Placing second 'CollabTitle'  
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -36,6 +36,7 @@ const HomePageComponent = () => {
          </Collaborations>
          <Collaborations>
             <GitFlowComponent />
+            <CollabTitle />
          </Collaborations>
         </>
     )
