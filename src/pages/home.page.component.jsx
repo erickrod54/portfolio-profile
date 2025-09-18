@@ -2,16 +2,17 @@ import { Card, Collaborations,
          CollabTitle,
          FloatCard,
          GitChart,
+         GitFlowComponent,
          HeaderTitle,
          SectionDivider,
          WizardCollabTitle } from "../components/index.components";
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 44.00- HomePageComponent -
+/**Portfolio-erick - version 44.01- HomePageComponent -
  * Features:
  * 
- *      --> Adding 'Collaborations' section 
+ *      --> Adding 'GitFlowComponent' to HomePageComponent 
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -33,7 +34,7 @@ const HomePageComponent = () => {
             <GitChart/>
          </Collaborations>
          <Collaborations>
-         
+            <GitFlowComponent />
          </Collaborations>
         </>
     )
