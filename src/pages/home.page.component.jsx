@@ -9,10 +9,10 @@ import { Card, Collaborations,
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 44.01- HomePageComponent -
+/**Portfolio-erick - version 44.02- HomePageComponent -
  * Features:
  * 
- *      --> Adding 'GitFlowComponent' to HomePageComponent 
+ *      --> Destructuring 'secondTitle' from 'CollabTitle' 
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -21,7 +21,8 @@ const HomePageComponent = () => {
     
     const { CollabTitleData } = usePortfolioContext();
 
-    const [{ title: firstTtile },] = CollabTitleData;
+    const [{ title: firstTtile }, { title:secondTitle }] = CollabTitleData;
+
     return(
         <>
          <HeaderTitle />
