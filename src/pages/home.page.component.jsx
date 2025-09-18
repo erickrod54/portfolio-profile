@@ -9,10 +9,10 @@ import { Card, Collaborations,
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 44.04 - HomePageComponent -
+/**Portfolio-erick - version 44.05 - HomePageComponent -
  * Features:
  * 
- *      --> Placing 'secondTitle'  
+ *      --> Placing second 'SectionDivider'  
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -38,6 +38,7 @@ const HomePageComponent = () => {
             <GitFlowComponent />
             <CollabTitle title={secondTitle}/>
          </Collaborations>
+         <SectionDivider />
         </>
     )
 }
