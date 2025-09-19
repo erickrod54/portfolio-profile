@@ -3,12 +3,11 @@ import { WizardCollabTitle } from "./components/index.components.js";
 import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
-import FloatCard from "./components/float.card.component.jsx";
 
-/**Portfolio-erick - version 44.11 - App  js file -
+/**Portfolio-erick - version 44.12 - App  js file -
  * Features:
  * 
- *      --> Removing 'FloatCard' 
+ *      --> Removing 'FloatCard' import 
  * 
  * Notes: To substite the legacy body implementation.
  */
