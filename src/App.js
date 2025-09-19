@@ -1,15 +1,15 @@
 import { Collaborations, CollabTitle, Footer, GitChart, GitFlowComponent } from "./components/index.components.js";
-import { HeaderTitle, WizardCollabTitle } from "./components/index.components.js";
+import { WizardCollabTitle } from "./components/index.components.js";
 import { Card } from "./components/index.components.js";
 import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
 import FloatCard from "./components/float.card.component.jsx";
 
-/**Portfolio-erick - version 44.08 - App  js file -
+/**Portfolio-erick - version 44.09 - App  js file -
  * Features:
  * 
- *      --> Removing 'HeaderTitle' 
+ *      --> Removing 'HeaderTitle' import 
  * 
  * Notes: To substite the legacy body implementation.
  */
