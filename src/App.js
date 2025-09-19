@@ -3,11 +3,13 @@ import { WizardCollabTitle } from "./components/index.components.js";
 import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
+import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.12 - App  js file -
+/**Portfolio-erick - version 44.13 - App  js file -
  * Features:
  * 
- *      --> Removing 'FloatCard' import 
+ *      --> Implementing routing 'wouter' and adding
+ *          temporal updating state
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -22,7 +24,7 @@ function App() {
   return (
     <ExperimentalUIWrapper>
   
-      <SectionDivider />
+      {/**<SectionDivider />
       <WizardCollabTitle />
       <Collaborations>
         <CollabTitle title={firstTitle}/>
@@ -33,7 +35,12 @@ function App() {
           <CollabTitle title={secondTitle}/>
       </Collaborations>
       <SectionDivider />
-      <Footer />
+      <Footer />*/}
+      <Switch>
+        <Route path='/'>
+           <h1 style={{color: "white"}}>Updating - 😉 work in progress</h1> 
+        </Route>
+      </Switch>
     </ExperimentalUIWrapper>
   );
 }
