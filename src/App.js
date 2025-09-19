@@ -5,10 +5,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import FloatCard from "./components/float.card.component.jsx";
 
-/**Portfolio-erick - version 44.10 - App  js file -
+/**Portfolio-erick - version 44.11 - App  js file -
  * Features:
  * 
- *      --> Removing 'Card' 
+ *      --> Removing 'FloatCard' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -23,7 +23,6 @@ function App() {
   return (
     <ExperimentalUIWrapper>
   
-      <FloatCard/>
       <SectionDivider />
       <WizardCollabTitle />
       <Collaborations>
