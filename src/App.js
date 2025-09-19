@@ -6,10 +6,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import FloatCard from "./components/float.card.component.jsx";
 
-/**Portfolio-erick - version 43.08 - App  js file -
+/**Portfolio-erick - version 44.08 - App  js file -
  * Features:
  * 
- *      --> Adding 'FloatCard' 
+ *      --> Removing 'HeaderTitle' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <ExperimentalUIWrapper>
-      <HeaderTitle />
+  
       <Card />
       <FloatCard/>
       <SectionDivider />
