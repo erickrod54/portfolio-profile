@@ -1,14 +1,13 @@
 import { Collaborations, CollabTitle, Footer, GitChart, GitFlowComponent } from "./components/index.components.js";
 import { WizardCollabTitle } from "./components/index.components.js";
-import { SectionDivider } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.14 - App  js file -
+/**Portfolio-erick - version 44.15 - App  js file -
  * Features:
  * 
- *      --> Removing 'SectionDivider'
+ *      --> Removing 'SectionDivider' import 
  * 
  * Notes: To substite the legacy body implementation.
  */
