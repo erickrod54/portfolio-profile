@@ -4,10 +4,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.15 - App  js file -
+/**Portfolio-erick - version 44.16 - App  js file -
  * Features:
  * 
- *      --> Removing 'SectionDivider' import 
+ *      --> Removing second 'SectionDivider'  
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -32,7 +32,6 @@ function App() {
           <GitFlowComponent />
           <CollabTitle title={secondTitle}/>
       </Collaborations>
-      <SectionDivider />
       <Footer />*/}
       <Switch>
         <Route path='/'>
