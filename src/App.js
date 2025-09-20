@@ -5,11 +5,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.13 - App  js file -
+/**Portfolio-erick - version 44.14 - App  js file -
  * Features:
  * 
- *      --> Implementing routing 'wouter' and adding
- *          temporal updating state
+ *      --> Removing 'SectionDivider'
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -24,7 +23,7 @@ function App() {
   return (
     <ExperimentalUIWrapper>
   
-      {/**<SectionDivider />
+      {/**
       <WizardCollabTitle />
       <Collaborations>
         <CollabTitle title={firstTitle}/>
