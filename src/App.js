@@ -1,13 +1,12 @@
 import { Collaborations, CollabTitle, Footer, GitChart, GitFlowComponent } from "./components/index.components.js";
-import { WizardCollabTitle } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.17 - App  js file -
+/**Portfolio-erick - version 44.18 - App  js file -
  * Features:
  * 
- *      --> Removing 'WizardCollabTitle'  
+ *      --> Removing 'WizardCollabTitle' import   
  * 
  * Notes: To substite the legacy body implementation.
  */
