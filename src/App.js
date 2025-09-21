@@ -1,12 +1,12 @@
-import { Collaborations, CollabTitle, Footer, GitChart, GitFlowComponent } from "./components/index.components.js";
+import { Collaborations, CollabTitle, Footer, GitFlowComponent } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.01 - App  js file -
+/**Portfolio-erick - version 45.02 - App  js file -
  * Features:
  * 
- *      --> Removing 'GitChart'   
+ *      --> Removing 'GitChart' import    
  * 
  * Notes: To substite the legacy body implementation.
  */
