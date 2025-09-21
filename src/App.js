@@ -3,10 +3,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 44.20 - App  js file -
+/**Portfolio-erick - version 45.00 - App  js file -
  * Features:
  * 
- *      --> Removing first 'CollabTitle'   
+ *      --> Removing second 'Collaborations'   
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -23,7 +23,6 @@ function App() {
   
       {/**
         <GitChart />      
-      </Collaborations>
       <Collaborations>
           <GitFlowComponent />
           <CollabTitle title={secondTitle}/>
