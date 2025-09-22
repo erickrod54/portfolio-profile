@@ -1,12 +1,12 @@
-import { Collaborations, CollabTitle, Footer, GitFlowComponent } from "./components/index.components.js";
+import { Collaborations, CollabTitle, Footer } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.05 - App  js file -
+/**Portfolio-erick - version 45.06 - App  js file -
  * Features:
  * 
- *      --> Removing 'GitFlowComponent'   
+ *      --> Removing 'GitFlowComponent' import    
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -22,7 +22,6 @@ function App() {
     <ExperimentalUIWrapper>
   
       {/**
-          <GitFlowComponent />
           <CollabTitle title={secondTitle}/>
       </Collaborations>
       <Footer />*/}
