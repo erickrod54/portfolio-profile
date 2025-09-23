@@ -3,18 +3,15 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.13 - App  js file -
+/**Portfolio-erick - version 45.14 - App  js file -
  * Features:
  * 
- *      --> Removing 'CollabTitleData' access     
+ *      --> Removing context     
  * 
  * Notes: To substite the legacy body implementation.
  */
 
 function App() {
-
-  const { CollabTitleData } = usePortfolioContext();
-
 
   return (
     <ExperimentalUIWrapper>
