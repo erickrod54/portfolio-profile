@@ -1,12 +1,11 @@
 import { CollabTitle, Footer } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
-import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.14 - App  js file -
+/**Portfolio-erick - version 45.15 - App  js file -
  * Features:
  * 
- *      --> Removing context     
+ *      --> Removing 'usePortfolioContext' import     
  * 
  * Notes: To substite the legacy body implementation.
  */
