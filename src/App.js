@@ -3,10 +3,10 @@ import { ExperimentalUIWrapper } from "./styled-components/styled.components.ind
 import { usePortfolioContext } from './context.js';
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.10 - App  js file -
+/**Portfolio-erick - version 45.11 - App  js file -
  * Features:
  * 
- *      --> Removing 'Footer'     
+ *      --> Removing 'firstTitle'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -15,7 +15,7 @@ function App() {
 
   const { CollabTitleData } = usePortfolioContext();
 
-  const [{ title: firstTitle }, { title: secondTitle} ] = CollabTitleData;
+  const [ { title: secondTitle} ] = CollabTitleData;
 
 
   return (
