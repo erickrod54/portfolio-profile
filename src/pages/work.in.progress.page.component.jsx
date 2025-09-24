@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.00 - UpdatingPageComponent -
+/**Portfolio-erick - version 46.01 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'WorkInProgressTitle'     
+ *      --> Implementing 'WorkInProgressTitle'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -23,7 +23,7 @@ const UpdatingPageComponent = () => {
 
   return (
     <UpdatingPageWrapper>
-      <h1>Updating - 😉 work in progress</h1> 
+      <WorkInProgressTitle>Updating - 😉 work in progress</WorkInProgressTitle> 
     </UpdatingPageWrapper>
       
   );
