@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 45.18 - UpdatingPageComponent -
+/**Portfolio-erick - version 45.19 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'UpdatingPageWrapper'     
+ *      --> Removing 'style={{color: "white"}}'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -19,7 +19,7 @@ const UpdatingPageComponent = () => {
 
   return (
     <>
-      <h1 style={{color: "white"}}>Updating - 😉 work in progress</h1> 
+      <h1>Updating - 😉 work in progress</h1> 
     </>
       
   );
