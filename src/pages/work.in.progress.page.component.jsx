@@ -1,11 +1,19 @@
+import styled from "styled-components";
 
-/**Portfolio-erick - version 45.17 - UpdatingPageComponent -
+/**Portfolio-erick - version 45.18 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'UpdatingPageComponent'     
+ *      --> Building 'UpdatingPageWrapper'     
  * 
  * Notes: To substite the legacy body implementation.
  */
+
+
+const UpdatingPageWrapper = styled.div`
+  h1{
+    color:white;
+  }
+`
 
 const UpdatingPageComponent = () => {
 
