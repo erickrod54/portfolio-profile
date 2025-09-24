@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 45.20 - UpdatingPageComponent -
+/**Portfolio-erick - version 46.00 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Implementing 'UpdatingPageWrapper'     
+ *      --> Building 'WorkInProgressTitle'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -13,6 +13,10 @@ const UpdatingPageWrapper = styled.div`
   h1{
     color:white;
   }
+`
+
+const WorkInProgressTitle = styled.h1`
+  color:white;
 `
 
 const UpdatingPageComponent = () => {
