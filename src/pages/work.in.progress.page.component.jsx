@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.03 - UpdatingPageComponent -
+/**Portfolio-erick - version 46.04 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'UpdatingData'     
+ *      --> Destructuring 'updating' from 'UpdatingData'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -22,7 +22,10 @@ const UpdatingData = [
     message: 'Updating - 😉 work in progress'
   }
 ]
+
 const UpdatingPageComponent = () => {
+
+  const [ { message: updating } ] = UpdatingData;
 
   return (
     <UpdatingPageWrapper>
