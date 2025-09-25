@@ -1,11 +1,10 @@
-import { CollabTitle } from "./components/index.components.js";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 45.16 - App  js file -
+/**Portfolio-erick - version 46.07 - App  js file -
  * Features:
  * 
- *      --> Removing 'Footer' import     
+ *      --> Removing 'CollabTitle' import     
  * 
  * Notes: To substite the legacy body implementation.
  */
