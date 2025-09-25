@@ -1,12 +1,13 @@
 import HomePageComponent from "./home.page.component";
+import UpdatingPageComponent from "./work.in.progress.page.component";
 
-/**Portfolio-erick - version 44.06 - HomePage -
+/**Portfolio-erick - version 46.06 - HomePage -
  * Features:
  * 
- *      --> Importing and exporting 'HomePageComponent'
+ *      --> Importing and exporting 'UpdatingPageComponent'
  * 
  * Notes: This file is gonna be changed later.
 */
 
 
-export { HomePageComponent }
+export { HomePageComponent, UpdatingPageComponent }
