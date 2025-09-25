@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.02 - UpdatingPageComponent -
+/**Portfolio-erick - version 46.03 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Removing 'h1' from UpdatingPageWrapper     
+ *      --> Building 'UpdatingData'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -17,6 +17,11 @@ const WorkInProgressTitle = styled.h1`
   color:white;
 `
 
+const UpdatingData = [
+  {
+    message: 'Updating - 😉 work in progress'
+  }
+]
 const UpdatingPageComponent = () => {
 
   return (
