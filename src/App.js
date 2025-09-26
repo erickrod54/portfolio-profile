@@ -2,12 +2,13 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 46.11 - App  js file -
+/**Portfolio-erick - version 46.12 - App  js file -
  * Features:
  * 
- *      --> Placing 'HomePageComponent'     
+ *      --> Defining first route 'overview'     
  * 
- * Notes: To substite the legacy body implementation.
+ * Notes: These routes are from 'AI & Classic Engineering 
+ * Program'
  */
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       <Switch>
         <Route path='/'>
            <HomePageComponent /> 
+        </Route>
+        <Route path={'/overview'}>
+            <UpdatingPageComponent />
         </Route>
       </Switch>
     </ExperimentalUIWrapper>
