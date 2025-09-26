@@ -1,11 +1,11 @@
-import { UpdatingPageComponent } from "./pages/index.pages.components.jsx";
+import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.components.jsx";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 46.08 - App  js file -
+/**Portfolio-erick - version 46.10 - App  js file -
  * Features:
  * 
- *      --> Implementing 'UpdatingPageComponent'     
+ *      --> Importing 'HomePageComponent'     
  * 
  * Notes: To substite the legacy body implementation.
  */
