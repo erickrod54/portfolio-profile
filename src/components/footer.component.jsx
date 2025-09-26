@@ -9,10 +9,10 @@ import { FooterWrapper, TopSection,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 35.06 - Footer 
+/** Portfolio-erick - version 46.12 - Footer 
  * Features:
  * 
- *   --> Destructuring 'BottomData' from context  
+ *   --> Removing first set of '#' from program titles  
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -74,11 +74,11 @@ const Footer = () => {
           <NavColumn>
             <h4>{program_title}</h4>
             <ul>
-              <li><a href="#overview">{first_item}</a></li>
-              <li><a href="#pricing">{second_item}</a></li>
-              <li><a href="#marketplace">{third_item}</a></li>
-              <li><a href="#features">{fourth_item}</a></li>
-              <li><a href="#integrations">{fifth_item}</a></li>
+              <li><a href="overview">{first_item}</a></li>
+              <li><a href="pricing">{second_item}</a></li>
+              <li><a href="marketplace">{third_item}</a></li>
+              <li><a href="features">{fourth_item}</a></li>
+              <li><a href="integrations">{fifth_item}</a></li>
             </ul>
           </NavColumn>
 
