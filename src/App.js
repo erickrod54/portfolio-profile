@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 46.10 - App  js file -
+/**Portfolio-erick - version 46.11 - App  js file -
  * Features:
  * 
- *      --> Importing 'HomePageComponent'     
+ *      --> Placing 'HomePageComponent'     
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -16,7 +16,7 @@ function App() {
     <ExperimentalUIWrapper>
       <Switch>
         <Route path='/'>
-           <UpdatingPageComponent /> 
+           <HomePageComponent /> 
         </Route>
       </Switch>
     </ExperimentalUIWrapper>
