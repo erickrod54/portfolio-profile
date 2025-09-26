@@ -1,6 +1,7 @@
 import { Card, Collaborations,
          CollabTitle,
          FloatCard,
+         Footer,
          GitChart,
          GitFlowComponent,
          HeaderTitle,
@@ -9,10 +10,10 @@ import { Card, Collaborations,
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 44.05 - HomePageComponent -
+/**Portfolio-erick - version 46.09 - HomePageComponent -
  * Features:
  * 
- *      --> Placing second 'SectionDivider'  
+ *      --> Placing 'Footer'  
  * 
  * Notes: This file is gonna be changed later.
 */
@@ -39,6 +40,7 @@ const HomePageComponent = () => {
             <CollabTitle title={secondTitle}/>
          </Collaborations>
          <SectionDivider />
+         <Footer />
         </>
     )
 }
