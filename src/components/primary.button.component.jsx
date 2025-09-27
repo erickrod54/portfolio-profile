@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.15 - PrimaryButton -
+/**Portfolio-erick - version 46.16 - PrimaryButton -
  * Features:
  * 
- *      --> Building 'StyledButton' 
+ *      --> Refactoring 'StyledButton' 
  * 
  * Notes: To substite the legacy body implementation.
  */
 
 
 const StyledButton = styled.button`
-.button {
+&{
   position: relative;
   text-decoration: none;
   color: #fff;
@@ -21,12 +21,12 @@ const StyledButton = styled.button`
   cursor: pointer;
 }
 
-.button span {
+& > span {
   position: relative;
   z-index: 1;
 }
 
-.button::before {
+&::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -35,11 +35,11 @@ const StyledButton = styled.button`
   transition: 0.5s;
 }
 
-.button:hover::before {
+&:hover::before {
   opacity: 0.7;
 }
 
-.button::after {
+&::after {
   content: "";
   position: absolute;
   inset: 0px;
@@ -50,7 +50,7 @@ const StyledButton = styled.button`
   filter: blur(20px);
 }
 
-.button:hover:after {
+&:hover:after {
   opacity: 1;
 }
 `
