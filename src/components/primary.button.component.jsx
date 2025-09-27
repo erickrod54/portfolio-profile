@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.17 - PrimaryButton -
+/**Portfolio-erick - version 46.18 - PrimaryButton -
  * Features:
  * 
- *      --> Implementing 'StyledButton' 
+ *      --> Building 'StyledSpan' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -53,6 +53,10 @@ const StyledButton = styled.button`
 &:hover:after {
   opacity: 1;
 }
+`
+
+const StyledSpan = styled.span`
+
 `
 
 const PrimaryButton = () => {
