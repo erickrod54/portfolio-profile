@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.16 - PrimaryButton -
+/**Portfolio-erick - version 46.17 - PrimaryButton -
  * Features:
  * 
- *      --> Refactoring 'StyledButton' 
+ *      --> Implementing 'StyledButton' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -58,9 +58,9 @@ const StyledButton = styled.button`
 const PrimaryButton = () => {
 
     return( 
-    <button class="button">
+    <StyledButton>
         <span>Go to Home</span>
-    </button>
+    </StyledButton>
     )
 }
 
