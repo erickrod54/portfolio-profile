@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 46.12 - App  js file -
+/**Portfolio-erick - version 46.13 - App  js file -
  * Features:
  * 
- *      --> Defining first route 'overview'     
+ *      --> Defining second route 'pricing'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -20,6 +20,9 @@ function App() {
            <HomePageComponent /> 
         </Route>
         <Route path={'/overview'}>
+            <UpdatingPageComponent />
+        </Route>
+        <Route path={'/pricing'}>
             <UpdatingPageComponent />
         </Route>
       </Switch>
