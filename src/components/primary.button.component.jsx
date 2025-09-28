@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.19 - PrimaryButton -
+/**Portfolio-erick - version 46.20 - PrimaryButton -
  * Features:
  * 
- *      --> Implementing 'StyledSpan' 
+ *      --> Building 'ButtonsData' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -58,6 +58,12 @@ const StyledButton = styled.button`
 const StyledSpan = styled.span`
 
 `
+
+const ButtonsData = [
+    {
+        content:'Go Home'
+    }
+]
 
 const PrimaryButton = () => {
 
