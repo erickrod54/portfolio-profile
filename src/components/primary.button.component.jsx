@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 46.20 - PrimaryButton -
+/**Portfolio-erick - version 47.00 - PrimaryButton -
  * Features:
  * 
- *      --> Building 'ButtonsData' 
+ *      --> Destructuring 'first_text' from 'ButtonsData' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -66,6 +66,8 @@ const ButtonsData = [
 ]
 
 const PrimaryButton = () => {
+
+    const [{ content: first_text }] = ButtonsData;
 
     return( 
     <StyledButton>
