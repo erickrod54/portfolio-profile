@@ -1,13 +1,13 @@
 import styled from "styled-components";
+import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 46.05 - UpdatingPageComponent -
+/**Portfolio-erick - version 47.02 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Placing 'updating'      
+ *      --> Importing 'PrimaryButton'      
  * 
  * Notes: To substite the legacy body implementation.
  */
-
 
 const UpdatingPageWrapper = styled.div`
   
