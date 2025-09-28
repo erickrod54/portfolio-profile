@@ -14,16 +14,18 @@ import GitFlowComponent from './git.flow.component.jsx'
 import Footer from "./footer.component.jsx";
 import DiscordIcon from './discord.icon.component.jsx'
 import FloatCard from "./float.card.component.jsx";
+import PrimaryButton from "./primary.button.component.jsx";
 
-/**Portfolio-erick - version 43.07 - index > components
+/**Portfolio-erick - version 47.01 - index > components
  *  - Features:
  * 
- *      --> Adding 'FloatCard'.
+ *      --> Adding 'PrimaryButton'.
  * 
  * Notes: This component now is on legacy directory
  */
 
 export { SocialComponent,
+         PrimaryButton,
          FloatCard,
          DiscordIcon,
          CollabTitle,
