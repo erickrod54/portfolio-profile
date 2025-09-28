@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 47.00 - PrimaryButton -
+/**Portfolio-erick - version 47.01 - PrimaryButton -
  * Features:
  * 
- *      --> Destructuring 'first_text' from 'ButtonsData' 
+ *      --> Placing 'first_text' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -71,7 +71,7 @@ const PrimaryButton = () => {
 
     return( 
     <StyledButton>
-        <StyledSpan>Go to Home</StyledSpan>
+        <StyledSpan>{first_text}</StyledSpan>
     </StyledButton>
     )
 }
