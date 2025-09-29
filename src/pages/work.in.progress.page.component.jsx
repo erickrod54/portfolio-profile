@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 47.02 - UpdatingPageComponent -
+/**Portfolio-erick - version 47.04 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Importing 'PrimaryButton'      
+ *      --> Placing 'PrimaryButton'      
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -29,6 +29,7 @@ const UpdatingPageComponent = () => {
 
   return (
     <UpdatingPageWrapper>
+      <PrimaryButton />
       <WorkInProgressTitle>{updating}</WorkInProgressTitle> 
     </UpdatingPageWrapper>
       
