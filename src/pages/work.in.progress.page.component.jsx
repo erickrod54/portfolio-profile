@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 47.06 - UpdatingPageComponent -
+/**Portfolio-erick - version 47.07 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'AbsoluteButtonWrapper'      
+ *      --> Implementing 'AbsoluteButtonWrapper'      
  * 
  * Notes: This refactor places the PrimaryButton
  * on the left corner
@@ -45,7 +45,9 @@ const UpdatingPageComponent = () => {
 
   return (
     <UpdatingPageWrapper>
-      <PrimaryButton />
+      <AbsoluteButtonWrapper>
+        <PrimaryButton />
+      </AbsoluteButtonWrapper>
       <WorkInProgressTitle>{updating}</WorkInProgressTitle> 
     </UpdatingPageWrapper>
       
