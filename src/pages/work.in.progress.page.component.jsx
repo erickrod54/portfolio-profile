@@ -1,16 +1,25 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 47.04 - UpdatingPageComponent -
+/**Portfolio-erick - version 47.05 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Placing 'PrimaryButton'      
+ *      --> Refacoring 'UpdatingPageWrapper'      
  * 
- * Notes: To substite the legacy body implementation.
+ * Notes: This refactor places the PrimaryButton
+ * on the left corner
  */
 
 const UpdatingPageWrapper = styled.div`
+  min-height: 100vh;
+  min-width: 100vw;
   
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column; 
 `
 
 const WorkInProgressTitle = styled.h1`
