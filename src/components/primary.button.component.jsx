@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Link } from "wouter";
 
-/**Portfolio-erick - version 47.01 - PrimaryButton -
+/**Portfolio-erick - version 47.03 - PrimaryButton -
  * Features:
  * 
- *      --> Placing 'first_text' 
+ *      --> Implementing 'Link'  
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -69,10 +70,12 @@ const PrimaryButton = () => {
 
     const [{ content: first_text }] = ButtonsData;
 
-    return( 
-    <StyledButton>
-        <StyledSpan>{first_text}</StyledSpan>
-    </StyledButton>
+    return(
+    <Link href="/">
+        <StyledButton>
+            <StyledSpan>{first_text}</StyledSpan>
+        </StyledButton>
+    </Link> 
     )
 }
 
