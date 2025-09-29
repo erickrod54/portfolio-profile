@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 47.05 - UpdatingPageComponent -
+/**Portfolio-erick - version 47.06 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Refacoring 'UpdatingPageWrapper'      
+ *      --> Building 'AbsoluteButtonWrapper'      
  * 
  * Notes: This refactor places the PrimaryButton
  * on the left corner
@@ -24,6 +24,13 @@ const UpdatingPageWrapper = styled.div`
 
 const WorkInProgressTitle = styled.h1`
   color:white;
+`
+
+const AbsoluteButtonWrapper = styled.div`
+  position:absolute;
+  top:40px;
+  left:40px;
+  width:auto;
 `
 
 const UpdatingData = [
