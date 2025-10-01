@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 47.14 - App  js file -
+/**Portfolio-erick - version 47.15 - App  js file -
  * Features:
  * 
- *      --> Defining eighth route 'team'     
+ *      --> Defining eighth route 'blog'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -39,6 +39,9 @@ function App() {
         </Route>
         <Route path={'/team'}>
             <UpdatingPageComponent />
+        </Route>
+        <Route path={'/blog'}>
+            <UpdatingPageComponent/>
         </Route>
       </Switch>
     </ExperimentalUIWrapper>
