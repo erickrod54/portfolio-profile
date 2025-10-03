@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.02 - App  js file -
+/**Portfolio-erick - version 48.03 - App  js file -
  * Features:
  * 
- *      --> Destructuring 'first_route'     
+ *      --> Placing 'first_route'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -73,7 +73,7 @@ function App() {
   return (
     <ExperimentalUIWrapper>
       <Switch>
-        <Route path='/'>
+        <Route path={first_route}>
            <HomePageComponent /> 
         </Route>
         <Route path={'/overview'}>
