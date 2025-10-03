@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.01 - App  js file -
+/**Portfolio-erick - version 48.02 - App  js file -
  * Features:
  * 
- *      --> Building 'RoutesData'     
+ *      --> Destructuring 'first_route'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -67,6 +67,8 @@ const RoutesData = [
 
 ]
 function App() {
+
+  const [{ route: first_route }] = RoutesData;
 
   return (
     <ExperimentalUIWrapper>
