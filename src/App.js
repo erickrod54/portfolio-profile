@@ -2,15 +2,70 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.00 - App  js file -
+/**Portfolio-erick - version 48.01 - App  js file -
  * Features:
  * 
- *      --> Defining twelveth route 'terms'     
+ *      --> Building 'RoutesData'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
  */
 
+const RoutesData = [
+  {
+    name:'home',
+    route:'/'
+  },
+  {
+    name:'pricing',
+    route:'/pricing'
+  },
+  {
+    name:'marketplace',
+    route:'/marketplace'
+  },
+  {
+    name:'features',
+    route:'/features'
+  },
+  {
+    name:'integrations',
+    route:'/integrations'
+  },
+  {
+    name:'about',
+    route:'/about'
+  },
+  {
+    name:'team',
+    route:'/team'
+  },
+  {
+    name:'blog',
+    route:'/blog'
+  },
+  {
+    name:'careers',
+    route:'/careers'
+  },
+  {
+    name:'privacy',
+    route:'/privacy'
+  },
+  {
+    name:'help',
+    route:'/help'
+  },
+  {
+    name:'twitter',
+    route:'/twitter'
+  },
+  {
+    name:'linkedin',
+    route:'/linkedin'
+  }
+
+]
 function App() {
 
   return (
