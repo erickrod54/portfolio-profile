@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 47.20 - App  js file -
+/**Portfolio-erick - version 48.00 - App  js file -
  * Features:
  * 
- *      --> Defining eleventh route 'linkedin'     
+ *      --> Defining twelveth route 'terms'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -57,6 +57,9 @@ function App() {
         </Route>
         <Route path={'/linkedin'}>
             <UpdatingPageComponent />  
+        </Route>
+        <Route path={'/terms'}>
+            <UpdatingPageComponent />
         </Route>
       </Switch>
     </ExperimentalUIWrapper>
