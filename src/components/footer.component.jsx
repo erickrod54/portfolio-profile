@@ -9,10 +9,10 @@ import { FooterWrapper, TopSection,
          NavColumns, NavColumn, BottomSection } from '../styled-components/styled.components.index';
 import { usePortfolioContext } from '../context';
 
-/** Portfolio-erick - version 47.20- Footer 
+/** Portfolio-erick - version 48.00- Footer 
  * Features:
  * 
- *   --> Removing first '#' from fifth program titles  
+ *   --> Removing second '#' from fifth program titles  
  * 
  * Note: This component is the base component for a 
  * generic SVG icon component
@@ -114,7 +114,7 @@ const Footer = () => {
         <Copyright>&copy; {getCurrentYear()} {copyright} </Copyright>
         <PolicyLinks>
           <a href="terms">{conditions}</a>
-          <a href="#privacy">{privacy}</a>
+          <a href="privacy">{privacy}</a>
         </PolicyLinks>
       </BottomSection>
     </FooterWrapper>
