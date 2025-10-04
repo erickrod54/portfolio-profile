@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.08 - App  js file -
+/**Portfolio-erick - version 48.09 - App  js file -
  * Features:
  * 
- *      --> Destructuring 'fourth_route'     
+ *      --> Placing 'fourth_route'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -90,7 +90,7 @@ function App() {
         <Route path={third_route}>
             <UpdatingPageComponent />
         </Route>
-        <Route path={'/marketplace'}>
+        <Route path={fourth_route}>
             <UpdatingPageComponent />
         </Route>
         <Route path={'/features'}>
