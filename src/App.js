@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.11 - App  js file -
+/**Portfolio-erick - version 48.12 - App  js file -
  * Features:
  * 
- *      --> Placing 'fifth_route'     
+ *      --> Destrucruing 'six_route'     
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -76,7 +76,8 @@ function App() {
          { route: second_route },
          {route: third_route },
          {route: fourth_route },
-         { route: fifth_route }
+         { route: fifth_route },
+         { route: six_route }
          ] = RoutesData;
 
   return (
