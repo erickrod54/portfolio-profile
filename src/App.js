@@ -2,7 +2,7 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.10 - App  js file -
+/**Portfolio-erick - version 48.11 - App  js file -
  * Features:
  * 
  *      --> Placing 'fifth_route'     
@@ -94,7 +94,7 @@ function App() {
         <Route path={fourth_route}>
             <UpdatingPageComponent />
         </Route>
-        <Route path={'/features'}>
+        <Route path={fifth_route}>
             <UpdatingPageComponent/>
         </Route>
         <Route path={'/integrations'}>
