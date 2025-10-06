@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 48.16 - App  js file -
+/**Portfolio-erick - version 48.17 - App  js file -
  * Features:
  * 
- *      --> Removing misleading 'path'      
+ *      --> Placing 'seventh_route'      
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -102,7 +102,7 @@ function App() {
         <Route path={sixth_route}>
             <UpdatingPageComponent/>
         </Route>
-        <Route path={'/about'}>
+        <Route path={seventh_route}>
             <UpdatingPageComponent />
         </Route>
         <Route path={'/team'}>
