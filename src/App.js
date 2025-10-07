@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 49.01 - App  js file -
+/**Portfolio-erick - version 49.02 - App  js file -
  * Features:
  * 
- *      --> Destructuring 'tenth_route'      
+ *      --> Placing 'tenth_route'      
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -114,7 +114,7 @@ function App() {
         <Route path={ninth_route}>
             <UpdatingPageComponent/>
         </Route>
-        <Route path={'/careers'}>
+        <Route path={tenth_route}>
             <UpdatingPageComponent/>
         </Route>
         <Route path={'/privacy'}>
