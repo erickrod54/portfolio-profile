@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 49.10 - App  js file -
+/**Portfolio-erick - version 49.11 - App  js file -
  * Features:
  * 
- *      --> Placing 'fourtheenth_route'      
+ *      --> Adding 'terms'      
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -67,8 +67,11 @@ const RoutesData = [
   {
     name:'linkedin',
     route:'/linkedin'
+  },
+  {
+    name:'terms',
+    route:'/terms'
   }
-
 ]
 function App() {
 
