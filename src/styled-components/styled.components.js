@@ -1,13 +1,23 @@
 import styled from "styled-components"
 
-/**Portfolio-erick - version 9.12 - styled.components - Features:
+/**Portfolio-erick - version 10.05 - styled.components - Features:
  * 
- *      --> writting 'SkillsListWrapper' 
+ *      --> writting 'ExperimentalUIWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+export const ExperimentalUIWrapper = styled.div`
+    height: 100vh; 
+    width: 100vw;  
+    margin: 0;     
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  
+`
 
 export const SkillsListWrapper = styled.div`
   width: 100%;
