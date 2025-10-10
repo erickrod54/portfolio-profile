@@ -3,14 +3,20 @@ import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 49.16 - UpdatingPageComponent -
+/**Portfolio-erick - version 49.17 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Importing 'ButtonTitle'      
+ *      --> Building 'StyledPath'      
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
  */
+
+const StyledPath = styled(ButtonTitle)`
+  color:purple;
+  font-size:1.5rem;
+  margin-left:10px;
+`
 
 const UpdatingPageWrapper = styled.div`
   min-height: 100vh;
