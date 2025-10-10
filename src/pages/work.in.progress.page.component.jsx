@@ -3,10 +3,10 @@ import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 49.17 - UpdatingPageComponent -
+/**Portfolio-erick - version 49.18 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Building 'StyledPath'      
+ *      --> Implementing 'StyledPath'      
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
@@ -58,7 +58,12 @@ const UpdatingPageComponent = () => {
       <AbsoluteButtonWrapper>
         <PrimaryButton />
       </AbsoluteButtonWrapper>
-      <WorkInProgressTitle>{updating} on {currentPath}</WorkInProgressTitle> 
+      <WorkInProgressTitle>
+          {updating} on 
+        <StyledPath>
+          {currentPath}
+        </StyledPath>
+        </WorkInProgressTitle> 
     </UpdatingPageWrapper>
       
   );
