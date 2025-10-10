@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
+import { ButtonTitle } from "../styled-components/styled.components";
 
-/**Portfolio-erick - version 49.15 - UpdatingPageComponent -
+/**Portfolio-erick - version 49.16 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Placing 'currentPath'      
+ *      --> Importing 'ButtonTitle'      
  * 
- * Notes: This refactor places the PrimaryButton
- * on the left corner
+ * Notes: This styled component will be refactor to 
+ * style the currentPath 
  */
 
 const UpdatingPageWrapper = styled.div`
