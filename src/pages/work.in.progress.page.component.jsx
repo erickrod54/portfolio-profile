@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 
-/**Portfolio-erick - version 49.14 - UpdatingPageComponent -
+/**Portfolio-erick - version 49.15 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Implementing 'useLocation' to get the current path      
+ *      --> Placing 'currentPath'      
  * 
  * Notes: This refactor places the PrimaryButton
  * on the left corner
@@ -51,7 +51,7 @@ const UpdatingPageComponent = () => {
       <AbsoluteButtonWrapper>
         <PrimaryButton />
       </AbsoluteButtonWrapper>
-      <WorkInProgressTitle>{updating}</WorkInProgressTitle> 
+      <WorkInProgressTitle>{updating} on {currentPath}</WorkInProgressTitle> 
     </UpdatingPageWrapper>
       
   );
