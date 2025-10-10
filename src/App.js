@@ -2,10 +2,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch } from "wouter";
 
-/**Portfolio-erick - version 49.12 - App  js file -
+/**Portfolio-erick - version 49.13 - App  js file -
  * Features:
  * 
- *      --> Destructuring 'fiftheen_route'      
+ *      --> Placing 'fiftheen_route'      
  * 
  * Notes: These routes are from 'AI & Classic Engineering 
  * Program'
@@ -137,7 +137,7 @@ function App() {
         <Route path={fourtheenth_route}>
             <UpdatingPageComponent />  
         </Route>
-        <Route path={'/terms'}>
+        <Route path={fiftheen_route}>
             <UpdatingPageComponent />
         </Route>
       </Switch>
