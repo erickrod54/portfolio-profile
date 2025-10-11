@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 50.02 - FourOFourComponent -
+/**Portfolio-erick - version 50.03 - FourOFourComponent -
  * Features:
  * 
- *      --> Building 'WrongPageWrapper' 
+ *      --> Implementing 'WrongPageWrapper' 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -598,6 +598,7 @@ const WrongPageWrapper = styled.div`
 const FourOFourComponent = () => {
 
     return(
+        <WrongPageWrapper>
 
         <div class="main_wrapper">
         <div class="main">
@@ -670,6 +671,7 @@ const FourOFourComponent = () => {
             <div class="text_4043">4</div>
         </div>
         </div>        
+        </WrongPageWrapper>
     )
 }
 
