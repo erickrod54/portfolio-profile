@@ -29,12 +29,13 @@ import { filePdf,
          electric_cyan,
          social_title,
          IconColorsData,
+         DiscordIconData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
          
-/**Portfolio-erick - version 40.18 - context js
+/**Portfolio-erick - version 50.04 - context js
  *  - Features:
  *  
- *      --> Importing and providing  'IconColorsData'.
+ *      --> Importing and providing  'DiscordIconData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -60,6 +61,7 @@ export const PortfolioProvider = ({ children }) => {
             value={{
                 ResumeData,
                 IconColorsData,
+                DiscordIconData,
                 social_title,
                 electric_cyan,
                 HeaderTitleData,
