@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 50.06åå - FloatCard
+/**Portfolio-erick - version 50.07 - FloatCard
  *  - Features:
  * 
- *      --> Removing 'card' from 'FloatCardWrapper'.
+ *      --> Removing 'card:hover' from 'FloatCardWrapper'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -120,10 +120,6 @@ const FloatItemsList = styled.ul`
 
 const FloatCardWrapper = styled.div` 
 
-.card:hover {
-  animation: ease-out 5s;
-  background: rgba(173, 173, 173, 0.05);
-}
 
 .card ul {
   padding: 1rem;
