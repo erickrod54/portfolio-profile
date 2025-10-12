@@ -1,10 +1,10 @@
 import { usePortfolioContext } from "../context";
 import { IconComponent } from "./index.components";
 
-/**Portfolio-erick - version 42.06 - SocialComponent -
+/**Portfolio-erick - version 50.04 - SocialComponent -
 * Features:
 
-    --> Receiving 'className' as prop
+    --> Destructuring 'DiscordIconData' from context
 
 * Notes: className has .svg class for this component
 *later will be refacotored
@@ -25,7 +25,7 @@ const DiscordIconData = [
 
 const DiscordIcon = ({ className }) => {
 
-  const { social } = usePortfolioContext()
+  const { social, DiscordIconData } = usePortfolioContext()
 
   const [,,,,{url: url_discord }] = social;
 
