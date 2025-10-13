@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 50.09 - App  js file -
+/**Portfolio-erick - version 50.10 - App  js file -
  * Features:
  * 
- *      --> Injecting 'fullScreenOverLay' into styled Wrapper 
+ *      --> Adding conditional flow into the Component 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -351,6 +351,10 @@ ${(props) => (props.$isLoading ? fullScreenOverLay : 'display:none')}
 
 const GhostLoader = ({ isLoading }) => {
 
+    /**the conditional will show the loader only if is loading */
+    if (!isLoading) {
+        return null;
+    }
 
     return(
         <GhostWrapper >
