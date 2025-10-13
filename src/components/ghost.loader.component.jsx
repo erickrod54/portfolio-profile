@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 50.08 - App  js file -
+/**Portfolio-erick - version 50.09 - App  js file -
  * Features:
  * 
- *      --> Building 'fullScreenOverLay' 
+ *      --> Injecting 'fullScreenOverLay' into styled Wrapper 
  * 
  * Notes: To substite the legacy body implementation.
  */
@@ -28,6 +28,7 @@ const fullScreenOverLay = css`
 `;
 
 const GhostWrapper = styled.div`
+${(props) => (props.$isLoading ? fullScreenOverLay : 'display:none')}
 
 #ghost {
   position: relative;
