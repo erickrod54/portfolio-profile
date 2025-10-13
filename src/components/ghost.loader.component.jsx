@@ -1,14 +1,34 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 50.00 - App  js file -
+/**Portfolio-erick - version 50.08 - App  js file -
  * Features:
  * 
- *      --> Implementing 'GhostWrapper' 
+ *      --> Building 'fullScreenOverLay' 
  * 
  * Notes: To substite the legacy body implementation.
  */
 
+/**This style component will overlay the Ghost over
+ * the layout*/
+const fullScreenOverLay = css`
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:9999;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background-color: rgba(0, 0, 0, 0.8 );
+
+  transition: opdacity 0.3s ease-in-out;
+`;
+
 const GhostWrapper = styled.div`
+
 #ghost {
   position: relative;
   scale: 0.8;
@@ -328,10 +348,11 @@ const GhostWrapper = styled.div`
 }
 `
 
-const GhostLoader = () => {
+const GhostLoader = ({ isLoading }) => {
+
 
     return(
-        <GhostWrapper>
+        <GhostWrapper >
 
         <div id="ghost">
             <div id="red">
