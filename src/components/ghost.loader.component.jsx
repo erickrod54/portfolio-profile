@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
 
-/**Portfolio-erick - version 50.10 - App  js file -
+/**Portfolio-erick - version 50.11 - App  js file -
  * Features:
  * 
- *      --> Adding conditional flow into the Component 
+ *      --> Passing down '$isLoading' as a prop 
  * 
- * Notes: To substite the legacy body implementation.
+ * Notes: This will trigger the logic that states 
+ * in 'GhostWrapper'
  */
 
 /**This style component will overlay the Ghost over
@@ -357,7 +358,7 @@ const GhostLoader = ({ isLoading }) => {
     }
 
     return(
-        <GhostWrapper >
+        <GhostWrapper $isLoading={isLoading}>
 
         <div id="ghost">
             <div id="red">
