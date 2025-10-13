@@ -1,14 +1,15 @@
+import GhostLoader from "./components/ghost.loader.component.jsx";
 import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.components.jsx";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 
-/**Portfolio-erick - version 49.13 - App  js file -
+/**Portfolio-erick - version 50.11 - App  js file -
  * Features:
  * 
- *      --> Placing 'fiftheen_route'      
+ *      --> Implementing 'useLocation'      
  * 
- * Notes: These routes are from 'AI & Classic Engineering 
- * Program'
+ * Notes: This hook will be use to start the loader 
+ * logic by catching the route
  */
 
 const RoutesData = [
@@ -75,6 +76,9 @@ const RoutesData = [
 ]
 function App() {
 
+const location = useLocation();
+
+
   const [{ route: first_route },
          { route: second_route },
          {route: third_route },
@@ -93,7 +97,11 @@ function App() {
          ] = RoutesData;
 
   return (
-    <ExperimentalUIWrapper>
+    <>
+    <GhostLoader />
+    <ExperimentalUIWrapper
+
+    >
       <Switch>
         <Route path={first_route}>
            <HomePageComponent /> 
@@ -142,6 +150,7 @@ function App() {
         </Route>
       </Switch>
     </ExperimentalUIWrapper>
+    </>
   );
 }
 
