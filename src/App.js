@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GhostLoader from "./components/ghost.loader.component.jsx";
 import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.components.jsx";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch, useLocation } from "wouter";
 
-/**Portfolio-erick - version 50.13 - App  js file -
+/**Portfolio-erick - version 50.14 - App  js file -
  * Features:
  * 
- *      --> Building 'isInitialMount'       
+ *      --> Implementing 'useEffect'       
  * 
- * Notes: This hook will be use to start the loader 
- * logic by catching the route
+ * Notes: The trigger will be 'location.pathname'
  */
 
 const RoutesData = [
@@ -82,6 +81,10 @@ const [ isLoading, setIsLoading ] = useState(true);
 
 /** the ref will check the component mount */
 const isInitialMount = React.useRef(true);
+
+useEffect(() => {
+
+}, [location.pathname])
 
   const [{ route: first_route },
          { route: second_route },
