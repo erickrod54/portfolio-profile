@@ -4,11 +4,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch, useLocation } from "wouter";
 
-/**Portfolio-erick - version 50.15 - App  js file -
+/**Portfolio-erick - version 50.16 - App  js file -
  * Features:
  * 
- *      --> Implementing 'if' flow to render GhostLoader
- *          on mount       
+ *      --> Building 'transitionTimer' for the page transition       
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -95,6 +94,14 @@ useEffect(() => {
 
     return () => clearTimeout(intialTimer);
   }
+
+  setIsLoading(true);
+
+  const transitionTimer = setTimeout(() => {
+    setIsLoading(true)
+  }, 600)
+
+  return () => clearTimeout(transitionTimer);
 
 }, [location.pathname])
 
