@@ -4,10 +4,10 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch, useLocation } from "wouter";
 
-/**Portfolio-erick - version 50.17 - App  js file -
+/**Portfolio-erick - version 50.18 - App  js file -
  * Features:
  * 
- *      --> Injecting 'isLoader' into GhostLoader       
+ *      --> Fixing the transition       
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -126,6 +126,7 @@ useEffect(() => {
     <>
     <GhostLoader isLoading={isLoading}/>
     <ExperimentalUIWrapper
+      style={{ filter:isLoading ? 'blur(1.5px)' : 'none', transition:'filter 0.3s'}}
     >
       <Switch>
         <Route path={first_route}>
