@@ -4,12 +4,14 @@ import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.co
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Route, Switch, useLocation } from "wouter";
 
-/**Portfolio-erick - version 50.14 - App  js file -
+/**Portfolio-erick - version 50.15 - App  js file -
  * Features:
  * 
- *      --> Implementing 'useEffect'       
+ *      --> Implementing 'if' flow to render GhostLoader
+ *          on mount       
  * 
- * Notes: The trigger will be 'location.pathname'
+ * Notes: simulates the intial load 
+ * ( will eventually refactored to handle fetching data)
  */
 
 const RoutesData = [
@@ -83,6 +85,16 @@ const [ isLoading, setIsLoading ] = useState(true);
 const isInitialMount = React.useRef(true);
 
 useEffect(() => {
+  
+  if (isInitialMount.current) {
+    
+    const intialTimer = setTimeout(() => {
+      setIsLoading(false);
+      isInitialMount.current = false;
+    }, 600);
+
+    return () => clearTimeout(intialTimer);
+  }
 
 }, [location.pathname])
 
