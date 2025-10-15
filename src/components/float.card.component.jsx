@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 50.18 - FloatCard
+/**Portfolio-erick - version 50.19 - FloatCard
  *  - Features:
  * 
- *      --> Removing 'card ul' from 'FloatCardWrapper'.
+ *      --> Removing 'card ul li' from 'FloatCardWrapper'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -119,11 +119,6 @@ const FloatItemsList = styled.ul`
 `
 
 const FloatCardWrapper = styled.div` 
-
-
-.card ul li {
-  cursor: pointer;
-}
 
 .svg {
   transition: all 0.3s;
