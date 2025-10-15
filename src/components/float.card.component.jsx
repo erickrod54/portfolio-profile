@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 50.19 - FloatCard
+/**Portfolio-erick - version 50.20 - FloatCard
  *  - Features:
  * 
- *      --> Removing 'card ul li' from 'FloatCardWrapper'.
+ *      --> Removing 'text' from 'FloatCardWrapper'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -133,20 +133,6 @@ const FloatCardWrapper = styled.div`
     inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
 }
 
-.text {
-  opacity: 0;
-  border-radius: 5px;
-  padding: 5px;
-  transition: all 0.3s;
-  color: rgb(255, 174, 0);
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  z-index: 9999;
-  box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
-    -10px 0 1px rgba(153, 153, 153, 0.2),
-    inset 0 0 20px rgba(255, 255, 255, 0.3),
-    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
-}
 
 /*isometric prooyection*/
 .iso-pro {
