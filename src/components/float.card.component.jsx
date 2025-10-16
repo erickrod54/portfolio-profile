@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 51.06 - FloatCard
+/**Portfolio-erick - version 51.07 - FloatCard
  *  - Features:
  * 
  *      --> Removing 'iso-pro:hover' from 'FloatCardWrapper'.
@@ -131,12 +131,6 @@ const FloatCardWrapper = styled.div`
   fill: currentColor;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
     inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
-}
-
-
-.iso-pro:hover span:nth-child(2) {
-  opacity: 0.4;
-  transform: translate(5px, -5px);
 }
 
 .iso-pro:hover span:nth-child(3) {
