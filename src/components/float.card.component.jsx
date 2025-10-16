@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { DiscordIcon } from "./index.components";
 
-/**Portfolio-erick - version 51.04 - FloatCard
+/**Portfolio-erick - version 51.05 - FloatCard
  *  - Features:
  * 
- *      --> Removing 'iso-pro span' from 'FloatCardWrapper'.
+ *      --> Removing 'iso-pro:hover span' from 'FloatCardWrapper'.
  * 
  * Notes: This component isolates the isometric
  * proyection styles in its own component 
@@ -133,9 +133,6 @@ const FloatCardWrapper = styled.div`
     inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
 }
 
-.iso-pro:hover span {
-  opacity: 1;
-}
 
 .iso-pro:hover span:nth-child(1) {
   opacity: 0.2;
