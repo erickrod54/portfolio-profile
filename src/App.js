@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import GhostLoader from "./components/ghost.loader.component.jsx";
 import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.components.jsx";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
-import { Route, Switch, useLocation } from "wouter";
+import { Redirect, Route, Switch, useLocation } from "wouter";
+import { useAuth0 } from "@auth0/auth0-react";
+import DashboardComponent from "./pages/dashboard.page.component.jsx";
 
-/**Portfolio-erick - version 50.18 - App  js file -
+/**Portfolio-erick - version 51.08 - App  js file -
  * Features:
  * 
- *      --> Fixing the transition       
+ *      --> Implementing Authentication Flow and new routes       
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -73,12 +75,22 @@ const RoutesData = [
   {
     name:'terms',
     route:'/terms'
+  },
+  {
+    name:'dashboard',
+    route:'/dashboard'
+  },
+  {
+    name:'callback',
+    route:'/callback'
   }
 ]
 function App() {
 
 const location = useLocation();
 const [ isLoading, setIsLoading ] = useState(true);
+
+const { isLoading: authLoading, isAuthenticated, loginWithRedirect} = useAuth0();
 
 /** the ref will check the component mount */
 const isInitialMount = React.useRef(true);
@@ -105,6 +117,8 @@ useEffect(() => {
 
 }, [location.pathname])
 
+const isAppLoading = isLoading || authLoading;
+
   const [{ route: first_route },
          { route: second_route },
          {route: third_route },
@@ -119,16 +133,32 @@ useEffect(() => {
          { route: twelfth_route },
          { route: thirteenth_route },
          { route: fourtheenth_route },
-         { route: fiftheen_route}
+         { route: fiftheen_route},
+         { route: seventeenth_route },
+         { route: eighteenth_route }
          ] = RoutesData;
+  
+  const Auth0CallbackHandler = () => {
+
+    if (authLoading) return <GhostLoader isLoading={true}/>;
+
+    return isAuthenticated ? <Redirect to="/dashboard" /> : <Redirect to="/" />
+  }
+
 
   return (
     <>
-    <GhostLoader isLoading={isLoading}/>
+    <GhostLoader isLoading={isAppLoading}/>
     <ExperimentalUIWrapper
       style={{ filter:isLoading ? 'blur(1.5px)' : 'none', transition:'filter 0.3s'}}
     >
       <Switch>
+        <Route path={'/callback'}>
+            <Auth0CallbackHandler />
+        </Route>
+        <Route path={'/dashboard'}>
+            <DashboardComponent />
+        </Route>
         <Route path={first_route}>
            <HomePageComponent /> 
         </Route>
