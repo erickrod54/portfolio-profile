@@ -6,10 +6,10 @@ import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useAuth0 } from "@auth0/auth0-react";
 import DashboardComponent from "./pages/dashboard.page.component.jsx";
 
-/**Portfolio-erick - version 51.10 - App  js file -
+/**Portfolio-erick - version 51.11 - App  js file -
  * Features:
  * 
- *      --> Placing 'first_route' in redirect       
+ *      --> Placing 'seventeenth_route' in Route       
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -153,7 +153,7 @@ const isAppLoading = isLoading || authLoading;
       style={{ filter:isLoading ? 'blur(1.5px)' : 'none', transition:'filter 0.3s'}}
     >
       <Switch>
-        <Route path={'/callback'}>
+        <Route path={{seventeenth_route}}>
             <Auth0CallbackHandler />
         </Route>
         <Route path={'/dashboard'}>
