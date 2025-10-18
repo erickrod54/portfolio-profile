@@ -6,10 +6,10 @@ import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useAuth0 } from "@auth0/auth0-react";
 import DashboardComponent from "./pages/dashboard.page.component.jsx";
 
-/**Portfolio-erick - version 51.13 - App  js file -
+/**Portfolio-erick - version 51.14 - App  js file -
  * Features:
  * 
- *      --> Placing 'seventeenth_route'        
+ *      --> exporting 'eighteenth_route'        
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -137,7 +137,7 @@ const isAppLoading = isLoading || authLoading;
          { route: seventeenth_route },
          { route: eighteenth_route }
          ] = RoutesData;
-  
+
   const Auth0CallbackHandler = () => {
 
     if (authLoading) return <GhostLoader isLoading={true}/>;
@@ -211,3 +211,5 @@ const isAppLoading = isLoading || authLoading;
 }
 
 export default App;
+
+export const [{ route: eighteenth_route }] = RoutesData;
