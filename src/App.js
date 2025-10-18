@@ -6,10 +6,10 @@ import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useAuth0 } from "@auth0/auth0-react";
 import DashboardComponent from "./pages/dashboard.page.component.jsx";
 
-/**Portfolio-erick - version 51.09 - App  js file -
+/**Portfolio-erick - version 51.10 - App  js file -
  * Features:
  * 
- *      --> Placing 'seventeenth_route'       
+ *      --> Placing 'first_route' in redirect       
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
@@ -142,7 +142,7 @@ const isAppLoading = isLoading || authLoading;
 
     if (authLoading) return <GhostLoader isLoading={true}/>;
 
-    return isAuthenticated ? <Redirect to={seventeenth_route} /> : <Redirect to="/" />
+    return isAuthenticated ? <Redirect to={seventeenth_route} /> : <Redirect to={first_route} />
   }
 
 
