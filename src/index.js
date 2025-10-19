@@ -6,16 +6,29 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 51.19 - index js file -
+/**Portfolio-erick - version 51.20 - index js file -
  * Features:
  * 
- *      --> Placing 'scopeData'
+ *      --> Building 'HelmetData'
  * 
  * Notes: Is pending to make a data structure to hold Helmet 
  * data and also develop a meta tag.
  */
 
 const scopeData = 'openid profile email';
+
+const HelmetData = [
+  {
+    name:'erickdev',
+    placement:'title'
+  },{
+    name:'canonical',
+    placement:'rel'
+  },{
+    name:'https://erickrod54.dev/',
+    placement:'href'
+  }
+]
 
 const auth0Domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const  auth0ClientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
