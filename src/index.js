@@ -6,10 +6,10 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 51.16 - index js file -
+/**Portfolio-erick - version 51.17 - index js file -
  * Features:
  * 
- *      --> Importing 'eighteenth_route'
+ *      --> Placing 'eighteenth_route'
  * 
  * Notes: Is pending to make a data structure to hold Helmet 
  * data and also develop a meta tag.
@@ -25,7 +25,7 @@ root.render(
       domain={auth0Domain}
       clientId={auth0ClientId}
       authorizationParams={{
-        redirect_uri:window.location.origin + '/callback',
+        redirect_uri:window.location.origin + {eighteenth_route},
         scope:'openid profile email'
       }}
     >
