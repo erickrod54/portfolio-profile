@@ -6,10 +6,10 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 51.18 - index js file -
+/**Portfolio-erick - version 51.19 - index js file -
  * Features:
  * 
- *      --> Building 'scopeData'
+ *      --> Placing 'scopeData'
  * 
  * Notes: Is pending to make a data structure to hold Helmet 
  * data and also develop a meta tag.
@@ -28,7 +28,7 @@ root.render(
       clientId={auth0ClientId}
       authorizationParams={{
         redirect_uri:window.location.origin + {eighteenth_route},
-        scope:'openid profile email'
+        scope:{scopeData}
       }}
     >
       <HelmetProvider>
