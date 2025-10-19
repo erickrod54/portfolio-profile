@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App, { eighteenth_route } from './App';
 import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 51.15 - index js file -
+/**Portfolio-erick - version 51.16 - index js file -
  * Features:
  * 
- *      --> Wrapping with 'Auth0Provider'
+ *      --> Importing 'eighteenth_route'
  * 
  * Notes: Is pending to make a data structure to hold Helmet 
  * data and also develop a meta tag.
