@@ -7,15 +7,16 @@ import { Card, Collaborations,
          HeaderTitle,
          SectionDivider,
          WizardCollabTitle } from "../components/index.components";
+import { AuthenticationButtons } from "../components/login.and.logout.components";
 
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 46.09 - HomePageComponent -
+/**Portfolio-erick - version 51.08 - HomePageComponent -
  * Features:
  * 
- *      --> Placing 'Footer'  
+ *      --> Adding 'AuthenticationButtons'   
  * 
- * Notes: This file is gonna be changed later.
+ * Notes: 'AuthenticationButtons' is to test Auth.
 */
 
 const HomePageComponent = () => {
@@ -26,6 +27,7 @@ const HomePageComponent = () => {
 
     return(
         <>
+         <AuthenticationButtons />
          <HeaderTitle />
          <Card/>
          <FloatCard />
