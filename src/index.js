@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { eighteenth_route } from './App';
+import App from './App';
 import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 52.04 - index js file -
+/**Portfolio-erick - version 52.05 - index js file -
  * Features:
  * 
- *      --> Destructuring 'title' from HelmetData
+ *      --> Clearing 'eighteenth_route' import 
  * 
  * Notes: Curley braces make 'eighteenth_route' to be 
  * treated as an object, and what it cause an authentication
