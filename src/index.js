@@ -6,10 +6,10 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 52.07 - index js file -
+/**Portfolio-erick - version 52.08 - index js file -
  * Features:
  * 
- *      --> Destructuring 'canonical' from 'HelmetData' 
+ *      --> Placing 'canonical' 
  * 
  * Notes: Curley braces make 'eighteenth_route' to be 
  * treated as an object, and what it cause an authentication
@@ -50,7 +50,7 @@ root.render(
       <HelmetProvider>
         <Helmet>
           <title>{title} 👨🏾‍💻 {'{}'}</title>
-          <link rel='canonical' href='https://erickrod54.dev/'/>
+          <link rel={canonical} href='https://erickrod54.dev/'/>
         </Helmet>
         <PortfolioProvider>
           < App />  
