@@ -6,10 +6,10 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 52.03 - index js file -
+/**Portfolio-erick - version 52.04 - index js file -
  * Features:
  * 
- *      --> Getting rid of 'eighteenth_route' curley braces
+ *      --> Destructuring 'title' from HelmetData
  * 
  * Notes: Curley braces make 'eighteenth_route' to be 
  * treated as an object, and what it cause an authentication
@@ -34,6 +34,8 @@ const HelmetData = [
 const auth0Domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const  auth0ClientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
+const [{name:title}] = HelmetData;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -41,7 +43,7 @@ root.render(
       domain={auth0Domain}
       clientId={auth0ClientId}
       authorizationParams={{
-        redirect_uri:window.location.origin + eighteenth_route,
+        redirect_uri:window.location.origin + '/callback',
         scope:{scopeData}
       }}
     >
