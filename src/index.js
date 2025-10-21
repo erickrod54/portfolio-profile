@@ -6,10 +6,10 @@ import { PortfolioProvider } from './context';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 52.05 - index js file -
+/**Portfolio-erick - version 52.06 - index js file -
  * Features:
  * 
- *      --> Clearing 'eighteenth_route' import 
+ *      --> Placing 'title' 
  * 
  * Notes: Curley braces make 'eighteenth_route' to be 
  * treated as an object, and what it cause an authentication
@@ -49,7 +49,7 @@ root.render(
     >
       <HelmetProvider>
         <Helmet>
-          <title>erickdev 👨🏾‍💻 {'{}'}</title>
+          <title>{title} 👨🏾‍💻 {'{}'}</title>
           <link rel='canonical' href='https://erickrod54.dev/'/>
         </Helmet>
         <PortfolioProvider>
