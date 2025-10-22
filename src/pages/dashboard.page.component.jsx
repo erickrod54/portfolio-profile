@@ -4,10 +4,10 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Redirect } from 'wouter'; // Important for redirecting unauthenticated users
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 
-/**Portfolio-erick - version 52.02 - AvatarPicture -
+/**Portfolio-erick - version 52.03 - AvatarPicture -
 * Features:
 
-    --> Building 'auth_flow_msg'
+    --> Placing 'auth_flow_msg'
 
 * Notes: Migrating styled components
 **/
@@ -31,7 +31,7 @@ const DashboardComponent = () => {
 
     if (isLoading) {
         // Show your loading state while Auth0 is checking the session
-        return <p>Loading user session...</p>;
+        return <p>{auth_flow_msg}</p>;
     }
 
     if (!isAuthenticated) {
