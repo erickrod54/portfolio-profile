@@ -3,11 +3,12 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Redirect } from 'wouter'; // Important for redirecting unauthenticated users
 import { AuthenticationButtons } from '../components/login.and.logout.components';
+import { first_route } from '../App';
 
-/**Portfolio-erick - version 52.05 - AvatarPicture -
+/**Portfolio-erick - version 52.07 - AvatarPicture -
 * Features:
 
-    --> Placing 'secured_area' 
+    --> Importing 'first_route' 
 
 * Notes: Migrating styled components
 **/
