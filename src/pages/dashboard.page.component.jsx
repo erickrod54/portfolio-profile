@@ -4,10 +4,10 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Redirect } from 'wouter'; // Important for redirecting unauthenticated users
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 
-/**Portfolio-erick - version 52.04 - AvatarPicture -
+/**Portfolio-erick - version 52.05 - AvatarPicture -
 * Features:
 
-    --> Destructuring 'secured_area' from 'DashboardAuthData'
+    --> Placing 'secured_area' 
 
 * Notes: Migrating styled components
 **/
@@ -43,7 +43,7 @@ const DashboardComponent = () => {
     return (
         <div>
             <AuthenticationButtons />
-            <h2>Dashboard: Secure Area</h2>
+            <h2>{secured_area}</h2>
             <p>Welcome, {user.name}!</p>
             {/* ... rest of your dashboard UI ... */}
         </div>
