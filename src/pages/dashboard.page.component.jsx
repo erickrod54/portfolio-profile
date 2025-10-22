@@ -4,10 +4,10 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Redirect } from 'wouter'; // Important for redirecting unauthenticated users
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 
-/**Portfolio-erick - version 52.03 - AvatarPicture -
+/**Portfolio-erick - version 52.04 - AvatarPicture -
 * Features:
 
-    --> Placing 'auth_flow_msg'
+    --> Destructuring 'secured_area' from 'DashboardAuthData'
 
 * Notes: Migrating styled components
 **/
@@ -25,7 +25,7 @@ const DashboardAuthData = [
 ]
 const DashboardComponent = () => {
 
-    const [{name:auth_flow_msg}] = DashboardAuthData;
+    const [{name:auth_flow_msg}, { name:secured_area }] = DashboardAuthData;
 
     const { user, isAuthenticated, isLoading } = useAuth0();
 
