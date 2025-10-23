@@ -5,10 +5,10 @@ import { Redirect } from 'wouter'; // Important for redirecting unauthenticated 
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 import { first_route } from '../App';
 
-/**Portfolio-erick - version 52.13 - DashboardComponent -
+/**Portfolio-erick - version 52.14 - DashboardComponent -
 * Features:
 
-    --> Destructuring 'secure_msg' from 'DashboardAuthData' 
+    --> Placing 'secure_msg'  
 
 * Notes: Migrating styled components
 **/
@@ -45,7 +45,7 @@ const DashboardComponent = () => {
         <div>
             <AuthenticationButtons />
             <h2>{secured_area}</h2>
-            <p>Welcome, {user.name}!</p>
+            <p>{secure_msg}, {user.name}!</p>
             {/* ... rest of your dashboard UI ... */}
         </div>
     );
