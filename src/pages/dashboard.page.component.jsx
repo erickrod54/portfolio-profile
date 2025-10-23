@@ -5,10 +5,10 @@ import { Redirect } from 'wouter'; // Important for redirecting unauthenticated 
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 import { first_route } from '../App';
 
-/**Portfolio-erick - version 52.07 - AvatarPicture -
+/**Portfolio-erick - version 52.12 - DashboardComponent -
 * Features:
 
-    --> Importing 'first_route' 
+    --> Placing 'first_route' 
 
 * Notes: Migrating styled components
 **/
@@ -37,7 +37,7 @@ const DashboardComponent = () => {
 
     if (!isAuthenticated) {
         // Redirect unauthenticated users back to the home page or login page
-        return <Redirect to="/" />;
+        return <Redirect to={first_route} />;
     }
 
     // User is authenticated, display dashboard content
