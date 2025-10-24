@@ -1,8 +1,11 @@
-/**Portfolio-erick - version 10.11 - index css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**Portfolio-erick - version 52.15 - index css
  *  - Features:
  * 
- *      --> Migrating gradient Background to the 
- *          actual styled Component
+ *      --> Adding tailwind css rules 
  * 
  * Notes: The Styled Component that will control 
  * the background now is ExperimentalUIWrapper
@@ -14,6 +17,12 @@
 Variables
 ===============
 */
+
+/* src/index.css */
+
+
+/* Add your custom styles and Shadcn variables below this line */
+
 
 :root {
   /* dark shades of primary color*/
