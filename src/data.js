@@ -10,15 +10,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 50.04 - data js
+/**Portfolio-erick - version 52.17 - data js
  *  - Features:
  * 
- *      --> Adding 'DiscordIconData' data set.
+ *      --> Adding 'DashboardAuthData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/**Dashboard Component Data */
+export const DashboardAuthData = [
+    {
+        name:'Loading user session...',
+        placement:'isLoading flow'
+    },{
+        name:'Dashboard: Secure Area',
+        placement:'authentication body'
+    },{
+        name:'Welcome,',
+        placement:'auth message'
+    }
+]
 
 /**DiscordIconComponent Data  */
 export const DiscordIconData = [
