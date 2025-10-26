@@ -10,15 +10,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiReact, SiJavascript } from 'react-icons/si';
 import { BiCloudDrizzle  } from 'react-icons/bi';
 
-/**Portfolio-erick - version 52.17 - data js
+/**Portfolio-erick - version 52.19 - data js
  *  - Features:
  * 
- *      --> Adding 'DashboardAuthData' data set.
+ *      --> Adding 'UpdatingData' data set.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
  * component itself
  */
+
+/** UpdatingPageComponent Data */
+export const UpdatingData = [
+  {
+    message: 'Updating - 😉 work in progress'
+  }
+]
 
 /**Dashboard Component Data */
 export const DashboardAuthData = [
