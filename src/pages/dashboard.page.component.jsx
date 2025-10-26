@@ -6,25 +6,13 @@ import { AuthenticationButtons } from '../components/login.and.logout.components
 import { first_route } from '../App';
 import { usePortfolioContext } from '../context';
 
-/**Portfolio-erick - version 52.17 - DashboardComponent -
+/**Portfolio-erick - version 52.18 - DashboardComponent -
 * Features:
 
-    --> Destructuring 'DashboardAuthData' from the context   
+    --> Removing local 'DashboardAuthData'    
 
 * Notes: Migrating styled components
 **/
-const DashboardAuthData = [
-    {
-        name:'Loading user session...',
-        placement:'isLoading flow'
-    },{
-        name:'Dashboard: Secure Area',
-        placement:'authentication body'
-    },{
-        name:'Welcome,',
-        placement:'auth message'
-    }
-]
 
 const DashboardComponent = () => {
 
