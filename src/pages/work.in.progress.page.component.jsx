@@ -4,10 +4,10 @@ import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
 import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 52.19 - UpdatingPageComponent -
+/**Portfolio-erick - version 52.20 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Destructuring 'UpdatingData' from context     
+ *      --> Clearing local 'UpdatingData'      
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
@@ -41,12 +41,6 @@ const AbsoluteButtonWrapper = styled.div`
   left:40px;
   width:auto;
 `
-
-const UpdatingData = [
-  {
-    message: 'Updating - 😉 work in progress'
-  }
-]
 
 const UpdatingPageComponent = () => {
 
