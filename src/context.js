@@ -31,12 +31,13 @@ import { filePdf,
          IconColorsData,
          DiscordIconData,
          DashboardAuthData,
+         UpdatingData,
          social, BrandInfoData, amazonAwsData, pythonData, CollabTitleData, WaterTitleData } from "./data";
          
-/**Portfolio-erick - version 52.17 - context js
+/**Portfolio-erick - version 52.19 - context js
  *  - Features:
  *  
- *      --> Importing and providing  'DashboardAuthData'.
+ *      --> Importing and providing  'UpdatingData'.
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -61,6 +62,7 @@ export const PortfolioProvider = ({ children }) => {
         <PortfolioContext.Provider 
             value={{
                 ResumeData,
+                UpdatingData,
                 DashboardAuthData,
                 IconColorsData,
                 DiscordIconData,
