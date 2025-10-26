@@ -4,11 +4,12 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Redirect } from 'wouter'; // Important for redirecting unauthenticated users
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 import { first_route } from '../App';
+import { usePortfolioContext } from '../context';
 
-/**Portfolio-erick - version 52.14 - DashboardComponent -
+/**Portfolio-erick - version 52.17 - DashboardComponent -
 * Features:
 
-    --> Placing 'secure_msg'  
+    --> Destructuring 'DashboardAuthData' from the context   
 
 * Notes: Migrating styled components
 **/
@@ -24,7 +25,10 @@ const DashboardAuthData = [
         placement:'auth message'
     }
 ]
+
 const DashboardComponent = () => {
+
+    const { DashboardAuthData } = usePortfolioContext();
 
     const [{name:auth_flow_msg}, { name:secured_area }, {name: secure_msg }] = DashboardAuthData;
 
