@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
+import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 49.18 - UpdatingPageComponent -
+/**Portfolio-erick - version 52.19 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Implementing 'StyledPath'      
+ *      --> Destructuring 'UpdatingData' from context     
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
@@ -48,6 +49,8 @@ const UpdatingData = [
 ]
 
 const UpdatingPageComponent = () => {
+
+  const { UpdatingData } = usePortfolioContext()
 
   const [ currentPath ] = useLocation();
 
