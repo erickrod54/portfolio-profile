@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 53.00  - styled.components - Features:
+/**Portfolio-erick - version 53.01  - styled.components - Features:
  * 
- *      --> Building 'AbsoluteButtonWrapper' 
+ *      --> Building 'WorkInProgressTitle' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -19,6 +19,10 @@ export const AbsoluteButtonWrapper = styled.div`
   top:40px;
   left:40px;
   width:auto;
+`
+
+export const WorkInProgressTitle = styled.h1`
+  color:white;
 `
 
 /**WizardCollabTitle styles - START */
