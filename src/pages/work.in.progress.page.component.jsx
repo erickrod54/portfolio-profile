@@ -3,12 +3,12 @@ import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
 import { usePortfolioContext } from "../context";
-import { AbsoluteButtonWrapper } from '../styled-components/styled.components.index';
+import { AbsoluteButtonWrapper, WorkInProgressTitle } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 53.00 - UpdatingPageComponent -
+/**Portfolio-erick - version 53.01 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Migrating 'AbsoluteButtonWrapper'      
+ *      --> Migrating 'WorkInProgressTitle'      
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
@@ -30,10 +30,6 @@ const UpdatingPageWrapper = styled.div`
   justify-content: center;
   align-items: center; 
   flex-direction: column; 
-`
-
-const WorkInProgressTitle = styled.h1`
-  color:white;
 `
 
 const UpdatingPageComponent = () => {
