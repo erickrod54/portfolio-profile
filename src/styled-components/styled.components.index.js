@@ -88,11 +88,12 @@ import { ExperimentalUIWrapper,
          Loader,
          WizardCollabWrapper,
          AbsoluteButtonWrapper,
+         WorkInProgressTitle,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 53.00 - styled.components - Features:
+/**Portfolio-erick - version 53.01 - styled.components - Features:
  * 
- *      --> Importing and exporting 'AbsoluteButtonWrapper'
+ *      --> Importing and exporting 'WorkInProgressTitle'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -100,6 +101,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+         WorkInProgressTitle,
         AbsoluteButtonWrapper,
          WizardCollabWrapper,
          Loader,
