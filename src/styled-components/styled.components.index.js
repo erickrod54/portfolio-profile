@@ -87,11 +87,12 @@ import { ExperimentalUIWrapper,
          Universe723,
          Loader,
          WizardCollabWrapper,
+         AbsoluteButtonWrapper,
          ProfilePictureImg } from "./styled.components";
 
-/**Portfolio-erick - version 41.10 - styled.components - Features:
+/**Portfolio-erick - version 53.00 - styled.components - Features:
  * 
- *      --> Clearing 'IconReactCustom'
+ *      --> Importing and exporting 'AbsoluteButtonWrapper'
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -99,6 +100,7 @@ import { ExperimentalUIWrapper,
  */
 
 export { ExperimentalUIWrapper,
+        AbsoluteButtonWrapper,
          WizardCollabWrapper,
          Loader,
          Universe723,
