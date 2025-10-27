@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled, { css, keyframes } from "styled-components"
 
-/**Portfolio-erick - version 41.10  - styled.components - Features:
+/**Portfolio-erick - version 53.00  - styled.components - Features:
  * 
- *      --> Clearing 'IconReactCustom' 
+ *      --> Building 'AbsoluteButtonWrapper' 
  * 
  * Notes: This components is adapted to the new layout
  * and is functional working, pending for layout the 
@@ -11,6 +11,15 @@ import styled, { css, keyframes } from "styled-components"
  */
 
 /** Styled Components for new Portfolio - START */
+
+/**UpdatingPageComponent - START */
+
+export const AbsoluteButtonWrapper = styled.div`
+  position:absolute;
+  top:40px;
+  left:40px;
+  width:auto;
+`
 
 /**WizardCollabTitle styles - START */
 export const WizardCollabWrapper = styled.div`
