@@ -3,11 +3,12 @@ import { PrimaryButton } from "../components/index.components";
 import { useLocation } from "wouter";
 import { ButtonTitle } from "../styled-components/styled.components";
 import { usePortfolioContext } from "../context";
+import { AbsoluteButtonWrapper } from '../styled-components/styled.components.index';
 
-/**Portfolio-erick - version 52.20 - UpdatingPageComponent -
+/**Portfolio-erick - version 53.00 - UpdatingPageComponent -
  * Features:
  * 
- *      --> Clearing local 'UpdatingData'      
+ *      --> Migrating 'AbsoluteButtonWrapper'      
  * 
  * Notes: This styled component will be refactor to 
  * style the currentPath 
@@ -33,13 +34,6 @@ const UpdatingPageWrapper = styled.div`
 
 const WorkInProgressTitle = styled.h1`
   color:white;
-`
-
-const AbsoluteButtonWrapper = styled.div`
-  position:absolute;
-  top:40px;
-  left:40px;
-  width:auto;
 `
 
 const UpdatingPageComponent = () => {
