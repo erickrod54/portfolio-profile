@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import GhostLoader from "./components/ghost.loader.component.jsx";
-import { HomePageComponent, UpdatingPageComponent } from "./pages/index.pages.components.jsx";
+import { HomePageComponent, UpdatingPageComponent, DashboardComponent } from "./pages/index.pages.components.jsx";
 import { ExperimentalUIWrapper } from "./styled-components/styled.components.index.js";
 import { Redirect, Route, Switch, useLocation } from "wouter";
 import { useAuth0 } from "@auth0/auth0-react";
-import DashboardComponent from "./pages/dashboard.page.component.jsx";
 
-/**Portfolio-erick - version 52.06 - App  js file -
+/**Portfolio-erick - version 53.03 - App  js file -
  * Features:
  * 
- *      --> Switching 'eighteenth_route' to 'first_route'        
+ *      --> Fixing 'DashboardComponent' import        
  * 
  * Notes: simulates the intial load 
  * ( will eventually refactored to handle fetching data)
