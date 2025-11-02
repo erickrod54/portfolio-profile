@@ -1,9 +1,9 @@
-import UpdatingPageComponent from './pages/work.in.progress.page.component'
+import { UpdatingPageComponent } from './pages/index.page.components'
 
-/**Portfolio-erick - version 53.04 - Apps -
+/**Portfolio-erick - version 53.05 - Apps -
  * Features:
  * 
- *      --> Rendering 'UpdatingPageComponent'      
+ *      --> Fixing 'UpdatingPageComponent' import       
  * 
  * Notes: This 'UpdatingPageComponent' will render while
  * the migration is being performed, this App js is from
