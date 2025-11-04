@@ -1,11 +1,12 @@
 import UpdatingPageComponent from "./work.in.progress.page.component";
+import HomePageComponent from './home.page.component';
 
-/**Portfolio-erick - version 53.05 - index.pages  -
+/**Portfolio-erick - version 53.08 - index.pages  -
  * Features:
  * 
- *      --> Importing and exporting 'UpdatingPageComponent'
+ *      --> Importing and exporting 'HomePageComponent'
  * 
- * Notes: Next component to migrate will be HomePageComponent.
+ * Notes: subcomponents of Home will be checked.
 */
 
-export { UpdatingPageComponent }
+export { UpdatingPageComponent, HomePageComponent }
