@@ -1,12 +1,12 @@
-//import ProfileCard from './profile.card.component';
-//import { SocialComponent } from './index.components';
+import SocialComponent from './social.component';
 import { useState } from 'react';
 import styled from 'styled-components';
+import ProfileCard from './profile.card.component';
 
-/**Portfolio-erick - version 53.07 - Card component -
+/**Portfolio-erick - version 53.08 - Card component -
 * Features:
 
-    -→> Mgrating Card to Vite + React
+    -→> Importing and placing 'ProfileCard' and 'SocialComponent' 
 
 * Notes: The next components to migrate will be 
 *  ProfileCard, and SocialComponent, by now 
@@ -103,10 +103,10 @@ const Card = () => {
     <StyledWrapper>
       <CardWrapper>
         <StyleProfileWrapper onClick={SocialHandler}>
-          {/*<ProfileCard />*/}      
+           <ProfileCard />     
         </StyleProfileWrapper>
           <StyleBneonCard />
-        {/**<SocialComponent  isRevealed={isRevealed}/>*/}
+        <SocialComponent  isRevealed={isRevealed}/>
       </CardWrapper>
 
     </StyledWrapper>
