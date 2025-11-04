@@ -1,17 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 53.06 - HeaderTitle - Features:
+/**Portfolio-erick - version 53.08 - HeaderTitle - Features:
  * 
- *      --> Migration 'HeaderTitle' to Vite
+ *      --> Migrating 'HeaderTitleData' to Vite version
  * 
- * Notes: None of your current CSS or styled components 
- * are referencing or using the data-text attribute
+ * Notes: There is still pending to fix a css issue with
+ * the name postion
  */
-
-const BackText = styled.span`
-
-`
 
 const backgroundAnimation = keyframes`
   @keyframes {
@@ -26,7 +22,11 @@ const backgroundAnimation = keyframes`
     }
 `
 
-const FrontText = styled.span`
+export const BackText = styled.span`
+
+`
+
+export const FrontText = styled.span`
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +48,6 @@ const FrontText = styled.span`
       -webkit-text-stroke: 1px var(--ani-color);
       `}
       
-  
 `
 
 const HeaderTitleWrapper = styled.div`
@@ -56,7 +55,7 @@ const HeaderTitleWrapper = styled.div`
   }
 `;
 
-const ButtonTitle = styled.button`
+export const ButtonTitle = styled.button`
     position: relative;
     border: none;
     background: transparent;
@@ -77,12 +76,11 @@ const ButtonTitle = styled.button`
       border-bottom: 2px solid #03a9f4;
       -webkit-text-stroke: 1px var(--ani-color);
     }
-  `
+`
 
 const HeaderTitleData = '@erickdev';
 
 const HeaderTitle = () => {
-
   const [isTextFilled, setIsTextFilled] = useState(true)
   const headerRef = useRef(null);
 
