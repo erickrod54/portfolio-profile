@@ -3,13 +3,14 @@ import IconComponent from './icon.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 
-/**Portfolio-erick - version 53.10 - OuterCircleIcons -
+/**Portfolio-erick - version 53.11 - OuterCircleIcons -
 * Features:
 
-    --> Migrating 'OuterCircleIcons' to Vite  
+    --> Fxing outer icon circle size on 'ProfileItemInnerSpan'  
 
-* Notes: Is still necesary to fix some sizing and positioning in
-* the icons, they look like off
+* Notes: The size was fix in the 'ProfileItemInnerSpan' due 
+* to it's wrap on each icon with one change fix size for all
+* icons in the circle
 **/
 
 const ProfileItemBase = css`
@@ -37,8 +38,8 @@ const ProfileItemBase = css`
 const ProfileItemInnerSpan = styled.span`
   /* block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1 */
   display: block;
-  width: 40px; /* w-[40px] */
-  height: 40px; /* h-[40px] */
+  width: 30px; /* w-[40px] */
+  height: 30px; /* h-[40px] */
   transition: all 500ms; /* transition-all duration-500 */
   border-radius: 9999px; /* rounded-full */
   z-index: 2; /* z-[2] */
