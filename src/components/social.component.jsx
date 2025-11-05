@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DiscordIcon  from "./discord.icon.component";
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 53.10 - SocialComponent -
+/**Portfolio-erick - version 53.11 - SocialComponent -
 * Features:
 
-    --> Migrating  'SocialComponent' to Vite 
+    --> Reducing left margin at 'StyledSci' 
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -55,7 +55,7 @@ const StyledSci = styled.ul`
   align-items: center;
   gap: 8px;
   margin-top: 5px;
-  margin-left: 1.5rem;
+  margin-left: 0.4rem;
 
   @meadia (max-width:480px){
     margin-top:15px;
