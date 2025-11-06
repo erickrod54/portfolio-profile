@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 53.08 - HeaderTitle - Features:
+/**Portfolio-erick - version 53.12 - HeaderTitle - Features:
  * 
- *      --> Migrating 'HeaderTitleData' to Vite version
+ *      --> Adding grid-area to 'BackText' and 'FrontText'
  * 
- * Notes: There is still pending to fix a css issue with
- * the name postion
+ * Notes: Also adding styles to center from the parent 
+ * component
  */
 
 const backgroundAnimation = keyframes`
@@ -23,11 +23,12 @@ const backgroundAnimation = keyframes`
 `
 
 export const BackText = styled.span`
-
+  grid-area: 1 / 1;
 `
 
 export const FrontText = styled.span`
-    position: absolute;
+    grid-area: 1 / 1;
+
     top: 0;
     left: 0;
     width: 0%;
@@ -51,12 +52,16 @@ export const FrontText = styled.span`
 `
 
 const HeaderTitleWrapper = styled.div`
+  display:flex;
+  justify-content:center;
   padding-top: 4rem;
   }
 `;
 
 export const ButtonTitle = styled.button`
-    position: relative;
+    display:grid;
+    place-items:center;
+
     border: none;
     background: transparent;
     --stroke-color: #ffffff7c;
