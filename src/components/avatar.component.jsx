@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { profilePicture } from '../assets/index.assets';
 import { useDataContext } from "../context.data";
 
-/**Portfolio-erick - version 53.13 - AvatarPicture -
+/**Portfolio-erick - version 53.14 - AvatarPicture -
 * Features:
 
-    --> Destructuring 'profilePictureImg' from context
+    --> Clearing 'profilePicture' import
  
 * Notes: Migrating styled components
 **/
