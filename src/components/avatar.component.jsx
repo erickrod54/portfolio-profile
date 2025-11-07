@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { profilePicture } from '../assets/index.assets';
+import { useDataContext } from "../context.data";
 
-/**Portfolio-erick - version 53.09 - AvatarPicture -
+/**Portfolio-erick - version 53.13 - AvatarPicture -
 * Features:
 
-    --> Migrating 'AvatarPicture' to Vite version
+    --> Destructuring 'profilePictureImg' from context
  
 * Notes: Migrating styled components
 **/
@@ -67,10 +68,12 @@ const ProfileCardCenterButton = styled.button`
 
 const AvatarPicture = () => {
 
+  const { profilePictureImg } = useDataContext()
+
   return(
        <ProfileCardCenterButton>
          <ProfilePictureImg 
-             src={profilePicture} 
+             src={profilePictureImg} 
              alt="User Profile" 
          /> 
        </ProfileCardCenterButton>
