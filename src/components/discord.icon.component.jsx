@@ -1,9 +1,10 @@
+import { useIconsContext } from '../context.icons.data';
 import IconComponent from './icon.component';
 
-/**Portfolio-erick - version 53.08 - SocialComponent -
+/**Portfolio-erick - version 53.15 - SocialComponent -
 * Features:
 
-    --> Migrating 'SocialComponent' to Vite version
+    --> Destructuring 'DiscordIconData' from context
 
 * Notes: className has .svg class for this component
 *later will be refacotored
@@ -52,6 +53,8 @@ const DiscordIconData = [
 
 const DiscordIcon = ({ className }) => {
 
+  const { DiscordIconData } = useIconsContext()
+  
   const [,,,,{url: url_discord }] = social;
 
   return(
