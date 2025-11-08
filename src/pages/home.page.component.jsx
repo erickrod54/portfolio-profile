@@ -10,15 +10,15 @@
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
 import Card from '../components/card.component';
 import HeaderTitle from '../components/header.title.component';
-import { useDataContext } from '../context.data.jsx';
+import { useDataContext } from '../contexts/context.data';
 
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 53.13 - HomePageComponent -
+/**Portfolio-erick - version 53.17 - HomePageComponent -
  * Features:
  * 
- *      --> Implementing 'useDataContext' test    
+ *      --> Changing context imports     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
