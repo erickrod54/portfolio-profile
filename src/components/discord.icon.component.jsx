@@ -1,10 +1,10 @@
-import { useIconsContext } from '../context.icons.data';
+import { useIconsContext } from '../contexts/context.icons.data';
 import IconComponent from './icon.component';
 
-/**Portfolio-erick - version 53.16 - SocialComponent -
+/**Portfolio-erick - version 53.17 - SocialComponent -
 * Features:
 
-    --> Clearing local 'DiscordIconData'
+    --> Changing 'context' imoport
 
 * Notes: className has .svg class for this component
 *later will be refacotored
