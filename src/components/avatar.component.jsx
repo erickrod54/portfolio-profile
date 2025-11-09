@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { useDataContext } from "../context.data";
+import { useDataContext } from "../contexts/context.data";
 
-/**Portfolio-erick - version 53.14 - AvatarPicture -
+/**Portfolio-erick - version 53.17 - AvatarPicture -
 * Features:
 
-    --> Clearing 'profilePicture' import
+    --> Changing import directory
  
 * Notes: Migrating styled components
 **/
