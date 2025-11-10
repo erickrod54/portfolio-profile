@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
+import { useDataContext } from '../contexts/context.data';
 
-/**Portfolio-erick - version 53.12 - HeaderTitle - Features:
+/**Portfolio-erick - version 53.20 - HeaderTitle - Features:
  * 
- *      --> Adding grid-area to 'BackText' and 'FrontText'
+ *      --> Destructuring 'HeaderTitleData' from context
  * 
  * Notes: Also adding styles to center from the parent 
  * component
@@ -86,8 +87,11 @@ export const ButtonTitle = styled.button`
 const HeaderTitleData = '@erickdev';
 
 const HeaderTitle = () => {
+
   const [isTextFilled, setIsTextFilled] = useState(true)
   const headerRef = useRef(null);
+
+  const { HeaderTitleData } = useDataContext();
 
   useEffect(() => {
     const timer = setTimeout(() => {
