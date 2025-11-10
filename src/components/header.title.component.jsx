@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import { useDataContext } from '../contexts/context.data';
 
-/**Portfolio-erick - version 53.20 - HeaderTitle - Features:
+/**Portfolio-erick - version 54.00 - HeaderTitle - Features:
  * 
- *      --> Destructuring 'HeaderTitleData' from context
+ *      --> Clearing local 'HeaderTitleData'
  * 
  * Notes: Also adding styles to center from the parent 
  * component
@@ -83,8 +83,6 @@ export const ButtonTitle = styled.button`
       -webkit-text-stroke: 1px var(--ani-color);
     }
 `
-
-const HeaderTitleData = '@erickdev';
 
 const HeaderTitle = () => {
 
