@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { data_test, profilePictureImg, social } from "../data.static";
+import { data_test, HeaderTitleData, profilePictureImg, social } from "../data.static";
 
-/**Portfolio-erick - version 53.18 - context.data
+/**Portfolio-erick - version 53.20 - context.data
  *  - Features:
  *  
- *      --> Importing and providing 'social'.
+ *      --> Importing and providing 'HeaderTitleData'.
  * 
  * Notes: This context will provide static data for 
  * the components that need it 
@@ -20,6 +20,7 @@ export const DataContextProvider = ({ children }) => {
                 data_test,
                 profilePictureImg,
                 social,
+                HeaderTitleData,
                 }}>
             {children}
         </DataContext.Provider>
