@@ -1,10 +1,11 @@
+import { useDataContext } from '../contexts/context.data';
 import { useIconsContext } from '../contexts/context.icons.data';
 import IconComponent from './icon.component';
 
-/**Portfolio-erick - version 53.17 - SocialComponent -
+/**Portfolio-erick - version 53.18 - SocialComponent -
 * Features:
 
-    --> Changing 'context' imoport
+    --> Destructuring 'social' from context
 
 * Notes: className has .svg class for this component
 *later will be refacotored
@@ -40,7 +41,8 @@ const social = [
 
 const DiscordIcon = ({ className }) => {
 
-  const { DiscordIconData } = useIconsContext()
+  const { DiscordIconData } = useIconsContext();
+  const { social } = useDataContext();
   
   const [,,,,{url: url_discord }] = social;
 
