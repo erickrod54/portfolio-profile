@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { DiscordIconData } from "../data.icons";
+import { DiscordIconData, pythonData } from "../data.icons";
 
-/**Portfolio-erick - version 53.17 - IconsContext
+/**Portfolio-erick - version 54.01 - IconsContext
  *  - Features:
  *  
  *      --> Placing context in new directory.
@@ -18,7 +18,7 @@ export const IconsContextProvider = ({ children }) => {
         <IconsContext.Provider 
             value={{
                 DiscordIconData,
-
+                pythonData,    
                 }}>
             {children}
         </IconsContext.Provider>
