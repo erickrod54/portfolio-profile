@@ -2,11 +2,12 @@ import { faAngular, faGitAlt, faWordpress } from '@fortawesome/free-brands-svg-i
 import IconComponent from './icon.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
+import { useIconsContext } from '../contexts/context.icons.data';
 
-/**Portfolio-erick - version 53.11 - OuterCircleIcons -
+/**Portfolio-erick - version 54.01 - OuterCircleIcons -
 * Features:
 
-    --> Fxing outer icon circle size on 'ProfileItemInnerSpan'  
+    --> Destructuring 'pythonData' from context  
 
 * Notes: The size was fix in the 'ProfileItemInnerSpan' due 
 * to it's wrap on each icon with one change fix size for all
@@ -213,6 +214,8 @@ const pythonData = [
 ];
 
 const OuterCircleIcons = () => {
+
+  const { pythonData } = useIconsContext()
 
   return (
     <>
