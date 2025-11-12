@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 import { useIconsContext } from '../contexts/context.icons.data';
 
-/**Portfolio-erick - version 54.02 - OuterCircleIcons -
+/**Portfolio-erick - version 54.03 - OuterCircleIcons -
 * Features:
 
-    --> Clearing local 'pythonData'  
+    --> Destructuring 'amazonAwsData'  
 
 * Notes: The size was fix in the 'ProfileItemInnerSpan' due 
 * to it's wrap on each icon with one change fix size for all
@@ -198,7 +198,7 @@ const amazonAwsData = [
 
 const OuterCircleIcons = () => {
 
-  const { pythonData } = useIconsContext()
+  const { pythonData, amazonAwsData } = useIconsContext()
 
   return (
     <>
