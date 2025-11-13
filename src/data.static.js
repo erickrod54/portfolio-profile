@@ -1,15 +1,23 @@
 import { profilePicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 53.20 - data js
+/**Portfolio-erick - version 54.08 - data js
  *  - Features:
  * 
- *      --> Adding 'HeaderTitleData'.
+ *      --> Adding 'social_title'.
  * 
  * Notes: This is the first test for context static 
  * data
  */
 
 export const HeaderTitleData = '@erickdev';
+
+export const social_title = [
+  {
+    id:1,
+    name:'Erick Rodriguez',
+    career:'Software Engineer'
+  }
+]
 
 export const social = [
     {
