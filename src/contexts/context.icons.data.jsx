@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { amazonAwsData, DiscordIconData, js_SquareData, pythonData } from "../data.icons";
+import { amazonAwsData, DiscordIconData, js_SquareData, pythonData, react_GradientData } from "../data.icons";
 
-/**Portfolio-erick - version 54.05 - IconsContext
+/**Portfolio-erick - version 54.07 - IconsContext
  *  - Features:
  *  
- *      --> Importing and providing 'js_SquareData'.
+ *      --> Importing and providing 'react_GradientData'.
  * 
  * Notes: This context will provide static data for 
  * the components that need it 
@@ -21,6 +21,7 @@ export const IconsContextProvider = ({ children }) => {
                 pythonData,
                 amazonAwsData,
                 js_SquareData,
+                react_GradientData,
                 }}>
             {children}
         </IconsContext.Provider>
