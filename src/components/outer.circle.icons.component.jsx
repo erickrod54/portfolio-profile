@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 import { useIconsContext } from '../contexts/context.icons.data';
 
-/**Portfolio-erick - version 54.06 - OuterCircleIcons -
+/**Portfolio-erick - version 54.07 - OuterCircleIcons -
 * Features:
 
-    --> Clearing local 'js_SquareData'  
+    --> Destructuring 'react_GradientData' from context  
 
 * Notes: The size was fix in the 'ProfileItemInnerSpan' due 
 * to it's wrap on each icon with one change fix size for all
@@ -159,7 +159,7 @@ const react_GradientData = [
 
 const OuterCircleIcons = () => {
 
-  const { pythonData, amazonAwsData, js_SquareData } = useIconsContext()
+  const { pythonData, amazonAwsData, js_SquareData, react_GradientData } = useIconsContext()
 
   return (
     <>
