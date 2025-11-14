@@ -8,17 +8,15 @@
 //         SectionDivider,
 //         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
-import Card from '../components/card.component';
-import HeaderTitle from '../components/header.title.component';
+import { Card, HeaderTitle } from '../components/index.components';
 import { useDataContext } from '../contexts/context.data';
-
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 53.17 - HomePageComponent -
+/**Portfolio-erick - version 54.08 - HomePageComponent -
  * Features:
  * 
- *      --> Changing context imports     
+ *      --> Fixing components imports from index     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
