@@ -2,11 +2,12 @@ import { faLinkedinIn, faTwitch, faXTwitter } from "@fortawesome/free-brands-svg
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DiscordIcon  from "./discord.icon.component";
 import styled from 'styled-components';
+import { useDataContext } from "../contexts/context.data";
 
-/**Portfolio-erick - version 53.11 - SocialComponent -
+/**Portfolio-erick - version 54.08 - SocialComponent -
 * Features:
 
-    --> Reducing left margin at 'StyledSci' 
+    --> Destructuring 'social_title' from the context 
 
 * Notes: Temperorally the state of the recent created
 * 'is-revealed' is set to 'true' for testing porpouse
@@ -145,6 +146,8 @@ const social_title = [
 ]
 
 const SocialComponent = ({ isRevealed }) => {
+
+  const { social_title} = useDataContext()
 
     const [{ name, career:engineer }] = social_title;
     
