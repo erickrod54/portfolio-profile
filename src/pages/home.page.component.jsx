@@ -8,15 +8,15 @@
 //         SectionDivider,
 //         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
-import { Card, HeaderTitle } from '../components/index.components';
+import { Card, FloatCard, HeaderTitle } from '../components/index.components';
 import { useDataContext } from '../contexts/context.data';
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 54.08 - HomePageComponent -
+/**Portfolio-erick - version 54.09 - HomePageComponent -
  * Features:
  * 
- *      --> Fixing components imports from index     
+ *      --> Adding 'FloatCard'     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -34,6 +34,7 @@ const HomePageComponent = () => {
         <>
             <HeaderTitle />
             <Card />
+            <FloatCard />
             <p>{ data_test }</p>
         </>
     )
