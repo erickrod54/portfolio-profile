@@ -8,25 +8,28 @@
 //         SectionDivider,
 //         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
-import { Card, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
+import { Card, Collaborations, CollabTitle, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
 import { useDataContext } from '../contexts/context.data';
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 54.12 - HomePageComponent -
+/**Portfolio-erick - version 54.14 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'WizardCollabTitle'     
+ *      --> Adding 'CollabTitle'     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
 */
 
-const HomePageComponent = () => {
-    
-    //const { CollabTitleData } = usePortfolioContext();
+const CollabTitleData = [
+  { id: 1, title: 'Daily Contributions !' },
+  { id: 2, title: 'Lets Flow together! ' }
+];
 
-    //const [{ title: firstTtile }, { title:secondTitle }] = CollabTitleData;
+const HomePageComponent = () => {
+
+    const [{ title: firstTtile }, { title:secondTitle }] = CollabTitleData;
 
  const { data_test } = useDataContext()
     
@@ -37,6 +40,9 @@ const HomePageComponent = () => {
             <FloatCard />
             <SectionDivider />
             <WizardCollabTitle />
+            <Collaborations>
+                <CollabTitle title={firstTtile}/>
+            </Collaborations>
             <p>{ data_test }</p>
         </>
     )
