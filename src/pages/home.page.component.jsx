@@ -8,15 +8,15 @@
 //         SectionDivider,
 //         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
-import { Card, FloatCard, HeaderTitle, SectionDivider } from '../components/index.components';
+import { Card, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
 import { useDataContext } from '../contexts/context.data';
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 54.10 - HomePageComponent -
+/**Portfolio-erick - version 54.12 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'SectionDivider'     
+ *      --> Adding 'WizardCollabTitle'     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -36,6 +36,7 @@ const HomePageComponent = () => {
             <Card />
             <FloatCard />
             <SectionDivider />
+            <WizardCollabTitle />
             <p>{ data_test }</p>
         </>
     )
