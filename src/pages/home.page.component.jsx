@@ -8,15 +8,15 @@
 //         SectionDivider,
 //         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
-import { Card, Collaborations, CollabTitle, FloatCard, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
+import { Card, Collaborations, CollabTitle, FloatCard, GitChart, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
 import { useDataContext } from '../contexts/context.data';
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 54.14 - HomePageComponent -
+/**Portfolio-erick - version 54.15 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'CollabTitle'     
+ *      --> Adding 'GitChart'     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -41,7 +41,8 @@ const HomePageComponent = () => {
             <SectionDivider />
             <WizardCollabTitle />
             <Collaborations>
-                <CollabTitle title={firstTtile}/>
+                <CollabTitle title={firstTtile} />
+                <GitChart />
             </Collaborations>
             <p>{ data_test }</p>
         </>
