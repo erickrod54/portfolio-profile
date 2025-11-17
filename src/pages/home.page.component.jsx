@@ -13,10 +13,10 @@ import { useDataContext } from '../contexts/context.data';
 
 //import { usePortfolioContext } from "../context";
 
-/**Portfolio-erick - version 54.15 - HomePageComponent -
+/**Portfolio-erick - version 54.16 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'GitChart'     
+ *      --> Rendering 'secondTitle'     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -43,6 +43,9 @@ const HomePageComponent = () => {
             <Collaborations>
                 <CollabTitle title={firstTtile} />
                 <GitChart />
+            </Collaborations>
+            <Collaborations>
+                <CollabTitle title={secondTitle}/>
             </Collaborations>
             <p>{ data_test }</p>
         </>
