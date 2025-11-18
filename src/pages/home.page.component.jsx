@@ -1,28 +1,16 @@
-//import { Card, Collaborations,
-//         CollabTitle,
-//         FloatCard,
-//         Footer,
-//         GitChart,
-//         GitFlowComponent,
-//         HeaderTitle,
-//         SectionDivider,
-//         WizardCollabTitle } from "../components/index.components";
 //import { AuthenticationButtons } from "../components/login.and.logout.components";
+import Footer from '../components/footer.component';
 import { Card,
          Collaborations,
          CollabTitle,
          FloatCard,
          GitChart,
          GitFlowComponent, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
-         
-import { useDataContext } from '../contexts/context.data';
 
-//import { usePortfolioContext } from "../context";
-
-/**Portfolio-erick - version 54.18 - HomePageComponent -
+/**Portfolio-erick - version 54.19 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'GitFlowComponent' to Vite version     
+ *      --> Adding 'Footer' to Vite version     
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -36,8 +24,6 @@ const CollabTitleData = [
 const HomePageComponent = () => {
 
     const [{ title: firstTtile }, { title:secondTitle }] = CollabTitleData;
-
- const { data_test } = useDataContext()
     
     return (
         <>
@@ -54,7 +40,8 @@ const HomePageComponent = () => {
                 <GitFlowComponent />
                 <CollabTitle title={secondTitle}/>
             </Collaborations>
-            <p>{ data_test }</p>
+            <SectionDivider />
+            <Footer />
         </>
     )
 }
