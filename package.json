@@ -19,6 +19,7 @@
     "lucide-react": "^0.555.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-helmet-async": "^2.0.5",
     "styled-components": "^6.1.19",
     "wouter": "^3.8.0"
   },
