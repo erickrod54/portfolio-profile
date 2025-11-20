@@ -9,11 +9,12 @@ import IconComponent from "./icon.component";
 import SectionDivider from "./section.divider.component";
 import WaterTitle from "./water.title.component";
 import WizardCollabTitle from "./wizard.collab.title.component";
+import PrimaryButton from './primary.button.component.jsx';
 
-/**Portfolio-erick - version 54.18 - index > components
+/**Portfolio-erick - version 54.20 - index > components
  *  - Features:
  * 
- *      --> Migrating 'GitFlowComponent' Vite version.
+ *      --> Migrating 'PrimaryButton' Vite version.
  * 
  * Notes: This component now is on legacy directory
  */
@@ -23,6 +24,7 @@ export { HeaderTitle,
          FloatCard,
          SectionDivider,
          GitChart,
+         PrimaryButton,
          IconComponent,
          GitFlowComponent,
          WaterTitle, WizardCollabTitle, Collaborations, CollabTitle }
