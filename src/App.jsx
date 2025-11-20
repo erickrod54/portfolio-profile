@@ -1,14 +1,16 @@
-import { UpdatingPageComponent } from './pages/index.page.components'
-import styled from 'styled-components'
+import { Route, Switch } from 'wouter';
+import { HomePageComponent, UpdatingPageComponent } from './pages/index.page.components';
+import styled from 'styled-components';
 
-/**Portfolio-erick - version 53.06 - Apps -
+/**Portfolio-erick - version 54.20 - Apps -
  * Features:
  * 
- *      --> Implementing 'ExperimentalUIWrapper'      
+ *      --> Implementing 'wouter' for routing      
  * 
- * Notes: This 'UpdatingPageComponent' will render while
- * the migration is being performed, this App js is from
- * the new vite tooling - Having React + JS
+ * Notes: At this version mapping routes simplified 
+ * the original code version, also added components
+ * at the RoutesData object to access and mount them
+ * when the route it's displayed
  */
 
 
@@ -34,11 +36,114 @@ const ExperimentalUIWrapper = styled.div`
     }
 `;
 
+const RoutesData = [
+  {
+    name:'home',
+    route: '/',
+    Component:HomePageComponent
+  },
+  {
+    name:'overview',
+    route:'/overview',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'pricing',
+    route:'/pricing',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'marketplace',
+    route:'/marketplace',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'features',
+    route:'/features',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'integrations',
+    route:'/integrations',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'about',
+    route:'/about',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'team',
+    route:'/team',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'blog',
+    route:'/blog',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'careers',
+    route:'/careers',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'privacy',
+    route:'/privacy',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'help',
+    route:'/help',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'twitter',
+    route:'/twitter',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'linkedin',
+    route:'/linkedin',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'terms',
+    route:'/terms',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'dashboard',
+    route:'/dashboard',
+    Component:UpdatingPageComponent
+  },
+  {
+    name:'callback',
+    route:'/callback',
+    Component:UpdatingPageComponent
+  }
+]
+
+
 function App() {
 
   return (
     <ExperimentalUIWrapper>
-      <UpdatingPageComponent />
+      <Switch>
+        {RoutesData.map((routeData) => {
+
+          const { name, route, Component } = routeData;
+
+          return (
+            <Route
+              key={name}
+              path={route}
+            >
+              <Component />
+            </Route>
+          )
+        })}
+      </Switch>
     </ExperimentalUIWrapper>
   )
 }
