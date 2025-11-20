@@ -1,10 +1,11 @@
 import styled, { css, keyframes } from "styled-components";
-//import { useLocation } from "wouter";
+import { useLocation } from "wouter";
+import { PrimaryButton } from "../components/index.components";
 
-/**Portfolio-erick - version 53.04 - UpdatingPageComponent -
+/**Portfolio-erick - version 54.20 - UpdatingPageComponent -
  * Features:
  * 
- *      --> First 'UpdatingPageComponent' migrated to Vite      
+ *      --> Restoring 'UpdatingPageComponent' at original version      
  * 
  * Notes: Vite will keep the front end of my portfolio,
  * UpdatingPageComponent will render while migration  
@@ -111,16 +112,19 @@ const UpdatingData = [
 
 const UpdatingPageComponent = () => {
 
-  //const [ currentPath ] = useLocation();
+const [ currentPath ] = useLocation();
 
-  const [ { message: updating }, { message: version } ] = UpdatingData;
+  const [ { message: updating } ] = UpdatingData;
 
   return (
     <UpdatingPageWrapper>
+      <AbsoluteButtonWrapper>
+        <PrimaryButton />
+      </AbsoluteButtonWrapper>
       <WorkInProgressTitle>
           {updating} on 
         <StyledPath>
-          {version}
+          {currentPath}
         </StyledPath>
         </WorkInProgressTitle> 
     </UpdatingPageWrapper>
