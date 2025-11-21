@@ -10,11 +10,12 @@ import SectionDivider from "./section.divider.component";
 import WaterTitle from "./water.title.component";
 import WizardCollabTitle from "./wizard.collab.title.component";
 import PrimaryButton from './primary.button.component.jsx';
+import SecondaryButton from "./secondary.button.jsx";
 
-/**Portfolio-erick - version 54.20 - index > components
+/**Portfolio-erick - version 55.01 - index > components
  *  - Features:
  * 
- *      --> Migrating 'PrimaryButton' Vite version.
+ *      --> Importing and exporting 'SecondaryButton' 
  * 
  * Notes: This component now is on legacy directory
  */
@@ -27,5 +28,6 @@ export { HeaderTitle,
          PrimaryButton,
          IconComponent,
          GitFlowComponent,
+         SecondaryButton,
          WaterTitle, WizardCollabTitle, Collaborations, CollabTitle }
 
