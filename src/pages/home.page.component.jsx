@@ -7,10 +7,12 @@ import { Card,
          GitChart,
          GitFlowComponent, HeaderTitle, SectionDivider, WizardCollabTitle } from '../components/index.components';
 
-/**Portfolio-erick - version 54.19 - HomePageComponent -
+import { AuthenticationButtons } from '../components/login.and.logout.components';
+
+/**Portfolio-erick - version 55.01 - HomePageComponent -
  * Features:
  * 
- *      --> Adding 'Footer' to Vite version     
+ *      --> Adding 'AuthenticationButtons' to Vite version
  * 
  * Notes: All the imports commented are sub components of 
  * HomePageComponent
@@ -27,6 +29,7 @@ const HomePageComponent = () => {
     
     return (
         <>
+            <AuthenticationButtons />
             <HeaderTitle />
             <Card />
             <FloatCard />
