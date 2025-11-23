@@ -9,6 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "20" 
+  },
+  
   "dependencies": {
     "@auth0/auth0-react": "^2.9.0",
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
