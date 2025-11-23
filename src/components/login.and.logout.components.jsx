@@ -1,10 +1,10 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import SecondaryButton from './secondary.button';
+import {SecondaryButton} from './index.components.js';
 
-/**Portfolio-erick - version 55.01 - AuthenticationButtons -
+/**Portfolio-erick - version 55.02 - AuthenticationButtons -
 * Features:
 
-    --> Building 'AuthenticationButtons' Vite version
+    --> Implementing 'SecondaryButton' 
 
 * Notes: Migrating styled components
 **/
@@ -12,7 +12,9 @@ import SecondaryButton from './secondary.button';
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
   return (
-    <SecondaryButton secondary_text={'Log in'} onClick={() => loginWithRedirect()} />
+    <SecondaryButton
+      secondary_text='Log in'
+      onClick={() => loginWithRedirect()} />
   );
 };
 
@@ -20,7 +22,9 @@ const LoginButton = () => {
 const LogoutButton = () => {
   const { logout } = useAuth0();
   return (
-    <SecondaryButton secondary_text={'Log Out'} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} />
+    <SecondaryButton
+      secondary_text='Log out'
+      onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} />
   );
 };
 
@@ -28,7 +32,7 @@ export const AuthenticationButtons = () => {
     const { isAuthenticated, isLoading } = useAuth0();
 
     if (isLoading) {
-        return <SecondaryButton secondary_text={'.Loading'}/>;
+        return <div>Loading...</div>;
     }
 
     // Display the appropriate button based on authentication status
