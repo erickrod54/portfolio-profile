@@ -1,16 +1,21 @@
-import { Route, Switch } from 'wouter';
-import { HomePageComponent, UpdatingPageComponent } from './pages/index.page.components';
+import { Redirect, Route, Switch } from 'wouter';
+import { DashboardComponent, HomePageComponent, UpdatingPageComponent } from './pages/index.page.components';
 import styled from 'styled-components';
+import { useAuth0 } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 54.20 - Apps -
+/**Portfolio-erick - version 55.02 - Apps -
  * Features:
  * 
- *      --> Implementing 'wouter' for routing      
+ *      --> Implementing 'Auth' flow      
  * 
- * Notes: At this version mapping routes simplified 
- * the original code version, also added components
- * at the RoutesData object to access and mount them
- * when the route it's displayed
+ * Notes: This flow has the following parts:
+ * 
+ *      1.- ProtectedDashboard
+ * 
+ *      2.- Auth0CallbackHandler
+ * 
+ * and the routes for this components and 
+ * the rest become 'genericRoutes'
  */
 
 
@@ -124,13 +129,49 @@ const RoutesData = [
   }
 ]
 
+const home_route = RoutesData.find(r => r.name === 'home').route;
+const dashboard_route = RoutesData.find(r => r.name === 'dashboard').route;
+const callback_route = RoutesData.find(r => r.name === 'callback').route;
+
+const ProtectedDashboard = () => {
+  const { isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <h2>Loading authentication state ...</h2>
+  }
+
+  if (!isAuthenticated) {
+    return <Redirect to={home_route}/>
+  }
+
+  return <DashboardComponent />
+}
+
+const Auth0CallbackHandler = () => {
+  const { isLoading:authLoading, isAuthenticated } = useAuth0();
+
+  if (authLoading) return <h2>Procesing Loading</h2>;
+
+  return isAuthenticated ? <Redirect to={dashboard_route} /> : <Redirect to={home_route}/>
+}
 
 function App() {
+
+  const genericRoutes = RoutesData.filter( r => 
+    r.route !== dashboard_route && r.route !== callback_route
+  );  
 
   return (
     <ExperimentalUIWrapper>
       <Switch>
-        {RoutesData.map((routeData) => {
+        <Route path={callback_route}>
+          <Auth0CallbackHandler />
+        </Route>
+
+        <Route path={dashboard_route}>
+            <ProtectedDashboard />
+        </Route>
+        {genericRoutes.map((routeData) => {
 
           const { name, route, Component } = routeData;
 
