@@ -1,0 +1,10 @@
+[build]
+  # Your existing correct publish directory
+  publish = "build"
+  # Your existing correct build command
+  command = "npm install --legacy-peer-deps && npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
