@@ -5,10 +5,10 @@ import PrimaryButton from "../components/primary.button.component";
 import WaterTitle from "../components/water.title.component";
 import SectionDivider from "../components/section.divider.component";
 
-/**Portfolio-erick - version 55.08 - FooterAllPages -
+/**Portfolio-erick - version 55.11 - FooterAllPages -
 * Features:
 
-    --> Building 'FooterAllPages'.    
+    --> Changing 'customMargin'.    
 
 * Notes: These component will manage the pages 
 * that will be displayed at Footer sharing a 
@@ -79,7 +79,7 @@ const FooterAllPages = ({children}) => {
         <WaterTitle title={current_location} customSize={'65px'}/>
         <PlaceholderDiv />
       </TopBarWrapper>
-      <SectionDivider customWidth={'65%'} customMargin={ '120px'} />
+      <SectionDivider customWidth={'65%'} customMargin={ '200px'} />
       {children}
     </FooterAllPagesWrapper>
   )
