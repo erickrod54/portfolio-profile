@@ -1,14 +1,14 @@
 import { Redirect, Route, Switch } from 'wouter';
-import { DashboardComponent, HomePageComponent, OverviewPage, UpdatingPageComponent } from './pages/index.page.components';
+import { AboutPage, DashboardComponent, HomePageComponent, OverviewPage, UpdatingPageComponent } from './pages/index.page.components';
 import styled from 'styled-components';
 import { useAuth0 } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 55.09 - Apps -
+/**Portfolio-erick - version 55.10 - Apps -
  * Features:
  * 
- *      --> Implementing 'OverviewPage'       
+ *      --> Implementing 'AboutPage'       
  * 
- * Notes: 'OverviewPage' is set in data
+ * Notes: 'AboutPage' is set in data
  */
 
 
@@ -68,7 +68,7 @@ const RoutesData = [
   {
     name:'about',
     route:'/about',
-    Component:UpdatingPageComponent
+    Component:AboutPage
   },
   {
     name:'team',
