@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-/**Portfolio-erick - version 54.10 - styled.components - Features:
+/**Portfolio-erick - version 54.11 - styled.components - Features:
  * 
- *      --> Migrating  'SectionDivider' to Vite
+ *      --> Adding  'customWidth' to Vite
  * 
  * Notes: Minor changes in the width down to 75% for this
  * version
@@ -20,7 +20,7 @@ const DividerLine = styled.div`
 
 const DividerContainer = styled.div`
   /* This outer div acts as a container to control the divider's width */
-  width: 75%; /* Adjust this to control how long the line is */
+  width: ${ props => props.$customWidth || '75%'}; /* Adjust this to control how long the line is */
   margin: 50px auto; /* Centers the divider and provides vertical spacing */
   height: 1px; /* The container height is minimal, the line inside does the work */
   display: flex;
@@ -49,10 +49,11 @@ const DividerColors = [
 
 const [{ color: electric_cyan }] = DividerColors;
 
-const SectionDivider = ({ color = electric_cyan }) => {
+const SectionDivider = ({ color = electric_cyan, customWidth }) => {
   return (
     // Apply the box-shadow (glow) and height/alignment styles to the container
     <DividerContainer 
+      $customWidth={customWidth}
       style={{ boxShadow: `0 0 10px ${color}` }}
     >
       {/* Pass the color as a custom transient prop ($color) to the line */}
