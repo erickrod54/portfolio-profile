@@ -1,9 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 54.11 - WaterTitle  -
+/**Portfolio-erick - version 55.10 - WaterTitle  -
  * Features:
  * 
- *      --> Migrating 'WaterTitle' to Vite
+ *      --> Adding 'customSize' 
  * 
  * Notes: This data is to test WaterTitle, the data
  * will be relocated or provided to the component
@@ -34,7 +34,7 @@ const Loader = styled.div`
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
-    font-size: 38px;
+    font-size: ${ props => props.$customSize || '38px' };
     letter-spacing: 5px;
   }
 
@@ -63,11 +63,11 @@ const TitleSpan = styled.span`
 
 `
 
-const WaterTitle = ({ title }) => {
+const WaterTitle = ({ title, customSize }) => {
 
   return (
     <WaterTitleWrapper> 
-      <Loader>
+      <Loader $customSize={customSize}>
           <TitleSpan>{title}</TitleSpan>
           <AlterTitleSpan>{title}</AlterTitleSpan>
       </Loader>
