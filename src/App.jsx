@@ -1,21 +1,14 @@
 import { Redirect, Route, Switch } from 'wouter';
-import { DashboardComponent, HomePageComponent, UpdatingPageComponent } from './pages/index.page.components';
+import { DashboardComponent, HomePageComponent, OverviewPage, UpdatingPageComponent } from './pages/index.page.components';
 import styled from 'styled-components';
 import { useAuth0 } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 55.02 - Apps -
+/**Portfolio-erick - version 55.09 - Apps -
  * Features:
  * 
- *      --> Implementing 'Auth' flow      
+ *      --> Implementing 'OverviewPage'       
  * 
- * Notes: This flow has the following parts:
- * 
- *      1.- ProtectedDashboard
- * 
- *      2.- Auth0CallbackHandler
- * 
- * and the routes for this components and 
- * the rest become 'genericRoutes'
+ * Notes: 'OverviewPage' is set in data
  */
 
 
@@ -50,7 +43,7 @@ const RoutesData = [
   {
     name:'overview',
     route:'/overview',
-    Component:UpdatingPageComponent
+    Component:OverviewPage
   },
   {
     name:'pricing',
