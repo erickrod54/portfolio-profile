@@ -1,9 +1,9 @@
 import { profilePicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.12 - data js
+/**Portfolio-erick - version 55.13 - data js
  *  - Features:
  * 
- *      --> Adding 'OverviewData'.
+ *      --> Adding 'AboutPageData'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -92,3 +92,40 @@ export const OverviewData = [
   },
 ];
 
+export const AboutPageData = [
+  {
+    subtitle: 'The Coalition of the Code',
+    title: 'Our Mission',
+    text: 'We are not just a company; we are a coalition of builders, protectors, and visionaries dedicated to pioneering solutions where others only see obstacles. Our strength comes from unity, blending diverse expertise',
+    linkText: 'Read more',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+1+Image'
+  },
+  {
+    subtitle: 'The Warrior\'s',
+    title: 'Resolve',
+    text: 'Unwavering commitment to protect and defend your mission, ensuring stability and security.',
+    linkText: 'Learn more',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+2+Image'
+  },
+  {
+    subtitle: 'The Priest\'s',
+    title: 'Insight',
+    text: 'Dedicated study and deep learning to heal complexity and reveal clear, ethical pathways forward.',
+    linkText: 'See options',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
+  },
+  {
+    subtitle: 'The Druid\'s',
+    title: 'Balance',
+    text: 'Integrating systems seamlessly and sustainably, creating harmony between nature, technology, and function.',
+    linkText: 'See options',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
+  },
+    {
+    subtitle: 'The King\'s and Queen\'s',
+    title: 'Strategy',
+    text: 'High-level vision and decisive leadership to guide every project from concept to conquest.',
+    linkText: 'See options',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
+  }
+];
