@@ -2,21 +2,21 @@ import { useDataContext } from "../contexts/context.data";
 import FooterAllPages from "./footer.all.pages";
 import ThreeColumnLayout from "./three.layout.component";
 
-/**Portfolio-erick - version 55.09 - OverviewPage -
+/**Portfolio-erick - version 55.12 - OverviewPage -
  * Features:
  * 
- *      --> Testing 'DummyFeaturesData'      
+ *      --> Destructuring 'OverviewData' from context      
  * 
  * Notes: 'OverviewPage' 
  */
 
 const OverviewPage = () => {
 
-    const { DummyFeaturesData } = useDataContext();
+    const { OverviewData } = useDataContext();
 
     return (
         <FooterAllPages>
-            <ThreeColumnLayout data={DummyFeaturesData} />
+            <ThreeColumnLayout data={OverviewData} />
         </FooterAllPages>
     )
 }
