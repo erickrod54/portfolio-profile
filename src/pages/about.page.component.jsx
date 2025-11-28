@@ -2,10 +2,10 @@ import { useDataContext } from "../contexts/context.data";
 import FooterAllPages from "./footer.all.pages";
 import ThreeColumnLayout from "./three.layout.component";
 
-/**Portfolio-erick - version 55.10 - AboutPage -
+/**Portfolio-erick - version 55.13 - AboutPage -
  * Features:
  * 
- *      --> Testing 'DummyFeaturesData'      
+ *      --> Adding 'AboutPageData'      
  * 
  * Notes: This the AboutPage where it tells
  * our journey
@@ -13,11 +13,11 @@ import ThreeColumnLayout from "./three.layout.component";
 
 const AboutPage = () => {
 
-    const { DummyFeaturesData } = useDataContext()
+    const { AboutPageData } = useDataContext()
 
     return (
         <FooterAllPages>
-            <ThreeColumnLayout data={DummyFeaturesData}/>
+            <ThreeColumnLayout data={AboutPageData}/>
         </FooterAllPages>
     )
 }
