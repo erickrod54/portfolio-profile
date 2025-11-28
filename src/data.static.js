@@ -1,9 +1,9 @@
 import { profilePicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.09 - data js
+/**Portfolio-erick - version 55.12 - data js
  *  - Features:
  * 
- *      --> Adding 'DummyFeaturesData'.
+ *      --> Adding 'OverviewData'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -74,3 +74,21 @@ export const DummyFeaturesData = [
     imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
   }
 ];
+
+export const OverviewData = [
+  {
+    subtitle: 'Forging the Future:',
+    title: 'Ancient Power Meets AI Mastery',
+    text: 'The battles of tomorrow demand more than steel and spellcraft. They require a unified front where legendary strategy converges with cutting-edge Artificial Intelligence. We don\'t just build solutions—we forge future-proof mastery, augmented by the wisdom of ages and the precision of the code.',
+    linkText: 'Read more',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+1+Image'
+  },
+  {
+    subtitle: 'Begin Your Quest',
+    title: 'Gain Skills and Experience',
+    text: 'Take the Roadmap to step from Classic Software Engineering + IA to Engineers Generalist',
+    linkText: 'Learn more',
+    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+2+Image'
+  },
+];
+
