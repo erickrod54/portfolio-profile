@@ -1,9 +1,9 @@
-import { blackSmith, profilePicture } from "./assets/index.assets";
+import { blackSmith, profilePicture, roadMapPicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.14 - data js
+/**Portfolio-erick - version 55.15 - data js
  *  - Features:
  * 
- *      --> Adding 'blackSmith'.
+ *      --> Adding 'roadMapPicture'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -88,7 +88,7 @@ export const OverviewData = [
     title: 'Gain Skills and Experience',
     text: 'Take the Roadmap to step from Classic Software Engineering + IA to Engineers Generalist',
     linkText: 'Learn more',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+2+Image'
+    imageUrl: roadMapPicture
   },
 ];
 
