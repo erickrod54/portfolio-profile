@@ -1,9 +1,9 @@
-import { profilePicture } from "./assets/index.assets";
+import { blackSmith, profilePicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.13 - data js
+/**Portfolio-erick - version 55.14 - data js
  *  - Features:
  * 
- *      --> Adding 'AboutPageData'.
+ *      --> Adding 'blackSmith'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -81,7 +81,7 @@ export const OverviewData = [
     title: 'Ancient Power Meets AI Mastery',
     text: 'The battles of tomorrow demand more than steel and spellcraft. They require a unified front where legendary strategy converges with cutting-edge Artificial Intelligence. We don\'t just build solutions—we forge future-proof mastery, augmented by the wisdom of ages and the precision of the code.',
     linkText: 'Read more',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+1+Image'
+    imageUrl: blackSmith
   },
   {
     subtitle: 'Begin Your Quest',
