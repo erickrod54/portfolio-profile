@@ -1,9 +1,9 @@
-import { blackSmith, profilePicture, roadMapPicture } from "./assets/index.assets";
+import { blackSmith, profilePicture, questPicture, roadMapPicture } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.15 - data js
+/**Portfolio-erick - version 55.16 - data js
  *  - Features:
  * 
- *      --> Adding 'roadMapPicture'.
+ *      --> Adding 'QuestPicture'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -98,7 +98,7 @@ export const AboutPageData = [
     title: 'Our Mission',
     text: 'We are not just a company; we are a coalition of builders, protectors, and visionaries dedicated to pioneering solutions where others only see obstacles. Our strength comes from unity, blending diverse expertise',
     linkText: 'Read more',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+1+Image'
+    imageUrl: questPicture
   },
   {
     subtitle: 'The Warrior\'s',
