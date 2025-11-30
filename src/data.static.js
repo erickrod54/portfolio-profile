@@ -1,9 +1,9 @@
-import { blackSmith, profilePicture, questPicture, roadMapPicture } from "./assets/index.assets";
+import { blackSmith, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.16 - data js
+/**Portfolio-erick - version 55.17 - data js
  *  - Features:
  * 
- *      --> Adding 'QuestPicture'.
+ *      --> Adding 'warriorResolve'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -105,7 +105,7 @@ export const AboutPageData = [
     title: 'Resolve',
     text: 'Unwavering commitment to protect and defend your mission, ensuring stability and security.',
     linkText: 'Learn more',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+2+Image'
+    imageUrl: warriorResolve
   },
   {
     subtitle: 'The Priest\'s',
