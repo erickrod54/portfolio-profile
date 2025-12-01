@@ -1,9 +1,9 @@
-import { blackSmith, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
+import { blackSmith, priestInsight, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.17 - data js
+/**Portfolio-erick - version 55.18 - data js
  *  - Features:
  * 
- *      --> Adding 'warriorResolve'.
+ *      --> Adding 'priestInsight'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -112,7 +112,7 @@ export const AboutPageData = [
     title: 'Insight',
     text: 'Dedicated study and deep learning to heal complexity and reveal clear, ethical pathways forward.',
     linkText: 'See options',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
+    imageUrl: priestInsight
   },
   {
     subtitle: 'The Druid\'s',
