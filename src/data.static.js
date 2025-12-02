@@ -1,9 +1,9 @@
 import { blackSmith, druidBalance, kingAndqueen, priestInsight, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.20 - data js
+/**Portfolio-erick - version 56.00 - data js
  *  - Features:
  * 
- *      --> Adding 'kingAndqueen'.
+ *      --> Adding 'TEAM_MEMBERS'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -128,4 +128,34 @@ export const AboutPageData = [
     linkText: 'See options',
     imageUrl: kingAndqueen
   }
+];
+
+// src/data/teamData.js
+
+export const TEAM_MEMBERS = [
+    {
+        id: 1,
+        name: "Erick Rodríguez",
+        title: "Founder & Lead Developer",
+        image: "https://via.placeholder.com/300/353535/FFFFFF?text=Erick",
+        bio: "Focused on clean architecture and performance optimization.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        id: 2,
+        name: "Carolina Bautista",
+        title: "Design Lead",
+        image: "https://via.placeholder.com/300/353535/FFFFFF?text=Sofia",
+        bio: "Bridging the gap between beautiful aesthetics and intuitive UX.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+    {
+        id: 3,
+        name: "Fernando Elorza",
+        title: "Financial Strategist",
+        image: "https://via.placeholder.com/300/353535/FFFFFF?text=Marcus",
+        bio: "Driving growth through data-informed content and outreach.",
+        socials: { twitter: "#", linkedin: "#" }
+    },
+
 ];
