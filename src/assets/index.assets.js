@@ -5,13 +5,17 @@ import questPicture from './Magical_Assets/Quest_mission.jpeg'
 import warriorResolve from './Magical_Assets/Warrior.jpeg'
 import priestInsight from './Magical_Assets/Holy_priest.jpeg'
 import druidBalance from './Magical_Assets/Druid.jpeg';
+import kingAndqueen from './Magical_Assets/King_and_queen.jpeg';
 
-/**Portfolio-erick - version 55.19 - assets > index -
+/**Portfolio-erick - version 55.20 - assets > index -
 * Features:
 
-    -→> Importing and exporting 'druidBalance'
+    -→> Importing and exporting 'kingAndqueen'
 
 * Notes: importing and exporting profilePicture
 **/
 
-export { profilePicture, blackSmith, roadMapPicture, questPicture, warriorResolve, priestInsight, druidBalance }
+export { profilePicture,
+         blackSmith,
+         roadMapPicture,
+         questPicture, warriorResolve, priestInsight, druidBalance, kingAndqueen }
