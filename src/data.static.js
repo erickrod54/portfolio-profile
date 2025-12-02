@@ -1,9 +1,9 @@
-import { blackSmith, druidBalance, priestInsight, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
+import { blackSmith, druidBalance, kingAndqueen, priestInsight, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
 
-/**Portfolio-erick - version 55.19 - data js
+/**Portfolio-erick - version 55.20 - data js
  *  - Features:
  * 
- *      --> Adding 'druidBalance'.
+ *      --> Adding 'kingAndqueen'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -126,6 +126,6 @@ export const AboutPageData = [
     title: 'Strategy',
     text: 'High-level vision and decisive leadership to guide every project from concept to conquest.',
     linkText: 'See options',
-    imageUrl: 'https://via.placeholder.com/450x400/0A0A0A/ccc?text=Idea+3+Image'
+    imageUrl: kingAndqueen
   }
 ];
