@@ -4,12 +4,13 @@ import { data_test,
          profilePictureImg,
          OverviewData,
          AboutPageData,
-         social, social_title, DummyFeaturesData } from "../data.static";
+         social, social_title, DummyFeaturesData, 
+         TEAM_MEMBERS} from "../data.static";
 
-/**Portfolio-erick - version 55.13 - context.data
+/**Portfolio-erick - version 56.00 - context.data
  *  - Features:
  *  
- *      --> Importing and providing 'AboutPageData'.
+ *      --> Importing and providing 'TEAM_MEMBERS'.
  * 
  * Notes: This context will provide static data for 
  * the components that need it 
@@ -30,6 +31,7 @@ export const DataContextProvider = ({ children }) => {
                 DummyFeaturesData,
                 OverviewData,
                 AboutPageData,
+                TEAM_MEMBERS,
                 }}>
             {children}
         </DataContext.Provider>
