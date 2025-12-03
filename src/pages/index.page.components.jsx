@@ -5,11 +5,12 @@ import OverviewPage from "./overview.page.component.jsx";
 import AboutPage from "./about.page.component.jsx";
 import FooterAllPages from "./footer.all.pages.jsx";
 import TeamMemberCard from "../components/team.member.card.component.jsx";
+import TeamPage from "./team.page.component.jsx";
 
-/**Portfolio-erick - version 56.01 - index.pages  -
+/**Portfolio-erick - version 56.02 - index.pages  -
  * Features:
  * 
- *      --> Importing and exporting 'TeamMemberCard'
+ *      --> Importing and exporting 'TeamGrid'
  * 
  * Notes: subcomponents of Home will be checked.
 */
@@ -17,4 +18,5 @@ import TeamMemberCard from "../components/team.member.card.component.jsx";
 export { DashboardComponent,
          UpdatingPageComponent,
          HomePageComponent,
+         TeamPage,
          OverviewPage, AboutPage, FooterAllPages, TeamMemberCard }
