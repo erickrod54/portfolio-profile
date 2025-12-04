@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import TeamMemberCard from './team.member.card.component';
+import { TeamMemberCard } from './index.components';
 
-/**Portfolio-erick - version 56.02 - TeamGrid - Features:
+/**Portfolio-erick - version 56.04 - TeamGrid - Features:
  * 
- *      --> Building 'TeamGrid'
+ *      --> Fixing 'TeamMemberCard' import
  * 
  * Notes: This component receives 'children' components
  */
