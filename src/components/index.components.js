@@ -11,11 +11,12 @@ import WaterTitle from "./water.title.component";
 import WizardCollabTitle from "./wizard.collab.title.component";
 import PrimaryButton from './primary.button.component.jsx';
 import SecondaryButton from "./secondary.button.jsx";
+import TeamGrid from "./team.grid.component.jsx";
 
-/**Portfolio-erick - version 55.01 - index > components
+/**Portfolio-erick - version 56.03 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting 'SecondaryButton' 
+ *      --> Importing and exporting 'TeamGrid' 
  * 
  * Notes: This component now is on legacy directory
  */
@@ -29,5 +30,6 @@ export { HeaderTitle,
          IconComponent,
          GitFlowComponent,
          SecondaryButton,
+         TeamGrid,
          WaterTitle, WizardCollabTitle, Collaborations, CollabTitle }
 
