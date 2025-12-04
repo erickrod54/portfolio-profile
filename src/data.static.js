@@ -1,9 +1,9 @@
 import { blackSmith, druidBalance, kingAndqueen, priestInsight, profilePicture, questPicture, roadMapPicture, warriorResolve } from "./assets/index.assets";
 
-/**Portfolio-erick - version 56.00 - data js
+/**Portfolio-erick - version 56.04 - data js
  *  - Features:
  * 
- *      --> Adding 'TEAM_MEMBERS'.
+ *      --> Adding 'ResumeData'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -159,3 +159,88 @@ export const TEAM_MEMBERS = [
     },
 
 ];
+
+export const ResumeData = {
+  "personal": {
+    "name": "Erick Rodriguez",
+    "title": "Full Stack Engineer / AI Engineer",
+    "email": "erickrod54@gmail.com",
+    "dm": "https://discord.gg/t8Ka7me4en",
+    "location": "Boynton Beach, FL",
+    "linkedin": "https://www.linkedin.com/in/erickrodriguezcardenas",
+    "github": "https://github.com/erickrod54",
+    "website": "https://erickrod54.dev"
+  },
+  "summary": "Full Stack Developer specializing in React, JavaScript, TypeScript, and scalable UI architecture, with growing backend experience in Node.js, Python, C#, and Docker-based environments.Strong background in building component-driven interfaces, integrating APIs, optimizing performance, and developing production-ready features in startup environments.Experienced working in Linux ecosystems, Raspberry Pi setups, cloud self-hosting, and containerized workflows.Recognized for leadership, mentoring, and delivering clean, maintainable, high-quality code.",
+  "skills": {
+    "languages": ["JavaScript (ES6+)", "TypeScript", "Python", "C#"],
+    "frameworks": ["React", "Node.js", "Next JS", "Vite"],
+    "databases": ["Supabase", "PostgreSQL", "Firebase"],
+    "tools": ["Git & Github workflow", "Vercel", "Auth0", "Netlify"],
+    "soft skills":["Leadership & mentoring", "Team collaboration", "Clear communication", "Technical documentation", "Problem-solving"]
+  },
+  "experience": [
+    {
+      "company": "Sport Excitement",
+      "title": "Front End Lead Developer → Full Stack Developer (Promoted)",
+      "location": "Queens, NY (Remote)",
+      "dates": "Aug 2023 – Present",
+      "achievements": [
+        "Lead front-end development while contributing to backend logic when needed.",
+        "Architect scalable UI systems, reusable components, and maintainable full-stack structures.",
+        "Implement API integrations and assist in client–server workflows.",
+        "Oversee code reviews, developer onboarding, and engineering best practices.",
+        "Work jointly with backend and design teams to deliver high-quality features.",
+        "Maintain Linux/Docker development environments."
+      ],
+      "stakeholder":"Angel G. Trujillo — +1 (347) 296-7289"
+    },
+    {
+      "company": "Sport Excitement",
+      "title": "Front End Developer",
+      "location": "Queens, NY (Remote)",
+      "dates": "Feb 2023 – Aug 2023",
+      "achievements": [
+        "Built modular UI components using React and TypeScript.",
+        "Implemented application state with Context API and custom hooks.",
+        "Improved UI performance, code structure, and developer experience.",
+        "Assisted in backend tasks involving API logic and data flow.",
+        "Contributed to architecture and early design system development.",
+      ],
+      "stakeholder":"Angel G. Trujillo — +1 (347) 296-7289"
+    },
+    {
+      "company": "CLO Solutions",
+      "title": "Front End Developer",
+      "location": "Florida (Remote)",
+      "dates": "Jul 2022 – Dec 2022",
+      "achievements": [
+        "Built reusable UI components and layouts for scalable products.",
+        "Implemented state management with Context API.",
+        "Ensured responsive, cross-platform front-end experiences.",
+        "Managed Git workflows, code reviews, and quality improvements.",
+      ]
+    },
+    {
+      "company": "Harley Davidson Motorcycles",
+      "title": "Front End Developer",
+      "location": "Medellín, Colombia",
+      "dates": "Jul 2016 – Jul 2017",
+      "achievements": [
+        "Homeland Heroes Foundation Project",
+        "Developed fundraising platform interfaces for veteran-focused foundation",
+        "Integrated Airtable for real-time event and donation tracking.",
+        "Optimized application performance and data-driven components",
+        "Developed clean dashboards and high-quality event interfaces.",
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UNEFA",
+      "degree": "Systems Engineer (Data Analysis Focus)",
+      "location": "San Cristóbal, Venezuela",
+      "dates": "2005–2010"
+    }
+  ]
+}
