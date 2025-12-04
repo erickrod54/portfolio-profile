@@ -12,11 +12,12 @@ import WizardCollabTitle from "./wizard.collab.title.component";
 import PrimaryButton from './primary.button.component.jsx';
 import SecondaryButton from "./secondary.button.jsx";
 import TeamGrid from "./team.grid.component.jsx";
+import TeamMemberCard from "./team.member.card.component.jsx";
 
-/**Portfolio-erick - version 56.03 - index > components
+/**Portfolio-erick - version 56.04 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting 'TeamGrid' 
+ *      --> Importing and exporting 'TeamMemberCard' 
  * 
  * Notes: This component now is on legacy directory
  */
@@ -31,5 +32,6 @@ export { HeaderTitle,
          GitFlowComponent,
          SecondaryButton,
          TeamGrid,
+         TeamMemberCard,
          WaterTitle, WizardCollabTitle, Collaborations, CollabTitle }
 
