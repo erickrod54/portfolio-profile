@@ -182,8 +182,8 @@ export const ResumeData = {
   "experience": [
     {
       "company": "Sport Excitement",
-      "title": "Front End Lead Developer → Full Stack Developer (Promoted)",
-      "location": "Queens, NY (Remote)",
+      "title": "Front End Lead Developer (Promoted)",
+      "location": "Queens, NY (Remote US)",
       "dates": "Aug 2023 – Present",
       "achievements": [
         "Lead front-end development while contributing to backend logic when needed.",
@@ -198,7 +198,7 @@ export const ResumeData = {
     {
       "company": "Sport Excitement",
       "title": "Front End Developer",
-      "location": "Queens, NY (Remote)",
+      "location": "Queens, NY (Remote US)",
       "dates": "Feb 2023 – Aug 2023",
       "achievements": [
         "Built modular UI components using React and TypeScript.",
@@ -212,7 +212,7 @@ export const ResumeData = {
     {
       "company": "CLO Solutions",
       "title": "Front End Developer",
-      "location": "Florida (Remote)",
+      "location": "Florida (Remote US)",
       "dates": "Jul 2022 – Dec 2022",
       "achievements": [
         "Built reusable UI components and layouts for scalable products.",
