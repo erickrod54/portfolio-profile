@@ -5,12 +5,13 @@ import { data_test,
          OverviewData,
          AboutPageData,
          social, social_title, DummyFeaturesData, 
-         TEAM_MEMBERS} from "../data.static";
+         TEAM_MEMBERS,
+         ResumeData} from "../data.static";
 
-/**Portfolio-erick - version 56.00 - context.data
+/**Portfolio-erick - version 56.04 - context.data
  *  - Features:
  *  
- *      --> Importing and providing 'TEAM_MEMBERS'.
+ *      --> Importing and providing 'ResumeData'.
  * 
  * Notes: This context will provide static data for 
  * the components that need it 
@@ -20,9 +21,12 @@ export const DataContext = React.createContext();
 
 export const DataContextProvider = ({ children }) => {
 
+    const context_data_test = 'from context data';
+
     return(
         <DataContext.Provider 
             value={{
+                context_data_test,
                 data_test,
                 profilePictureImg,
                 social,
@@ -32,6 +36,7 @@ export const DataContextProvider = ({ children }) => {
                 OverviewData,
                 AboutPageData,
                 TEAM_MEMBERS,
+                ResumeData
                 }}>
             {children}
         </DataContext.Provider>
