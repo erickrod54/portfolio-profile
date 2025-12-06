@@ -3,12 +3,14 @@ import { AboutPage, DashboardComponent, HomePageComponent, OverviewPage, TeamPag
 import styled from 'styled-components';
 import { useAuth0 } from '@auth0/auth0-react';
 
-/**Portfolio-erick - version 56.03 - Apps -
+/**Portfolio-erick - version 56.05 - Apps -
  * Features:
  * 
- *      --> Implementing 'TeamPage'       
+ *      --> Fixing responsiveness for Desktops in 
+ *          'ExperimentalUIWrapper'       
  * 
- * Notes: 'AboutPage' is set in data
+ * Notes: Still some adjustments to do in Collab
+ * sections
  */
 
 
@@ -25,7 +27,7 @@ const ExperimentalUIWrapper = styled.div`
     overflow-y: auto; 
 
     /* Media query for smaller mobile screens (e.g., height < 600px) */
-    @media (max-height: 600px) {
+    @media (max-height: 2000px) {
         /* Allow content to scroll if it doesn't fit in the viewport height */
         height: auto; 
         min-height: 100vh;
