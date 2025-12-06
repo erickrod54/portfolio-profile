@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import DiscordIcon from "./discord.icon.component";
+import { useDataContext } from "../contexts/context.data";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import ResumePDF from "./resume.component";
 
-/**Portfolio-erick - version 55.01 - FloatCard
+/**Portfolio-erick - version 56.04 - FloatCard
  *  - Features:
  * 
- *      --> Deleting 'Log in' button.
+ *      --> Implementing 'PDFDownloadLink'.
  * 
- * Notes: now this fucntionality will be use with
- * SecondaryButton
+ * Notes: Later on this will have it's own 
+ * component.
  */
 
 const IsoPro = styled.li`
@@ -141,10 +144,21 @@ const IsoShape = styled.span`
 
 const FloatCard = () => {
 
+  const { ResumeData } = useDataContext(); // 1. Fetch data here
+
+  const fileName = "Erick_Rodriguez_Resume.pdf";
+  
+    // Optional: Return null if data isn't ready yet, or use loading state.
+    if (!ResumeData) {
+        return null; 
+    }
+
     return(
         <FloatCardWrapper> 
         <FloatList>
         <FloatItemsList>
+            
+            {/* 1. DISCORD ICON (Normal Link/Component) */}
             <IsoPro>
             <IsoShape></IsoShape>
             <IsoShape></IsoShape>
@@ -152,20 +166,43 @@ const FloatCard = () => {
               <DiscordIcon className={'svg'}/>
             <TextIso>Discord</TextIso>
             </IsoPro>
+
+            {/* 2. RESUME ICON (PDFDownloadLink Integration) */}
             <IsoPro>
             <IsoShape></IsoShape>
             <IsoShape></IsoShape>
             <IsoShape></IsoShape>
-            <a href="/#">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 384 512"
-                  class='svg'
-                  >
-                  <path d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM175 441c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23 0-86.1c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 86.1-23-23c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64z"/></svg>
-            </a>
-            <TextIso>Resume</TextIso>
+            
+            {/* 💥 REPLACE THE OLD <a href="#"/> WITH PDFDownloadLink */}
+            <PDFDownloadLink
+                // Pass the generated PDF component and data
+                document={<ResumePDF data={ResumeData} />} 
+                fileName={fileName}
+            >
+                {/* PDFDownloadLink passes { loading } to its child function */}
+                {({ loading }) => (
+                    // The child of PDFDownloadLink is what gets rendered as the link/button
+                    <div style={{ pointerEvents: loading ? 'none' : 'auto' }}>
+                        
+                        {/* ⚠️ We need to ensure the SVG has the correct attributes */}
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 384 512"
+                            // If loading, you can change the color or add a spinner style here
+                            class='svg' 
+                            style={{ opacity: loading ? 0.5 : 1 }}
+                        >
+                          <path d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM175 441c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23 0-86.1c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 86.1-23-23c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64z"/></svg>
+                    </div>
+                )}
+            </PDFDownloadLink>
+
+            <TextIso>
+                {/* Optional: Show loading text on hover */}
+                Resume 
+            </TextIso>
             </IsoPro>
+            
         </FloatItemsList>
         </FloatList>
      </FloatCardWrapper>
