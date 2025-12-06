@@ -4,13 +4,13 @@ import { useDataContext } from "../contexts/context.data";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import ResumePDF from "./resume.component";
 
-/**Portfolio-erick - version 56.04 - FloatCard
+/**Portfolio-erick - version 56.05 - FloatCard
  *  - Features:
- * 
+ * SS
  *      --> Implementing 'PDFDownloadLink'.
  * 
  * Notes: Later on this will have it's own 
- * component.
+ * component. and the styles will be migrated
  */
 
 const IsoPro = styled.li`
