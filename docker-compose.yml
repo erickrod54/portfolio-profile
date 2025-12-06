@@ -1,0 +1,52 @@
+# Docker-comnpose file - ( this is where the entire back end stack is defined - API + Database )
+
+version: '3.8'
+
+services:
+  # ------------------------------------
+  # 1. PostgreSQL Database Service
+  # ------------------------------------
+  db:
+    image: postgres:14-alpine
+    container_name: resume_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      # Data persists outside the container
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:${PG_PORT}" 
+
+  # ------------------------------------
+  # 2. Node.js API Service
+  # ------------------------------------
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: resume_api
+    restart: always
+    environment:
+      DB_USER: ${POSTGRES_USER}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_NAME: ${POSTGRES_DB}
+      DB_HOST: db      # IMPORTANT: Use the service name 'db' for the host
+      DB_PORT: ${PG_PORT}
+      PORT: ${NODE_PORT}
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules # Avoid overwriting node_modules
+    ports:
+      - "8080:${NODE_PORT}"
+
+# Docker Volumes for persistent data
+volumes:
+  postgres_data:
+
