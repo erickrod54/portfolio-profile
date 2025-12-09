@@ -4,10 +4,10 @@ import { useDataContext } from "../contexts/context.data";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import ResumePDF from "./resume.component";
 
-/**Portfolio-erick - version 56.05 - FloatCard
+/**Portfolio-erick - version 56.04 - FloatCard
  *  - Features:
- * SS
- *      --> Implementing 'PDFDownloadLink'.
+ * 
+ *      --> Fixing 'FloatCardWrapper' width and heigth.
  * 
  * Notes: Later on this will have it's own 
  * component. and the styles will be migrated
@@ -127,8 +127,8 @@ const FloatCardWrapper = styled.div`
   transition: all 0.3s;
   /* if you find some problems change w - h : 30px*/
   padding: 1rem;
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
   color: rgb(255, 174, 0);
   fill: currentColor;
