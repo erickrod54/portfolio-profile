@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from 'styled-components';
 
-/**Portfolio-erick - version 54.15 - GitChart - Features:
+/**Portfolio-erick - version 56.05 - GitChart - Features:
  * 
- *      --> Migrating 'GitChart' to Vite 
+ *      --> Adjusting 'cardCount' to 15 
  * 
  * Notes: Changing size from 15 to 12 for this version
  */
@@ -54,7 +54,7 @@ const CommitCard = styled.div`
 
 const GitChart = () => {
 
-  const cardCount = 12;
+  const cardCount = 15;
   const cards = Array.from({ length: cardCount });
 
   return(
