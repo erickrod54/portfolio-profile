@@ -2,17 +2,18 @@ import { Redirect, Route, Switch } from 'wouter';
 import { AboutPage, DashboardComponent, HomePageComponent, OverviewPage, TeamPage, UpdatingPageComponent } from './pages/index.page.components';
 import styled from 'styled-components';
 import { useAuth0 } from '@auth0/auth0-react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-/**Portfolio-erick - version 56.05 - Apps -
+/**Portfolio-erick - version 56.07 - Apps -
  * Features:
  * 
- *      --> Fixing responsiveness for Desktops in 
- *          'ExperimentalUIWrapper'       
+ *      --> Testing 'QueryClient' and 'QueryProvider'       
  * 
- * Notes: Still some adjustments to do in Collab
- * sections
+ * Notes: This provider will be migrated later with the 
+ * rest of the providers
  */
 
+const queryClient = new QueryClient();
 
 const ExperimentalUIWrapper = styled.div`
     height: 100vh; 
@@ -157,6 +158,10 @@ function App() {
   );  
 
   return (
+
+    <QueryClientProvider client={queryClient}>
+
+
     <ExperimentalUIWrapper>
       <Switch>
         <Route path={callback_route}>
@@ -181,6 +186,8 @@ function App() {
         })}
       </Switch>
     </ExperimentalUIWrapper>
+    </QueryClientProvider>
+ 
   )
 }
 
