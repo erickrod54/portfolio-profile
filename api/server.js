@@ -1,13 +1,44 @@
+// api/server.js (CLEANED AND MERGED)
+
+/**Portfolio-erick - version 56.08 - server js -
+* Features:
+
+    -→> Resolving 'Mixed Content' issue 
+
+* Notes: This 'Mixed Content' issue is been address 
+* also in 'server js ' by adding 'allowedOrigins' and
+* 'https' for all origins, also bringing 'PORT' from
+*  secrets and the following:
+*
+*.        --> allowedOriging to https
+*         --> PORT from secrets
+*         --> also creating 'self signed certificates'
+*         --> and reading 'self signed certificates' by server js
+**/
+
 const express = require('express');
+const https = require('https');
+const fs = require('fs');
 const { Pool } = require('pg');
-const cors = require('cors');
+const path = require('path');
+const cors = require('cors'); // Ensure this is installed: npm install cors
 
-//api/server js is where the back end operations logic is defined
-//as get, put, post, delete ( CRUD operations )
+// --- Configuration ---
 
-// api/server.js (Add this near the top)
-// ----------------------------------------------------
+// 1. Define the port for the API server itself
+const PORT = process.env.PORT || 8080; 
+
+// 2. Define the exact origins (protocol + domain + port) that are allowed.
+// These MUST match your Vite development URL (https://localhost:3000, etc.)
+const allowedOrigins = [
+    'https://localhost:3000',      
+    'https://192.168.1.108:3000',
+    'https://0.0.0.0:3000',         
+];
+
+// 3. Initial Dummy Data (for seeding the database)
 const INITIAL_DUMMY_DATA = {
+    // ... your full dummy data object ...
     personal: { 
         name: "Erick Rodriguez", 
         title: "Senior Full Stack Developer", 
@@ -31,37 +62,60 @@ const INITIAL_DUMMY_DATA = {
     ]
 };
 
-const app = express();
+// 4. Initialize Express App
+const app = express(); 
 
-// --- Middleware ---
-app.use(cors()); // Enable CORS for your React frontend
-app.use(express.json()); // Enable parsing JSON bodies
-
-// --- Database Connection Pool ---
+// 5. Database Connection Pool
 const pool = new Pool({
   user: process.env.DB_USER,
-  host: process.env.DB_HOST, // 'db' from docker-compose.yml
+  host: process.env.DB_HOST,
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
 });
 
-// --- API Endpoints ---
+// --- Middleware ---
 
-// 1. GET /api/resume (TanStack Query fetch)
+// 6. CORS Middleware (Custom Check) - MUST be first
+app.use(cors({
+    origin: function (origin, callback) {
+        // Allows requests with no origin (e.g., Postman) OR allowed origins
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            // Rejects all other origins
+            callback(new Error(`CORS policy does not allow access from Origin ${origin}`), false);
+        }
+    },
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE", 
+    credentials: true,
+}));
+
+const sslOptions = {
+    key: fs.readFileSync(path.join(__dirname, 'server.key')),
+    cert: fs.readFileSync(path.join(__dirname, 'server.cert'))
+}
+
+// 7. Standard Express Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+// --- API Endpoints (CRUD) ---
+
+// All your existing, correct API endpoints (GET, PUT, POST, DELETE) go here:
+
+// 1. GET /api/resume 
 app.get('/api/resume', async (req, res) => {
     try {
         const client = await pool.connect();
-        // SELECT the single row of resume data
         const result = await client.query('SELECT data FROM resume_data LIMIT 1');
         client.release();
 
         if (result.rows.length === 0) {
-            // If the table is empty, return an empty/default structure
             return res.status(200).json({ personal: {}, summary: '', skills: {}, experience: [], education: [] });
         }
         
-        // Data is stored as JSONB in the database
         res.json(result.rows[0].data);
     } catch (err) {
         console.error('Error fetching resume data:', err.message);
@@ -69,25 +123,19 @@ app.get('/api/resume', async (req, res) => {
     }
 });
 
-
-// 2. PUT /api/resume (TanStack Query mutation)
+// 2. PUT /api/resume 
 app.put('/api/resume', async (req, res) => {
     const resumeData = req.body;
     try {
         const client = await pool.connect();
-        
-        // This query inserts the data or updates the existing row (Upsert logic).
-        // It relies on having a single row with a fixed ID (e.g., 1) or using a custom table structure.
         const query = `
             INSERT INTO resume_data (id, data) 
             VALUES (1, $1)
             ON CONFLICT (id) 
             DO UPDATE SET data = $1;
         `;
-        
         await client.query(query, [resumeData]);
         client.release();
-        
         res.json(resumeData);
     } catch (err) {
         console.error('Error saving resume data:', err.message);
@@ -95,34 +143,22 @@ app.put('/api/resume', async (req, res) => {
     }
 });
 
+// 3. POST /api/experience 
 app.post('/api/experience', async (req, res) => {
-    /**the request body should contain the new experience 
-     * object e.g title: 'New Job', company: "ABC" */
-
     const newExperience = req.body;
     let client;
-
     try {
         client = await pool.connect();
-
-        // fetch the current resume data from the data base
         const result = await client.query('SELECT data FROM resume_data WHERE id = 1');
-
         if (result.rows.length === 0) {
             client.release();
             return res.status(404).send('Resume data not found. Cannot add experience.');
         }
-
         const currentResumeData = result.rows[0].data;
-
-        //Modify the data: Add the new experience to the array
         if (!currentResumeData.experience) {
-            currentResumeData.experience = [] //ensure exists
+            currentResumeData.experience = []
         }
-        // Assign a temporary ID if necessary for the Front End, though using array index is simpler for now
         currentResumeData.experience.push(newExperience);
-
-        //save the entire object back into the db
         const updateQuery = `
             INSERT INTO resume_data (id,data)
             VALUES (1, $1)
@@ -130,13 +166,8 @@ app.post('/api/experience', async (req, res) => {
             DO UPDATE SET data = $1
             RETURNING data
         `;
-
         const updateResult = await client.query(updateQuery, [currentResumeData]);
-
         client.release();
-
-        //return the newly added item or the entire updated data
-
         res.status(201).json(updateResult.rows[0].data.experience.slice(-1)[0])
     } catch (err) {
         console.error('Error adding new experience:', err.message);
@@ -145,41 +176,27 @@ app.post('/api/experience', async (req, res) => {
     }
 })
 
+// 4. DELETE /api/experience/:index 
 app.delete('/api/experience/:index', async (req, res) => {
-    //get the index from the url and convert it to integer
     const indexToDelete = parseInt(req.params.index, 10);
     let client
-
     try {
-        // --- input validation
-        // Ensure the index is a non-negative number
         if (isNaN(indexToDelete) || indexToDelete < 0) {
             return res.status(400).send('Invalid index provided for deletion');
         }
-
         client = await pool.connect();
-
-        //fetch the resume data
         const result = await client.query('SELECT data FROM resume_data WHERE id = 1');
-
         if (result.rows.length === 0) {
             client.release();
             return res.status(404).send('Resume data not found. Cannnot delete experience')
         }
-
         const currentResumeData = result.rows[0].data;
         const experience = currentResumeData.experience || [];
-
-        //Modify the data: Check and delete the item
         if (indexToDelete >= experience.length) {
             client.release();
             return res.status(404).send('Experience index out of bounds');
         }
-
-        //Remove the item at the specified index
         experience.splice(indexToDelete, 1);
-
-        //save the entire updated resume object back
         const updateQuery = `
             INSERT INTO resume_data (id, data)
             VALUES (1, $1)
@@ -187,12 +204,8 @@ app.delete('/api/experience/:index', async (req, res) => {
             DO UPDATE SET data = $1
             RETURNING data
         `;
-
         await client.query(updateQuery, [currentResumeData]);
-
         client.release();
-
-        //Respond with 204 No Content for a sucessful deletion
         res.status(204).send();
     } catch (err) {
         console.error('Error deleting experience', err.message);
@@ -201,13 +214,9 @@ app.delete('/api/experience/:index', async (req, res) => {
     }
 })
 
-// --- Server Initialization ---
-const PORT = process.env.PORT || 8080;
 
-// Function to ensure the table exists on startup with retries
-// api/server.js (Updated setupDatabase function)
+// --- Server Initialization Logic ---
 
-// Function to ensure the table exists and contains initial data
 async function setupDatabase(retries = 5) {
     let client;
     while (retries > 0) {
@@ -226,12 +235,11 @@ async function setupDatabase(retries = 5) {
             await client.query(createTableQuery);
             console.log('Table resume_data ensured.');
 
-            // 2. Check if data exists
+            // 2. Check if data exists and seed if empty
             const checkDataQuery = 'SELECT COUNT(*) FROM resume_data';
             const { rows } = await client.query(checkDataQuery);
             
             if (rows[0].count === '0') {
-                // 3. SEED DATA if table is empty
                 console.log('Database is empty. Inserting initial dummy data...');
                 const seedQuery = `
                     INSERT INTO resume_data (id, data) 
@@ -262,10 +270,9 @@ async function setupDatabase(retries = 5) {
 }
 
 
-
-
+// Start the database setup and then the server
 setupDatabase().then(() => {
-    app.listen(PORT, () => {
-        console.log(`Node API listening on http://localhost:${PORT}`);
+    https.createServer(sslOptions,app).listen(PORT, () => {
+        console.log(`Secure Node API listening on https://localhost:${PORT}`);
     });
 });
