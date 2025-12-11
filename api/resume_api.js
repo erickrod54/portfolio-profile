@@ -1,6 +1,16 @@
 import axios from 'axios';
 
-const API_HOST = 'http://192.168.1.108:8080'
+/**Portfolio-erick - version 56.08 - resume api -
+* Features:
+
+    -→>  Resolving classic 'Mixed Content' issue
+
+* Notes: here in the API, the 'API_HOST' is being
+* switch from 'http' to 'https' so this back end 
+* layer will match in protocol with the front end 
+**/
+
+const API_HOST = 'https://192.168.1.108:8080'
 const API_BASE_URL = `${API_HOST}/api/resume`;
 
 //1.- Fetch function ( Query ) 
