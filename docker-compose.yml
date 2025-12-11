@@ -1,4 +1,5 @@
 # Docker-comnpose file - ( this is where the entire back end stack is defined - API + Database )
+# reversing back proxy to "${PG_PORT}:5432" version 56.08
 
 version: '3.8'
 
@@ -18,7 +19,7 @@ services:
       # Data persists outside the container
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:${PG_PORT}" 
+      - "${PG_PORT}:5432" 
 
   # ------------------------------------
   # 2. Node.js API Service
