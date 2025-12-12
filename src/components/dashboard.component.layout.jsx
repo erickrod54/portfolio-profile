@@ -4,20 +4,33 @@ import { Separator } from './separator.ui.dashboard.component';
 import { FileText, LayoutDashboard } from 'lucide-react';
 import ExperienceEditor from './experience.editor.component';
 import { Link } from 'wouter';
+import SummaryEditor from './summary.editor.component';
+import PersonalDetailsEditor from './personal.details.editor.component';
+import SkillsEditor from './skills.editor.component';
+import { useQuery } from '@tanstack/react-query';
+import { fetchResumeData } from '../../api/resume_api';
+import EducationEditor from './education.editor.component';
 
-/**Portfolio-erick - version 56.07 - DashboardLayout -
+/**Portfolio-erick - version 56.09 - DashboardLayout -
 * Features:
 
-    -→> Building 'DashboardLayout' 
+    -→> Adding all 'DashboardLayout' sub components 
 
-* Notes: This is a layout component it will have the side
-* bar, a main title, an a managing areav ( still working 
-* on resume, in order to complete the integration i'll
-* have to resolve a CORS - so i can fully perform CRUD
-* over the resume -) 
+* Notes: Later on these sub components will be add
+* it to the index
 **/
 
 export default function DashboardLayout() {
+
+    // 1. Fetch the data
+const { data: resume, isLoading, error } = useQuery({ 
+    queryKey: ['resumeData'], 
+    queryFn: fetchResumeData 
+});
+
+// 2. Handle the "Loading" state
+if (isLoading) return <div className="text-black p-10">Loading Resume Data...</div>;
+if (error) return <div className="text-red-500">Error loading data!</div>;
     return (
         // Main container that establishes the flex layout for sidebar and main content
         <div className='min-h-screen bg-gray-50 flex'> 
@@ -85,14 +98,41 @@ export default function DashboardLayout() {
                     {/**Column 2: The Resume Editor */}
                     <div className='col-span-1 md:col-span-2'>
                         <CardDashboard>
+                            {/* Card Content for the editor */}
+                            <CardDashboardHeader>
+                                {/* Added mb-4 for better spacing above the content */}
+                                <CardTitleHeader className='text-2xl border-b pb-4 mb-4 text-black'>Edit Summary</CardTitleHeader> 
+                            </CardDashboardHeader>
+                            <CardDashboardContent>
+                                <SummaryEditor initialSummary={resume?.summary || ""}/>
+                            </CardDashboardContent>
+                               <CardDashboardHeader>
+                                {/* Added mb-4 for better spacing above the content */}
+                                <CardTitleHeader className='text-2xl border-b pb-4 mb-4 text-black'>Edit Personal Info</CardTitleHeader> 
+                            </CardDashboardHeader>
+                            <CardDashboardContent>
+                                <PersonalDetailsEditor initialPersonal={resume?.personal || {} }/>
+                            </CardDashboardContent>
                             <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4 text-black'>Edit Work Experience</CardTitleHeader> 
                             </CardDashboardHeader>
-                            {/* Card Content for the editor */}
                             <CardDashboardContent> 
-                                {/**🎯 Integration Point: The TansStack Query component */}
-                                <ExperienceEditor /> 
+                                <ExperienceEditor experience={ resume?.experience || []} /> 
+                            </CardDashboardContent>
+                               <CardDashboardHeader>
+                                {/* Added mb-4 for better spacing above the content */}
+                                <CardTitleHeader className='text-2xl border-b pb-4 mb-4 text-black'>Add Skills</CardTitleHeader> 
+                            </CardDashboardHeader>
+                            <CardDashboardContent>
+                                <SkillsEditor initialSkills={resume?.skills || {} } />
+                            </CardDashboardContent>
+                               <CardDashboardHeader>
+                                {/* Added mb-4 for better spacing above the content */}
+                                <CardTitleHeader className='text-2xl border-b pb-4 mb-4 text-black'>Edit Education</CardTitleHeader> 
+                            </CardDashboardHeader>
+                            <CardDashboardContent>
+                                <EducationEditor education={resume?.education || [] }/>
                             </CardDashboardContent>
                         </CardDashboard>
                     </div>
