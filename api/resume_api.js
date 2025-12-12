@@ -1,13 +1,11 @@
 import axios from 'axios';
 
-/**Portfolio-erick - version 56.08 - resume api -
+/**Portfolio-erick - version 56.09 - resume api -
 * Features:
 
-    -→>  Resolving classic 'Mixed Content' issue
+    -→>  Building 'updateResume'
 
-* Notes: here in the API, the 'API_HOST' is being
-* switch from 'http' to 'https' so this back end 
-* layer will match in protocol with the front end 
+* Notes: sends the entire resume object to the DB 
 **/
 
 const API_HOST = 'https://192.168.1.108:8080'
@@ -39,5 +37,12 @@ export async function deleteExperience(indexToDelete) {
     //sends the index in the url path
     const response = await axios.delete(`${API_HOST}/api/experience/${indexToDelete}`);
     //The API returns 204 No Content
+    return response.data;
+}
+
+//5.- this sends the entire resume object to the DB
+export async function updateResume(updatedResume) {
+    const response = await axios.put(`${API_HOST}/api/resume`,
+        updatedResume);
     return response.data;
 }
