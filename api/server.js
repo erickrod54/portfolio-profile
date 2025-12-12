@@ -1,6 +1,6 @@
 // api/server.js (CLEANED AND MERGED)
 
-/**Portfolio-erick - version 56.08 - server js -
+/**Portfolio-erick - version 56.09 - server js -
 * Features:
 
     -→> Resolving 'Mixed Content' issue 
@@ -14,6 +14,14 @@
 *         --> PORT from secrets
 *         --> also creating 'self signed certificates'
 *         --> and reading 'self signed certificates' by server js
+*
+*
+* for the development enviroment access to:
+*
+*  'https://192.168.1.108:8080/api/resume'
+*
+* and proceed, so the browser get the cert
+* ( for now is self signed )
 **/
 
 const express = require('express');
