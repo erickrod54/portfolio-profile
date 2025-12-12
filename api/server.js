@@ -1,27 +1,18 @@
-// api/server.js (CLEANED AND MERGED)
-
 /**Portfolio-erick - version 56.09 - server js -
 * Features:
 
-    -→> Resolving 'Mixed Content' issue 
+    -→> Refactoring cors middleware to show explicit origin
+    
+    --> Adding '||' merge operator to '.put'
 
-* Notes: This 'Mixed Content' issue is been address 
-* also in 'server js ' by adding 'allowedOrigins' and
-* 'https' for all origins, also bringing 'PORT' from
-*  secrets and the following:
-*
-*.        --> allowedOriging to https
-*         --> PORT from secrets
-*         --> also creating 'self signed certificates'
-*         --> and reading 'self signed certificates' by server js
-*
-*
-* for the development enviroment access to:
-*
-*  'https://192.168.1.108:8080/api/resume'
-*
-* and proceed, so the browser get the cert
-* ( for now is self signed )
+    --> Removing trailing slash from 'external' dev adress
+
+* Notes: The merge operator merge new data ( added ) with
+* exisiting data ( so keep all the data instead of replacing 
+* it), the trailing slash is not necessary for the browser
+* cause the browser read it without it, ( in fact can cause
+* the blocking of the communication between the back end and 
+* front end)
 **/
 
 const express = require('express');
@@ -41,6 +32,7 @@ const PORT = process.env.PORT || 8080;
 const allowedOrigins = [
     'https://localhost:3000',      
     'https://192.168.1.108:3000',
+    'https://100.70.7.113:3000',
     'https://0.0.0.0:3000',         
 ];
 
@@ -87,17 +79,18 @@ const pool = new Pool({
 // 6. CORS Middleware (Custom Check) - MUST be first
 app.use(cors({
     origin: function (origin, callback) {
-        // Allows requests with no origin (e.g., Postman) OR allowed origins
+        console.log("Incoming request from origin:", origin);
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            // Rejects all other origins
+            console.error(`Blocked by CORS: ${origin}`); 
             callback(new Error(`CORS policy does not allow access from Origin ${origin}`), false);
         }
     },
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE", 
     credentials: true,
 }));
+
 
 const sslOptions = {
     key: fs.readFileSync(path.join(__dirname, 'server.key')),
@@ -133,23 +126,25 @@ app.get('/api/resume', async (req, res) => {
 
 // 2. PUT /api/resume 
 app.put('/api/resume', async (req, res) => {
-    const resumeData = req.body;
+    const incomingData = req.body;
     try {
         const client = await pool.connect();
+        // The || operator in JSONB merges the existing data with the new data
         const query = `
             INSERT INTO resume_data (id, data) 
             VALUES (1, $1)
             ON CONFLICT (id) 
-            DO UPDATE SET data = $1;
+            DO UPDATE SET data = resume_data.data || $1;
         `;
-        await client.query(query, [resumeData]);
+        await client.query(query, [incomingData]);
         client.release();
-        res.json(resumeData);
+        res.json(incomingData);
     } catch (err) {
         console.error('Error saving resume data:', err.message);
         res.status(500).send('Server error saving data.');
     }
 });
+
 
 // 3. POST /api/experience 
 app.post('/api/experience', async (req, res) => {
