@@ -4,10 +4,10 @@ import { Redirect } from 'wouter';
 import { AuthenticationButtons } from '../components/login.and.logout.components';
 import DashboardLayout from '../components/dashboard.component.layout';
 
-/**Portfolio-erick - version 56.07 - Card component -
+/**Portfolio-erick - version 56.09 - DashboardComponent -
 * Features:
 
-    -→> Building 'DashboardComponent' 
+    -→> Adding 'DashboardLayout' 
 
 * Notes: The next components to migrate will be 
 *  ProfileCard, and SocialComponent, by now 
@@ -30,8 +30,8 @@ const DashboardComponent = () => {
     }
 
     return (
-        <div> 
-            <AuthenticationButtons /> 
+        <div>
+            <AuthenticationButtons />
             <DashboardLayout />
         </div>
     );
