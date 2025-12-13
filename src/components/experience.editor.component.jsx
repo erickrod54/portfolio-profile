@@ -1,100 +1,217 @@
-import React from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { fetchResumeData } from '../../api/resume_api';
-import { useAddExperience, useDeleteExperience } from '../hooks/use.experience.mutations';
+import { useMutation, useQueryClient } from "@tanstack/react-query"
+import React, { useState, useEffect } from "react" // Added useEffect
+import { updateResume } from "../../api/resume_api"
 
-/**Portfolio-erick - version 56.07 - Card component -
+/**Portfolio-erick - version 56.09 - ExperienceEditor -
 * Features:
 
-    -→> Building 'ExperienceEditor' 
+    -→> Refactoring 'ExperienceEditor' 
 
-* Notes: The 'ExperienceEditor' will be use perform
-* CRUD only over the 'experience' item, as this first 
-* step work successfully it will be extendibile and
-* and applied to the Whole resume
+* Notes: The refactor includes:
+*         
+*       -> granular CRUD operation ( over every esperience data )
+*       -> collapsable css ( improving user experience )
+*
+* is pending to implement the order of the job experience
+* by the most recent date
 **/
 
-const RESUME_QUERY_KEY = ['resumeData'];
+export default function ExperienceEditor({ experience }) {
+    const [expandedIndex, setExpandedIndex] = useState(0);
+    
+    // 1. Create a local state to hold "Draft" changes
+    const [localExperience, setLocalExperience] = useState(experience);
 
-export default function ExperienceEditor() {
-    //1.- fetch the data query using useQuery
-    const {
-        data: resume,
-        isLoading,
-        isError
-    } = useQuery({
-        queryKey: RESUME_QUERY_KEY,
-        queryFn: fetchResumeData
+    // 2. Sync local state whenever the "experience" prop changes (initial load or external updates)
+    useEffect(() => {
+        setLocalExperience(experience);
+    }, [experience]);
+
+    const queryClient = useQueryClient();
+    const mutation = useMutation({
+        mutationFn: updateResume,
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: ['resumeData'] });
+            alert("Changes saved successfully!"); // Optional feedback
+        }
     });
 
-    //2.- Initialize the mutations
-    const addMutation = useAddExperience();
-    const deleteMutation = useDeleteExperience();
-
-    if (isLoading) return <div className='text-black'>Loading resume data...</div>
-    if (isError) return <div className='text-black'>Error loading resume data</div>
-
-    //the expereince array from the data, defaulting to an empty array
-    const experience = resume?.experience || [];
-
-    // Handlers
-
-    const handleAddExperience = () => {
-        // Define the shape of the new experience item the user would input
-        const newJob = {
-            title: 'New Position (Temp)',
-            company: 'New Company Inc',
-            dates: 'Present',
-            location: 'Anytown, USA',
-            achievements: ["Describe a new task or achievement here"]
+    // This now sends the CURRENT local state to the database
+    const handleSave = () => mutation.mutate({ experience: localExperience });
+    
+    const addJob = () => {
+        const newJob = { 
+            company: "New Co", 
+            title: "Role", 
+            dates: "Present", 
+            location: "Remote", 
+            achievements: [""], 
+            stakeholder: "" 
         };
-        //Trigger the mutation to POST the new data
-        addMutation.mutate(newJob);
+        const newList = [newJob, ...localExperience];
+        setLocalExperience(newList); // Update local state
+        setExpandedIndex(0);
     };
 
-    const handleDeleteExperience = (index) => {
-        // Trigger the mutation to DELETE the item by index
-        deleteMutation.mutate(index)
+    const deleteJob = (index) => {
+        const newList = localExperience.filter((_, i) => i !== index);
+        setLocalExperience(newList);
+        // Important: We still trigger a save/mutation for deletions usually, 
+        // but for consistency with your request, you could also wait for manual save.
+        // Let's trigger mutation here so "Delete" is permanent.
+        mutation.mutate({ experience: newList });
+
+        if (index === expandedIndex) {
+            setExpandedIndex(Math.max(0, index - 1))
+        } else if (index < expandedIndex) {
+            setExpandedIndex(expandedIndex - 1)
+        }
     };
+
+    const toggleExpand = (index) => {
+        setExpandedIndex(prevIndex => (prevIndex === index ? -1 : index))
+    }
+
+    // 3. Update ONLY local state while typing
+    const updateLocalField = (index, field, value) => {
+        const newList = [...localExperience];
+        newList[index] = { ...newList[index], [field]: value };
+        setLocalExperience(newList);
+    };
+
+    const updateLocalAchievement = (jobIdx, achIdx, value) => {
+        const newList = [...localExperience];
+        const updatedJob = { ...newList[jobIdx] };
+        const updatedAch = [...updatedJob.achievements];
+        updatedAch[achIdx] = value;
+        updatedJob.achievements = updatedAch;
+        newList[jobIdx] = updatedJob;
+        setLocalExperience(newList);
+    };
+
+    const addLocalAchievement = (jobIdx) => {
+        const newList = [...localExperience];
+        const updatedJob = { ...newList[jobIdx] };
+        updatedJob.achievements = [...updatedJob.achievements, ""];
+        newList[jobIdx] = updatedJob;
+        setLocalExperience(newList);
+    };
+
+    if (!localExperience || !Array.isArray(localExperience)) {
+        return <div className="text-gray-500 p-4">Initializing experience data...</div>;
+    }
 
     return (
-        <div className='experience-editor text-black'>
-            <h2>🧳 Work Experience Editor</h2>
-            
-            {/**the Add Button */}
-            <button
-                className='text-white'
-                onClick={handleAddExperience}
-                disabled={addMutation.isPending}
-            >
-                {addMutation.isPending ? 'Adding' : '➕ Add New Job'}
-            </button>
+        <div className="space-y-6">
+            <div className="flex justify-between items-center border-b pb-4">
+                <h3 className="font-bold text-black text-2xl">💼 Work Experience</h3>
+                <button onClick={addJob} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
+                    + Add job
+                </button>
+            </div>
 
-            {/**List of current experience entries */}
-            {experience.map((job, index) => (
-                <div
-                    //We use the tempId (for optimistic uopdates) or the index key
-                    key={job.tempId || index}
-                    className='job-entry'
-                    style={{ border: '1px solid #ccc', padding: '10px', margin: '10px 0' }}
-                >
-                    <h3>{job.title} at {job.company}</h3>
-                    <p>Dates: {job.dates}</p>
+            {localExperience.map((job, i) => {
+                const isExpanded = expandedIndex === i;
+                return (
+                    <div key={i} className="border rounded-xl bg-white shadow-sm border-gray-200 overflow-hidden transition-all hover:shadow-md">
+                        <div 
+                            className={`flex justify-between items-center p-4 cursor-pointer transition-colors ${isExpanded ? 'bg-blue-50' : 'bg-gray-50 hover:bg-gray-100'}`}
+                            onClick={() => toggleExpand(i)}
+                        >
+                            <div className="flex items-center space-x-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 text-gray-500 transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                                <div>
+                                    <h4 className="font-bold text-lg text-gray-900">{job.company || "New Company"}</h4>
+                                    <p className="text-sm text-gray-600">{job.title} {job.dates ? `• ${job.dates}` : ''}</p>
+                                </div>
+                            </div>
+                            
+                            {/* ACTION BUTTONS GROUP */}
+                            <div className="flex items-center space-x-2">
+                                <button 
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleSave(); // Commits changes to DB
+                                    }} 
+                                    disabled={mutation.isPending}
+                                    className="text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded shadow-sm font-semibold transition-all z-10 disabled:bg-gray-400"
+                                >
+                                    {mutation.isPending ? "Saving..." : "Save"}
+                                </button>
+                                <button 
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        deleteJob(i);
+                                    }} 
+                                    className="text-sm text-red-500 hover:text-red-700 hover:bg-red-50 px-3 py-1 rounded border border-transparent hover:border-red-200 transition-all z-10"
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
 
-                    {/**The delete dates */}
-                    <button
-                        className='text-white'
-                        onClick={() => handleDeleteExperience(index)}
-                        disabled={deleteMutation.isPending}
-                    >
-                        {deleteMutation.isPending ? 'Deleting' : '🗑️ Delete Job'}
-                    </button>
-                </div>
-            ))}
+                        {/* CONTENT SECTION (Inputs) */}
+                        <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                            <div className="p-6 border-t border-gray-100">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Company</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                            value={job.company || ""} onChange={e => updateLocalField(i, 'company', e.target.value)} />
+                                    </div>
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Title</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                            value={job.title || ""} onChange={e => updateLocalField(i, 'title', e.target.value)} />
+                                    </div>
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Dates</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                            value={job.dates || ""} onChange={e => updateLocalField(i, 'dates', e.target.value)} />
+                                    </div>
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Location</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                            value={job.location || ""} onChange={e => updateLocalField(i, 'location', e.target.value)} />
+                                    </div>
+                                    <div className="space-y-1 md:col-span-2">
+                                        <label className="text-xs font-bold text-blue-600 uppercase tracking-wide">Stakeholder (Contact)</label>
+                                        <input className="w-full border-b-2 border-blue-200 p-2 text-black focus:border-blue-500 outline-none bg-blue-50/50 italic transition-colors" 
+                                            value={job.stakeholder || ""} onChange={e => updateLocalField(i, 'stakeholder', e.target.value)} />
+                                    </div>
+                                </div>
 
-            {/** Feedback Messages */}
-            {addMutation.isError && <p style={{ color: 'red' }}>🛑 Error adding the job please try again</p>}
-            {deleteMutation.isError && <p style={{ color: 'red' }}>🛑 Error deleting job. Please reload</p>}
+                                {/* Achievements Section */}
+                                <div className="mt-6 pt-4 border-t border-dashed border-gray-200">
+                                    <h4 className="text-sm font-bold text-gray-700 mb-3 flex items-center">
+                                        <span className="text-xl mr-2">🏆</span> Key Achievements
+                                    </h4>
+                                    <div className="space-y-3 pl-2">
+                                        {job.achievements?.map((ach, achIdx) => (
+                                            <div key={achIdx} className="flex items-start group relative">
+                                                <span className="text-blue-500 mr-2 mt-2">•</span>
+                                                <textarea 
+                                                    className="w-full border-2 border-gray-100 p-3 rounded-lg text-sm text-gray-700 focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none min-h-[80px] transition-all resize-y"
+                                                    value={ach || ""}
+                                                    onChange={e => updateLocalAchievement(i, achIdx, e.target.value)}
+                                                />
+                                            </div>
+                                        ))}
+                                        <button 
+                                            onClick={() => addLocalAchievement(i)} 
+                                            className="inline-flex items-center text-blue-600 text-xs font-bold hover:text-blue-800 hover:underline mt-2 transition-all"
+                                        >
+                                            + Add Achievement Bullet
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     );
 }
