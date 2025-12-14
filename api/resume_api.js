@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-/**Portfolio-erick - version 56.09 - resume api -
+/**Portfolio-erick - version 56.10 - resume api -
 * Features:
 
-    -→>  Building 'updateResume'
+    -→>  Updating 'API_HOST' to production
 
 * Notes: sends the entire resume object to the DB 
 **/
 
-const API_HOST = 'https://192.168.1.108:8080'
+const API_HOST = 'https://api.erickrod54.dev'
 const API_BASE_URL = `${API_HOST}/api/resume`;
 
 //1.- Fetch function ( Query ) 
