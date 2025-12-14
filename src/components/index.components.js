@@ -13,11 +13,12 @@ import PrimaryButton from './primary.button.component.jsx';
 import SecondaryButton from "./secondary.button.jsx";
 import TeamGrid from "./team.grid.component.jsx";
 import TeamMemberCard from "./team.member.card.component.jsx";
+import GithubIcon from "./github.icon.component.jsx";
 
-/**Portfolio-erick - version 56.04 - index > components
+/**Portfolio-erick - version 56.10 - index > components
  *  - Features:
  * 
- *      --> Importing and exporting 'TeamMemberCard' 
+ *      --> Importing and exporting 'GithubIcon' 
  * 
  * Notes: This component now is on legacy directory
  */
@@ -33,5 +34,6 @@ export { HeaderTitle,
          SecondaryButton,
          TeamGrid,
          TeamMemberCard,
+         GithubIcon,
          WaterTitle, WizardCollabTitle, Collaborations, CollabTitle }
 
