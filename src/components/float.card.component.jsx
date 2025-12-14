@@ -3,11 +3,12 @@ import DiscordIcon from "./discord.icon.component";
 import { useDataContext } from "../contexts/context.data";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import ResumePDF from "./resume.component";
+import { GithubIcon } from "./index.components";
 
-/**Portfolio-erick - version 56.04 - FloatCard
+/**Portfolio-erick - version 56.10 - FloatCard
  *  - Features:
  * 
- *      --> Fixing 'FloatCardWrapper' width and heigth.
+ *      --> Adding 'GithubIcon'.
  * 
  * Notes: Later on this will have it's own 
  * component. and the styles will be migrated
@@ -202,6 +203,16 @@ const FloatCard = () => {
                 Resume 
             </TextIso>
             </IsoPro>
+            
+            {/* 1. GITHUB ICON (Normal Link/Component) */}
+            <IsoPro>
+            <IsoShape></IsoShape>
+            <IsoShape></IsoShape>
+            <IsoShape></IsoShape>
+              <GithubIcon className={'svg'}/>
+            <TextIso>Github</TextIso>
+            </IsoPro>
+
             
         </FloatItemsList>
         </FloatList>
