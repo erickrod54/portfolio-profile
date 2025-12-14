@@ -3,3 +3,7 @@ node_modules
 # env files
 .env
 .env.local
+
+# self signed certs
+api/server.cert
+api/server.key
