@@ -1,11 +1,7 @@
-/**Portfolio-erick - version 56.09 - server js -
+/**Portfolio-erick - version 56.10 - server js -
 * Features:
 
-    -→> Refactoring cors middleware to show explicit origin
-    
-    --> Adding '||' merge operator to '.put'
-
-    --> Removing trailing slash from 'external' dev adress
+    -→> Refactoring 'allowedOrigins'
 
 * Notes: The merge operator merge new data ( added ) with
 * exisiting data ( so keep all the data instead of replacing 
@@ -32,9 +28,10 @@ const PORT = process.env.PORT || 8080;
 const allowedOrigins = [
     'https://localhost:3000',      
     'https://192.168.1.108:3000',
-    'https://100.70.7.113:3000',
+    'https://100.70.7.113:3000', 
     'https://0.0.0.0:3000',         
 ];
+
 
 // 3. Initial Dummy Data (for seeding the database)
 const INITIAL_DUMMY_DATA = {
