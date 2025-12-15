@@ -10,15 +10,21 @@ import SkillsEditor from './skills.editor.component';
 import { useQuery } from '@tanstack/react-query';
 import { fetchResumeData } from '../../api/resume_api';
 import EducationEditor from './education.editor.component';
+import styled from 'styled-components';
 
-/**Portfolio-erick - version 56.09 - DashboardLayout -
+/**Portfolio-erick - version 56.10 - DashboardLayout -
 * Features:
 
-    -→> Adding all 'DashboardLayout' sub components 
+    -→> Refactoring 'DashboardLayout' starting with 'LoadingDiv' 
 
 * Notes: Later on these sub components will be add
 * it to the index
 **/
+
+const LoadingDiv = styled.div.attrs({
+    // Use Tailwind classes via className for the global structure
+    className: "text-white p-10 text-4xl font-extrabold"
+})``;
 
 export default function DashboardLayout() {
 
@@ -29,7 +35,7 @@ const { data: resume, isLoading, error } = useQuery({
 });
 
 // 2. Handle the "Loading" state
-if (isLoading) return <div className="text-black p-10">Loading Resume Data...</div>;
+if (isLoading) return <LoadingDiv>Loading Resume Data...</LoadingDiv>;
 if (error) return <div className="text-red-500">Error loading data!</div>;
     return (
         // Main container that establishes the flex layout for sidebar and main content
