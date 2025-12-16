@@ -10,22 +10,15 @@ import SkillsEditor from './skills.editor.component';
 import { useQuery } from '@tanstack/react-query';
 import { fetchResumeData } from '../../api/resume_api';
 import EducationEditor from './education.editor.component';
-import styled from 'styled-components';
 import { loadingVariants } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.11 - DashboardLayout -
+/**Portfolio-erick - version 56.12 - DashboardLayout -
 * Features:
 
-    -→> Refactoring using Variants shad/cn and Vercel mindset 
+    -→> Removing 'LoadingDiv', and using variants 
 
 * Notes: UI components scalable for the dashboard component
 **/
-
-const LoadingDiv = styled.div.attrs({
-    // Use Tailwind classes via className for the global structure
-    className: "text-white p-10 text-4xl font-extrabold"
-})``;
-
 
 export default function DashboardLayout() {
 
@@ -35,8 +28,9 @@ const { data: resume, isLoading, error } = useQuery({
     queryFn: fetchResumeData 
 });
 
-// 2. Handle the "Loading" state
-if (isLoading) return <LoadingDiv>Loading Resume Data...</LoadingDiv>;
+    // 2. Handle the "Loading" state
+    //as the first loading div has no variant will be the base styles
+    if (isLoading) return <div className={loadingVariants() }>Loading Resume Data...</div>;
     if (error) return <div className={ loadingVariants( { variant: 'error' })}>Error loading data!</div>;
     return (
         // Main container that establishes the flex layout for sidebar and main content
