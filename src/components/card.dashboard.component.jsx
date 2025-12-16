@@ -1,30 +1,45 @@
-import * as React from 'react';
+import { cva } from 'class-variance-authority';
 import { forwardRef } from 'react';
+import { cn } from '../utils/utils.index';
 
-/**Portfolio-erick - version 56.07 - CardDashboard -
+/**Portfolio-erick - version 56.12 - CardDashboard -
 * Features:
 
-    -→> Building lego pieces for 'DashboardLayout' 
+    -→> Refactoring card as UI + Thin component & building variants
 
-* Notes: This arquitectural design follows a headless UI
-* pattern that is scallable ( receive props and partial css)
-* and has the following:
-*
-*       1.- CardDashboard
-*       2.- CardDashboardHeader
-*       3.- CardTitleHeader
-*       4.- CardDashboardContent
-*
-* the append to 'displayName' is important to be exactly as it is
-* because can generate silent rendering ( does not render the content)
+* Notes: This is the first refactor as cva UI, building a 
+* variant and testing of light /dark team switch, pending to add
+* a switch button
 *
 **/
 
+const cardVariants = cva(
+    "rounded-lg border transition-colors",
+    {
+        variants: {
+            theme:{
+                light: "bg-white text-black border-gray-200",
+                dark:"bg-zinc-900 text-zinc-100 border-zinc-700",
+            },
+            variant: {
+                default: "",
+                danger:"border-red-500",
+            },
+        },
+        defaultVariants: {
+            theme: "light",
+            variant:"default"
+        }
+    }
+);
+
 //Card Container
-const CardDashboard = forwardRef(({ className, ...props }, ref) => (
+const CardDashboard = forwardRef(({ className, variant, theme, ...props }, ref) => (
     <div
         ref={ref}
-        className={`rounded-lg border bg-white text-card-foreground shadow-sm ${className}`}
+        className={cn(cardVariants({ variant, theme }),
+        className
+        )}
         {...props}
     />
 ))
