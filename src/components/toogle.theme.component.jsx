@@ -1,10 +1,10 @@
 import { cn } from '../utils/utils.index';
-import { switchVariants } from './ui-components/theme.toggle.variant.component';
+import { switchVariants } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.13 - ToggleButton -
+/**Portfolio-erick - version 56.14 - ToggleButton -
 * Features:
 
-    --> Building 'ToggleButton'
+    --> Fixing 'switchVariants' import
 
 * Notes: 'ToggleButton' has been built it using 
 * 'cva + react state + tailwind' and its a 
