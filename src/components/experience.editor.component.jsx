@@ -2,18 +2,12 @@ import { useMutation, useQueryClient } from "@tanstack/react-query"
 import React, { useState, useEffect } from "react" // Added useEffect
 import { updateResume } from "../../api/resume_api"
 
-/**Portfolio-erick - version 56.09 - ExperienceEditor -
+/**Portfolio-erick - version 56.14 - ExperienceEditor -
 * Features:
 
-    -→> Refactoring 'ExperienceEditor' 
+    -→> Removing 'Work Experience' title 
 
-* Notes: The refactor includes:
-*         
-*       -> granular CRUD operation ( over every esperience data )
-*       -> collapsable css ( improving user experience )
-*
-* is pending to implement the order of the job experience
-* by the most recent date
+* Notes: The next step will be removing hard coded text styles
 **/
 
 export default function ExperienceEditor({ experience }) {
@@ -104,7 +98,6 @@ export default function ExperienceEditor({ experience }) {
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <h3 className="font-bold text-black text-2xl">💼 Work Experience</h3>
                 <button onClick={addJob} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
                     + Add job
                 </button>
