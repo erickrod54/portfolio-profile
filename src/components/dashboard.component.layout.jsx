@@ -13,10 +13,10 @@ import EducationEditor from './education.editor.component';
 import { loadingVariants } from './ui-components/ui.index.components';
 import ToogleButton from '../components/toogle.theme.component'
 
-/**Portfolio-erick - version 56.14 - DashboardLayout -
+/**Portfolio-erick - version 56.15 - DashboardLayout -
 * Features:
 
-    -→> Testting 'ToggleButton' and removing hard coded styles ( text colors )
+    -→> Removing more hard coded styles ( text colors )
 
 * Notes: The test has been a sucess, next step apply styles globally
 **/
@@ -37,8 +37,8 @@ const { data: resume, isLoading, error } = useQuery({
     if (isLoading) return <div className={loadingVariants() }>Loading Resume Data...</div>;
     if (error) return <div className={ loadingVariants( { variant: 'error' })}>Error loading data!</div>;
     return (
-        // Main container that establishes the flex layout for sidebar and main content
-        <div className='min-h-screen bg-gray-50 flex text-black'> 
+        // Main container that establishes the flex layout for sidebar and main content - hard coded color been removed
+        <div className='min-h-screen bg-gray-50 flex'> 
             
             {/* 1. Sidebar (Fixed width, sticky) */}
             <aside className='w-64 bg-white border-r p-4 shadow-xl sticky top-0 h-screen'>
@@ -48,16 +48,17 @@ const { data: resume, isLoading, error } = useQuery({
                         setTheme(e.target.checked ? "dark" : "light")
                     }
                 />
-                <h1 className='text-2xl font-extrabold text-blue-700 mb-8'>Erick's Dashboard</h1>
+                {/**hard coded color been removed */}
+                <h1 className='text-2xl font-extrabold mb-8'>Erick's Dashboard</h1>
                 <nav className='space-y-2'>
-                    {/**Active Navigation Item (Added active styling) */}
-                    <Link href='/dashboard' className='flex items-center space-x-3 p-3 text-sm font-semibold text-white bg-blue-600 rounded-lg shadow-md transition duration-150'>
+                    {/**Active Navigation Item (Added active styling) - hard coded text color been removed */}
+                    <Link href='/dashboard' className='flex items-center space-x-3 p-3 text-sm font-semibold bg-blue-600 rounded-lg shadow-md transition duration-150'>
                         <LayoutDashboard className='w-5 h-5' />
-                        <span className='text-white'>Dashboard Overview</span>
+                        <span>Dashboard Overview</span>
                     </Link>
                     
-                    {/**Other navigation items */}
-                    <Link href='#' className='flex items-center space-x-3 p-3 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-lg'>
+                    {/**Other navigation items - hard coded text been removed*/}
+                    <Link href='#' className='flex items-center space-x-3 p-3 text-sm font-medium hover:bg-gray-100 rounded-lg'>
                         <FileText className='w-5 h-5' />
                         <span>Profile Settings</span>
                     </Link>
@@ -92,10 +93,10 @@ const { data: resume, isLoading, error } = useQuery({
                             </CardDashboardContent>
                         </CardDashboard>
 
-                        {/* Analytics Placeholder Card */}
+                        {/* Analytics Placeholder Card - hard coded text color removed */}
                         <CardDashboard theme={theme}>
                             <CardDashboardHeader>
-                                <CardTitleHeader className='text-xl text=black'>Analitycs Placeholder</CardTitleHeader>
+                                <CardTitleHeader className='text-xl'>Analitycs Placeholder</CardTitleHeader>
                             </CardDashboardHeader>
                             {/* Card Content must be here, NOT inside the header */}
                             <CardDashboardContent theme={theme}> 
