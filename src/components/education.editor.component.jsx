@@ -2,10 +2,10 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react"; // Removed useEffect
 import { updateResume } from "../../api/resume_api";
 
-/**Portfolio-erick - version 56.14 - EducationEditor -
+/**Portfolio-erick - version 56.15 - EducationEditor -
 * Features:
 
-    -→> Removing education subtitle 'EducationEditor' 
+    -→> Removing hard coded text color 'EducationEditor' 
 
 * Notes: The 'EducationEditor' will be use perform
 * CRUD granular over every education field
@@ -72,12 +72,13 @@ export default function EducationEditor({ education }) {
         setLocalEducation(newList);
     };
 
+    /**this can be placed in loadingMessages cva */
     if (!localEducation) return <div className="text-gray-400 p-4 text-center">Loading...</div>;
 
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <button onClick={addEducation} className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
+                <button onClick={addEducation} className="bg-black hover:bg-gray-800 px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
                     + Add Education
                 </button>
             </div>
@@ -91,18 +92,19 @@ export default function EducationEditor({ education }) {
                             onClick={() => setExpandedIndex(isExpanded ? -1 : i)}
                         >
                             <div className="flex items-center space-x-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 text-gray-400 transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                                 <div>
-                                    <h4 className="font-bold text-gray-900">{edu.school || "New University"}</h4>
-                                    <p className="text-xs text-gray-500 uppercase font-semibold tracking-wider">{edu.degree || "Degree"}</p>
+                                    <h4 className="font-bold">{edu.school || "New University"}</h4>
+                                    <p className="text-xs uppercase font-semibold tracking-wider">{edu.degree || "Degree"}</p>
                                 </div>
                             </div>
                             <div className="flex items-center space-x-2">
+                                {/**i keep the color hover color text to later make it a primitive ui - save as every button */}
                                 <button 
                                     onClick={(e) => { e.stopPropagation(); handleSave(i); }} 
-                                    className="text-xs bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded font-bold shadow-sm disabled:bg-gray-400"
+                                    className="text-xs bg-green-600 hover:bg-green-700 px-3 py-1.5 rounded font-bold shadow-sm disabled:bg-gray-400"
                                     disabled={mutation.isPending}
                                 >
                                     {mutation.isPending && isSavingIndex === i ? "Saving..." : "Save"}
@@ -116,23 +118,23 @@ export default function EducationEditor({ education }) {
                         <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isExpanded ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                             <div className="p-6 border-t border-gray-100 bg-white grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-1">
-                                    <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">University / School</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <label className="text-[10px] font-bold uppercase tracking-widest">University / School</label>
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
                                         value={edu.school || ""} onChange={e => updateLocalField(i, 'school', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
-                                    <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Degree / Major</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <label className="text-[10px] font-bold uppercase tracking-widest">Degree / Major</label>
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
                                         value={edu.degree || ""} onChange={e => updateLocalField(i, 'degree', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
-                                    <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Location</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <label className="text-[10px] font-bold uppercase tracking-widest">Location</label>
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
                                         value={edu.location || ""} onChange={e => updateLocalField(i, 'location', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
-                                    <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Dates</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <label className="text-[10px] font-bold uppercase tracking-widest">Dates</label>
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
                                         value={edu.dates || ""} onChange={e => updateLocalField(i, 'dates', e.target.value)} />
                                 </div>
                             </div>
