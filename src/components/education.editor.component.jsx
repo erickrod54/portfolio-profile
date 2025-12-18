@@ -2,10 +2,10 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react"; // Removed useEffect
 import { updateResume } from "../../api/resume_api";
 
-/**Portfolio-erick - version 56.09 - EducationEditor -
+/**Portfolio-erick - version 56.14 - EducationEditor -
 * Features:
 
-    -→> Building 'EducationEditor' 
+    -→> Removing education subtitle 'EducationEditor' 
 
 * Notes: The 'EducationEditor' will be use perform
 * CRUD granular over every education field
@@ -77,10 +77,6 @@ export default function EducationEditor({ education }) {
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <div className="flex items-center space-x-2">
-                    <span className="text-2xl">🎓</span>
-                    <h3 className="font-bold text-black text-2xl">Education</h3>
-                </div>
                 <button onClick={addEducation} className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
                     + Add Education
                 </button>
