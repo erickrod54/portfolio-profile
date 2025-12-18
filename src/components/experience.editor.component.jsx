@@ -92,13 +92,13 @@ export default function ExperienceEditor({ experience }) {
     };
 
     if (!localExperience || !Array.isArray(localExperience)) {
-        return <div className="text-gray-500 p-4">Initializing experience data...</div>;
+        return <div className="p-4">Initializing experience data...</div>;
     }
 
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <button onClick={addJob} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
+                <button onClick={addJob} className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
                     + Add job
                 </button>
             </div>
@@ -112,12 +112,13 @@ export default function ExperienceEditor({ experience }) {
                             onClick={() => toggleExpand(i)}
                         >
                             <div className="flex items-center space-x-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 text-gray-500 transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                {/**arrow to display dropdown */ }
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                                 <div>
-                                    <h4 className="font-bold text-lg text-gray-900">{job.company || "New Company"}</h4>
-                                    <p className="text-sm text-gray-600">{job.title} {job.dates ? `• ${job.dates}` : ''}</p>
+                                    <h4 className="font-bold text-lg">{job.company || "New Company"}</h4>
+                                    <p className="text-sm">{job.title} {job.dates ? `• ${job.dates}` : ''}</p>
                                 </div>
                             </div>
                             
@@ -129,10 +130,11 @@ export default function ExperienceEditor({ experience }) {
                                         handleSave(); // Commits changes to DB
                                     }} 
                                     disabled={mutation.isPending}
-                                    className="text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded shadow-sm font-semibold transition-all z-10 disabled:bg-gray-400"
+                                    className="text-sm bg-green-600 hover:bg-green-700 px-3 py-1 rounded shadow-sm font-semibold transition-all z-10 disabled:bg-gray-400"
                                 >
                                     {mutation.isPending ? "Saving..." : "Save"}
                                 </button>
+                                {/**i will keep the text color on this button to make it a primitive ui */}
                                 <button 
                                     onClick={(e) => {
                                         e.stopPropagation();
@@ -150,51 +152,52 @@ export default function ExperienceEditor({ experience }) {
                             <div className="p-6 border-t border-gray-100">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                                     <div className="space-y-1">
-                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Company</label>
-                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                        <label className="text-xs font-bold uppercase tracking-wide">Company</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 focus:border-blue-500 outline-none bg-transparent transition-colors" 
                                             value={job.company || ""} onChange={e => updateLocalField(i, 'company', e.target.value)} />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Title</label>
-                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                        <label className="text-xs font-bold uppercase tracking-wide">Title</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 focus:border-blue-500 outline-none bg-transparent transition-colors" 
                                             value={job.title || ""} onChange={e => updateLocalField(i, 'title', e.target.value)} />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Dates</label>
-                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                        <label className="text-xs font-bold uppercase tracking-wide">Dates</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 focus:border-blue-500 outline-none bg-transparent transition-colors" 
                                             value={job.dates || ""} onChange={e => updateLocalField(i, 'dates', e.target.value)} />
                                     </div>
                                     <div className="space-y-1">
-                                        <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Location</label>
-                                        <input className="w-full border-b-2 border-gray-200 p-2 text-black focus:border-blue-500 outline-none bg-transparent transition-colors" 
+                                        <label className="text-xs font-bold uppercase tracking-wide">Location</label>
+                                        <input className="w-full border-b-2 border-gray-200 p-2 focus:border-blue-500 outline-none bg-transparent transition-colors" 
                                             value={job.location || ""} onChange={e => updateLocalField(i, 'location', e.target.value)} />
                                     </div>
                                     <div className="space-y-1 md:col-span-2">
-                                        <label className="text-xs font-bold text-blue-600 uppercase tracking-wide">Stakeholder (Contact)</label>
-                                        <input className="w-full border-b-2 border-blue-200 p-2 text-black focus:border-blue-500 outline-none bg-blue-50/50 italic transition-colors" 
+                                        <label className="text-xs font-bold uppercase tracking-wide">Stakeholder (Contact)</label>
+                                        <input className="w-full border-b-2 border-blue-200 p-2 focus:border-blue-500 outline-none bg-blue-50/50 italic transition-colors" 
                                             value={job.stakeholder || ""} onChange={e => updateLocalField(i, 'stakeholder', e.target.value)} />
                                     </div>
                                 </div>
 
                                 {/* Achievements Section */}
                                 <div className="mt-6 pt-4 border-t border-dashed border-gray-200">
-                                    <h4 className="text-sm font-bold text-gray-700 mb-3 flex items-center">
+                                    <h4 className="text-sm font-bold mb-3 flex items-center">
                                         <span className="text-xl mr-2">🏆</span> Key Achievements
                                     </h4>
                                     <div className="space-y-3 pl-2">
                                         {job.achievements?.map((ach, achIdx) => (
                                             <div key={achIdx} className="flex items-start group relative">
-                                                <span className="text-blue-500 mr-2 mt-2">•</span>
+                                                <span className="mr-2 mt-2">•</span>
                                                 <textarea 
-                                                    className="w-full border-2 border-gray-100 p-3 rounded-lg text-sm text-gray-700 focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none min-h-[80px] transition-all resize-y"
+                                                    className="w-full border-2 border-gray-100 p-3 rounded-lg text-sm focus:ring-2 focus:ring-blue-200 focus:border-blue-400 outline-none min-h-[80px] transition-all resize-y"
                                                     value={ach || ""}
                                                     onChange={e => updateLocalAchievement(i, achIdx, e.target.value)}
                                                 />
                                             </div>
                                         ))}
+                                        {/**i will keep the text on hover for later make it a primitive ui */}
                                         <button 
                                             onClick={() => addLocalAchievement(i)} 
-                                            className="inline-flex items-center text-blue-600 text-xs font-bold hover:text-blue-800 hover:underline mt-2 transition-all"
+                                            className="inline-flex items-center text-xs font-bold hover:text-blue-800 hover:underline mt-2 transition-all"
                                         >
                                             + Add Achievement Bullet
                                         </button>
