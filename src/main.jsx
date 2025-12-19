@@ -6,11 +6,12 @@ import { DataContextProvider } from './contexts/context.data.jsx'
 import { IconsContextProvider } from './contexts/context.icons.data.jsx'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Auth0Provider } from '@auth0/auth0-react'
+import { ThemeProvider } from './contexts/context.theme.jsx'
 
-/**Portfolio-erick - version 55.02 - main js
+/**Portfolio-erick - version 56.16 - main js
  *  - Features:
  *  
- *      --> Implementing 'Auth0Provider' and secrets
+ *      --> Adding 'ThemeProvider' 
  * 
  * Notes: This provider soon will be replaced with
  * the global provider
@@ -52,11 +53,13 @@ createRoot(document.getElementById('root')).render(
         <title>{title} 👨🏾‍💻 {'{}'}</title>
         <link rel={canonical} href={href_url}/>
       </Helmet>
-      <IconsContextProvider>
-        <DataContextProvider>
-          <App />
-        </DataContextProvider>
-      </IconsContextProvider>
+      <ThemeProvider>
+        <IconsContextProvider>
+          <DataContextProvider>
+            <App />
+          </DataContextProvider>
+        </IconsContextProvider>
+      </ThemeProvider>
     </HelmetProvider>
     </Auth0Provider>
   </StrictMode>,
