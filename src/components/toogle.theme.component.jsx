@@ -1,10 +1,11 @@
+import { useTheme } from '../contexts/context.theme';
 import { cn } from '../utils/utils.index';
 import { switchVariants } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.14 - ToggleButton -
+/**Portfolio-erick - version 56.16 - ToggleButton -
 * Features:
 
-    --> Fixing 'switchVariants' import
+    --> Destructuring theme and toggle form context
 
 * Notes: 'ToggleButton' has been built it using 
 * 'cva + react state + tailwind' and its a 
@@ -19,13 +20,18 @@ import { switchVariants } from './ui-components/ui.index.components';
 *
 **/
 
-const ToggleButton = ({ theme, size, className, ...props }) => {
+const ToggleButton = ({ size, className, ...props }) => {
+    
+    const { theme, toggleTheme } = useTheme();
+
     return (
         /* The Label Container */
         <label className={cn(switchVariants({ theme, size }), className)}>
             <input
                 type="checkbox"
                 className="peer sr-only" // sr-only is cleaner than manual opacity-0
+                checked={theme === "dark"} // controlled by context
+                onChange={toggleTheme} // Changes context state
                 {...props}
             />
 
