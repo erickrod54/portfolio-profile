@@ -2,10 +2,10 @@ import { cva } from 'class-variance-authority';
 import { forwardRef } from 'react';
 import { cn } from '../utils/utils.index';
 
-/**Portfolio-erick - version 56.14 - CardDashboard -
+/**Portfolio-erick - version 56.16 - CardDashboard -
 * Features:
 
-    -→> Applying 'cn' merge util to all headless componenents
+    -→> Refactoring 'cardVariants' to react to context theme
 
 * Notes: applying 'cn' in order to merge styles easily and
 * avoid conflicts by mixing javaScript and twMerge in the 
@@ -14,24 +14,21 @@ import { cn } from '../utils/utils.index';
 **/
 
 const cardVariants = cva(
-    "rounded-lg border transition-colors",
+    // These classes react to the variables in index.css
+    "rounded-lg border bg-card text-card-foreground shadow-sm transition-colors",
     {
         variants: {
-            theme:{
-                light: "bg-white text-black border-gray-200",
-                dark:"bg-zinc-900 text-zinc-100 border-zinc-700",
-            },
             variant: {
-                default: "",
-                danger:"border-red-500",
+                default: "border-border", 
+                danger: "border-red-500",
             },
         },
         defaultVariants: {
-            theme: "light",
-            variant:"default"
+            variant: "default",
         }
     }
 );
+
 
 //Card Container
 // 1. Card Container (Keep as is, but ensure theme is passed)
@@ -62,7 +59,7 @@ const CardTitleHeader = forwardRef(({ className, ...props }, ref) => (
         ref={ref}
         // Use 'text-inherit' to force it to use the color defined in CardDashboard
         // or just let it inherit naturally by removing any conflicting 'text-...' classes
-        className={cn("text-2xl font-semibold leading-none tracking-tight text-inherit", className)}
+        className={cn("text-2xl font-semibold leading-none tracking-tight text-inherit text-foreground", className)}
         {...props}
     />
 ));
