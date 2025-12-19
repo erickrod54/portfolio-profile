@@ -13,17 +13,17 @@ import EducationEditor from './education.editor.component';
 import { loadingVariants } from './ui-components/ui.index.components';
 import ToogleButton from '../components/toogle.theme.component'
 
-/**Portfolio-erick - version 56.15 - DashboardLayout -
+/**Portfolio-erick - version 56.16 - DashboardLayout -
 * Features:
 
-    -→> Removing more hard coded styles ( text colors )
+    -→> Elevathing theme swtich to context
 
-* Notes: The test has been a sucess, next step apply styles globally
+* Notes: The theme is handled by the context and 
+* the theme reacts to 'bg-background text-foreground'
+* to make it dark or light 
 **/
 
 export default function DashboardLayout() {
-
-const [ theme, setTheme ] = useState('light')
 
     // 1. Fetch the data
 const { data: resume, isLoading, error } = useQuery({ 
@@ -38,16 +38,11 @@ const { data: resume, isLoading, error } = useQuery({
     if (error) return <div className={ loadingVariants( { variant: 'error' })}>Error loading data!</div>;
     return (
         // Main container that establishes the flex layout for sidebar and main content - hard coded color been removed
-        <div className='min-h-screen bg-gray-50 flex'> 
+        <div className='min-h-screen bg-background text-foreground flex'> 
             
             {/* 1. Sidebar (Fixed width, sticky) */}
-            <aside className='w-64 bg-white border-r p-4 shadow-xl sticky top-0 h-screen'>
-                <ToogleButton
-                    checked={theme === "dark"}
-                    onChange={(e) => 
-                        setTheme(e.target.checked ? "dark" : "light")
-                    }
-                />
+            <aside className='w-64 bg-card border-r border-border p-4 shadow-xl sticky top-0 h-screen'>
+                <ToogleButton />
                 {/**hard coded color been removed */}
                 <h1 className='text-2xl font-extrabold mb-8'>Erick's Dashboard</h1>
                 <nav className='space-y-2'>
@@ -80,7 +75,7 @@ const { data: resume, isLoading, error } = useQuery({
                     <div className='col-span-1 space-y-6'>
                         
                         {/* Status Card */}
-                        <CardDashboard theme={theme}>
+                        <CardDashboard>
                             <CardDashboardHeader>
                                 <CardTitleHeader className='text-xl'>
                                     Resume Status
@@ -94,12 +89,12 @@ const { data: resume, isLoading, error } = useQuery({
                         </CardDashboard>
 
                         {/* Analytics Placeholder Card - hard coded text color removed */}
-                        <CardDashboard theme={theme}>
+                        <CardDashboard>
                             <CardDashboardHeader>
                                 <CardTitleHeader className='text-xl'>Analitycs Placeholder</CardTitleHeader>
                             </CardDashboardHeader>
                             {/* Card Content must be here, NOT inside the header */}
-                            <CardDashboardContent theme={theme}> 
+                            <CardDashboardContent> 
                                 {/** placeholder for future chart integration */}
                                 <div className='h-40 bg-gray-100 border border-dashed rounded-md flex items-center justify-center text-sm'>
                                     [Future Chart integration]
@@ -110,7 +105,7 @@ const { data: resume, isLoading, error } = useQuery({
 
                     {/**Column 2: The Resume Editor */}
                     <div className='col-span-1 md:col-span-2'>
-                        <CardDashboard theme={theme}>
+                        <CardDashboard>
                             {/* Card Content for the editor */}
                             <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
