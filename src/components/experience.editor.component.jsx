@@ -2,10 +2,10 @@ import { useMutation, useQueryClient } from "@tanstack/react-query"
 import React, { useState, useEffect } from "react" // Added useEffect
 import { updateResume } from "../../api/resume_api"
 
-/**Portfolio-erick - version 56.14 - ExperienceEditor -
+/**Portfolio-erick - version 56.17 - ExperienceEditor -
 * Features:
 
-    -→> Removing 'Work Experience' title 
+    -→> Adding 'text-foreground' and 'bg-card' 
 
 * Notes: The next step will be removing hard coded text styles
 **/
@@ -106,9 +106,9 @@ export default function ExperienceEditor({ experience }) {
             {localExperience.map((job, i) => {
                 const isExpanded = expandedIndex === i;
                 return (
-                    <div key={i} className="border rounded-xl bg-white shadow-sm border-gray-200 overflow-hidden transition-all hover:shadow-md">
+                    <div key={i} className="border rounded-xl bg-card shadow-sm border-border text-foreground overflow-hidden transition-all hover:shadow-md">
                         <div 
-                            className={`flex justify-between items-center p-4 cursor-pointer transition-colors ${isExpanded ? 'bg-blue-50' : 'bg-gray-50 hover:bg-gray-100'}`}
+                            className={`flex justify-between items-center p-4 cursor-pointer transition-colors ${isExpanded ? 'bg-card' : 'bg-secondary'}`}
                             onClick={() => toggleExpand(i)}
                         >
                             <div className="flex items-center space-x-4">
