@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateResume } from '../../api/resume_api';
+import { ButtonUI } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.09 - SummaryEditor -
+/**Portfolio-erick - version 56.17 - SummaryEditor -
 * Features:
 
-    -→> Building 'SummaryEditor' 
+    -→> Adding 'ButtonUI' variant 'primary' 
 
 * Notes: The 'SummaryEditor' will add/ edit the 
 * summary section
 **/
 
-// 1. Remove fullResume from props - we don't need it anymore!
 export default function SummaryEditor({ initialSummary }) {
     const [text, setText] = useState(initialSummary || "");
     const queryClient = useQueryClient();
@@ -24,37 +24,39 @@ export default function SummaryEditor({ initialSummary }) {
         mutationFn: updateResume,
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ['resumeData'] });
-            alert("Summary updated successfully!");
+            // Consider using a toast library later!
         }
     });
 
     const handleSave = () => {
-        // 2. Simplified Payload: Only send the summary key.
-        // The backend '||' operator preserves everything else automatically.
         mutation.mutate({ summary: text });
     };
 
     return (
-        <div className='summary-editor p-4 border rounded bg-white mt-4 shadow-sm'>
-            <h3 className='text-black font-bold mb-2'>✏️ Professional Summary</h3>
+        /* 1. Change bg-white to bg-card and text-black to text-foreground */
+        <div className='p-4 border border-border rounded-lg bg-card mt-4 shadow-sm'>
+            <h3 className='text-foreground font-bold mb-2 flex items-center gap-2'>
+                <span>✏️</span> Professional Summary
+            </h3>
+            
+            {/* 2. Remove hardcoded border/text colors; let index.css handle it */}
             <textarea
-                className='w-full p-2 border rounded text-black min-h-[100px] focus:ring-2 focus:ring-blue-500 outline-none'
+                className='w-full p-3 bg-background text-foreground border border-border rounded-md min-h-[120px] focus:ring-2 focus:ring-primary outline-none transition-all'
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Write your professional summary here..."
             />
-            <div className="flex justify-end">
-                <button
+            
+            <div className="flex justify-end mt-4">
+                {/* 3. CLEAN BUTTON: No hardcoded bg-blue or bg-gray! 
+                      The Button component handles 'disabled' styles automatically via CVA. */}
+                <ButtonUI
+                    variant="primary"
                     onClick={handleSave}
                     disabled={mutation.isPending || text === initialSummary}
-                    className={`mt-2 px-4 py-2 rounded text-white transition-colors ${
-                        mutation.isPending || text === initialSummary 
-                        ? 'bg-gray-400 cursor-not-allowed' 
-                        : 'bg-blue-600 hover:bg-blue-700'
-                    }`}
                 >
                     {mutation.isPending ? 'Saving...' : 'Save Summary'}   
-                </button>
+                </ButtonUI>
             </div>
         </div>
     );
