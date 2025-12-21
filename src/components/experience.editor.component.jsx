@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react" // Added useEffect
 import { updateResume } from "../../api/resume_api"
 import { ButtonUI } from '../components/ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.18 - ExperienceEditor -
+/**Portfolio-erick - version 56.19 - ExperienceEditor -
 * Features:
 
-    -→> Adding 'ButtonUI' for +Add Job 
+    -→> Adding 'ButtonUI' for Saving 
 
 * Notes: The next step will be removing hard coded text styles
 **/
@@ -125,16 +125,16 @@ export default function ExperienceEditor({ experience }) {
                             
                             {/* ACTION BUTTONS GROUP */}
                             <div className="flex items-center space-x-2">
-                                <button 
+                                <ButtonUI 
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         handleSave(); // Commits changes to DB
                                     }} 
                                     disabled={mutation.isPending}
-                                    className="text-sm bg-green-600 hover:bg-green-700 px-3 py-1 rounded shadow-sm font-semibold transition-all z-10 disabled:bg-gray-400"
+                                    variant='primary'
                                 >
                                     {mutation.isPending ? "Saving..." : "Save"}
-                                </button>
+                                </ButtonUI>
                                 {/**i will keep the text color on this button to make it a primitive ui */}
                                 <button 
                                     onClick={(e) => {
