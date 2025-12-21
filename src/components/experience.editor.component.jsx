@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react" // Added useEffect
 import { updateResume } from "../../api/resume_api"
 import { ButtonUI } from '../components/ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.19 - ExperienceEditor -
+/**Portfolio-erick - version 56.20 - ExperienceEditor -
 * Features:
 
-    -→> Adding 'ButtonUI' for Saving 
+    -→> Adding 'ButtonUI' variant 'danger' for delete 
 
 * Notes: The next step will be removing hard coded text styles
 **/
@@ -136,15 +136,15 @@ export default function ExperienceEditor({ experience }) {
                                     {mutation.isPending ? "Saving..." : "Save"}
                                 </ButtonUI>
                                 {/**i will keep the text color on this button to make it a primitive ui */}
-                                <button 
+                                <ButtonUI 
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         deleteJob(i);
-                                    }} 
-                                    className="text-sm text-red-500 hover:text-red-700 hover:bg-red-50 px-3 py-1 rounded border border-transparent hover:border-red-200 transition-all z-10"
+                                    }}
+                                    variant='danger'
                                 >
                                     Delete
-                                </button>
+                                </ButtonUI>
                             </div>
                         </div>
 
