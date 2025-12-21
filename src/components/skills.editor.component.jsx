@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateResume } from '../../api/resume_api';
 
-/**Portfolio-erick - version 56.09 - SkillsEditor -
+/**Portfolio-erick - version 57.00 - SkillsEditor -
 * Features:
 
-    -→> Building 'SkillsEditor' 
+    -→> Adding text-foreground and bg-card 
 
 * Notes: The 'SkillsEditor' will be use perform
 * an adition of the new skill to the exisiting 
@@ -54,17 +54,17 @@ export default function SkillsEditor({ initialSkills }) {
     };
 
     return (
-        <div className="skills-editor p-2 border rounded-lg bg-white mt-6 shadow-md">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-2">🛠️ Technical Skills</h3>
+        <div className="skills-editor p-2 border rounded-lg bg-card mt-6 shadow-md">
+            <h3 className="text-2xl font-bold text-foreground mb-6 pb-2">🛠️ Technical Skills</h3>
             
             {Object.entries(initialSkills || {}).map(([category, skills]) => (
                 <div key={category} className="mb-8 last:mb-0">
-                    <h4 className="text-lg font-semibold text-blue-600 mb-3 uppercase tracking-wider">{category}</h4>
+                    <h4 className="text-sm font-bold text-primary mb-3 uppercase tracking-widest opacity-90">{category}</h4>
                     
                     {/* Tag Cloud */}
                     <div className="flex flex-wrap gap-2 mb-4">
                         {skills.map(skill => (
-                            <div key={skill} className="flex items-center bg-gray-100 text-gray-700 px-3 py-1 rounded-full border border-gray-200 group">
+                            <div key={skill} className="flex items-center bg-muted text-muted-foreground px-3 py-1 rounded-full border border-border group transition-colors">
                                 <span className="text-sm font-medium">{skill}</span>
                                 <button 
                                     onClick={() => handleRemoveSkill(category, skill)}
@@ -79,7 +79,7 @@ export default function SkillsEditor({ initialSkills }) {
                     {/* Add Input */}
                     <div className="flex items-center gap-2 max-w-xs">
                         <input 
-                            className="flex-1 border-b-2 border-gray-200 p-1 text-sm text-black focus:border-blue-500 outline-none transition-colors"
+                            className="flex-1 border-b-2 border-border p-1 text-sm text-foreground focus:border-blue-500 outline-none transition-colors"
                             placeholder={`Add ${category}...`}
                             value={activeCategory === category ? newSkill : ""}
                             onChange={(e) => {
@@ -90,7 +90,7 @@ export default function SkillsEditor({ initialSkills }) {
                         />
                         <button 
                             onClick={() => handleAddSkill(category)}
-                            className="text-blue-500 hover:text-blue-700 font-bold text-xl mt-4 p-1"
+                            className="text-foreground hover:text-secondary font-bold text-xl mt-4 p-1"
                         >
                             +
                         </button>
