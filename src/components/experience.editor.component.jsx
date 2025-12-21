@@ -1,11 +1,12 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query"
 import React, { useState, useEffect } from "react" // Added useEffect
 import { updateResume } from "../../api/resume_api"
+import { ButtonUI } from '../components/ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.17 - ExperienceEditor -
+/**Portfolio-erick - version 56.18 - ExperienceEditor -
 * Features:
 
-    -→> Adding 'text-foreground' and 'bg-card' 
+    -→> Adding 'ButtonUI' for +Add Job 
 
 * Notes: The next step will be removing hard coded text styles
 **/
@@ -98,9 +99,9 @@ export default function ExperienceEditor({ experience }) {
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <button onClick={addJob} className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
+                <ButtonUI onClick={addJob} variant='primary'>
                     + Add job
-                </button>
+                </ButtonUI>
             </div>
 
             {localExperience.map((job, i) => {
