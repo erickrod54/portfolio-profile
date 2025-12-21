@@ -16,6 +16,7 @@
   --color-primary: #2563eb;
   /* Blue-600 */
   --color-primary-foreground: #ffffff;
+  --color-secondary: #26262c;
 }
 
 .dark {
@@ -24,11 +25,12 @@
   /* Zinc-950 */
   --color-foreground: #f9fafb;
   --color-card: #18181b;
+  --color-secondary:#26262c;
   /* Zinc-900 */
   --color-card-foreground: #f9fafb;
   --color-border: #27272a;
   /* Zinc-800 */
-  --color-primary: #3b82f6;
+  --color-primary: #60a5fa;
   /* Blue-500 */
 }
 
