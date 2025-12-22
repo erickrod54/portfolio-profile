@@ -4,17 +4,15 @@ import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 import { cn } from "../utils/utils";
 
-/**Portfolio-erick - version 57.05 - EducationEditor -
+/**Portfolio-erick - version 57.06 - EducationEditor -
 * Features:
 
-    -→> Improving styling css  
+    -→> Adding 'ButtonUI' primary to Save  
 
-* Notes: key improvements:
-*   
-*   1.- Themed Labels
-*   2.- Input Refinement-> Added bg-muted/50 and border-border.
-*   3.- Chevron Color -> Changed the SVG chevron to text-primary.
-*   4.- Header Logic -> bg-muted/50
+* Notes: this component is almost complete:
+* the changes to the 'dropdown arrow' and 
+* dropdown 'titles' should be applied to the
+* experience editor
 *
 **/
 
@@ -118,13 +116,13 @@ export default function EducationEditor({ education }) {
                 </div>
                 <div className="flex items-center space-x-2">
                     {/* Replaced manual button with your ButtonUI or themed buttons */}
-                    <button 
+                    <ButtonUI 
                         onClick={(e) => { e.stopPropagation(); handleSave(i); }} 
-                        className="text-xs bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded font-bold transition-colors disabled:opacity-50"
                         disabled={mutation.isPending}
+                        variant='primary'
                     >
                         {mutation.isPending && isSavingIndex === i ? "Saving..." : "Save"}
-                    </button>
+                    </ButtonUI>
                     <button 
                         onClick={(e) => { e.stopPropagation(); deleteEducation(i); }} 
                         className="text-xs text-red-500 hover:text-red-700 font-bold px-2 py-1.5 transition-colors"
