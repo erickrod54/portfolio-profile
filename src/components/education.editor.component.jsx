@@ -1,11 +1,12 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import React, { useState } from "react"; // Removed useEffect
 import { updateResume } from "../../api/resume_api";
+import { ButtonUI } from "./ui-components/ui.index.components";
 
-/**Portfolio-erick - version 56.15 - EducationEditor -
+/**Portfolio-erick - version 57.02 - EducationEditor -
 * Features:
 
-    -→> Removing hard coded text color 'EducationEditor' 
+    -→> Adding ButtonUI variant 'primary' 
 
 * Notes: The 'EducationEditor' will be use perform
 * CRUD granular over every education field
@@ -78,9 +79,9 @@ export default function EducationEditor({ education }) {
     return (
         <div className="space-y-6">
             <div className="flex justify-between items-center border-b pb-4">
-                <button onClick={addEducation} className="bg-black hover:bg-gray-800 px-4 py-2 rounded-lg shadow-sm font-semibold text-sm transition-colors">
+                <ButtonUI onClick={addEducation} variant='primary'>
                     + Add Education
-                </button>
+                </ButtonUI>
             </div>
 
             {localEducation.map((edu, i) => {
