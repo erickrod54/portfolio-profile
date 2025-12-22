@@ -3,10 +3,10 @@ import React, { useState } from "react"; // Removed useEffect
 import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 
-/**Portfolio-erick - version 57.03 - EducationEditor -
+/**Portfolio-erick - version 57.04 - EducationEditor -
 * Features:
 
-    -→> Adding bg to dropdown 
+    -→> Adding bg-card to to inner box  
 
 * Notes: The 'EducationEditor' will be use perform
 * CRUD granular over every education field
@@ -117,25 +117,25 @@ export default function EducationEditor({ education }) {
                         </div>
 
                         <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isExpanded ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                            <div className="p-6 border-t border-gray-100 bg-white grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="p-6 border-t border-border bg-card grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-1">
                                     <label className="text-[10px] font-bold uppercase tracking-widest">University / School</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-muted transition-all" 
                                         value={edu.school || ""} onChange={e => updateLocalField(i, 'school', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
                                     <label className="text-[10px] font-bold uppercase tracking-widest">Degree / Major</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-muted transition-all" 
                                         value={edu.degree || ""} onChange={e => updateLocalField(i, 'degree', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
                                     <label className="text-[10px] font-bold uppercase tracking-widest">Location</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-muted transition-all" 
                                         value={edu.location || ""} onChange={e => updateLocalField(i, 'location', e.target.value)} />
                                 </div>
                                 <div className="space-y-1">
                                     <label className="text-[10px] font-bold uppercase tracking-widest">Dates</label>
-                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-transparent transition-all" 
+                                    <input className="w-full border-b-2 border-gray-100 p-2 focus:border-blue-500 outline-none bg-muted transition-all" 
                                         value={edu.dates || ""} onChange={e => updateLocalField(i, 'dates', e.target.value)} />
                                 </div>
                             </div>
