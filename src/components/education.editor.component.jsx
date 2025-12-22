@@ -3,10 +3,10 @@ import React, { useState } from "react"; // Removed useEffect
 import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 
-/**Portfolio-erick - version 57.02 - EducationEditor -
+/**Portfolio-erick - version 57.03 - EducationEditor -
 * Features:
 
-    -→> Adding ButtonUI variant 'primary' 
+    -→> Adding bg to dropdown 
 
 * Notes: The 'EducationEditor' will be use perform
 * CRUD granular over every education field
@@ -87,9 +87,9 @@ export default function EducationEditor({ education }) {
             {localEducation.map((edu, i) => {
                 const isExpanded = expandedIndex === i;
                 return (
-                    <div key={i} className="border rounded-xl bg-white shadow-sm border-gray-200 overflow-hidden transition-all hover:shadow-md">
+                    <div key={i} className="border rounded-xl shadow-sm border-gray-200 overflow-hidden transition-all hover:shadow-md">
                         <div 
-                            className={`flex justify-between items-center p-4 cursor-pointer transition-colors ${isExpanded ? 'bg-blue-50' : 'bg-gray-50 hover:bg-gray-100'}`}
+                            className={`flex justify-between items-center p-4 cursor-pointer transition-colors ${isExpanded ? 'bg-secondary' : 'bg-card'}`}
                             onClick={() => setExpandedIndex(isExpanded ? -1 : i)}
                         >
                             <div className="flex items-center space-x-4">
