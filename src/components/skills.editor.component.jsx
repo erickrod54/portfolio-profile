@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateResume } from '../../api/resume_api';
+import { ButtonUI } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 57.00 - SkillsEditor -
+/**Portfolio-erick - version 57.01 - SkillsEditor -
 * Features:
 
-    -→> Adding text-foreground and bg-card 
+    -→> Adding 'ButtonUI' 
 
 * Notes: The 'SkillsEditor' will be use perform
 * an adition of the new skill to the exisiting 
@@ -88,12 +89,15 @@ export default function SkillsEditor({ initialSkills }) {
                             }}
                             onKeyDown={(e) => e.key === 'Enter' && handleAddSkill(category)}
                         />
-                        <button 
+                        <ButtonUI 
+                            variant='ghost'
+                            size="sm"
                             onClick={() => handleAddSkill(category)}
                             className="text-foreground hover:text-secondary font-bold text-xl mt-4 p-1"
+                            title={`Add to ${category}`}
                         >
                             +
-                        </button>
+                        </ButtonUI>
                     </div>
                 </div>
             ))}
