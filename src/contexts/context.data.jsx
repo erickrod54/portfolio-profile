@@ -7,19 +7,26 @@ import { data_test,
          social, social_title, DummyFeaturesData, 
          TEAM_MEMBERS,
          ResumeData} from "../data.static";
+import { fetchResumeData } from "../../api/resume_api";
+import { useQuery } from "@tanstack/react-query";
 
-/**Portfolio-erick - version 56.04 - context.data
+/**Portfolio-erick - version 57.08 - context.data
  *  - Features:
  *  
- *      --> Importing and providing 'ResumeData'.
+ *      --> Fetching data from my back end server by 'resume_api'.
  * 
- * Notes: This context will provide static data for 
- * the components that need it 
+ * Notes: The data set comes from 'ResumeData'
  */
 
 export const DataContext = React.createContext();
 
 export const DataContextProvider = ({ children }) => {
+
+    const { data: ResumeData, isLoading, error } = useQuery({
+        queryKey: ['resumeData'],
+        queryFn: fetchResumeData,
+        staleTime: 1000 * 60 * 5, // Keep data fresh for 5min
+    })
 
     const context_data_test = 'from context data';
 
@@ -36,7 +43,9 @@ export const DataContextProvider = ({ children }) => {
                 OverviewData,
                 AboutPageData,
                 TEAM_MEMBERS,
-                ResumeData
+                ResumeData,
+                isLoading,
+                error
                 }}>
             {children}
         </DataContext.Provider>
