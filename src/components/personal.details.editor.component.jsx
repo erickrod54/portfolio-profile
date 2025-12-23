@@ -3,10 +3,12 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 
- /**Portfolio-erick - version 56.17 - PersonalDetailsEditor -
+ /**Portfolio-erick - version 57.08 - PersonalDetailsEditor -
 * Features:
 
-    -→> Adding ButtonUI component ( primary variant ) 
+    -→> Refactoring 'handleSave' to preserve hidden keys ( ensure scheme structure)
+    
+    --> Adding missing inputs from data keys.
 
 * Notes: The 'PersonalDetailsEditor' will be use perform
 * CRUD granular over every PersonalDetail data
@@ -38,7 +40,11 @@ export default function PersonalDetailsEditor({ initialPersonal, fullResume }) {
 
     const handleSave = () => {
         // Renamed variable to 'updatedData' to avoid conflict with the imported function
-        const updatedData = { ...fullResume, personal: form };
+        const updatedData = {
+            ...fullResume, personal: {
+                ...fullResume.personal, //preserve hidden links ( github, linkdn )
+                ...form
+        } };
         mutation.mutate(updatedData);
     };
 
@@ -79,6 +85,30 @@ export default function PersonalDetailsEditor({ initialPersonal, fullResume }) {
                     name="phone"
                     placeholder="Phone"
                     value={form.phone || ''}
+                    onChange={handleChange}
+                />
+                
+                <input
+                    className="border p-2 rounded"
+                    name="location"
+                    placeholder="location"
+                    value={form.location || ''}
+                    onChange={handleChange}
+                />
+                
+                <input
+                    className="border p-2 rounded"
+                    name="github"
+                    placeholder="Github Url"
+                    value={form.github || ''}
+                    onChange={handleChange}
+                />
+                
+                <input
+                    className="border p-2 rounded col-span-1 md:col-span-2"
+                    name='linkedin'
+                    placeholder="LinkedIn URL"
+                    value={form.linkedin || ''}
                     onChange={handleChange}
                 />
             </div>
