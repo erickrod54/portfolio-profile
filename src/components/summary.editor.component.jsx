@@ -3,13 +3,15 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateResume } from '../../api/resume_api';
 import { ButtonUI } from './ui-components/ui.index.components';
 
-/**Portfolio-erick - version 56.17 - SummaryEditor -
+/**Portfolio-erick - version 57.08 - SummaryEditor -
 * Features:
 
-    -→> Adding 'ButtonUI' variant 'primary' 
+    -→> Refactoring 'Saving' payload 
 
-* Notes: The 'SummaryEditor' will add/ edit the 
-* summary section
+* Notes: The whole resume needs to be sends it when
+* the summary is modified - solve the issue that does
+* not let save the summary - ( before was sending only
+* the summary )
 **/
 
 export default function SummaryEditor({ initialSummary }) {
@@ -29,7 +31,8 @@ export default function SummaryEditor({ initialSummary }) {
     });
 
     const handleSave = () => {
-        mutation.mutate({ summary: text });
+        const updatedData = { ...fullResume, summary: currentSummaryText };
+        mutation.mutate({ updatedData });
     };
 
     return (
