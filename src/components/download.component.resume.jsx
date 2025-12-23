@@ -3,10 +3,11 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import ResumePDF from './resume.component';
 import { useDataContext } from '../contexts/context.data';
 
-/**Portfolio-erick - version 56.04 - DownloadButton
+/**Portfolio-erick - version 57.08 - DownloadButton
  *  - Features:
  * 
- *      --> Building 'DownloadButton'.
+ *      --> Destructuring 'ResumeData, isLoading, error' from 
+ *          the context.
  * 
  * Notes: This is the alternative button to place to 
  * download whereever is neededSS
@@ -34,7 +35,13 @@ const DownloadButton = () => {
     // We use the name property from the ResumeData for the filename
     const fileName = "Erick_Rodriguez_Resume.pdf"; 
 
-    const { ResumeData } = useDataContext()
+    const { ResumeData, isLoading, error } = useDataContext();
+
+    //1.- if the API has not finish fetching ( loading )
+    if (isLoading) return <div>Connecting to the server...</div>
+
+    //2.- if the back end is down, or is a CORS error
+    if (error || !ResumeData) return <div>Resume Unavaible</div>
 
     return (
         <PDFDownloadLink 
