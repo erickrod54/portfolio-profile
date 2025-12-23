@@ -7,14 +7,17 @@ import { IconsContextProvider } from './contexts/context.icons.data.jsx'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Auth0Provider } from '@auth0/auth0-react'
 import { ThemeProvider } from './contexts/context.theme.jsx'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-/**Portfolio-erick - version 56.16 - main js
+/**Portfolio-erick - version 57.08 - main js
  *  - Features:
  *  
- *      --> Adding 'ThemeProvider' 
+ *      --> Adding 'QueryClient' and 'QueryClientProvider' 
  * 
- * Notes: This provider soon will be replaced with
- * the global provider
+ * Notes: The query client and query provider in order to let 
+ * react query use the data provider 'data bridge' ( this is 
+ * part of the react query to provide the data directly to the 
+ * PDF component )
  */
 
 const HelmetData = [
@@ -38,6 +41,8 @@ if (!AUTH_DOMAIN || !AUTH_CLIENT_ID) {
 }
 const [{ name: title }, { name: canonical }, { name: href_url }] = HelmetData;
 
+const queryClient = new QueryClient();
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Auth0Provider
@@ -53,13 +58,15 @@ createRoot(document.getElementById('root')).render(
         <title>{title} 👨🏾‍💻 {'{}'}</title>
         <link rel={canonical} href={href_url}/>
       </Helmet>
-      <ThemeProvider>
-        <IconsContextProvider>
-          <DataContextProvider>
-            <App />
-          </DataContextProvider>
-        </IconsContextProvider>
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider>
+          <IconsContextProvider>
+            <DataContextProvider>
+              <App />
+            </DataContextProvider>
+          </IconsContextProvider>
+        </ThemeProvider>
+      </QueryClientProvider>
     </HelmetProvider>
     </Auth0Provider>
   </StrictMode>,
