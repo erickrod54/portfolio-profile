@@ -4,10 +4,10 @@ import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 import { cn } from "../utils/utils";
 
-/**Portfolio-erick - version 57.06 - EducationEditor -
+/**Portfolio-erick - version 57.07 - EducationEditor -
 * Features:
 
-    -→> Adding 'ButtonUI' primary to Save  
+    -→> Adding 'ButtonUI' danger to Delete  
 
 * Notes: this component is almost complete:
 * the changes to the 'dropdown arrow' and 
@@ -123,12 +123,12 @@ export default function EducationEditor({ education }) {
                     >
                         {mutation.isPending && isSavingIndex === i ? "Saving..." : "Save"}
                     </ButtonUI>
-                    <button 
+                    <ButtonUI 
                         onClick={(e) => { e.stopPropagation(); deleteEducation(i); }} 
-                        className="text-xs text-red-500 hover:text-red-700 font-bold px-2 py-1.5 transition-colors"
+                        variant='danger'
                     >
                         Delete
-                    </button>
+                    </ButtonUI>
                 </div>
             </div>
 
