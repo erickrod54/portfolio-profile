@@ -2,10 +2,10 @@ import { Text, View, StyleSheet } from '@react-pdf/renderer';
 import { styles } from './resume.component';
 import React from 'react';
 
-/**Portfolio-erick - version 56.04 - EducationSection
+/**Portfolio-erick - version 57.10 - EducationSection
  *  - Features:
  * 
- *      --> Building 'EducationSection'.
+ *      --> Changing mismatch key 'institution' for 'school'.
  * 
  * Notes: This is the first test for context static 
  * data
@@ -22,7 +22,7 @@ const EducationSection = ({ education }) => {
                     {/* Institution, Dates & Location Header */}
                     <View style={styles.educationHeader}>
                         <Text style={styles.institution}>
-                            {item.institution}
+                            {item.school}
                         </Text>
                         <Text style={styles.degreeDates}>
                             {item.location} | {item.dates}
