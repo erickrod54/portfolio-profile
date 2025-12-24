@@ -4,19 +4,18 @@ import { updateResume } from "../../api/resume_api";
 import { ButtonUI } from "./ui-components/ui.index.components";
 import { cn } from "../utils/utils";
 
-/**Portfolio-erick - version 57.07 - EducationEditor -
+/**Portfolio-erick - version 57.10 - EducationEditor -
 * Features:
 
-    -→> Adding 'ButtonUI' danger to Delete  
+    -→> Refactoring 'Save' and 'Delete' payload  
 
-* Notes: this component is almost complete:
-* the changes to the 'dropdown arrow' and 
-* dropdown 'titles' should be applied to the
-* experience editor
+* Notes: this way in each operation i send the 
+* fullResume and i save or delete, without wiping
+* down the rest of the data 
 *
 **/
 
-export default function EducationEditor({ education }) {
+export default function EducationEditor({ education, fullResume }) {
     const [expandedIndex, setExpandedIndex] = useState(0);
     const [isSavingIndex, setIsSavingIndex] = useState(null);
     
@@ -42,11 +41,30 @@ export default function EducationEditor({ education }) {
     });
 
     const handleSave = (index) => {
-        setIsSavingIndex(index);
-        mutation.mutate({ education: localEducation }, {
-            onSettled: () => setIsSavingIndex(null)
-        });
+    setIsSavingIndex(index);
+    // 1. Spread the full resume
+    // 2. Overwrite only the education array
+    const updatedData = { 
+        ...fullResume, 
+        education: localEducation 
     };
+    
+    mutation.mutate(updatedData, {
+        onSettled: () => setIsSavingIndex(null)
+    });
+};
+
+const deleteEducation = (index) => {
+    const newList = localEducation.filter((_, i) => i !== index);
+    setLocalEducation(newList);
+    
+    // Do the same full-object spread here
+    mutation.mutate({ 
+        ...fullResume, 
+        education: newList 
+    });
+};
+
 
     const addEducation = () => {
         const newEdu = { 
@@ -57,18 +75,6 @@ export default function EducationEditor({ education }) {
         };
         setLocalEducation([newEdu, ...localEducation]);
         setExpandedIndex(0);
-    };
-
-    const deleteEducation = (index) => {
-        const newList = localEducation.filter((_, i) => i !== index);
-        setLocalEducation(newList);
-        mutation.mutate({ education: newList });
-        
-        if (index === expandedIndex) {
-            setExpandedIndex(Math.max(0, index - 1));
-        } else if (index < expandedIndex) {
-            setExpandedIndex(expandedIndex - 1);
-        }
     };
 
     const updateLocalField = (index, field, value) => {
