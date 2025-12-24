@@ -13,10 +13,10 @@ import EducationEditor from './education.editor.component';
 import { loadingVariants } from './ui-components/ui.index.components';
 import ToogleButton from '../components/toogle.theme.component'
 
-/**Portfolio-erick - version 56.16 - DashboardLayout -
+/**Portfolio-erick - version 57.09 - DashboardLayout -
 * Features:
 
-    -→> Elevathing theme swtich to context
+    -→> Drilling the 'fullResume' to each editor
 
 * Notes: The theme is handled by the context and 
 * the theme reacts to 'bg-background text-foreground'
@@ -112,35 +112,35 @@ const { data: resume, isLoading, error } = useQuery({
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4'>🗓️ Edit Summary</CardTitleHeader> 
                             </CardDashboardHeader>
                             <CardDashboardContent>
-                                <SummaryEditor initialSummary={resume?.summary || ""}/>
+                                <SummaryEditor initialSummary={resume?.summary || ""} fullResume={resume}/>
                             </CardDashboardContent>
                                <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4'> 🔖 Edit Personal Info</CardTitleHeader> 
                             </CardDashboardHeader>
                             <CardDashboardContent>
-                                <PersonalDetailsEditor initialPersonal={resume?.personal || {} }/>
+                                <PersonalDetailsEditor initialPersonal={resume?.personal || {} } fullResume={resume}/>
                             </CardDashboardContent>
                             <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4'>💼 Edit Work Experience</CardTitleHeader> 
                             </CardDashboardHeader>
                             <CardDashboardContent> 
-                                <ExperienceEditor experience={ resume?.experience || []} /> 
+                                <ExperienceEditor experience={resume?.experience || []} fullResume={resume} /> 
                             </CardDashboardContent>
                                <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4'> ⚙️ Add Skills</CardTitleHeader> 
                             </CardDashboardHeader>
                             <CardDashboardContent>
-                                <SkillsEditor initialSkills={resume?.skills || {} } />
+                                <SkillsEditor initialSkills={resume?.skills || {}} fullResume={resume} />
                             </CardDashboardContent>
                                <CardDashboardHeader>
                                 {/* Added mb-4 for better spacing above the content */}
                                 <CardTitleHeader className='text-2xl border-b pb-4 mb-4'>🎓 Edit Education</CardTitleHeader> 
                             </CardDashboardHeader>
                             <CardDashboardContent>
-                                <EducationEditor education={resume?.education || [] }/>
+                                <EducationEditor education={resume?.education || []} fullResume={resume} />
                             </CardDashboardContent>
                         </CardDashboard>
                     </div>
